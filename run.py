@@ -99,7 +99,6 @@ def main(args):
                         new_lines = clean_up(lines)
                         output_file.writelines(new_lines)
             output_file.write("\n---\n")
-            output_file.write("&nbsp; \pagebreak\n")
 
 
 if __name__ == "__main__":

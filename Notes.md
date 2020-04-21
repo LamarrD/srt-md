@@ -413,7 +413,6 @@ There are some commercial solutions.
 There are many good proposals for internet core redesign such as based blogging.
 
 ---
-&nbsp; \pagebreak
 ## 02 - Cybercrimes
 
 ### Introduction to Cybercrimes
@@ -706,7 +705,6 @@ These costs include payment to the affiliates.
 Cost of the network infrastructure, and payment to spammers and botnet operators.
 
 ---
-&nbsp; \pagebreak
 ## 03 - Penetration-Testing
 
 ### Introduction to Penatration Testing
@@ -929,7 +927,6 @@ Commitment is a desire to act in a consistent manner.
 Social proof is looking to others for clues on how to behave.
 
 ---
-&nbsp; \pagebreak
 ## 04b - DNS-Security
 
 ### Introduction to Domain Name Servers
@@ -1163,7 +1160,6 @@ The third statement, a short TTL means that the page will be quickly cached, thi
 The fourth statement, the attacker exploits the same origin policy, this is true.
 
 ---
-&nbsp; \pagebreak
 ## 05b - Advanced Web Security-Session-Management
 
 ### Session Management
@@ -1277,7 +1273,6 @@ Session tokens should be unpredictable.
 And finally, when a user logs out, the server should invalidate the session token.
 
 ---
-&nbsp; \pagebreak
 ## 05c - Adanced Web Security - HTTPS
 
 ### Goals
@@ -1433,7 +1428,6 @@ That is, the CAs must publish in a public log of all the certificates that they 
 And companies like Google can constantly scan the public logs to look for invalid or forged certificates.
 
 ---
-&nbsp; \pagebreak
 ## 06 - Advanced-Malware-Analysis
 
 ### Introduction to Advance Malware Analysis
@@ -1749,7 +1743,6 @@ And here's the result from reversing VMProtect.
 Again, our tool is able to obtain the main information and properties of the original CFG.
 
 ---
-&nbsp; \pagebreak
 ## 07 - Botnet-Detection
 
 ### Introduction
@@ -2023,7 +2016,6 @@ Which of the following information should we consider in order to identify the s
 We need all of them.
 
 ---
-&nbsp; \pagebreak
 ## 08a - Internet-Scale-Threat-Analysis
 
 ### Introduction
@@ -2271,7 +2263,6 @@ Of course, please remember to be a good citizen on the Internet.
 There's also a repository of data from previous scans.
 
 ---
-&nbsp; \pagebreak
 ## 08b - Domain-and-Network-Reputation
 
 ### Introduction
@@ -2548,7 +2539,6 @@ Therefore, we should study policy criteria for Takedowns, and have the community
 We can test the policy with the newly created top-level domains.
 
 ---
-&nbsp; \pagebreak
 ## 09a - Basics-of-Bitcoin-and-Blockchain
 
 ### Acknowledgements
@@ -2924,7 +2914,6 @@ Can the attacker destroy confidence in Bitcoin?
 Yes. For example, by refusing to extend from the valid block, then Bitcoin may become useless for valid transactions.
 
 ---
-&nbsp; \pagebreak
 ## 10a - ML-For-Security
 
 ### Introduction
@@ -3195,7 +3184,6 @@ This shows that our data mining and machine learning-based approach performed qu
 Other approaches are all based on rules hand-coded by experts.
 
 ---
-&nbsp; \pagebreak
 ## 11a - Cloud-Computing-VM-Monitoring
 
 ### Introduction to Network Security
@@ -6665,7 +6653,6 @@ The fourth statement, data link layer controls can protect connections comprised
 This is false, they cannot protect connections with multiple links.
 
 ---
-&nbsp; \pagebreak
 ## 11b - Property-Perserving-Encryption
 
 ### Introduction
@@ -6849,7 +6836,6 @@ The third statement each access to the remote storage must have a read and a wri
 Because we want to hide from core providers the fact that we only reading or writing data, therefore we will include dummy reads and writes.
 
 ---
-&nbsp; \pagebreak
 ## Attack-Tolerant-Systems
 
 ### Introduction
@@ -7053,7 +7039,6 @@ For example, we can have many instances of the system and network services.
 Each instance can have a different implementation, and these instances can be composed on-the-fly.
 
 ---
-&nbsp; \pagebreak
 ## Browser-Security-Model
 
 ### Introduction to Advanced Web Security
@@ -7574,12 +7559,10 @@ A difficult hash function should be very hard for the attackers to analyze.
 But we want all the hash function to be efficient to calculate
 
 ---
-&nbsp; \pagebreak
 ## Data-Poisoning-And-Model-Evasion
 
 
 ---
-&nbsp; \pagebreak
 ## Mobile-Malware
 
 ### Introduction
@@ -7776,7 +7759,6 @@ That is potentially all resources can go to all the sinks.
 However, the data flows observed from the Facebook app include additional flows that lead to leakage.
 
 ---
-&nbsp; \pagebreak
 ## New-and-Alternative-Cryptocurrencies
 
 ### Introduction
@@ -8061,7 +8043,6 @@ On the other hand, such an approach can also be inefficient because those on the
 This is because bitcoin nodes don't filter these transactions for you.
 
 ---
-&nbsp; \pagebreak
 ## Security-of-Internet-Protocols
 
 ### Introduction to Security Internet Protocols
@@ -8320,4 +8301,3 @@ And also, route attestation for each AS along the path.
 And of course, all the certificates must be available, and they must be valid.
 
 ---
-&nbsp; \pagebreak
