@@ -4,6 +4,7 @@ Creates readable text file from SRT file.
 import re, sys
 import os
 import glob
+from functools import cmp_to_key
 
 
 # Modified from https://gist.github.com/ndunn219/62263ce1fb59fda08656be7369ce329b
@@ -62,6 +63,21 @@ def clean_up(lines):
     return new_lines
 
 
+def sorter(file_name1, file_name2):
+    file_num = int(file_name1.split(" - ")[0])
+    if file_num < 10:
+        file_name1 = "0" + file_name1
+
+    file_num = int(file_name2.split(" - ")[0])
+    if file_num < 10:
+        file_name2 = "0" + file_name2
+
+    if file_name1 > file_name2:
+        return 1
+    else:
+        return -1
+
+
 def main(args):
     file_encoding = "utf-8" if len(args) < 3 else args[2]
     output_file = open("Notes.md", "w")
@@ -69,7 +85,9 @@ def main(args):
         for dir in sorted(dirs):
             output_file.write(f"## {dir}\n\n")
             for c_root, c_dirs, c_files in os.walk(f"data/{dir}"):
-                for file_name in sorted(c_files):
+
+                c_files = sorted(c_files, key=cmp_to_key(sorter))
+                for file_name in c_files:
                     with open(
                         f"data/{dir}/{file_name}",
                         encoding=file_encoding,
