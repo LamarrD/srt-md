@@ -1,0 +1,24 @@
+1
+00:00:00,000 --> 00:00:04,340
+In this lesson, we will discuss domain and network reputation.
+
+2
+00:00:04,340 --> 00:00:06,200
+We will learn who to trust and,
+
+3
+00:00:06,200 --> 00:00:08,360
+more importantly, who not to trust.
+
+4
+00:00:08,360 --> 00:00:13,800
+Hopefully, we can figure out who is disreputable as soon as they are on the Internet.
+
+5
+00:00:13,800 --> 00:00:19,045
+In other words, we're going to do all those things that we're told not to do: prejudge,
+
+6
+00:00:19,045 --> 00:00:24,080
+profile and stereotype in order to stop hackers and protect the Internet.
+

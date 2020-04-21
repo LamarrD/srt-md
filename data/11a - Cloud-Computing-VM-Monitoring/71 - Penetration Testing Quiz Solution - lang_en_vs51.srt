@@ -1,0 +1,14 @@
+1
+00:00:00,280 --> 00:00:03,540
+All of these events should
+trigger a penetration testing.
+
+2
+00:00:03,540 --> 00:00:06,850
+I should also add that penetration
+testing should also be done
+
+3
+00:00:06,850 --> 00:00:10,600
+on a regular basis as well as
+on these triggering events.

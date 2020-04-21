@@ -1,0 +1,23 @@
+1
+00:00:00,230 --> 00:00:02,450
+But there are also
+security requirements.
+
+2
+00:00:02,450 --> 00:00:02,980
+The code and
+
+3
+00:00:02,980 --> 00:00:07,380
+data of the security tool need to be
+isolated from the untrusted machine.
+
+4
+00:00:07,380 --> 00:00:10,360
+The handling of the security
+events has to be secure.
+
+5
+00:00:10,360 --> 00:00:14,130
+Furthermore, the security tool should
+not rely on untrusted code and data.

@@ -1,0 +1,60 @@
+1
+00:00:00,000 --> 00:00:03,305
+Here's an example. Suppose k equal to two.
+
+2
+00:00:03,305 --> 00:00:06,595
+That is, the polynomial is a linear function, a line.
+
+3
+00:00:06,595 --> 00:00:09,895
+Suppose all you know is one point, say S1.
+
+4
+00:00:09,895 --> 00:00:12,675
+You cannot determine the polynomial because there are
+
+5
+00:00:12,675 --> 00:00:15,460
+infinite number of lines that go through S1.
+
+6
+00:00:15,460 --> 00:00:18,860
+It is clear that you need two points to determine a line.
+
+7
+00:00:18,860 --> 00:00:21,875
+For example, if you know both S1 and S2,
+
+8
+00:00:21,875 --> 00:00:25,330
+then you can reconstruct the line and then you can compute S,
+
+9
+00:00:25,330 --> 00:00:27,205
+which is the original secret.
+
+10
+00:00:27,205 --> 00:00:30,925
+Notice that, this example also shows that obviously,
+
+11
+00:00:30,925 --> 00:00:34,610
+any two points on a line can determine the same line,
+
+12
+00:00:34,610 --> 00:00:37,400
+which means any two of the entries can help you
+
+13
+00:00:37,400 --> 00:00:40,790
+reconstruct the original secret S. In general,
+
+14
+00:00:40,790 --> 00:00:42,530
+when we need to determine q(X),
+
+15
+00:00:42,530 --> 00:00:45,790
+we should use the Lagrange interpolation algorithm.
+

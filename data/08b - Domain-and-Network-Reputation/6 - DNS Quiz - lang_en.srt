@@ -1,0 +1,8 @@
+1
+00:00:00,000 --> 00:00:04,985
+Now, let's do a quiz on how malicious applications use DNS domains.
+
+2
+00:00:04,985 --> 00:00:09,730
+Match the malicious application with its DNS characteristics.
+

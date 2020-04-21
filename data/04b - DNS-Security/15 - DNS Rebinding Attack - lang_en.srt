@@ -1,0 +1,152 @@
+1
+00:00:00,290 --> 00:00:03,870
+Even DNS-SEC cannot
+prevent all DNS attacks.
+
+2
+00:00:03,870 --> 00:00:07,050
+The DNS Rebinding Attack
+is one such example.
+
+3
+00:00:07,050 --> 00:00:09,030
+To among a DNS rebinding attack,
+
+4
+00:00:09,030 --> 00:00:13,240
+the attacker needs only register
+a domain name, such as evil.com.
+
+5
+00:00:13,240 --> 00:00:18,060
+And attract web traffic, for example,
+by running an advertisement in a frame.
+
+6
+00:00:18,060 --> 00:00:22,824
+In this attack, when evil.com is
+looked up, the attacker answers with
+
+7
+00:00:22,824 --> 00:00:26,902
+the IP address of his own server and
+use a very short TTL value.
+
+8
+00:00:26,902 --> 00:00:28,932
+The attacker's server, evil.com,
+
+9
+00:00:28,932 --> 00:00:32,189
+also serves the browser
+a malicious JavaScript.
+
+10
+00:00:32,189 --> 00:00:33,720
+To circumvent the firewall,
+
+11
+00:00:33,720 --> 00:00:38,980
+when the malicious JavaScript issues a
+query to evil.com, the TTL has expired.
+
+12
+00:00:38,980 --> 00:00:41,780
+The attacker then rebinds the host name,
+evil.com,
+
+13
+00:00:41,780 --> 00:00:44,480
+to an IP address of an internal server.
+
+14
+00:00:44,480 --> 00:00:48,500
+That is, now the firewall thinks
+that evil.com is internal.
+
+15
+00:00:48,500 --> 00:00:52,530
+The browser now believes that these
+two servers belong to the same origin,
+
+16
+00:00:52,530 --> 00:00:56,210
+because they share the same host name,
+www.evil.com.
+
+17
+00:00:56,210 --> 00:00:59,360
+So it will allows script
+to read back the response.
+
+18
+00:00:59,360 --> 00:01:03,290
+Therefore, the malicious script
+can easily extra trade information
+
+19
+00:01:03,290 --> 00:01:05,420
+from the server to evil.com.
+
+20
+00:01:05,420 --> 00:01:09,070
+That is now the attacker is able
+to read arbitrary documents
+
+21
+00:01:09,070 --> 00:01:10,460
+from the internal server.
+
+22
+00:01:10,460 --> 00:01:14,240
+To mitigate such attack,
+the browser should use DNS Pinning.
+
+23
+00:01:14,240 --> 00:01:18,600
+Meaning that, you should refuse the
+switching to new IP address for domain.
+
+24
+00:01:18,600 --> 00:01:21,870
+On the other hand,
+this means that it may break proxies,
+
+25
+00:01:21,870 --> 00:01:24,430
+VPNs, dynamic DNS and so on.
+
+26
+00:01:24,430 --> 00:01:28,260
+Therefore, it is not consistently
+implemented in all browsers.
+
+27
+00:01:28,260 --> 00:01:30,980
+For the internal servers,
+they should check Host headers for
+
+28
+00:01:30,980 --> 00:01:33,910
+unrecognized domains such as evil.com.
+
+29
+00:01:33,910 --> 00:01:37,210
+It should also provide stronger
+authentication of users.
+
+30
+00:01:37,210 --> 00:01:39,740
+For the firewall is
+to implement a policy
+
+31
+00:01:39,740 --> 00:01:44,600
+such that external domain names cannot
+resolve to internal IP address.
+
+32
+00:01:44,600 --> 00:01:48,030
+It should provide stronger protection
+of browsers within the network.
+

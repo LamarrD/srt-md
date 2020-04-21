@@ -1,0 +1,180 @@
+1
+00:00:00,000 --> 00:00:04,010
+One mechanism to make transaction link analysis less effective,
+
+2
+00:00:04,010 --> 00:00:06,495
+and let's protect unlinkability,
+
+3
+00:00:06,495 --> 00:00:08,170
+is to use mixing.
+
+4
+00:00:08,170 --> 00:00:11,310
+The main proposal for decentralized mixing.
+
+5
+00:00:11,310 --> 00:00:16,075
+Since bitcoin is a decentralized system is called coinjoin.
+
+6
+00:00:16,075 --> 00:00:19,435
+In this protocol, different users joining,
+
+7
+00:00:19,435 --> 00:00:24,179
+create a single bitcoin transaction that combines all the inputs.
+
+8
+00:00:24,179 --> 00:00:29,720
+Furthermore, in a transaction that has multiple inputs coming from different addresses,
+
+9
+00:00:29,720 --> 00:00:32,510
+the signatures corresponding to each input
+
+10
+00:00:32,510 --> 00:00:35,465
+are separate from and independent of each other.
+
+11
+00:00:35,465 --> 00:00:40,250
+This allows a group of users to mix their coins with a single transaction.
+
+12
+00:00:40,250 --> 00:00:43,400
+Each user supplies an input address and
+
+13
+00:00:43,400 --> 00:00:47,640
+an output address and form a transaction with these addresses.
+
+14
+00:00:47,640 --> 00:00:51,780
+The order of input and output addresses is randomized,
+
+15
+00:00:51,780 --> 00:00:57,815
+so that an outsider will be unable to determine the mapping between inputs and outputs.
+
+16
+00:00:57,815 --> 00:01:02,240
+All the participants check that it's outgoing address has been included in
+
+17
+00:01:02,240 --> 00:01:07,895
+the transaction and that it receives the same amount of bitcoin that they are inputting.
+
+18
+00:01:07,895 --> 00:01:09,890
+Once they have confirmed this,
+
+19
+00:01:09,890 --> 00:01:11,845
+they sign the transaction.
+
+20
+00:01:11,845 --> 00:01:16,710
+Somebody, say an attacker looking at this transaction on the blockchain,
+
+21
+00:01:16,710 --> 00:01:20,375
+even if they know that it is a coinjoin transaction,
+
+22
+00:01:20,375 --> 00:01:25,010
+would be unable to determine the mapping between the inputs and outputs.
+
+23
+00:01:25,010 --> 00:01:27,340
+From an outsider's perspective,
+
+24
+00:01:27,340 --> 00:01:31,865
+the coins have been mixed and this is the essence of coinjoin.
+
+25
+00:01:31,865 --> 00:01:35,500
+Here's the procedure to create coinjoin.
+
+26
+00:01:35,500 --> 00:01:40,175
+First, a participant needs to find peers who want to mix.
+
+27
+00:01:40,175 --> 00:01:44,950
+Then, they exchange the input and output addresses to be included in the transaction.
+
+28
+00:01:44,950 --> 00:01:48,850
+Then, they construct the transaction by mixing the orders.
+
+29
+00:01:48,850 --> 00:01:52,300
+Then, the transaction is sent around and each peer can check
+
+30
+00:01:52,300 --> 00:01:55,970
+that his or her input and output have been included.
+
+31
+00:01:55,970 --> 00:01:59,710
+Then, the signatures are collected in a transaction.
+
+32
+00:01:59,710 --> 00:02:05,390
+Finally, this coinjoin transaction is broadcast to the bitcoin system.
+
+33
+00:02:05,390 --> 00:02:08,260
+It is important for the participants to
+
+34
+00:02:08,260 --> 00:02:11,500
+exchange these input and output addresses in such a way
+
+35
+00:02:11,500 --> 00:02:14,635
+that even the other members of the peer group
+
+36
+00:02:14,635 --> 00:02:18,385
+do not know the mapping between input and output addresses.
+
+37
+00:02:18,385 --> 00:02:21,705
+To exchange these addresses in unlinkable way,
+
+38
+00:02:21,705 --> 00:02:24,855
+we need an anonymous communication protocol.
+
+39
+00:02:24,855 --> 00:02:29,240
+For example, we can use Tor or special purpose protocol.
+
+40
+00:02:29,240 --> 00:02:34,640
+For example, the peers can use Tor to exchange the input addresses.
+
+41
+00:02:34,640 --> 00:02:39,050
+Therefore, no one knows what input address each other is using.
+
+42
+00:02:39,050 --> 00:02:41,030
+Once that is accomplished,
+
+43
+00:02:41,030 --> 00:02:45,650
+it is not necessary to communicate the output addresses in a secure way.
+
+44
+00:02:45,650 --> 00:02:47,755
+Once that is accomplished,
+
+45
+00:02:47,755 --> 00:02:51,710
+there's no way to link an output address with an input address.
+

@@ -1,0 +1,153 @@
+1
+00:00:00,330 --> 00:00:03,517
+Before we go into
+the details of web security,
+
+2
+00:00:03,517 --> 00:00:06,633
+let's understand how
+the modern web works.
+
+3
+00:00:06,633 --> 00:00:11,502
+For typical website, it contains
+both static and active contents.
+
+4
+00:00:11,502 --> 00:00:15,834
+The active contents, or the code,
+can be from many sources and
+
+5
+00:00:15,834 --> 00:00:18,690
+they can be combined in many ways.
+
+6
+00:00:18,690 --> 00:00:23,088
+Then the security challenges are we
+have many different types of data and
+
+7
+00:00:23,088 --> 00:00:25,530
+codes for many different sources.
+
+8
+00:00:25,530 --> 00:00:28,080
+And they run and
+interact with each other.
+
+9
+00:00:28,080 --> 00:00:31,940
+For example,
+on a typical web page we have code or
+
+10
+00:00:31,940 --> 00:00:36,890
+data related to the page itself,
+the third-party API's, for
+
+11
+00:00:36,890 --> 00:00:41,800
+example to tutor, third-party
+libraries to how you navigate and
+
+12
+00:00:41,800 --> 00:00:44,520
+scripts that run advertising contents.
+
+13
+00:00:44,520 --> 00:00:49,620
+And the data and codes on a website
+can be from many different sources,
+
+14
+00:00:49,620 --> 00:00:51,300
+by many different developers.
+
+15
+00:00:51,300 --> 00:00:52,300
+For example,
+
+16
+00:00:52,300 --> 00:00:58,670
+a website can have many parties
+contributing to its data and code.
+
+17
+00:00:58,670 --> 00:01:02,860
+These include page developers,
+library developers,
+
+18
+00:01:02,860 --> 00:01:08,295
+service providers, data providers,
+ad providers, and other users,
+
+19
+00:01:08,295 --> 00:01:12,928
+and extension developers,
+such as the web app developers and
+
+20
+00:01:12,928 --> 00:01:17,430
+the CDN's,
+the content distribution networks.
+
+21
+00:01:17,430 --> 00:01:22,030
+Obviously these parties can be from
+different vendors and companies.
+
+22
+00:01:22,030 --> 00:01:26,390
+So the basic security questions are with
+data and codes from so many different
+
+23
+00:01:26,390 --> 00:01:32,130
+sources, how do we ensure data And
+integrity when we browse the web?
+
+24
+00:01:32,130 --> 00:01:37,650
+For example, we need to figure out
+how to protect page from ads and
+
+25
+00:01:37,650 --> 00:01:40,940
+services because they
+are from different sources.
+
+26
+00:01:40,940 --> 00:01:45,120
+On the other hand, maybe there's
+a legitimate reason to share data
+
+27
+00:01:45,120 --> 00:01:47,290
+when they are from different sources.
+
+28
+00:01:47,290 --> 00:01:51,670
+That is, how do we share data
+with cross-origin page and
+
+29
+00:01:51,670 --> 00:01:55,340
+how do we protect one user
+from another user's content?
+
+30
+00:01:55,340 --> 00:01:58,670
+How do we protect the page
+from a third-party library?
+
+31
+00:01:58,670 --> 00:02:02,300
+How do we protect a page from
+the content distribution network?
+
+32
+00:02:02,300 --> 00:02:05,190
+And how do we protect
+browser extensions from page?

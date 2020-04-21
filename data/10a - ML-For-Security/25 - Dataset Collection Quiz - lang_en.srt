@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:02,820
+Now let's do a quiz. Suppose we want to select data
+
+2
+00:00:02,820 --> 00:00:05,535
+set to train a classifier to detect intrusions,
+
+3
+00:00:05,535 --> 00:00:07,010
+what are the considerations?
+

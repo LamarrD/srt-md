@@ -1,0 +1,23 @@
+1
+00:00:00,300 --> 00:00:02,780
+After you've gained
+access to the system.
+
+2
+00:00:02,780 --> 00:00:05,120
+Now you can steal valuable information.
+
+3
+00:00:05,120 --> 00:00:08,960
+Such information can allow you
+further access to the system.
+
+4
+00:00:08,960 --> 00:00:12,705
+For example, you can discover the trust
+relationship among the machines on
+
+5
+00:00:12,705 --> 00:00:17,120
+a network, and you can obtain user
+credentials such as passwords.

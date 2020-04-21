@@ -1,0 +1,17 @@
+1
+00:00:00,280 --> 00:00:03,040
+You can read more about
+the XCodeGhost attack with the link
+
+2
+00:00:03,040 --> 00:00:04,280
+in the instructor's note.
+
+3
+00:00:04,280 --> 00:00:05,630
+Then you can answer the question,
+
+4
+00:00:05,630 --> 00:00:09,080
+what kind of information can
+an infected app obtain from the device?

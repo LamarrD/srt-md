@@ -1,0 +1,212 @@
+1
+00:00:00,260 --> 00:00:03,719
+So now, let's go into the detail
+of the traceback mechanism.
+
+2
+00:00:03,719 --> 00:00:07,170
+The main component is
+the edge sampling algorithm.
+
+3
+00:00:07,170 --> 00:00:10,710
+An edge includes the start and
+end IP addresses.
+
+4
+00:00:10,710 --> 00:00:12,510
+It also includes distance,
+
+5
+00:00:12,510 --> 00:00:16,610
+which is the number of hops
+since the last edge stored.
+
+6
+00:00:16,610 --> 00:00:18,430
+Here's the procedure for
+
+7
+00:00:18,430 --> 00:00:22,200
+a router to decide how to
+record the edge information.
+
+8
+00:00:22,200 --> 00:00:24,589
+When a packet arrives, it throws a coin.
+
+9
+00:00:24,589 --> 00:00:28,615
+If it's heads, then it will write its
+address into the start address and
+
+10
+00:00:28,615 --> 00:00:31,230
+then write 0 into the distance field.
+
+11
+00:00:31,230 --> 00:00:34,220
+If it's tail, then if distance is 0,
+
+12
+00:00:34,220 --> 00:00:38,310
+then it writes its IP address
+into the end address field.
+
+13
+00:00:38,310 --> 00:00:41,560
+And regardless,
+it will increment the distance field.
+
+14
+00:00:41,560 --> 00:00:43,100
+So here's an example.
+
+15
+00:00:43,100 --> 00:00:46,640
+Again, a packet would
+include edge information,
+
+16
+00:00:46,640 --> 00:00:51,030
+which includes the start address,
+end address, and distance.
+
+17
+00:00:51,030 --> 00:00:56,070
+Suppose the packet travels through
+three routers, R1, R2, and R3.
+
+18
+00:00:56,070 --> 00:00:58,490
+R1 tosses a coin and it's head.
+
+19
+00:00:58,490 --> 00:01:03,710
+So R1 writes its address to
+the start field and 0 in distance.
+
+20
+00:01:03,710 --> 00:01:07,030
+Now R2, it tosses a coin and it's tail.
+
+21
+00:01:07,030 --> 00:01:08,132
+The distance was 0.
+
+22
+00:01:08,132 --> 00:01:12,436
+So according to the process,
+it should write itself to the end and
+
+23
+00:01:12,436 --> 00:01:14,560
+then increment distance to 1.
+
+24
+00:01:14,560 --> 00:01:18,390
+Now for R3, it tosses the coin and
+it's tail again.
+
+25
+00:01:18,390 --> 00:01:20,295
+But the distance was not 0.
+
+26
+00:01:20,295 --> 00:01:22,645
+So it does not write itself to the end.
+
+27
+00:01:22,645 --> 00:01:25,010
+It simply increment the distance.
+
+28
+00:01:25,010 --> 00:01:25,870
+Now it's 2.
+
+29
+00:01:25,870 --> 00:01:29,380
+Now, for R3, it tosses a coin,
+it's tail again,
+
+30
+00:01:29,380 --> 00:01:34,410
+and the distance is greater than 0, so
+it does not write itself to the end.
+
+31
+00:01:34,410 --> 00:01:37,740
+It simply increment
+the distance from 1 to 2.
+
+32
+00:01:37,740 --> 00:01:42,020
+Now, as you can see, the edge
+information includes the starting of
+
+33
+00:01:42,020 --> 00:01:47,120
+the edge, which is R1, the end,
+which is R2, the distance is 2.
+
+34
+00:01:47,120 --> 00:01:49,900
+That means from R3's perspective,
+
+35
+00:01:49,900 --> 00:01:53,680
+the distance is 2 since
+the beginning of the edge.
+
+36
+00:01:53,680 --> 00:01:55,270
+With the edge information,
+
+37
+00:01:55,270 --> 00:01:58,890
+now we can talk about how
+do we reconstruct the path.
+
+38
+00:01:58,890 --> 00:02:02,482
+The package arrive at the victim
+contains edge information.
+
+39
+00:02:02,482 --> 00:02:07,370
+And this information can be extracted
+to reconstruct the path that started
+
+40
+00:02:07,370 --> 00:02:10,690
+from the victim all the way to
+the source of the attack packets.
+
+41
+00:02:10,690 --> 00:02:14,160
+Again, the edge information
+contains the starting router and
+
+42
+00:02:14,160 --> 00:02:17,967
+the end router of the edge and
+the distance from the starting router.
+
+43
+00:02:17,967 --> 00:02:22,413
+And the number of packets needed to
+reconstruct the path is given by this
+
+44
+00:02:22,413 --> 00:02:23,670
+formula.
+
+45
+00:02:23,670 --> 00:02:26,140
+This is the expected number of packets.
+
+46
+00:02:26,140 --> 00:02:32,200
+And p is the probability of head versus
+tail, and d is the length of the path.
+

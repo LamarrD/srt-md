@@ -1,0 +1,48 @@
+1
+00:00:00,000 --> 00:00:02,625
+First, a wallet connected to the internet.
+
+2
+00:00:02,625 --> 00:00:04,580
+This is called a hot wallet.
+
+3
+00:00:04,580 --> 00:00:07,080
+Second, the wallet is offline.
+
+4
+00:00:07,080 --> 00:00:09,170
+This is called the cold wallet.
+
+5
+00:00:09,170 --> 00:00:12,650
+Third, used on laptops and personal computers.
+
+6
+00:00:12,650 --> 00:00:14,810
+These are the desktop wallets.
+
+7
+00:00:14,810 --> 00:00:18,660
+Fourth, QR code capable with instant payments.
+
+8
+00:00:18,660 --> 00:00:20,505
+These are the mobile wallets.
+
+9
+00:00:20,505 --> 00:00:23,375
+Fifth, wallets provided on the cloud.
+
+10
+00:00:23,375 --> 00:00:25,365
+These are the online wallets.
+
+11
+00:00:25,365 --> 00:00:28,545
+Developers make use of top grade cryptography.
+
+12
+00:00:28,545 --> 00:00:30,530
+These are the hardware wallets.
+

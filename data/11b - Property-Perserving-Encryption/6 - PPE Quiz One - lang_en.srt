@@ -1,0 +1,62 @@
+1
+00:00:00,220 --> 00:00:02,980
+To understand the potential
+security issues of
+
+2
+00:00:02,980 --> 00:00:05,970
+Property Preserving Encryption,
+let's do a quiz.
+
+3
+00:00:05,970 --> 00:00:08,490
+First, let's review standard encryption.
+
+4
+00:00:08,490 --> 00:00:11,870
+In standard encryption,
+there is no preserving of properties.
+
+5
+00:00:11,870 --> 00:00:15,460
+For example,
+suppose we encrypt the age information.
+
+6
+00:00:15,460 --> 00:00:18,690
+The encrypted data leaks
+nothing except the size
+
+7
+00:00:18,690 --> 00:00:20,400
+of the original plain text data.
+
+8
+00:00:20,400 --> 00:00:23,160
+For example,
+we know that there are four entries.
+
+9
+00:00:23,160 --> 00:00:27,120
+Now let's take a look at an example
+of property preserving encryption.
+
+10
+00:00:27,120 --> 00:00:31,270
+Again, we want to encrypt the age
+information, but we preserve equality.
+
+11
+00:00:31,270 --> 00:00:35,870
+Therefore in encrypted data, we see
+that these two values are the same,
+
+12
+00:00:35,870 --> 00:00:38,740
+because the original paying
+tax values are the same.
+
+13
+00:00:38,740 --> 00:00:40,060
+So what is preserved?
+

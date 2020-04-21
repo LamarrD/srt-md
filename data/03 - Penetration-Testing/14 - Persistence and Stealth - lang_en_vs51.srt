@@ -1,0 +1,55 @@
+1
+00:00:00,260 --> 00:00:03,120
+To simulate the modern attacks,
+such as the so
+
+2
+00:00:03,120 --> 00:00:05,380
+called advanced persistent threats.
+
+3
+00:00:05,380 --> 00:00:08,470
+Penetration testing can try
+to be persistent and stealth.
+
+4
+00:00:08,470 --> 00:00:13,300
+For example, the tester can install
+a backdoor through a malware so
+
+5
+00:00:13,300 --> 00:00:16,020
+that there's a permanent
+foothold in the network.
+
+6
+00:00:16,020 --> 00:00:20,210
+The malware can be placed in
+a strategic place such as a proxy.
+
+7
+00:00:20,210 --> 00:00:23,270
+And the result can be that now
+the malware can listen and
+
+8
+00:00:23,270 --> 00:00:25,880
+record all traffic within the network.
+
+9
+00:00:25,880 --> 00:00:30,089
+And by analyzing internal traffic, the
+malware can capture user credentials and
+
+10
+00:00:30,089 --> 00:00:32,475
+find out valuable information.
+
+11
+00:00:32,475 --> 00:00:34,400
+These steps can be iterated and
+
+12
+00:00:34,400 --> 00:00:38,690
+moved from one port of the network
+to the next while hiding the tracks.

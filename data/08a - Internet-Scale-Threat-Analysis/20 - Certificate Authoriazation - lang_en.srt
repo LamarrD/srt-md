@@ -1,0 +1,28 @@
+1
+00:00:00,000 --> 00:00:06,035
+Another interesting study is on the certificates issued by certificate authorities.
+
+2
+00:00:06,035 --> 00:00:10,440
+This is an important topic because HTTPS underlines
+
+3
+00:00:10,440 --> 00:00:14,087
+all secure Web communications and HTTPS
+
+4
+00:00:14,087 --> 00:00:18,355
+is depending on the security of certificate authorities.
+
+5
+00:00:18,355 --> 00:00:19,740
+The problem is that there are
+
+6
+00:00:19,740 --> 00:00:24,875
+many certificate authorities and every one of them can sign for any website.
+
+7
+00:00:24,875 --> 00:00:29,110
+In fact, we don't even know all the certificate authorities, until we see them.
+

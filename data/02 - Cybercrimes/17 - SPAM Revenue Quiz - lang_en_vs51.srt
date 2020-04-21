@@ -1,0 +1,17 @@
+1
+00:00:00,240 --> 00:00:02,790
+Now, let's do a quiz on spam revenue.
+
+2
+00:00:02,790 --> 00:00:06,100
+Name the top three countries
+where spam directed visitors
+
+3
+00:00:06,100 --> 00:00:08,580
+added items to their shopping cart.
+
+4
+00:00:08,580 --> 00:00:10,770
+These are the visitors that
+can make transactions.

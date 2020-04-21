@@ -1,0 +1,39 @@
+1
+00:00:00,260 --> 00:00:04,019
+Let's continue with a review
+of Same Origin Policy.
+
+2
+00:00:04,019 --> 00:00:06,750
+We have discussed
+the Same Origin Policy for
+
+3
+00:00:06,750 --> 00:00:10,450
+DOM, which stand for
+Document Object Model.
+
+4
+00:00:10,450 --> 00:00:15,070
+The Same Origin Policy for
+DOM says that origin A can access origin
+
+5
+00:00:15,070 --> 00:00:20,079
+B's DOM if A and B have the same
+protocol, domain and port.
+
+6
+00:00:21,100 --> 00:00:26,540
+In this lesson, we are going to discuss
+the Same Origin Policy for cookies.
+
+7
+00:00:26,540 --> 00:00:31,320
+Here, origin is determined by
+the combination of scheme,
+
+8
+00:00:31,320 --> 00:00:35,480
+domain, and path, and
+scheme can be optional

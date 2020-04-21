@@ -1,0 +1,120 @@
+1
+00:00:00,000 --> 00:00:05,820
+Now, let's discuss a few interesting internet-wide security studies using ZMap.
+
+2
+00:00:05,820 --> 00:00:10,110
+In one study, the researchers scanned the HTTPS servers
+
+3
+00:00:10,110 --> 00:00:14,675
+and the SSH servers and collected their public keys.
+
+4
+00:00:14,675 --> 00:00:19,117
+As you can see, a large number of machines share their public keys.
+
+5
+00:00:19,117 --> 00:00:23,225
+Although there are lot legitimate reasons why machines would share their keys,
+
+6
+00:00:23,225 --> 00:00:25,800
+we need to understand whether the keys happen to be the
+
+7
+00:00:25,800 --> 00:00:30,375
+same without the intention of sharing because that is bad for security.
+
+8
+00:00:30,375 --> 00:00:33,210
+In particular, researchers find that some of
+
+9
+00:00:33,210 --> 00:00:36,625
+these machines share their key in a vulnerable manner.
+
+10
+00:00:36,625 --> 00:00:39,840
+For example, they simply use the default keys without creating
+
+11
+00:00:39,840 --> 00:00:41,500
+their own keys and there's
+
+12
+00:00:41,500 --> 00:00:45,960
+a apparent entropy problem that caused them to have the same keys.
+
+13
+00:00:45,960 --> 00:00:48,855
+Let's look at the effect of not having sufficient entropy.
+
+14
+00:00:48,855 --> 00:00:51,345
+As a quick review, in RSA,
+
+15
+00:00:51,345 --> 00:00:54,450
+the public key n is the product of p and q,
+
+16
+00:00:54,450 --> 00:00:58,325
+where p and q are large random prime numbers.
+
+17
+00:00:58,325 --> 00:01:01,155
+The security of RSA is based on the fact that
+
+18
+00:01:01,155 --> 00:01:05,265
+factoring n back to p and q is very, very inefficient.
+
+19
+00:01:05,265 --> 00:01:07,535
+That is, it's very hard for the attacker.
+
+20
+00:01:07,535 --> 00:01:13,920
+On the other hand, if two private keys N_1 and N_2 share the same prime number, say p,
+
+21
+00:01:13,920 --> 00:01:17,370
+then it's trivial to compute p because p is
+
+22
+00:01:17,370 --> 00:01:21,450
+the greatest common denominator of N_1 and N_2.
+
+23
+00:01:21,450 --> 00:01:24,060
+The reason that two different public keys may have
+
+24
+00:01:24,060 --> 00:01:29,205
+the same prime number can be that there's not sufficient entropy and therefore
+
+25
+00:01:29,205 --> 00:01:33,375
+two machines may happen to generate the same large prime number
+
+26
+00:01:33,375 --> 00:01:37,620
+p. There is also a very efficient algorithm due to D.J.
+
+27
+00:01:37,620 --> 00:01:42,615
+Bernstein to compute the GCD of every pair of N_1 and N_2.
+
+28
+00:01:42,615 --> 00:01:44,280
+With this efficient approach,
+
+29
+00:01:44,280 --> 00:01:50,200
+the researchers were able to crack many keys on TLS and SSH machines.
+
+30
+00:01:50,200 --> 00:01:53,000
+The majority of these machines are network devices.
+

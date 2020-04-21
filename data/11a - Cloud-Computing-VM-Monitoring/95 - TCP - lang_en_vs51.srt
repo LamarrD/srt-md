@@ -1,0 +1,105 @@
+1
+00:00:00,170 --> 00:00:03,515
+Now let's look at the transport
+layer protocols, in particular,
+
+2
+00:00:03,515 --> 00:00:05,696
+the transmission control protocol or
+TCP.
+
+3
+00:00:05,696 --> 00:00:10,457
+TCP is connection-oriented and
+it preserves the order of packets,
+
+4
+00:00:10,457 --> 00:00:13,550
+we can use an analogy to explain TCP.
+
+5
+00:00:13,550 --> 00:00:15,750
+Suppose we want to mail a book, and
+
+6
+00:00:15,750 --> 00:00:19,700
+the way we send the book is to
+mail each page in envelope.
+
+7
+00:00:19,700 --> 00:00:24,690
+And that's analogous to breaking
+application data into TCP packets.
+
+8
+00:00:24,690 --> 00:00:27,600
+And of course, for each page,
+there's a page number, so
+
+9
+00:00:27,600 --> 00:00:31,290
+that we know the sequence of
+these pages in the original book.
+
+10
+00:00:31,290 --> 00:00:34,610
+Likewise, TCP packets
+have sequence numbers.
+
+11
+00:00:34,610 --> 00:00:38,890
+Now, when the pages arrive,
+they arrive in separate envelopes and
+
+12
+00:00:38,890 --> 00:00:40,290
+may be out of order.
+
+13
+00:00:40,290 --> 00:00:44,330
+At the destination, we make sure
+that we receive all the pages,
+
+14
+00:00:44,330 --> 00:00:47,380
+put them back in order and
+reassemble the book.
+
+15
+00:00:47,380 --> 00:00:51,850
+Similarly, at the definition host,
+each packet upon it's receipt,
+
+16
+00:00:51,850 --> 00:00:52,920
+will be acknowledged.
+
+17
+00:00:52,920 --> 00:00:57,520
+And any lost packet will be notified so
+that the source can resend the packet
+
+18
+00:00:57,520 --> 00:01:01,310
+and then the packet will be
+reassembled in the original order.
+
+19
+00:01:01,310 --> 00:01:05,050
+Now let's take a look at TCP Header,
+it includes the port numbers,
+
+20
+00:01:05,050 --> 00:01:08,790
+the sequence number of the packet and
+acknowledgement number.
+
+21
+00:01:08,790 --> 00:01:12,270
+That is for acknowledging
+a previously received packet.
+
+22
+00:01:12,270 --> 00:01:16,660
+It also has a number of flux, these
+are used to control the TCP connection.

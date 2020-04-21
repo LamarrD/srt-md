@@ -1,0 +1,144 @@
+1
+00:00:00,000 --> 00:00:03,682
+We call that in TCP handshake,
+the first packet from the client and
+
+2
+00:00:03,682 --> 00:00:08,520
+the first packet from the server have
+the sequence numbers randomly generated.
+
+3
+00:00:08,520 --> 00:00:10,230
+This is very important.
+
+4
+00:00:10,230 --> 00:00:13,730
+Suppose, these initial sequence
+numbers are predictable.
+
+5
+00:00:13,730 --> 00:00:16,960
+Then the attacker can forge
+a source ID address and
+
+6
+00:00:16,960 --> 00:00:21,410
+still be able to finish the TCP
+handshake and establish a TCP session.
+
+7
+00:00:21,410 --> 00:00:25,740
+And this will break IP-based
+authentication such as SPF,
+
+8
+00:00:25,740 --> 00:00:30,030
+which is Sender Policy Framework
+that is used to authenticate email.
+
+9
+00:00:30,030 --> 00:00:34,700
+We can use an example to illustrate
+the importance of having random
+
+10
+00:00:34,700 --> 00:00:36,650
+initial sequence numbers.
+
+11
+00:00:36,650 --> 00:00:38,370
+Suppose there's an attacker and
+
+12
+00:00:38,370 --> 00:00:42,860
+he wants to forge the source IP address
+of the victim to create a TCP session.
+
+13
+00:00:42,860 --> 00:00:46,470
+So the attacker sends the initial
+SYN packet to the server and
+
+14
+00:00:46,470 --> 00:00:49,390
+forge the source IP address
+to be from the victim.
+
+15
+00:00:49,390 --> 00:00:53,030
+Now the server is going to send
+a SYN/ACK packet to the victim
+
+16
+00:00:53,030 --> 00:00:55,480
+with its own sequence number.
+
+17
+00:00:55,480 --> 00:00:59,150
+Of course, the attacker did
+not receive the SYN/ACK packet
+
+18
+00:00:59,150 --> 00:01:01,780
+because the SYN/ACK packet
+is sent to the victim.
+
+19
+00:01:01,780 --> 00:01:04,129
+Now if this sequence
+number is predictable,
+
+20
+00:01:04,129 --> 00:01:08,720
+then the attacker can still send ACK
+packet to ACK this SYN packet as if
+
+21
+00:01:08,720 --> 00:01:11,870
+that the attacker had
+received the SYN/ACK packet.
+
+22
+00:01:11,870 --> 00:01:15,870
+And when a server receives this
+ACK packet on its SYN/ACK packet,
+
+23
+00:01:15,870 --> 00:01:19,380
+then the server knows that
+the connection should be established.
+
+24
+00:01:19,380 --> 00:01:23,020
+From this point on, the attacker can
+send command through the server and
+
+25
+00:01:23,020 --> 00:01:26,190
+the server will think that
+the command is from its victim.
+
+26
+00:01:26,190 --> 00:01:30,540
+Because the victim and the server
+hasn't established TCP connection.
+
+27
+00:01:30,540 --> 00:01:34,740
+Here's an example of attacks on
+predictable sequence numbers,
+
+28
+00:01:34,740 --> 00:01:38,210
+suppose the attacker can correctly
+guess the sequence number.
+
+29
+00:01:38,210 --> 00:01:39,900
+He can then send a reset packet.
+
+30
+00:01:39,900 --> 00:01:43,350
+This will terminate a connection and
+result in the null service attack.

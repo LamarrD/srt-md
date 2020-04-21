@@ -1,0 +1,100 @@
+1
+00:00:00,230 --> 00:00:03,770
+Now let's take a look at
+TCP IP network stack.
+
+2
+00:00:03,770 --> 00:00:06,610
+The Link Layer is a group of protocols
+
+3
+00:00:06,610 --> 00:00:10,900
+that only operate on the length
+the host is physically connected to.
+
+4
+00:00:10,900 --> 00:00:15,900
+The network or internet layer is a group
+of protocols that are used to transport
+
+5
+00:00:15,900 --> 00:00:21,390
+packets from one host to another and may
+cross network boundaries if necessary.
+
+6
+00:00:21,390 --> 00:00:26,250
+The Transport layer protocols provide,
+host to host communication services for
+
+7
+00:00:26,250 --> 00:00:27,290
+applications.
+
+8
+00:00:27,290 --> 00:00:31,860
+They provide services such as connection
+oriented data stream support,
+
+9
+00:00:31,860 --> 00:00:35,310
+reliability, flow control and
+multi tasking.
+
+10
+00:00:35,310 --> 00:00:38,720
+The Application layer protocols
+depend upon the underlying
+
+11
+00:00:38,720 --> 00:00:43,320
+Transport layer protocol to establish
+host to host data transfer channels.
+
+12
+00:00:43,320 --> 00:00:46,817
+And manage the data exchange
+in a client-server or
+
+13
+00:00:46,817 --> 00:00:49,140
+peer-to-peer networking model.
+
+14
+00:00:49,140 --> 00:00:51,830
+When host A sends
+traffic data to host B,
+
+15
+00:00:51,830 --> 00:00:55,070
+the data usually starts
+as Application message.
+
+16
+00:00:55,070 --> 00:01:00,440
+The Transport layer segments the data
+and puts TCP header onto the segments.
+
+17
+00:01:00,440 --> 00:01:03,810
+The IP layer then puts the IP
+header on these segments, and
+
+18
+00:01:03,810 --> 00:01:05,540
+they become the IP packet.
+
+19
+00:01:05,540 --> 00:01:11,320
+The Link Layer puts a link header onto
+the IP packets, and this becomes frames.
+
+20
+00:01:11,320 --> 00:01:14,110
+And this Link Layer frame can
+then be sent to the link,
+
+21
+00:01:14,110 --> 00:01:16,720
+connected to the host,
+such as the ethernet cable.

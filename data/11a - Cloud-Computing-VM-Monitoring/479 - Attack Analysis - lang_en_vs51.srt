@@ -1,0 +1,71 @@
+1
+00:00:00,250 --> 00:00:04,040
+Lets use an example to illustrate
+frequency analysis attack.
+
+2
+00:00:04,040 --> 00:00:07,810
+Here is encrypted data of the number
+of days a patient stays in hospital.
+
+3
+00:00:07,810 --> 00:00:11,890
+As you can see the data is encrypted
+to perform frequency analysis
+
+4
+00:00:11,890 --> 00:00:14,590
+we first sort the data and
+record the frequency.
+
+5
+00:00:14,590 --> 00:00:18,440
+We also sort and record
+the frequency of the auxiliary data.
+
+6
+00:00:18,440 --> 00:00:22,310
+For example, there's public information
+of how frequent a patient will stay for
+
+7
+00:00:22,310 --> 00:00:24,990
+one day versus two days and so on.
+
+8
+00:00:24,990 --> 00:00:29,070
+By matching these two histograms
+we can link a cyber text value
+
+9
+00:00:29,070 --> 00:00:30,440
+to a plain text value.
+
+10
+00:00:30,440 --> 00:00:34,710
+For example, for the first cyber
+attack value the frequency is ten.
+
+11
+00:00:34,710 --> 00:00:37,030
+And we know that from
+the auxiliary data,
+
+12
+00:00:37,030 --> 00:00:39,940
+the plain text value one
+has frequency of 11.
+
+13
+00:00:39,940 --> 00:00:44,240
+Therefore, we can link the ciphertext
+value to plaintext value one.
+
+14
+00:00:44,240 --> 00:00:46,670
+And therefore, with frequency analysis,
+
+15
+00:00:46,670 --> 00:00:49,440
+we can uncover the plaintext
+data without the encryption key.

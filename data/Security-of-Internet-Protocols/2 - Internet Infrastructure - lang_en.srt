@@ -1,0 +1,84 @@
+1
+00:00:00,270 --> 00:00:04,460
+You can think of the Internet as
+a collection of large networks.
+
+2
+00:00:04,460 --> 00:00:07,140
+These large networks
+are typically managed
+
+3
+00:00:07,140 --> 00:00:09,620
+by the Internet Service Providers,
+or the ISPs.
+
+4
+00:00:09,620 --> 00:00:16,340
+The ISPs work together to allow traffic
+to flow from one network to another.
+
+5
+00:00:16,340 --> 00:00:20,840
+So to the users, the Internet is
+just one big connected network.
+
+6
+00:00:20,840 --> 00:00:25,970
+Because a user can reach from his
+computer on one end of the Internet
+
+7
+00:00:25,970 --> 00:00:28,820
+to another computer on
+the other end of the Internet.
+
+8
+00:00:28,820 --> 00:00:32,795
+The computers within a local
+area network use the local and
+
+9
+00:00:32,795 --> 00:00:36,250
+inter-domain routing protocol
+to communicate with each other.
+
+10
+00:00:36,250 --> 00:00:38,890
+Computers from different networks,
+for example,
+
+11
+00:00:38,890 --> 00:00:44,120
+from two different ISP networks,
+use TCP/IP protocol to communicate.
+
+12
+00:00:44,120 --> 00:00:48,950
+But in order to decide how to send
+traffic from host A to host B which may
+
+13
+00:00:48,950 --> 00:00:53,560
+be in two separate ISP networks,
+there needs to be routing information
+
+14
+00:00:53,560 --> 00:00:58,635
+which is decided by BGP which stands for
+border gateway protocol.
+
+15
+00:00:58,635 --> 00:01:02,765
+The domain name system is a distributed,
+hierarchical database system
+
+16
+00:01:02,765 --> 00:01:06,975
+that provides the mapping between an IP
+address and a symbol domain name,
+
+17
+00:01:06,975 --> 00:01:11,864
+such as www.cc.gatech.edu.
+

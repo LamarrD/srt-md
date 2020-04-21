@@ -1,0 +1,21 @@
+1
+00:00:00,260 --> 00:00:03,200
+Google Apps is platform as a service.
+
+2
+00:00:03,200 --> 00:00:06,720
+Amazon Web Services is
+infrastructure as a service.
+
+3
+00:00:06,720 --> 00:00:09,250
+Salesforce is platform as a service.
+
+4
+00:00:09,250 --> 00:00:12,200
+Knowledge Tree is software as a service.
+
+5
+00:00:12,200 --> 00:00:14,880
+Microsoft Azure is
+infrastructure as a service.

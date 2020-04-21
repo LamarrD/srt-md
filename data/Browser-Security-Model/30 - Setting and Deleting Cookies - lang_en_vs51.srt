@@ -1,0 +1,177 @@
+1
+00:00:00,270 --> 00:00:04,372
+In a domain is any domain-suffix
+of a URL-hostname,
+
+2
+00:00:04,372 --> 00:00:07,130
+except the top level domain.
+
+3
+00:00:07,130 --> 00:00:12,180
+For example,
+the web server login.site.com can
+
+4
+00:00:12,180 --> 00:00:15,252
+set cookies for all of site.com.
+
+5
+00:00:15,252 --> 00:00:22,770
+Because site.com is a suffix, but not
+another site or the TLD, which is .com.
+
+6
+00:00:22,770 --> 00:00:27,455
+Using this rule the cookies
+is set by login.site.com have
+
+7
+00:00:27,455 --> 00:00:32,250
+these allowed domains,
+login.site.com and site.com.
+
+8
+00:00:32,250 --> 00:00:36,981
+And these domains are not allowed
+because they are other domains or
+
+9
+00:00:36,981 --> 00:00:38,280
+the TLD, .com.
+
+10
+00:00:38,280 --> 00:00:41,790
+And path can be set to
+anything within that domain.
+
+11
+00:00:41,790 --> 00:00:43,990
+How are domains identified?
+
+12
+00:00:43,990 --> 00:00:48,240
+They are identified by name,
+domain, and path.
+
+13
+00:00:48,240 --> 00:00:50,100
+Here we have two cookies.
+
+14
+00:00:50,100 --> 00:00:53,320
+Both cookies store in
+browser's cookie jar.
+
+15
+00:00:53,320 --> 00:00:58,310
+And both are in scope of login.site.com,
+but they're distinct.
+
+16
+00:00:58,310 --> 00:01:01,780
+What are the policies for
+a server to read cookies?
+
+17
+00:01:01,780 --> 00:01:05,160
+In other words,
+the reading same origin policy.
+
+18
+00:01:05,160 --> 00:01:08,430
+The browser sends all
+cookies in URL scope,
+
+19
+00:01:08,430 --> 00:01:12,000
+which is determined by domain and path.
+
+20
+00:01:12,000 --> 00:01:17,630
+And the goal is that server should
+only see cookies in its own scope.
+
+21
+00:01:17,630 --> 00:01:18,360
+Here's an example.
+
+22
+00:01:18,360 --> 00:01:22,410
+We have two cookies,
+both set by login.site.com.
+
+23
+00:01:22,410 --> 00:01:26,573
+The different servers see different
+cookies depending on their scopes.
+
+24
+00:01:26,573 --> 00:01:32,941
+For example the server
+http://checkout.site.com
+
+25
+00:01:32,941 --> 00:01:40,247
+only sees Cookie2 because it's
+within the scope of site.com.
+
+26
+00:01:40,247 --> 00:01:46,025
+Another example, http://login.site.com,
+
+27
+00:01:46,025 --> 00:01:49,314
+again, only sees Cookie2.
+
+28
+00:01:49,314 --> 00:01:53,884
+And the reason is Cookie1
+requires secure which
+
+29
+00:01:53,884 --> 00:01:57,903
+means that the connection
+has to be HTTPS.
+
+30
+00:01:57,903 --> 00:02:02,994
+The third example here,
+https://login.site.com,
+
+31
+00:02:02,994 --> 00:02:06,950
+it can use both Cookie1 and Cookie2.
+
+32
+00:02:06,950 --> 00:02:11,200
+What are the rules for
+client-side read/write of cookies?
+
+33
+00:02:11,200 --> 00:02:14,130
+A JavaScript can set cookie values.
+
+34
+00:02:14,130 --> 00:02:17,610
+It can also read out
+the attributes of a cookie.
+
+35
+00:02:17,610 --> 00:02:19,450
+It can even delete a cookie.
+
+36
+00:02:19,450 --> 00:02:23,600
+The exception is that if
+the cookie is set as HTTP only,
+
+37
+00:02:23,600 --> 00:02:26,948
+that means it cannot be accessed
+by client-side scripts.
+
+38
+00:02:26,948 --> 00:02:32,470
+Which means client-side scripts cannot
+read or write this HttpOnly cookie.

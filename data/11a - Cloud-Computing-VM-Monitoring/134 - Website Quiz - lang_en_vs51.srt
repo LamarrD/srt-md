@@ -1,0 +1,24 @@
+1
+00:00:00,220 --> 00:00:05,560
+Lets take a moment to understand the
+enormity of the web security problem.
+
+2
+00:00:05,560 --> 00:00:08,414
+Take your best shot at
+answering these questions.
+
+3
+00:00:08,414 --> 00:00:14,140
+First, in 2015 how many active
+websites were on the internet?
+
+4
+00:00:14,140 --> 00:00:18,790
+Second, how many websites does
+Google quarantine each day?
+
+5
+00:00:18,790 --> 00:00:22,760
+Third, how many malicious websites
+are identified every day?

@@ -1,0 +1,108 @@
+1
+00:00:00,000 --> 00:00:02,865
+Clustering can also be used for classification.
+
+2
+00:00:02,865 --> 00:00:05,445
+In clustering, we assigned training examples
+
+3
+00:00:05,445 --> 00:00:08,490
+into different clusters based on some distance measure.
+
+4
+00:00:08,490 --> 00:00:11,100
+That is examples in the same cluster are more
+
+5
+00:00:11,100 --> 00:00:14,295
+similar to each other than examples from different clusters.
+
+6
+00:00:14,295 --> 00:00:18,180
+Typically, we defined some distance function to measure similarity.
+
+7
+00:00:18,180 --> 00:00:20,740
+Here's an overview of the clustering process.
+
+8
+00:00:20,740 --> 00:00:23,705
+Typically, we predetermine the number of clusters.
+
+9
+00:00:23,705 --> 00:00:25,935
+We also start with seed clusters,
+
+10
+00:00:25,935 --> 00:00:27,510
+each with one element.
+
+11
+00:00:27,510 --> 00:00:31,480
+That is, each seed is a representative example of a cluster.
+
+12
+00:00:31,480 --> 00:00:35,590
+They may assign a samples to these C clusters based on distance measures,
+
+13
+00:00:35,590 --> 00:00:38,160
+then we adjust or find a new centroids.
+
+14
+00:00:38,160 --> 00:00:42,130
+A centroid is the center of the cluster according to distance measure.
+
+15
+00:00:42,130 --> 00:00:43,720
+Then based on the new centroids,
+
+16
+00:00:43,720 --> 00:00:45,325
+we are just cluster membership,
+
+17
+00:00:45,325 --> 00:00:48,580
+so the examples are assigned to the best fit clusters.
+
+18
+00:00:48,580 --> 00:00:51,845
+The example here belong to this cluster because
+
+19
+00:00:51,845 --> 00:00:55,415
+it is closer to the centroid than to the centroid and that centroid.
+
+20
+00:00:55,415 --> 00:01:00,130
+In other words, cluster membership is based on distance to the centroid of the cluster.
+
+21
+00:01:00,130 --> 00:01:04,885
+We continue this process of finding new centroids and adjusting cluster membership,
+
+22
+00:01:04,885 --> 00:01:06,760
+until the customers converge.
+
+23
+00:01:06,760 --> 00:01:09,770
+That is, there's no more changes in the cluster membership.
+
+24
+00:01:09,770 --> 00:01:11,900
+Once the clusters are finalized,
+
+25
+00:01:11,900 --> 00:01:14,810
+then each cluster can be represented by its centroid.
+
+26
+00:01:14,810 --> 00:01:17,540
+Given a test data, it is assigned to a cluster
+
+27
+00:01:17,540 --> 00:01:20,390
+if its distance to the centroid is the shortest.
+

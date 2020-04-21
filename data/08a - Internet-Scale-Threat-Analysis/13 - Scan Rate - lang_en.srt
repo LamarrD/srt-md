@@ -1,0 +1,48 @@
+1
+00:00:00,000 --> 00:00:02,920
+The first major question is whether ZMap
+
+2
+00:00:02,920 --> 00:00:06,585
+or our network can handle scanning at gigabit speed.
+
+3
+00:00:06,585 --> 00:00:09,480
+In order to answer this question researchers at
+
+4
+00:00:09,480 --> 00:00:15,267
+the University of Michigan perform 10 trials scanning one percent of the IPB for address
+
+5
+00:00:15,267 --> 00:00:19,260
+space at different rates ranging from 1,000 packets per
+
+6
+00:00:19,260 --> 00:00:24,080
+second to the maximum 1.4 million packets per second.
+
+7
+00:00:24,080 --> 00:00:28,825
+This maximum is determined by the NIC configuration.
+
+8
+00:00:28,825 --> 00:00:31,050
+NIC stands for network interface card.
+
+9
+00:00:31,050 --> 00:00:34,350
+As we can see there is no correlation
+
+10
+00:00:34,350 --> 00:00:38,269
+between a scanning rate and the number of hosts that respond.
+
+11
+00:00:38,269 --> 00:00:40,785
+One way to interpret this result is that
+
+12
+00:00:40,785 --> 00:00:45,000
+even slower scanning rates does not produce additional response.
+

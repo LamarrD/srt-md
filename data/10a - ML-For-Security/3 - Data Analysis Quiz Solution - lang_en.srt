@@ -1,0 +1,48 @@
+1
+00:00:00,000 --> 00:00:02,970
+The first one, model normal network and
+
+2
+00:00:02,970 --> 00:00:06,880
+system behavior and identify deviations from the norm.
+
+3
+00:00:06,880 --> 00:00:08,810
+This is anomaly detection.
+
+4
+00:00:08,810 --> 00:00:13,075
+Second, combination of misuse and anomaly detection,
+
+5
+00:00:13,075 --> 00:00:14,920
+this is hybrid detection.
+
+6
+00:00:14,920 --> 00:00:19,645
+The third one, detect known attacks using signatures of those attacks,
+
+7
+00:00:19,645 --> 00:00:21,550
+this is misused detection.
+
+8
+00:00:21,550 --> 00:00:24,150
+The forth one, can detect known types of
+
+9
+00:00:24,150 --> 00:00:27,680
+attacks without generating a lot of false positives,
+
+10
+00:00:27,680 --> 00:00:29,390
+this is misuse detection.
+
+11
+00:00:29,390 --> 00:00:33,270
+The last one, have the ability to detect zero-day attacks,
+
+12
+00:00:33,270 --> 00:00:35,180
+this is anomaly detection.
+

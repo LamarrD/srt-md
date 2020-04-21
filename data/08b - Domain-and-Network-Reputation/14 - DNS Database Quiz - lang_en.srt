@@ -1,0 +1,16 @@
+1
+00:00:00,000 --> 00:00:01,265
+Now, let's do a quiz.
+
+2
+00:00:01,265 --> 00:00:04,140
+We have just discussed that the information extracted from
+
+3
+00:00:04,140 --> 00:00:08,090
+the passive DNS database can be grouped into three categories of features.
+
+4
+00:00:08,090 --> 00:00:10,570
+Match the category to its definition.
+

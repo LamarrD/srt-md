@@ -1,0 +1,19 @@
+1
+00:00:00,230 --> 00:00:04,510
+This may be a surprise to you, but
+a top country is the United States,
+
+2
+00:00:04,510 --> 00:00:07,420
+followed by Canada,
+followed by Philippines.
+
+3
+00:00:07,420 --> 00:00:10,545
+There's an interesting paper called
+Show Me the Money: Characterizing
+
+4
+00:00:10,545 --> 00:00:14,280
+Spam-advertised Revenue, and
+I encourage you to study this paper.

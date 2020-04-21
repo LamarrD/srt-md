@@ -1,0 +1,19 @@
+1
+00:00:00,310 --> 00:00:05,720
+Subnet spoofing means that the spoof
+address is within a given address space.
+
+2
+00:00:05,720 --> 00:00:08,920
+Random spoofing means
+that the spoof address
+
+3
+00:00:08,920 --> 00:00:12,250
+is a randomly generated 32-bit address.
+
+4
+00:00:12,250 --> 00:00:16,940
+Fixed spoofing means that the spoof
+address is the address of a target.
+

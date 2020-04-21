@@ -1,0 +1,16 @@
+1
+00:00:00,000 --> 00:00:02,605
+Let's start with a quiz on data analysis.
+
+2
+00:00:02,605 --> 00:00:05,810
+Match the type of analytics to its characteristic.
+
+3
+00:00:05,810 --> 00:00:08,065
+The types are anomaly detection,
+
+4
+00:00:08,065 --> 00:00:10,120
+hybrid, or misuse detection.
+

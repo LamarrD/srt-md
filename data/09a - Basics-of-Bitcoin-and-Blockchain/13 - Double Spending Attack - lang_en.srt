@@ -1,0 +1,64 @@
+1
+00:00:00,000 --> 00:00:04,530
+Let's say Alice pass a coin to Bob by sending her a sign statement to Bob,
+
+2
+00:00:04,530 --> 00:00:06,045
+but didn't tell anyone else.
+
+3
+00:00:06,045 --> 00:00:10,710
+She could create another sign statement that pays the very same coin to Chuck.
+
+4
+00:00:10,710 --> 00:00:14,450
+To Chuck, this would appear to be a perfectly valid transaction,
+
+5
+00:00:14,450 --> 00:00:17,025
+and now he thinks he's the owner of the coin.
+
+6
+00:00:17,025 --> 00:00:21,735
+Bob and Chuck would both have valid-looking claims to be the owner of this coin.
+
+7
+00:00:21,735 --> 00:00:24,160
+This is called a double spending attack.
+
+8
+00:00:24,160 --> 00:00:27,480
+That is, Alice is spending the same coin twice.
+
+9
+00:00:27,480 --> 00:00:31,365
+Intuitively, we know coins are not supposed to work this way.
+
+10
+00:00:31,365 --> 00:00:33,680
+In fact, double spending attacks are one of
+
+11
+00:00:33,680 --> 00:00:37,220
+the key problems to any cryptocurrency has to solve.
+
+12
+00:00:37,220 --> 00:00:39,775
+GoofyCoin does not solve the double spending attack,
+
+13
+00:00:39,775 --> 00:00:41,865
+and therefore, it is not secure.
+
+14
+00:00:41,865 --> 00:00:46,885
+GoofyCoin is simple, and its mechanism for transferring coins is very similar to Bitcoin.
+
+15
+00:00:46,885 --> 00:00:48,475
+But because it is insecure,
+
+16
+00:00:48,475 --> 00:00:50,160
+it is not a cryptocurrency.
+

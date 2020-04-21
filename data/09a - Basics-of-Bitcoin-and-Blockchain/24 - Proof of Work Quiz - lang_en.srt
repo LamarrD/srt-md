@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:02,430
+Now, let's do a quiz on proof of work.
+
+2
+00:00:02,430 --> 00:00:03,900
+With regards to bitcoin,
+
+3
+00:00:03,900 --> 00:00:05,830
+which of the following statements are true?
+

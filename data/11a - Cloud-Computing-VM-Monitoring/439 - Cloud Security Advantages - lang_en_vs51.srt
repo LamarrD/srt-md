@@ -1,0 +1,65 @@
+1
+00:00:00,290 --> 00:00:03,469
+Let's summarize the security advantages
+a cloud computing environment
+
+2
+00:00:03,469 --> 00:00:04,570
+can provide.
+
+3
+00:00:04,570 --> 00:00:09,310
+These include Data Fragmentation and
+Dispersal, Dedicated Security Team,
+
+4
+00:00:09,310 --> 00:00:13,060
+Greater Investment in Security
+Infrastructure, Fault Tolerance and
+
+5
+00:00:13,060 --> 00:00:15,620
+Reliability, Greater Resiliency,
+
+6
+00:00:15,620 --> 00:00:18,630
+Hypervisor Protection
+Against Network Attacks and
+
+7
+00:00:18,630 --> 00:00:21,610
+the Possible Reduction
+of C&amp;A Activities.
+
+8
+00:00:22,940 --> 00:00:26,310
+Furthermore, the compliance
+analysis is simplified and
+
+9
+00:00:26,310 --> 00:00:28,870
+data can be held by unbiased party.
+
+10
+00:00:28,870 --> 00:00:33,050
+There is Low-Cost associated with
+Disaster Recovery and Data Storage.
+
+11
+00:00:33,050 --> 00:00:35,240
+There are on demand
+security controls and
+
+12
+00:00:35,240 --> 00:00:37,400
+real time detection of system tampering.
+
+13
+00:00:37,400 --> 00:00:40,550
+Reconstitution of services is easy and
+vast.
+
+14
+00:00:40,550 --> 00:00:42,790
+And an advanced Honeynet
+can be deployed.

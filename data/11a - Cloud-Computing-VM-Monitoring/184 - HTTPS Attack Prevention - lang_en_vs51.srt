@@ -1,0 +1,102 @@
+1
+00:00:00,017 --> 00:00:04,580
+One approach to deal with rogue
+certificate is to use dynamic public-key
+
+2
+00:00:04,580 --> 00:00:05,248
+pinning.
+
+3
+00:00:05,248 --> 00:00:11,040
+This means that a website will declare
+the CAs that sign its certificate.
+
+4
+00:00:11,040 --> 00:00:13,110
+When a browser first visits a website,
+
+5
+00:00:13,110 --> 00:00:16,980
+the website tells the browser
+the list of authorized CAs.
+
+6
+00:00:16,980 --> 00:00:18,390
+Then on subsequent visits,
+
+7
+00:00:18,390 --> 00:00:22,630
+the browser will reject any
+certificate issued by other CAs.
+
+8
+00:00:22,630 --> 00:00:28,680
+Very similarly there's a public-key
+pinning extension for HTTP or HPKP.
+
+9
+00:00:28,680 --> 00:00:32,640
+This feature tells a web
+browser the list of proper keys
+
+10
+00:00:32,640 --> 00:00:34,700
+to be associated with the website.
+
+11
+00:00:34,700 --> 00:00:38,650
+And it can prevent man-in-the-middle
+attacks with forged certificates.
+
+12
+00:00:38,650 --> 00:00:40,560
+When the browser visits a website for
+
+13
+00:00:40,560 --> 00:00:44,650
+the first time, the browser sends
+a list of public-key hashes.
+
+14
+00:00:44,650 --> 00:00:49,050
+And on subsequent visits, the browser
+expects the server to use one or
+
+15
+00:00:49,050 --> 00:00:52,600
+more of these public
+keys in its certificates.
+
+16
+00:00:52,600 --> 00:00:55,580
+Another problem to deal with
+forged certificate is for
+
+17
+00:00:55,580 --> 00:00:57,390
+the CAs to be transparent.
+
+18
+00:00:57,390 --> 00:01:00,760
+That is,
+the CAs must publish in a public log
+
+19
+00:01:00,760 --> 00:01:03,093
+of all the certificates
+that they have issued and
+
+20
+00:01:03,093 --> 00:01:08,180
+a browser will only accept a certificate
+if it is published on a public log.
+
+21
+00:01:08,180 --> 00:01:12,760
+And companies like Google can constantly
+scan the public logs to look for
+
+22
+00:01:12,760 --> 00:01:14,430
+invalid or forged certificates.

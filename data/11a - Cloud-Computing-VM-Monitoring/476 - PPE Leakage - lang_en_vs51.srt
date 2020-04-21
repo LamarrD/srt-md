@@ -1,0 +1,43 @@
+1
+00:00:00,200 --> 00:00:01,859
+The previous examples are simple.
+
+2
+00:00:01,859 --> 00:00:05,140
+Now the question is, what does
+the leakage in property preserving
+
+3
+00:00:05,140 --> 00:00:08,250
+encryption really mean for
+real applications?
+
+4
+00:00:08,250 --> 00:00:11,520
+We can take a look at
+the electronic medical records.
+
+5
+00:00:11,520 --> 00:00:14,560
+Here are some attributes in
+electronic medical records.
+
+6
+00:00:14,560 --> 00:00:19,320
+These attributes are typically used
+in equality queries or ordering.
+
+7
+00:00:19,320 --> 00:00:23,060
+In other words, to ensure that
+the applications will continue to work,
+
+8
+00:00:23,060 --> 00:00:27,690
+these attributes will be encrypted
+to preserve equality or order.
+
+9
+00:00:27,690 --> 00:00:32,280
+These attributes are sensitive to either
+the hospital or the patient or both.

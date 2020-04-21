@@ -1,0 +1,28 @@
+1
+00:00:00,000 --> 00:00:03,115
+In a previous example of a redundant system,
+
+2
+00:00:03,115 --> 00:00:06,860
+we see that the motor takes the majority as the correct output.
+
+3
+00:00:06,860 --> 00:00:11,330
+This assumes that the non-faulty components can reach a consensus.
+
+4
+00:00:11,330 --> 00:00:14,610
+Therefore, the goal of a redundant system is
+
+5
+00:00:14,610 --> 00:00:18,800
+that a set of non-faulty services can reach a consensus,
+
+6
+00:00:18,800 --> 00:00:22,785
+even in the presence of some corrupted or faulty services.
+
+7
+00:00:22,785 --> 00:00:27,610
+This consensus is then the correct service that a system will provide.
+

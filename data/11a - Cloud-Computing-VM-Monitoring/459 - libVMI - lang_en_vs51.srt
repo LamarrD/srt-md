@@ -1,0 +1,135 @@
+1
+00:00:00,260 --> 00:00:03,010
+Now we need to address one
+very important detail.
+
+2
+00:00:03,010 --> 00:00:05,939
+When you read memory,
+all you see are 1s and 0s.
+
+3
+00:00:05,939 --> 00:00:11,070
+But how do you know what the 1s and 0s
+mean, unless you know the memory layout,
+
+4
+00:00:11,070 --> 00:00:13,300
+according to data structure definitions?
+
+5
+00:00:13,300 --> 00:00:17,140
+For example, this blob may represent a
+data structure that you're looking for.
+
+6
+00:00:17,140 --> 00:00:20,180
+Therefore, as we have discussed
+in passive monitoring,
+
+7
+00:00:20,180 --> 00:00:23,300
+we need to convert the raw memory
+view into something meaningful
+
+8
+00:00:23,300 --> 00:00:26,480
+such as virtual addresses
+kernel symbols, etc.
+
+9
+00:00:26,480 --> 00:00:32,100
+We use libVMI, or previously called
+XenAccess, to analyze memory contents.
+
+10
+00:00:32,100 --> 00:00:35,430
+This is an example of
+the code that used libVMI
+
+11
+00:00:35,430 --> 00:00:38,460
+APIs to obtain the list
+of learning processes.
+
+12
+00:00:38,460 --> 00:00:40,040
+And this is the output.
+
+13
+00:00:40,040 --> 00:00:43,490
+The pull here is that with libVMI or
+XenAccess,
+
+14
+00:00:43,490 --> 00:00:46,080
+you don't even write a whole
+lot of code in order to obtain
+
+15
+00:00:46,080 --> 00:00:49,750
+such useful runtime information
+of the other virtual machine.
+
+16
+00:00:49,750 --> 00:00:53,020
+libVMI is open source,
+it provides access and
+
+17
+00:00:53,020 --> 00:00:55,960
+analysis of virtual addresses,
+kernel symbols.
+
+18
+00:00:55,960 --> 00:00:58,850
+It was first released as Zeb
+acess in Spring 2006, and
+
+19
+00:00:58,850 --> 00:01:02,170
+here's the GitHub repository.
+
+20
+00:01:02,170 --> 00:01:06,480
+Here's a quick summary of the libVMI
+features, you can perform virtual memory
+
+21
+00:01:06,480 --> 00:01:10,800
+translation, for example so that you
+can know which are the kernel symbols.
+
+22
+00:01:10,800 --> 00:01:14,470
+You can also place monitoring hooks
+into a guest virtual machine, for
+
+23
+00:01:14,470 --> 00:01:17,560
+example, to trap exceptions and
+page faults.
+
+24
+00:01:17,560 --> 00:01:20,420
+For example,
+hooks can be placed in a virtual machine
+
+25
+00:01:20,420 --> 00:01:22,160
+to trap the following events.
+
+26
+00:01:22,160 --> 00:01:24,672
+For example,
+memory read-write-execute events,
+
+27
+00:01:24,672 --> 00:01:29,500
+register read-write events, interrupts
+and single stepping of instructions.
+
+28
+00:01:29,500 --> 00:01:32,400
+This is useful to trace
+a log of program execution.

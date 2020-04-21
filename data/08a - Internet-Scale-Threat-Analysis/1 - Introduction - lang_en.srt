@@ -1,0 +1,24 @@
+1
+00:00:00,000 --> 00:00:03,495
+The Internet is a large ecosystem of networks.
+
+2
+00:00:03,495 --> 00:00:06,575
+It is also a large ecosystem of vulnerabilities.
+
+3
+00:00:06,575 --> 00:00:09,710
+To defend the network, we need to know it.
+
+4
+00:00:09,710 --> 00:00:13,258
+In other words, we need to map the entire Internet.
+
+5
+00:00:13,258 --> 00:00:15,905
+In this lesson, we'll learn how to map the internet
+
+6
+00:00:15,905 --> 00:00:19,230
+efficiently and thoroughly, and survey vulnerabilities.
+

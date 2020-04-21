@@ -1,0 +1,24 @@
+1
+00:00:00,210 --> 00:00:04,930
+In particular, a cookie that can
+only be sent in requests originating
+
+2
+00:00:04,930 --> 00:00:09,620
+from the same origin as the target
+domain is a SameSite cookie.
+
+3
+00:00:09,620 --> 00:00:13,960
+Again, this can be used to defend
+against cross-site request forgery.
+
+4
+00:00:13,960 --> 00:00:20,230
+And a cookie that cannot be accessed by
+client-side APIs is the HTTPOnly cookie.
+
+5
+00:00:20,230 --> 00:00:23,660
+It can be used to defend against
+cross-site scripting attacks.

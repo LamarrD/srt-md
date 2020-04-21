@@ -1,0 +1,32 @@
+1
+00:00:00,000 --> 00:00:03,750
+Now, let's discuss some of the key performance metrics of machine learning.
+
+2
+00:00:03,750 --> 00:00:06,740
+The error rate is the fraction of false predictions.
+
+3
+00:00:06,740 --> 00:00:09,545
+Accuracy is the fraction of correct predictions.
+
+4
+00:00:09,545 --> 00:00:11,340
+Precision is a fraction of
+
+5
+00:00:11,340 --> 00:00:14,855
+correct predictions among all examples predicted to be positive.
+
+6
+00:00:14,855 --> 00:00:19,585
+Recall is the fraction of correct predictions among all real positive examples.
+
+7
+00:00:19,585 --> 00:00:24,685
+Precision and recall are not limited to two class or positive versus negative problems.
+
+8
+00:00:24,685 --> 00:00:28,580
+That is, they can be generalized into multi-class applications.
+

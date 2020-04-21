@@ -1,0 +1,30 @@
+1
+00:00:00,250 --> 00:00:01,710
+Now let's do a quiz.
+
+2
+00:00:01,710 --> 00:00:05,939
+In 2011, the security company,
+RSA, was compromised.
+
+3
+00:00:05,939 --> 00:00:08,410
+And it began with social engineering.
+
+4
+00:00:08,410 --> 00:00:09,640
+Once gaining access,
+
+5
+00:00:09,640 --> 00:00:14,230
+the attackers then installed backdoor
+using Adobe Flash vulnerability.
+
+6
+00:00:14,230 --> 00:00:15,380
+In this quiz,
+
+7
+00:00:15,380 --> 00:00:20,030
+list the steps the attackers used to
+access RSAs Adobe Flash software.

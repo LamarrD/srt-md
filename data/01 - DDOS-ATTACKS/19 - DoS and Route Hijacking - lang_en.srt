@@ -1,0 +1,116 @@
+1
+00:00:00,420 --> 00:00:03,770
+The Internet routing protocol
+can also be exploited to
+
+2
+00:00:03,770 --> 00:00:05,830
+launch in our service attacks.
+
+3
+00:00:05,830 --> 00:00:08,910
+In particular,
+there have been several incidents of
+
+4
+00:00:08,910 --> 00:00:12,050
+route hijacking that resulted
+in denial of service.
+
+5
+00:00:12,050 --> 00:00:15,750
+Here's one example involving
+Pakistan and YouTube.
+
+6
+00:00:15,750 --> 00:00:20,940
+The Internet is divided into a large
+number of so-called autonomous systems.
+
+7
+00:00:20,940 --> 00:00:24,410
+Each autonomous system or
+AS is responsible for
+
+8
+00:00:24,410 --> 00:00:29,480
+logging packets in and out a subset of
+the Internet defined by the prefix.
+
+9
+00:00:29,480 --> 00:00:34,280
+For example, the YouTube service
+address is within this prefix.
+
+10
+00:00:34,280 --> 00:00:39,618
+It is actually 208.65.103.238.
+
+11
+00:00:39,618 --> 00:00:44,545
+In February 2008, Pakistan Telecom
+advertise that, is actually
+
+12
+00:00:44,545 --> 00:00:49,990
+responsible for subset of Internet
+defined by this particular prefix.
+
+13
+00:00:49,990 --> 00:00:52,490
+And this prefix is more specific
+
+14
+00:00:52,490 --> 00:00:55,450
+than a segment that includes
+the YouTube server.
+
+15
+00:00:55,450 --> 00:00:59,340
+And since the routing positions for
+a specific IP address,
+
+16
+00:00:59,340 --> 00:01:03,440
+such as the YouTube server
+use the more specific prefix.
+
+17
+00:01:03,440 --> 00:01:07,960
+Then the whole Internet thought that
+Pakistan Telecom is responsible for
+
+18
+00:01:07,960 --> 00:01:10,630
+routing traffic to YouTube.
+
+19
+00:01:10,630 --> 00:01:13,370
+The result of this
+route hijacking is that
+
+20
+00:01:13,370 --> 00:01:17,450
+all traffic to YouTube was
+instantly routed to Pakistan.
+
+21
+00:01:17,450 --> 00:01:21,680
+As you can see,
+the traffic volume at the YouTube server
+
+22
+00:01:21,680 --> 00:01:26,130
+jumped to zero until the route
+hijacking mistake was corrected.
+
+23
+00:01:26,130 --> 00:01:29,552
+In a more recent example,
+China Telecom published
+
+24
+00:01:29,552 --> 00:01:34,420
+BGP routes that caused .mail and
+.gov to route through China Telecom.
+

@@ -1,0 +1,112 @@
+1
+00:00:00,000 --> 00:00:03,070
+Now let's discuss the security of bitcoins.
+
+2
+00:00:03,070 --> 00:00:06,980
+First, can Alice steal bitcoins that belonged to another user?
+
+3
+00:00:06,980 --> 00:00:09,510
+This is not possible because there's no way
+
+4
+00:00:09,510 --> 00:00:12,625
+Alice can create a valid signature that spends that coin.
+
+5
+00:00:12,625 --> 00:00:15,940
+That is, as long as the underlying cryptography is solid,
+
+6
+00:00:15,940 --> 00:00:18,140
+Alice cannot steal bitcoins.
+
+7
+00:00:18,140 --> 00:00:21,200
+But can Alice launch a double spending attack?
+
+8
+00:00:21,200 --> 00:00:23,755
+Suppose Alice creates two transactions.
+
+9
+00:00:23,755 --> 00:00:28,145
+Here we use C subscript A to represent a coin owned by Alice.
+
+10
+00:00:28,145 --> 00:00:31,330
+Suppose in the first transaction she sends Bob a bitcoin.
+
+11
+00:00:31,330 --> 00:00:32,780
+In the second transaction,
+
+12
+00:00:32,780 --> 00:00:37,400
+Alice double spends by sending the same bitcoin to another node that she controls.
+
+13
+00:00:37,400 --> 00:00:41,495
+Of course, only one of these transactions can be included in the blockchain.
+
+14
+00:00:41,495 --> 00:00:44,390
+If the blockchain get extended from the second transaction,
+
+15
+00:00:44,390 --> 00:00:46,985
+then Bob will be denied this bitcoin.
+
+16
+00:00:46,985 --> 00:00:49,010
+Suppose Bob is the merchant.
+
+17
+00:00:49,010 --> 00:00:51,320
+In order to protect himself from this attack,
+
+18
+00:00:51,320 --> 00:00:54,935
+Bob should wait until the transaction has multiple confirmations.
+
+19
+00:00:54,935 --> 00:00:59,055
+That is, there are multiple blogs extended from this block in the blockchain.
+
+20
+00:00:59,055 --> 00:01:03,245
+The most common heuristics is to wait until you hear six confirmations.
+
+21
+00:01:03,245 --> 00:01:06,110
+Let's summarize the safeguards in bitcoin.
+
+22
+00:01:06,110 --> 00:01:10,100
+The protection against invalid transactions is done through cryptography,
+
+23
+00:01:10,100 --> 00:01:12,265
+but also enforced by consensus.
+
+24
+00:01:12,265 --> 00:01:15,860
+Protection against double-spending is purely by consensus.
+
+25
+00:01:15,860 --> 00:01:20,085
+There's no 100% guarantee that a transaction is in the consensus branch.
+
+26
+00:01:20,085 --> 00:01:22,815
+That is, the guarantee is probabilistic.
+
+27
+00:01:22,815 --> 00:01:24,900
+Again, the more confirmation you see,
+
+28
+00:01:24,900 --> 00:01:27,790
+the higher probability that a transaction is valid.
+

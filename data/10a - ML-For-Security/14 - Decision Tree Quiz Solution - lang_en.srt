@@ -1,0 +1,28 @@
+1
+00:00:00,000 --> 00:00:02,835
+First, can it supplement honeypot analysis?
+
+2
+00:00:02,835 --> 00:00:05,660
+Yes. Can it supplement penetration testing?
+
+3
+00:00:05,660 --> 00:00:08,650
+Yes. Can it highlight or detect malicious traffic?
+
+4
+00:00:08,650 --> 00:00:11,505
+Yes, and therefore the third statement is false.
+
+5
+00:00:11,505 --> 00:00:14,790
+Fourth, can it characterize known scanning activity?
+
+6
+00:00:14,790 --> 00:00:18,285
+Yes, and therefore the fourth statement is false.
+
+7
+00:00:18,285 --> 00:00:23,340
+The last one, can it detect previously unknown network anomalies? The answer is yes.
+

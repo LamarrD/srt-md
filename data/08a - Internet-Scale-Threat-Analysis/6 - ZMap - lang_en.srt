@@ -1,0 +1,60 @@
+1
+00:00:00,000 --> 00:00:01,673
+But in order to do that,
+
+2
+00:00:01,673 --> 00:00:05,555
+Internet surveys should not require heroic efforts.
+
+3
+00:00:05,555 --> 00:00:11,446
+For example, it would be nice if we can scan the whole HTTPS ecosystem every day.
+
+4
+00:00:11,446 --> 00:00:14,042
+Given that existing tools are so slow,
+
+5
+00:00:14,042 --> 00:00:18,244
+researchers at the University of Michigan wrote ZMap,
+
+6
+00:00:18,244 --> 00:00:21,200
+a new Internet scanner, from scratch.
+
+7
+00:00:21,200 --> 00:00:25,050
+ZMap is a fully-functional open-source network scanner that can
+
+8
+00:00:25,050 --> 00:00:29,098
+scan a single port on the IPv4 address space.
+
+9
+00:00:29,098 --> 00:00:30,598
+On a gigabit network,
+
+10
+00:00:30,598 --> 00:00:32,680
+it can cover 98 percent of
+
+11
+00:00:32,680 --> 00:00:37,340
+the IPv4 address space from a single machine in under 45 minutes.
+
+12
+00:00:37,340 --> 00:00:41,600
+With ZMap, performing a scan on the Internet no longer
+
+13
+00:00:41,600 --> 00:00:45,865
+requires hundreds of hours of coding or months to execute.
+
+14
+00:00:45,865 --> 00:00:47,990
+Now, performing an Internet scan is
+
+15
+00:00:47,990 --> 00:00:51,350
+a single command which could be finished within an hour.
+

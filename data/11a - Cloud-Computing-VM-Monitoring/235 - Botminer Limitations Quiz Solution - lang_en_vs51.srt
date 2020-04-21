@@ -1,0 +1,18 @@
+1
+00:00:00,200 --> 00:00:03,560
+Botnets can vary the CNC
+communication patterns and
+
+2
+00:00:03,560 --> 00:00:07,280
+they can introduce random noise
+in their communication traffic.
+
+3
+00:00:07,280 --> 00:00:11,170
+For A-plane clustering, the botnets
+can also vary their activities
+
+4
+00:00:11,170 --> 00:00:13,060
+to evade our detection heuristics.

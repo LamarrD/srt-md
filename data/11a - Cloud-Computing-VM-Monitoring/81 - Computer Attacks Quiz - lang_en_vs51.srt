@@ -1,0 +1,12 @@
+1
+00:00:00,280 --> 00:00:02,009
+Now let's do a quiz.
+
+2
+00:00:02,009 --> 00:00:03,480
+On this pie chart,
+
+3
+00:00:03,480 --> 00:00:08,719
+what are the top three industries that
+were targets of cyber attacks in 2016?

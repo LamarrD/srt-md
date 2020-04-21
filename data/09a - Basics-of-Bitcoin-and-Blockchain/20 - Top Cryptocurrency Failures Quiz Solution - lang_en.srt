@@ -1,0 +1,96 @@
+1
+00:00:00,000 --> 00:00:05,185
+First, provide a globally accessible blockchain through the use of nanosatellites.
+
+2
+00:00:05,185 --> 00:00:07,035
+This is Spacebit.
+
+3
+00:00:07,035 --> 00:00:09,915
+Second, a social networking platform that uses
+
+4
+00:00:09,915 --> 00:00:13,315
+cryptocurrency to members that view ads in the app.
+
+5
+00:00:13,315 --> 00:00:15,170
+Popular in Uzbekistan.
+
+6
+00:00:15,170 --> 00:00:16,825
+This is GetGems.
+
+7
+00:00:16,825 --> 00:00:20,280
+Third, a decentralized peer-to-peer digital currency.
+
+8
+00:00:20,280 --> 00:00:22,795
+The community is friendly and vibrant,
+
+9
+00:00:22,795 --> 00:00:25,365
+and known for charitable acts such as sending
+
+10
+00:00:25,365 --> 00:00:28,830
+the 2014 Jamaican bobsled team to the Olympics.
+
+11
+00:00:28,830 --> 00:00:30,505
+This is Dogecoin.
+
+12
+00:00:30,505 --> 00:00:33,175
+Fourth, according to a published white paper,
+
+13
+00:00:33,175 --> 00:00:35,940
+it used new variations on the blockchain that would
+
+14
+00:00:35,940 --> 00:00:39,815
+result in new breed of cryptocurrency. That's Paycoin.
+
+15
+00:00:39,815 --> 00:00:42,575
+Fifth, the largest crowdfund in history.
+
+16
+00:00:42,575 --> 00:00:45,995
+An attacker exploited a vulnerability in its smart contract
+
+17
+00:00:45,995 --> 00:00:49,820
+with losses totaling $50 million. This is DAO.
+
+18
+00:00:49,820 --> 00:00:53,525
+This quiz highlights some important points about cryptocurrency.
+
+19
+00:00:53,525 --> 00:00:55,120
+There is a strong market for it,
+
+20
+00:00:55,120 --> 00:00:56,955
+but it is also a volatile field,
+
+21
+00:00:56,955 --> 00:00:59,455
+and it is not an easy problem to solve.
+
+22
+00:00:59,455 --> 00:01:01,040
+To further muddy the water,
+
+23
+00:01:01,040 --> 00:01:02,495
+at the end of 2016,
+
+24
+00:01:02,495 --> 00:01:05,670
+there was talk of cryptocurrencies disappearing altogether.
+

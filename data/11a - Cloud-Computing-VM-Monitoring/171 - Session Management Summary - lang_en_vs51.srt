@@ -1,0 +1,39 @@
+1
+00:00:00,310 --> 00:00:04,200
+To summarize what we've learned about
+the security of session management,
+
+2
+00:00:04,200 --> 00:00:09,380
+we should always assume cookie data
+retrieved from client is adversarial,
+
+3
+00:00:09,380 --> 00:00:10,710
+or not trusted.
+
+4
+00:00:10,710 --> 00:00:13,231
+There are multiple ways
+to store session tokens.
+
+5
+00:00:13,231 --> 00:00:15,421
+Cookies, by themselves, are not secure.
+
+6
+00:00:15,421 --> 00:00:17,880
+For example, they can be overwritten.
+
+7
+00:00:17,880 --> 00:00:20,440
+Session tokens should be unpredictable.
+
+8
+00:00:20,440 --> 00:00:22,910
+And finally, when a user logs out,
+
+9
+00:00:22,910 --> 00:00:25,480
+the server should invalidate
+the session token.

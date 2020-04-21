@@ -1,0 +1,38 @@
+1
+00:00:00,280 --> 00:00:04,895
+The second statement is true
+because you can certainly list
+
+2
+00:00:04,895 --> 00:00:09,455
+Google + as a trusted source and
+list it in the white list.
+
+3
+00:00:09,455 --> 00:00:13,500
+For the first statement,
+if you use third party software
+
+4
+00:00:13,500 --> 00:00:18,030
+that has inline script,
+you can still embed it on your site.
+
+5
+00:00:18,030 --> 00:00:23,000
+You can use script source and
+style source to allow inline script.
+
+6
+00:00:23,000 --> 00:00:24,650
+For the third statement, for
+
+7
+00:00:24,650 --> 00:00:28,680
+really secure site,
+it is best to restrict everything.
+
+8
+00:00:28,680 --> 00:00:32,640
+Then once you know which sources will
+be used, add them to the whitelist.

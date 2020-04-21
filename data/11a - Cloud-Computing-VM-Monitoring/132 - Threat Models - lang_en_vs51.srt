@@ -1,0 +1,303 @@
+1
+00:00:00,440 --> 00:00:04,490
+Let's go over the various types
+of attackers in more details.
+
+2
+00:00:04,490 --> 00:00:10,050
+For the web attacker, the attacker could
+typically control a suspicious site,
+
+3
+00:00:10,050 --> 00:00:12,340
+say, attacker.com.
+
+4
+00:00:12,340 --> 00:00:15,980
+He can even obtain certificate for
+his website so
+
+5
+00:00:15,980 --> 00:00:20,580
+that the website can interact with
+users' browsers through HTTPS.
+
+6
+00:00:21,950 --> 00:00:26,170
+And then the attacker can wait for
+the user to visit attacker.com.
+
+7
+00:00:26,170 --> 00:00:30,780
+For example, this can be done through
+phishing and other kinds of redirect.
+
+8
+00:00:30,780 --> 00:00:35,040
+Or, the attacker can set up some
+sort of malicious, or fake,
+
+9
+00:00:35,040 --> 00:00:40,350
+web app and wait for the user to
+download these apps and run these apps.
+
+10
+00:00:40,350 --> 00:00:45,155
+The point here is that, typically,
+a web attacker is somewhat passive.
+
+11
+00:00:45,155 --> 00:00:48,070
+He sets up some attack
+infrastructure and waits for
+
+12
+00:00:48,070 --> 00:00:53,900
+the users to actually either visit those
+sites or use those malicious apps.
+
+13
+00:00:53,900 --> 00:00:56,578
+A network attacker is more powerful.
+
+14
+00:00:56,578 --> 00:01:00,898
+He can perform both passive and
+active attacks.
+
+15
+00:01:00,898 --> 00:01:06,052
+For example, a passive attack means
+that the attacker simply intercepts and
+
+16
+00:01:06,052 --> 00:01:10,050
+analyze traffic to learn
+about the communication.
+
+17
+00:01:10,050 --> 00:01:14,460
+For example, the attacker can
+perform wireless eavesdropping
+
+18
+00:01:14,460 --> 00:01:17,820
+to crack the encryption key for
+you're Wi-Fi network.
+
+19
+00:01:17,820 --> 00:01:21,780
+Examples of active attacks
+include inserting a malicious
+
+20
+00:01:21,780 --> 00:01:26,020
+router in the network so that traffic
+can route through the router and
+
+21
+00:01:26,020 --> 00:01:28,420
+be subject to the attackers attack.
+
+22
+00:01:28,420 --> 00:01:32,020
+That includes both passive
+like eavesdropping, or
+
+23
+00:01:32,020 --> 00:01:35,130
+active attacks such
+as traffic injection.
+
+24
+00:01:35,130 --> 00:01:40,780
+Another example is DNS poisoning, where
+the attacker changed the DNS entry so
+
+25
+00:01:40,780 --> 00:01:44,080
+that a legitimate site such as cnn.com,
+
+26
+00:01:44,080 --> 00:01:48,650
+now has an IP address of a server
+that's controlled by the attacker.
+
+27
+00:01:48,650 --> 00:01:53,870
+That is, legitimate traffic such as
+to cnn.com will not be redirected,
+
+28
+00:01:53,870 --> 00:01:58,710
+so that legitimate traffic such
+as those to cnn.com will now
+
+29
+00:01:58,710 --> 00:02:01,620
+be redirected to the attacker's machine.
+
+30
+00:02:01,620 --> 00:02:05,400
+The most general and
+powerful attack is through malware.
+
+31
+00:02:05,400 --> 00:02:08,110
+By injecting a piece of malware
+on the user's computer,
+
+32
+00:02:08,110 --> 00:02:13,280
+the attacker essentially escapes,
+the browser's isolation mechanism.
+
+33
+00:02:13,280 --> 00:02:14,290
+And now,
+
+34
+00:02:14,290 --> 00:02:18,550
+has a program that runs directly under
+the control of the operating system.
+
+35
+00:02:18,550 --> 00:02:23,850
+That is, the malware runs as any
+other applications on your computer.
+
+36
+00:02:23,850 --> 00:02:26,130
+You may ask, why is that possible?
+
+37
+00:02:26,130 --> 00:02:31,200
+Isn't the browser supposed to isolate
+the rest of the computer from the web?
+
+38
+00:02:31,200 --> 00:02:36,010
+The problem is that browser is a very
+complex piece of software, and
+
+39
+00:02:36,010 --> 00:02:40,130
+as such, browsers may
+contain exploitable bugs, and
+
+40
+00:02:40,130 --> 00:02:45,450
+these bugs often enable remote
+execution of malicious code.
+
+41
+00:02:45,450 --> 00:02:50,990
+For example, when a browser visits a
+site that's controlled by the attacker,
+
+42
+00:02:50,990 --> 00:02:55,100
+the attacker can send a webpage
+that contains malicious input.
+
+43
+00:02:55,100 --> 00:02:59,880
+And the result is that a bug
+is being exploited and
+
+44
+00:02:59,880 --> 00:03:05,280
+a piece of malicious software, or
+malware, is now installed on a computer.
+
+45
+00:03:05,280 --> 00:03:09,620
+Now, even if the browsers are bug free,
+there are still lots of
+
+46
+00:03:09,620 --> 00:03:13,890
+vulnerabilities on the web,
+in particular on the web-server side.
+
+47
+00:03:13,890 --> 00:03:18,768
+That would enable cross-site scripting,
+SQL injection,
+
+48
+00:03:18,768 --> 00:03:21,645
+and cross-site request forgery.
+
+49
+00:03:21,645 --> 00:03:26,069
+For example, SQL injection
+would allow the attacker to
+
+50
+00:03:26,069 --> 00:03:29,362
+bypass the control of the web server,
+and
+
+51
+00:03:29,362 --> 00:03:35,640
+directly inject attackers' code into
+the back end of the SQL database.
+
+52
+00:03:35,640 --> 00:03:40,040
+The point is that malware
+attackers can actually bypass
+
+53
+00:03:40,040 --> 00:03:41,830
+the basic control of web,
+
+54
+00:03:41,830 --> 00:03:46,920
+including browser, to actually attack
+the users' computers or the web service.
+
+55
+00:03:48,010 --> 00:03:51,390
+So we will discuss three
+main types of attackers.
+
+56
+00:03:51,390 --> 00:03:56,470
+The malware attacker, the network
+attacker, and the web attacker.
+
+57
+00:03:56,470 --> 00:03:59,160
+It is obvious that a web attacker
+
+58
+00:03:59,160 --> 00:04:03,120
+is the least lethal because
+he's mostly passive.
+
+59
+00:04:03,120 --> 00:04:08,530
+A network attacker is more powerful
+because he can perform both passive and
+
+60
+00:04:08,530 --> 00:04:09,850
+active attacks.
+
+61
+00:04:09,850 --> 00:04:13,090
+And a malware attacker
+is the most lethal and
+
+62
+00:04:13,090 --> 00:04:17,910
+powerful because it can inject
+code into a user's computer or
+
+63
+00:04:17,910 --> 00:04:21,930
+a server to perform any actions
+desired by the attacker.

@@ -1,0 +1,64 @@
+1
+00:00:00,000 --> 00:00:02,685
+Now, let's discuss anonymity in Bitcoin.
+
+2
+00:00:02,685 --> 00:00:07,940
+Some, including WikiLeaks, claims that BitCoins provide anonymity.
+
+3
+00:00:07,940 --> 00:00:11,980
+Others, believe that Bitcoin does not provide anonymity.
+
+4
+00:00:11,980 --> 00:00:13,720
+So, what is anonymity?
+
+5
+00:00:13,720 --> 00:00:17,340
+Literally, anonymous means without a name.
+
+6
+00:00:17,340 --> 00:00:20,070
+Bitcoin, an ID is an address,
+
+7
+00:00:20,070 --> 00:00:22,735
+which is the hash of a public key.
+
+8
+00:00:22,735 --> 00:00:26,060
+In computer science, we call this pseudonymity.
+
+9
+00:00:26,060 --> 00:00:31,845
+In computer science, an anonymity means pseudonymity plus unlinkability.
+
+10
+00:00:31,845 --> 00:00:34,690
+We know that Bitcoins provides pseudonymity.
+
+11
+00:00:34,690 --> 00:00:38,625
+Now, the question is does Bitcoin provide unlinkability.
+
+12
+00:00:38,625 --> 00:00:41,685
+That is, can we be sure that in Bitcoin,
+
+13
+00:00:41,685 --> 00:00:45,590
+different transactions of the same users can be linked together.
+
+14
+00:00:45,590 --> 00:00:49,420
+More precisely, unlinkability in Bitcoin means that,
+
+15
+00:00:49,420 --> 00:00:53,265
+it is also hard to link different transactions of the same user.
+
+16
+00:00:53,265 --> 00:00:58,930
+Furthermore, it should be hard to link the sender of a payment to its recipient.
+

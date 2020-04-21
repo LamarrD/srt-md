@@ -1,0 +1,14 @@
+1
+00:00:00,250 --> 00:00:04,520
+For the following cookies, determine
+whether they are session cookie,
+
+2
+00:00:04,520 --> 00:00:09,695
+persistent cookie, secure cookie,
+HttpOnly cookie, SameSite cookie,
+
+3
+00:00:09,695 --> 00:00:13,420
+Third-party cookie,
+Super cookie, or Zombie cookie.

@@ -1,0 +1,171 @@
+1
+00:00:00,250 --> 00:00:02,380
+Here's the architecture of BotHunter.
+
+2
+00:00:02,380 --> 00:00:04,300
+He has a number of detection engines.
+
+3
+00:00:04,300 --> 00:00:06,260
+Each of these engines are disposable for
+
+4
+00:00:06,260 --> 00:00:09,340
+detecting certain activities
+of the botnet lifecycle.
+
+5
+00:00:09,340 --> 00:00:12,700
+And the correlator correlates
+evidence of these activities and
+
+6
+00:00:12,700 --> 00:00:15,920
+makes detection that an internal
+machine has been compromised and
+
+7
+00:00:15,920 --> 00:00:19,470
+has become a bot and
+produces a bot infection profile.
+
+8
+00:00:19,470 --> 00:00:21,940
+Let's discuss the BotHunter
+detection engines.
+
+9
+00:00:21,940 --> 00:00:23,420
+The first is SCADE.
+
+10
+00:00:23,420 --> 00:00:25,189
+SCADE is for scan detection,
+
+11
+00:00:25,189 --> 00:00:28,905
+recur in the bounded lifecycle
+inbound scan is a first event.
+
+12
+00:00:28,905 --> 00:00:33,520
+SCADE used different ways for different
+inbound scan connections, in particular,
+
+13
+00:00:33,520 --> 00:00:36,220
+it gives us higher weight
+to vulnerable ports.
+
+14
+00:00:36,220 --> 00:00:38,230
+SCADE also detects outbound scan.
+
+15
+00:00:38,230 --> 00:00:40,500
+It looks at the rate of
+outbound connections,
+
+16
+00:00:40,500 --> 00:00:42,320
+how likely such connection fails and
+
+17
+00:00:42,320 --> 00:00:45,580
+the distribution of the destination
+of these outbound connections.
+
+18
+00:00:45,580 --> 00:00:48,680
+Collectively this can
+suggest outbound scan.
+
+19
+00:00:48,680 --> 00:00:51,680
+Another BotHunter
+detection engine is SLADE.
+
+20
+00:00:51,680 --> 00:00:54,320
+SLADE can detect anomalies
+in network payloads.
+
+21
+00:00:54,320 --> 00:00:57,550
+The main idea is that we can
+establish the normal profile
+
+22
+00:00:57,550 --> 00:01:01,020
+of a network service by looking
+at the n-gram byte distribution
+
+23
+00:01:01,020 --> 00:01:03,540
+of the traffic payload
+of this network service.
+
+24
+00:01:03,540 --> 00:01:08,160
+That is, an attack such as an exploit or
+egg download will cause deviation
+
+25
+00:01:08,160 --> 00:01:11,790
+from this normal profile because
+the n-gram byte distribution
+
+26
+00:01:11,790 --> 00:01:14,830
+of the attack traffic will be
+different from the normal traffic.
+
+27
+00:01:14,830 --> 00:01:17,430
+SLADE has a very
+efficient implementation
+
+28
+00:01:17,430 --> 00:01:19,125
+of payload anomaly detection.
+
+29
+00:01:19,125 --> 00:01:21,950
+BotHunter also includes
+a signature engine.
+
+30
+00:01:21,950 --> 00:01:24,920
+This signature engine can
+detect known exploits and
+
+31
+00:01:24,920 --> 00:01:26,640
+know patterns of command control.
+
+32
+00:01:26,640 --> 00:01:29,440
+The signature rules come
+form multiple open sources.
+
+33
+00:01:29,440 --> 00:01:33,010
+Here's an example of infection
+profile produced by BotHunter.
+
+34
+00:01:33,010 --> 00:01:36,070
+It list the initial host that
+infects the internal machine,
+
+35
+00:01:36,070 --> 00:01:39,530
+the internal machine that has become a
+bot and the command and control server.
+
+36
+00:01:39,530 --> 00:01:43,020
+It also lists evidence
+of the lifecycle steps.
+

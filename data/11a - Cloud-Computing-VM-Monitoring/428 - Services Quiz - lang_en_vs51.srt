@@ -1,0 +1,13 @@
+1
+00:00:00,280 --> 00:00:03,730
+Now let's do a quiz on the cloud
+computing service models.
+
+2
+00:00:03,730 --> 00:00:05,455
+Given the definition of these models,
+
+3
+00:00:05,455 --> 00:00:09,080
+determine the service category for
+each of the products listed below.

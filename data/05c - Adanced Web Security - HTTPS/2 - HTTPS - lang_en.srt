@@ -1,0 +1,129 @@
+1
+00:00:00,200 --> 00:00:04,560
+HTTPS is essentially HTTP over SSL,
+
+2
+00:00:04,560 --> 00:00:10,620
+the secure socket layer, which is now
+called TLS, transport layer security.
+
+3
+00:00:10,620 --> 00:00:14,530
+With HTTPS,
+all traffic between a web browser and
+
+4
+00:00:14,530 --> 00:00:19,820
+a web site is encrypted,
+whereas HTTP is a clear text protocol,
+
+5
+00:00:19,820 --> 00:00:22,970
+meaning that the traffic
+is not encrypted.
+
+6
+00:00:22,970 --> 00:00:29,530
+For example, using HTTP, a user sends
+a password and a web server receives it.
+
+7
+00:00:29,530 --> 00:00:34,410
+Since the traffic data is in clear text,
+a network attacker with access to
+
+8
+00:00:34,410 --> 00:00:38,870
+the link can intercept the traffic
+data and learn the user's password.
+
+9
+00:00:39,870 --> 00:00:43,830
+Now with HTTPS,
+the user still sends the password, but
+
+10
+00:00:43,830 --> 00:00:46,690
+the password is encrypted
+in transmission.
+
+11
+00:00:46,690 --> 00:00:49,555
+Therefore, even when
+attacker can access a link,
+
+12
+00:00:49,555 --> 00:00:52,710
+he cannot learn your
+clear text password.
+
+13
+00:00:52,710 --> 00:00:55,860
+In summary, HTTPS allows for
+
+14
+00:00:55,860 --> 00:00:59,640
+secure communication over untrusted or
+public network.
+
+15
+00:00:59,640 --> 00:01:04,489
+It encrypts traffic and uses public key
+to authenticate the web server and.
+
+16
+00:01:04,489 --> 00:01:05,510
+if possible.
+
+17
+00:01:05,510 --> 00:01:06,880
+even the browser.
+
+18
+00:01:06,880 --> 00:01:09,880
+Even if only the web service
+public key is known,
+
+19
+00:01:09,880 --> 00:01:12,960
+many in the man-in-the-middle-attack
+can still be prevented.
+
+20
+00:01:12,960 --> 00:01:17,960
+With all these benefits,
+HTTPS is not used for all web traffic.
+
+21
+00:01:17,960 --> 00:01:21,720
+The reason is that crypto operations
+can slow down the web service,
+
+22
+00:01:21,720 --> 00:01:24,880
+in particular,
+if it is not implemented right.
+
+23
+00:01:24,880 --> 00:01:27,250
+And some ad networks,
+do not support HTTPS.
+
+24
+00:01:28,440 --> 00:01:29,200
+For example,
+
+25
+00:01:29,200 --> 00:01:35,270
+the ad publishers cannot learn the web
+contents as being viewed by the users.
+
+26
+00:01:35,270 --> 00:01:36,270
+On the other hand,
+
+27
+00:01:36,270 --> 00:01:40,450
+Google is now trying to encourage
+websites from adopting HTTPS.
+

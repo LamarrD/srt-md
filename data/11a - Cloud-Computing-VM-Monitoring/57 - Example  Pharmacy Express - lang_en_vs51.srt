@@ -1,0 +1,59 @@
+1
+00:00:00,250 --> 00:00:03,190
+Now let's study an example of scam.
+
+2
+00:00:03,190 --> 00:00:06,409
+First, the Botnet sends scam
+messages to the victim users.
+
+3
+00:00:06,409 --> 00:00:08,391
+The user clicks on the link and
+
+4
+00:00:08,391 --> 00:00:12,996
+the link will eventually lead him
+to website to purchase fake drugs.
+
+5
+00:00:12,996 --> 00:00:16,735
+And payment will then be withdrawn
+from his bank account and
+
+6
+00:00:16,735 --> 00:00:19,437
+he will receive shipment
+of the fake drug.
+
+7
+00:00:19,437 --> 00:00:23,298
+Using data collected from spam feeds,
+Botnet infiltration and
+
+8
+00:00:23,298 --> 00:00:25,307
+various types of honeypot data.
+
+9
+00:00:25,307 --> 00:00:28,782
+The researchers were able to find
+some interesting data regarding
+
+10
+00:00:28,782 --> 00:00:30,760
+this Pharmacy Express scam.
+
+11
+00:00:30,760 --> 00:00:34,431
+In particular,
+they find that these two accounts for
+
+12
+00:00:34,431 --> 00:00:37,440
+around 35% of all affiliate scams.
+
+13
+00:00:37,440 --> 00:00:40,600
+And we will look more into these
+scammers in more details shortly.

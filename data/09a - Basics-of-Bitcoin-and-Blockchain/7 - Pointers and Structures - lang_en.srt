@@ -1,0 +1,160 @@
+1
+00:00:00,000 --> 00:00:04,045
+Now, let's introduce a new data structure called hash pointer.
+
+2
+00:00:04,045 --> 00:00:09,340
+We know that a typical data pointer is the address to where the data is stored.
+
+3
+00:00:09,340 --> 00:00:12,600
+A hash pointer contains a pointer to where
+
+4
+00:00:12,600 --> 00:00:16,045
+the data is stored but also the hash of that data.
+
+5
+00:00:16,045 --> 00:00:20,500
+That is, we expand the data pointer to include the hash of the data.
+
+6
+00:00:20,500 --> 00:00:24,595
+We're going to use this notation to represent hash pointers.
+
+7
+00:00:24,595 --> 00:00:26,985
+If we have a hash pointer, obviously,
+
+8
+00:00:26,985 --> 00:00:29,555
+we can use the data pointer to get the data back.
+
+9
+00:00:29,555 --> 00:00:31,085
+But since we have the hash,
+
+10
+00:00:31,085 --> 00:00:34,075
+we can also verify that the data has not been changed.
+
+11
+00:00:34,075 --> 00:00:38,015
+We can use hash pointers to build very useful data structures.
+
+12
+00:00:38,015 --> 00:00:40,560
+In particular, we can build blockchain,
+
+13
+00:00:40,560 --> 00:00:43,515
+which is a linked list of hash pointers.
+
+14
+00:00:43,515 --> 00:00:46,440
+Suppose we have a hash pointer pointing to a block.
+
+15
+00:00:46,440 --> 00:00:52,490
+This block contains not only data value but also the hash pointer of the previous block,
+
+16
+00:00:52,490 --> 00:00:55,025
+and likewise, the previous block contains
+
+17
+00:00:55,025 --> 00:00:59,100
+not only the data values but also a hash pointer to the previous block.
+
+18
+00:00:59,100 --> 00:01:01,205
+And this is called a blockchain.
+
+19
+00:01:01,205 --> 00:01:02,675
+To construct a blockchain,
+
+20
+00:01:02,675 --> 00:01:04,270
+we append a block at the end,
+
+21
+00:01:04,270 --> 00:01:06,370
+include a hash pointer in a block,
+
+22
+00:01:06,370 --> 00:01:09,485
+and then compute a hash and store the hash pointer.
+
+23
+00:01:09,485 --> 00:01:12,420
+This hash pointer is a root of this blockchain.
+
+24
+00:01:12,420 --> 00:01:16,640
+A use case for blockchain is a tamper-evident log.
+
+25
+00:01:16,640 --> 00:01:20,240
+That is, we want to be a log data structure that stores a bunch of
+
+26
+00:01:20,240 --> 00:01:24,135
+data and allows us to append data onto the end of the log.
+
+27
+00:01:24,135 --> 00:01:26,810
+But if somebody changes the data in the log,
+
+28
+00:01:26,810 --> 00:01:28,850
+it is easy for us to detect that.
+
+29
+00:01:28,850 --> 00:01:32,750
+We can see that if an attacker changes data in this block,
+
+30
+00:01:32,750 --> 00:01:37,105
+the hash will not match the hash pointer store in the next data block.
+
+31
+00:01:37,105 --> 00:01:42,230
+Of course, the attacker can then change the hash value stored in this hash pointer.
+
+32
+00:01:42,230 --> 00:01:45,800
+But the result is that the hash value of this block will not
+
+33
+00:01:45,800 --> 00:01:50,120
+match the hash value stored in the hash pointer of the next block.
+
+34
+00:01:50,120 --> 00:01:53,170
+The attacker can again change this hash value.
+
+35
+00:01:53,170 --> 00:01:56,960
+But then, it will not match the hash value stored in the root.
+
+36
+00:01:56,960 --> 00:02:01,490
+Therefore, tampering a data item will cause the difference of the computed hash of
+
+37
+00:02:01,490 --> 00:02:04,040
+the whole chain to be different than the hash value
+
+38
+00:02:04,040 --> 00:02:06,860
+stored in the hash pointer to the whole chain.
+
+39
+00:02:06,860 --> 00:02:10,005
+That is, by just remembering this single hash pointer,
+
+40
+00:02:10,005 --> 00:02:12,080
+we can easily detect data tampering.
+

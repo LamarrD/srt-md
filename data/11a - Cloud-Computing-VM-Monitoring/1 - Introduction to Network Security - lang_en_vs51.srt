@@ -1,0 +1,99 @@
+1
+00:00:09,488 --> 00:00:11,480
+Welcome to Network Security.
+
+2
+00:00:11,480 --> 00:00:15,730
+When we think about network security, we
+need to think about ways we can protect
+
+3
+00:00:15,730 --> 00:00:20,160
+our most valuable network assets,
+data, and access to the data.
+
+4
+00:00:20,160 --> 00:00:23,800
+We need to protect it from misuse,
+authorized modification, and
+
+5
+00:00:23,800 --> 00:00:24,940
+destruction.
+
+6
+00:00:24,940 --> 00:00:28,420
+We need to make sure assets
+is restricted only to those
+
+7
+00:00:28,420 --> 00:00:29,860
+who are granted access.
+
+8
+00:00:29,860 --> 00:00:34,420
+Sun Tzu said in the Art of War,
+Know thy self, know thy enemy.
+
+9
+00:00:34,420 --> 00:00:37,130
+A thousand battles and
+a thousand victories.
+
+10
+00:00:37,130 --> 00:00:40,770
+Now that may seem a little extreme but
+it is not.
+
+11
+00:00:40,770 --> 00:00:41,330
+We are at war.
+
+12
+00:00:42,490 --> 00:00:47,360
+Our enemies are hackers, scammers,
+and script kitties off the internet.
+
+13
+00:00:47,360 --> 00:00:51,110
+The battlefield is our networks and
+the price is our data.
+
+14
+00:00:51,110 --> 00:00:55,800
+Network security requires us to use
+all hardware and software means
+
+15
+00:00:55,800 --> 00:01:00,510
+at our disposal to protect our assets
+and to effectively deploy them.
+
+16
+00:01:00,510 --> 00:01:05,410
+In this course, we're going to learn
+about our enemies, their motivations,
+
+17
+00:01:05,410 --> 00:01:07,190
+methods, and attacks.
+
+18
+00:01:07,190 --> 00:01:11,990
+We also going to investigate how
+defensive weapons and counter attacks.
+
+19
+00:01:11,990 --> 00:01:17,600
+Once you have completed this course, you
+will have a clear understanding of who,
+
+20
+00:01:17,600 --> 00:01:21,590
+how, and hopefully even why
+our networks are under attack.
+
+21
+00:01:21,590 --> 00:01:25,850
+And what you must do to prevent or
+at least minimize the damage.

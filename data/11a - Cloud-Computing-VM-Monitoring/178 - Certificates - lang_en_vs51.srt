@@ -1,0 +1,159 @@
+1
+00:00:00,240 --> 00:00:02,810
+An essential problem in
+public key cryptography
+
+2
+00:00:02,810 --> 00:00:05,820
+is how Alice can obtain
+the public key of Bob.
+
+3
+00:00:05,820 --> 00:00:10,710
+The standard is to use certificate
+issued by a certificate authority,
+
+4
+00:00:10,710 --> 00:00:12,480
+we call it the CA.
+
+5
+00:00:12,480 --> 00:00:16,720
+First, every entity has
+installed the public key of CA.
+
+6
+00:00:16,720 --> 00:00:21,780
+Then Bob can ask the CA to generate
+a certificate for his public key.
+
+7
+00:00:21,780 --> 00:00:26,090
+The certificate authority keeps
+the signing private key to itself.
+
+8
+00:00:26,090 --> 00:00:30,760
+And again, the corresponding public key
+has been installed in all entities.
+
+9
+00:00:30,760 --> 00:00:34,894
+The CA signs Bob's public key
+using it's signing private key and
+
+10
+00:00:34,894 --> 00:00:38,470
+the signature is put
+into the certificate.
+
+11
+00:00:38,470 --> 00:00:42,090
+So Bob can now present
+the certificate to Alice.
+
+12
+00:00:42,090 --> 00:00:45,700
+And because Alice has the certificate
+authority's public key,
+
+13
+00:00:45,700 --> 00:00:49,190
+she can verify that the signature
+was constructed properly.
+
+14
+00:00:49,190 --> 00:00:52,500
+Which means that Bob's public
+key has been certified
+
+15
+00:00:52,500 --> 00:00:54,410
+by the certificate authority.
+
+16
+00:00:54,410 --> 00:00:57,390
+Here's an example of
+public key certificate.
+
+17
+00:00:57,390 --> 00:01:00,010
+Let's go over some
+important information.
+
+18
+00:01:00,010 --> 00:01:02,740
+First, there's a unique serial number.
+
+19
+00:01:02,740 --> 00:01:05,290
+Second, there's a valid time period.
+
+20
+00:01:05,290 --> 00:01:09,510
+And there's a public key and
+a signature produced by the CA.
+
+21
+00:01:09,510 --> 00:01:12,090
+Here's an example of
+certificate information
+
+22
+00:01:12,090 --> 00:01:14,510
+that a user sees on his computer.
+
+23
+00:01:14,510 --> 00:01:20,770
+It identifies that the certificate is
+for the public key of mail.google.com.
+
+24
+00:01:20,770 --> 00:01:22,730
+A certificate is for an entity or
+
+25
+00:01:22,730 --> 00:01:26,420
+subject that is identified
+by the common name.
+
+26
+00:01:26,420 --> 00:01:28,270
+So what is a common name?
+
+27
+00:01:28,270 --> 00:01:32,910
+A common name can be an explicit name,
+for example cc.gatech.edu.
+
+28
+00:01:32,910 --> 00:01:38,700
+Or it can be a wildcard,
+for example, *.gatech.edu.
+
+29
+00:01:38,700 --> 00:01:43,500
+If a wildcard is used it can
+only be the leftmost component,
+
+30
+00:01:43,500 --> 00:01:45,616
+and it does not match dot.
+
+31
+00:01:45,616 --> 00:01:50,171
+For example: *.a.com matches
+
+32
+00:01:50,171 --> 00:01:54,730
+x.a.com but not y.x.a.com.
+
+33
+00:01:54,730 --> 00:01:59,676
+There are large numbers of CAs out
+there, and a browser typically accepts
+
+34
+00:01:59,676 --> 00:02:04,400
+certificates from 60 top level CAs and
+1200 intermediate CAs.

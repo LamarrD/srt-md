@@ -1,0 +1,74 @@
+1
+00:00:00,250 --> 00:00:03,590
+The first statement,
+DNS stores IP address.
+
+2
+00:00:03,590 --> 00:00:07,190
+For security reasons, the domain
+name is stored somewhere else.
+
+3
+00:00:07,190 --> 00:00:08,540
+This is false.
+
+4
+00:00:08,540 --> 00:00:12,250
+DNS stores both the IP address and
+the domain name.
+
+5
+00:00:12,250 --> 00:00:15,140
+That's the whole point of providing
+the mapping between domain name and
+
+6
+00:00:15,140 --> 00:00:16,280
+IP address.
+
+7
+00:00:16,280 --> 00:00:17,380
+The second statement.
+
+8
+00:00:17,380 --> 00:00:21,640
+All domain names and IP addresses
+are stored at the Central Registry.
+
+9
+00:00:21,640 --> 00:00:22,650
+This is true.
+
+10
+00:00:22,650 --> 00:00:25,790
+When a new domain name is
+registered at a local DNS,
+
+11
+00:00:25,790 --> 00:00:29,030
+it will also be copied
+to the Central Registry.
+
+12
+00:00:29,030 --> 00:00:31,640
+The third statement,
+it can take several days for
+
+13
+00:00:31,640 --> 00:00:34,890
+information to propagate
+to all DNS servers.
+
+14
+00:00:34,890 --> 00:00:35,990
+This is true.
+
+15
+00:00:35,990 --> 00:00:38,820
+It takes anywhere from 12 to 36 hours to
+
+16
+00:00:38,820 --> 00:00:42,030
+propagate information to
+all DNS servers worldwide.
+

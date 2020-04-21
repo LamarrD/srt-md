@@ -1,0 +1,9 @@
+1
+00:00:00,220 --> 00:00:03,890
+They are typically inappropriate or
+irrelevant to the user and
+
+2
+00:00:03,890 --> 00:00:06,720
+typically it's being sent to
+a large number of recipients.

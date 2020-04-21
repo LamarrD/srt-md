@@ -1,0 +1,37 @@
+1
+00:00:00,280 --> 00:00:02,940
+Now let's do a quiz
+on session hijacking.
+
+2
+00:00:02,940 --> 00:00:05,270
+Check all the statements that are true.
+
+3
+00:00:05,270 --> 00:00:09,770
+First, active session hijacking
+involves disconnecting the user
+
+4
+00:00:09,770 --> 00:00:12,800
+from the server once
+that user is logged on.
+
+5
+00:00:12,800 --> 00:00:17,060
+Social engineering is required to
+perform this type of hijacking.
+
+6
+00:00:17,060 --> 00:00:19,550
+Second, in passive session hijacking,
+
+7
+00:00:19,550 --> 00:00:23,520
+the attacker silently captures
+the credentials of a user.
+
+8
+00:00:23,520 --> 00:00:27,070
+Social engineering is required to
+perform this type of hijacking.

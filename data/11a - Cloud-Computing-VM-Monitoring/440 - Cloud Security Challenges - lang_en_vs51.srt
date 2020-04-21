@@ -1,0 +1,144 @@
+1
+00:00:00,270 --> 00:00:03,010
+Let's also summarize
+the security challenges.
+
+2
+00:00:03,010 --> 00:00:06,600
+First, we have to consider various
+international privacy laws.
+
+3
+00:00:06,600 --> 00:00:09,850
+For example, the Eu Data
+Protection Directive and the U.S.
+
+4
+00:00:09,850 --> 00:00:11,350
+Safe harbor program.
+
+5
+00:00:11,350 --> 00:00:14,110
+And data can be subject to
+subpoenas from government,
+
+6
+00:00:14,110 --> 00:00:15,900
+including a foreign government.
+
+7
+00:00:15,900 --> 00:00:19,120
+And since multiple organizations may
+be using the same cloud computing
+
+8
+00:00:19,120 --> 00:00:22,110
+environment, we need very
+strong isolation protection.
+
+9
+00:00:22,110 --> 00:00:27,010
+And since computation and data can be
+distributed log in becomes a challenge.
+
+10
+00:00:27,010 --> 00:00:30,460
+Similarly, since the cloud is
+a distributed computing environment
+
+11
+00:00:30,460 --> 00:00:33,630
+it is challenging to provide
+consistent quality of service.
+
+12
+00:00:33,630 --> 00:00:37,070
+And finally, since the customer does
+not own the computing environment
+
+13
+00:00:37,070 --> 00:00:39,600
+there could be potential
+data ownership issues.
+
+14
+00:00:39,600 --> 00:00:44,210
+For example, who owns the one time data
+produced by a customer application?
+
+15
+00:00:44,210 --> 00:00:45,840
+There are additional challenges.
+
+16
+00:00:45,840 --> 00:00:49,820
+These include, now we have to
+depend on a secure hypervisor.
+
+17
+00:00:49,820 --> 00:00:52,550
+And, the cloud is an attractive
+target to attackers.
+
+18
+00:00:52,550 --> 00:00:55,290
+And, we sill need the security
+of the operating systems
+
+19
+00:00:55,290 --> 00:00:56,920
+running in the virtual machines.
+
+20
+00:00:56,920 --> 00:00:59,890
+And, the potential impact of
+a successful attack on the cloud
+
+21
+00:00:59,890 --> 00:01:01,100
+can be massive.
+
+22
+00:01:01,100 --> 00:01:04,280
+And since some organizations
+now start to use public cloud,
+
+23
+00:01:04,280 --> 00:01:06,810
+it is challenging to reconcile
+the security policies
+
+24
+00:01:06,810 --> 00:01:09,400
+of the internal network
+versus the public cloud.
+
+25
+00:01:09,400 --> 00:01:12,990
+And for public cloud that uses
+software as a service model,
+
+26
+00:01:12,990 --> 00:01:16,800
+a customer cannot control what
+software or what version to use.
+
+27
+00:01:16,800 --> 00:01:20,370
+It is obvious that we should protect
+data security using encryption.
+
+28
+00:01:20,370 --> 00:01:23,670
+In particular, we need to encrypt
+not only the data at rest, but
+
+29
+00:01:23,670 --> 00:01:26,680
+also access to resources
+because otherwise
+
+30
+00:01:26,680 --> 00:01:29,890
+every service can learn about
+the computing tasks being performed.

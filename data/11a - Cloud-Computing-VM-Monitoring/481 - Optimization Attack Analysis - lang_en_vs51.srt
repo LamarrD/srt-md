@@ -1,0 +1,82 @@
+1
+00:00:00,250 --> 00:00:02,890
+Here are some results
+of applying this attack
+
+2
+00:00:02,890 --> 00:00:05,060
+on the electronic Medical records.
+
+3
+00:00:05,060 --> 00:00:08,940
+The x axis is the cumulative
+fraction of records recovered, and
+
+4
+00:00:08,940 --> 00:00:12,070
+the y axis is the fraction of hospitals.
+
+5
+00:00:12,070 --> 00:00:16,690
+That is, in all of this parts,
+our point xy shows that
+
+6
+00:00:16,690 --> 00:00:21,900
+at least x fraction of records was
+recovered for y fraction of hospitals.
+
+7
+00:00:21,900 --> 00:00:26,610
+For example, for disease severity
+at least 40% of the records
+
+8
+00:00:26,610 --> 00:00:29,670
+were recovered for 50% of the hospitals.
+
+9
+00:00:29,670 --> 00:00:33,180
+The best result we can obtain
+is that all records, for
+
+10
+00:00:33,180 --> 00:00:35,540
+all hospitals, were recovered.
+
+11
+00:00:35,540 --> 00:00:37,490
+Here are the highlights of the results.
+
+12
+00:00:37,490 --> 00:00:38,260
+For example, for
+
+13
+00:00:38,260 --> 00:00:43,440
+sex, 100% of the patients For
+95% of the hospitals recovered.
+
+14
+00:00:43,440 --> 00:00:47,300
+And for major diagnostic category,
+40% of the patients for
+
+15
+00:00:47,300 --> 00:00:49,920
+28% of the hospitals were recovered.
+
+16
+00:00:49,920 --> 00:00:53,090
+And we show more results
+here the highlights are, for
+
+17
+00:00:53,090 --> 00:00:53,862
+age 10% of the patients for
+85% of the hospitals were recovered.
+
+18
+00:00:53,862 --> 00:00:57,510
+For length of stay, 83% of the patients
+for 50% of the hospitals were recovered

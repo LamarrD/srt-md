@@ -1,0 +1,36 @@
+1
+00:00:00,000 --> 00:00:03,780
+The key technical problems we need to solve in bitcoins are,
+
+2
+00:00:03,780 --> 00:00:05,870
+who maintains the ledger or the block chain,
+
+3
+00:00:05,870 --> 00:00:08,580
+who can decide which transactions are valid,
+
+4
+00:00:08,580 --> 00:00:10,450
+who creates new bitcoins,
+
+5
+00:00:10,450 --> 00:00:13,615
+who determines how the rules of the system can change,
+
+6
+00:00:13,615 --> 00:00:16,680
+and how do bitcoins acquire exchange values?
+
+7
+00:00:16,680 --> 00:00:19,845
+In addition, we need infrastructure support for bitcoins.
+
+8
+00:00:19,845 --> 00:00:22,325
+That includes exchange, wallet software,
+
+9
+00:00:22,325 --> 00:00:24,240
+and service providers, and so on.
+

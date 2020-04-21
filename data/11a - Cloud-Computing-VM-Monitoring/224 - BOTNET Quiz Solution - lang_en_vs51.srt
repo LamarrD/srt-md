@@ -1,0 +1,28 @@
+1
+00:00:00,370 --> 00:00:05,270
+A Botnet is a network of bots controlled
+by a Bot Master or an attacker.
+
+2
+00:00:05,270 --> 00:00:09,390
+More preciously Botnet is a coordinated
+group of malware instances that
+
+3
+00:00:09,390 --> 00:00:12,060
+are controlled via
+command control channels.
+
+4
+00:00:12,060 --> 00:00:15,360
+Command architectures include
+centralized architecture or
+
+5
+00:00:15,360 --> 00:00:16,830
+disputed architecture.
+
+6
+00:00:16,830 --> 00:00:20,587
+Botnet is a key platform for
+fraud and other for-profit exports.

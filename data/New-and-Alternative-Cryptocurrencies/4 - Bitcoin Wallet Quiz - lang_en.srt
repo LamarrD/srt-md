@@ -1,0 +1,8 @@
+1
+00:00:00,000 --> 00:00:02,520
+Now, let's do a quiz on bitcoin wallet.
+
+2
+00:00:02,520 --> 00:00:06,520
+What is the defining characteristic of these bitcoin wallets?
+

@@ -1,0 +1,36 @@
+1
+00:00:00,000 --> 00:00:02,380
+In Bitcoin, we use proof-of-work.
+
+2
+00:00:02,380 --> 00:00:06,750
+To create a block, a no finds a nonce such that the hash of the nonce with
+
+3
+00:00:06,750 --> 00:00:08,790
+a hash pointer to the previous block and
+
+4
+00:00:08,790 --> 00:00:11,415
+all the transactions in this block is very small.
+
+5
+00:00:11,415 --> 00:00:15,450
+Specifically, this hash value has to be smaller than a target value.
+
+6
+00:00:15,450 --> 00:00:20,455
+With this proof-of-work, if Alice has 100 times more computing power than Bob,
+
+7
+00:00:20,455 --> 00:00:24,300
+it doesn't mean that she always wins the race of finding this nonce.
+
+8
+00:00:24,300 --> 00:00:27,545
+It means that she has about a 99 percent chance of winning.
+
+9
+00:00:27,545 --> 00:00:30,950
+In the long run, Bob can still create one percent of the blocks.
+

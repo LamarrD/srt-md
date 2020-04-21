@@ -1,0 +1,64 @@
+1
+00:00:00,240 --> 00:00:03,300
+This attack can be generalized and
+optimized.
+
+2
+00:00:03,300 --> 00:00:07,210
+Again, start with the encrypted data,
+we have obtained a frequency histogram.
+
+3
+00:00:07,210 --> 00:00:11,080
+We also obtain a frequency
+histogram from the auxiliary data.
+
+4
+00:00:11,080 --> 00:00:15,020
+The basic idea is then,
+to find an assignment from servertext
+
+5
+00:00:15,020 --> 00:00:18,080
+to plaintext that minimizes
+a gives cost function.
+
+6
+00:00:18,080 --> 00:00:21,910
+Here the cost function is
+the distance between the histograms.
+
+7
+00:00:21,910 --> 00:00:26,850
+This has the effect of minimizing
+the total mismatch in frequencies across
+
+8
+00:00:26,850 --> 00:00:28,980
+all plaintext- ciphertext pairs.
+
+9
+00:00:28,980 --> 00:00:32,360
+For example, for this assignment,
+the cost is this.
+
+10
+00:00:32,360 --> 00:00:36,440
+Whereas the assignment on mapping,
+it has the minimum cost is this.
+
+11
+00:00:36,440 --> 00:00:40,620
+There's an algorithm that can find the
+assignments that has the minimum cost.
+
+12
+00:00:40,620 --> 00:00:43,350
+With this algorithm,
+we can find the assignment
+
+13
+00:00:43,350 --> 00:00:47,760
+from ciphertext to plain text and then
+decipher the original encrypted data.
+

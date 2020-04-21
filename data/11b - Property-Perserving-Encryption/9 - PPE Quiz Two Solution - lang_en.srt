@@ -1,0 +1,14 @@
+1
+00:00:00,260 --> 00:00:02,330
+Obviously, the order is leaked.
+
+2
+00:00:02,330 --> 00:00:05,563
+Frequency is also leaked
+because the same value in plain
+
+3
+00:00:05,563 --> 00:00:08,262
+text will be the same
+value in encrypted text.
+

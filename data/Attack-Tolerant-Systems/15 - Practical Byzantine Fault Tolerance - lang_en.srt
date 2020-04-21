@@ -1,0 +1,52 @@
+1
+00:00:00,000 --> 00:00:04,375
+Now let's discuss how do we make system services tolerate attacks.
+
+2
+00:00:04,375 --> 00:00:09,090
+First, we will discuss a related area called fault tolerance.
+
+3
+00:00:09,090 --> 00:00:13,665
+A fault in the system is the cost of an error that leads to a system failure.
+
+4
+00:00:13,665 --> 00:00:17,095
+Again, a system error is because of a fault,
+
+5
+00:00:17,095 --> 00:00:19,250
+and error leads to a failure.
+
+6
+00:00:19,250 --> 00:00:22,870
+Fault tolerance can be achieved through a failure masking.
+
+7
+00:00:22,870 --> 00:00:26,435
+And failure masking can be achieved through redundancy.
+
+8
+00:00:26,435 --> 00:00:29,270
+For example, let's look at a example system.
+
+9
+00:00:29,270 --> 00:00:33,705
+Here, a single fault in any of these three components can lead to a failure.
+
+10
+00:00:33,705 --> 00:00:37,990
+An example of redundancy is triple modular redundancy.
+
+11
+00:00:37,990 --> 00:00:41,295
+We can put motors at each stage of the system.
+
+12
+00:00:41,295 --> 00:00:46,470
+And each voter accepts the majority as the correct output from the components.
+
+13
+00:00:46,470 --> 00:00:50,430
+This scheme can mask any single failure of the components.
+

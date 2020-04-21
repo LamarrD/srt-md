@@ -1,0 +1,47 @@
+1
+00:00:00,200 --> 00:00:04,300
+Now let's discuss another data privacy
+issue in the cloud environment.
+
+2
+00:00:04,300 --> 00:00:06,830
+Suppose we don't trust
+the cloud provider?
+
+3
+00:00:06,830 --> 00:00:09,880
+We can either encrypt our data
+on the cloud storage server and
+
+4
+00:00:09,880 --> 00:00:11,150
+keep the keys to ourself.
+
+5
+00:00:12,470 --> 00:00:13,930
+When we need to use the data,
+
+6
+00:00:13,930 --> 00:00:16,530
+we can fetch the encrypted
+data to our environment,
+
+7
+00:00:16,530 --> 00:00:20,600
+encrypt the data, then use the
+application in our local environment.
+
+8
+00:00:20,600 --> 00:00:23,010
+The question is, is this efficient?
+
+9
+00:00:23,010 --> 00:00:26,850
+No, because the data access patterns
+can still leak information,
+
+10
+00:00:26,850 --> 00:00:29,570
+such as what kind of computing
+tasks are being performed.
+

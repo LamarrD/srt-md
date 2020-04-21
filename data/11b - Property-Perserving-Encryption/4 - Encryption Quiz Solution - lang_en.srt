@@ -1,0 +1,48 @@
+1
+00:00:00,220 --> 00:00:03,130
+In property preserving encryption,
+some selective
+
+2
+00:00:03,130 --> 00:00:07,090
+properties of the alternate data
+are preserved, such as the order.
+
+3
+00:00:07,090 --> 00:00:10,620
+Searchable encryption means that
+the encrypted data can be searched
+
+4
+00:00:10,620 --> 00:00:12,610
+using the encrypted keywords.
+
+5
+00:00:12,610 --> 00:00:14,080
+In secure computation,
+
+6
+00:00:14,080 --> 00:00:18,930
+multiple parties can compute a function
+using inputs that are kept private.
+
+7
+00:00:18,930 --> 00:00:22,950
+In Homomorphic encryption, computations
+performed directly on encrypted data,
+
+8
+00:00:22,950 --> 00:00:26,630
+have the same result as
+the computations on the plaintext.
+
+9
+00:00:26,630 --> 00:00:29,850
+In functional encryption,
+the possession of a secret key
+
+10
+00:00:29,850 --> 00:00:33,030
+will allow someone to learn
+the function that is being encrypted.
+

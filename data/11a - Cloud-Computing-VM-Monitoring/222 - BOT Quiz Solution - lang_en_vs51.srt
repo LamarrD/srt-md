@@ -1,0 +1,9 @@
+1
+00:00:00,270 --> 00:00:04,880
+A bot is often called a zombie because
+it is a compromised computer controlled
+
+2
+00:00:04,880 --> 00:00:07,930
+by malware without the consent and
+knowledge of the user.

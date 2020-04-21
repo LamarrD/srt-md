@@ -1,0 +1,8 @@
+1
+00:00:00,410 --> 00:00:02,550
+Let's do a quiz on edge sampling.
+
+2
+00:00:02,550 --> 00:00:05,190
+Select all the statements that
+are true for edge sampling.

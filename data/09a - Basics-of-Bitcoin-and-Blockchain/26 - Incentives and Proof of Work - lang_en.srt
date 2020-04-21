@@ -1,0 +1,32 @@
+1
+00:00:00,000 --> 00:00:02,280
+Recall in a double spending example.
+
+2
+00:00:02,280 --> 00:00:03,970
+This is a valid transaction,
+
+3
+00:00:03,970 --> 00:00:06,525
+and we want more confirmation of this block.
+
+4
+00:00:06,525 --> 00:00:11,265
+The question is, can we reward nodes that extend from this transaction block?
+
+5
+00:00:11,265 --> 00:00:13,575
+We cannot simply rely on honesty.
+
+6
+00:00:13,575 --> 00:00:16,875
+In fact, we should use incentive to promote honesty.
+
+7
+00:00:16,875 --> 00:00:19,740
+Since we are dealing with bitcoin which has value,
+
+8
+00:00:19,740 --> 00:00:23,550
+we should be able to provide incentive to nodes that behave honestly.
+

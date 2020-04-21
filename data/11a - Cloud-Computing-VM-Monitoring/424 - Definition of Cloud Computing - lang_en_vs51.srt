@@ -1,0 +1,44 @@
+1
+00:00:00,280 --> 00:00:03,860
+First, let's go over
+the definition of cloud computing.
+
+2
+00:00:03,860 --> 00:00:08,270
+Cloud computing is a model for
+enabling convenient, on-demand
+
+3
+00:00:08,270 --> 00:00:12,630
+network access to a shared pool of
+configurable computing resources.
+
+4
+00:00:12,630 --> 00:00:17,930
+For example networks, servers,
+storage, applications, and services.
+
+5
+00:00:17,930 --> 00:00:22,270
+What this definition says is that, cloud
+computing uses resources that can be
+
+6
+00:00:22,270 --> 00:00:25,870
+rapidly provisioned and
+require low management overhead.
+
+7
+00:00:25,870 --> 00:00:29,020
+Please note that the cloud
+computing industry represents
+
+8
+00:00:29,020 --> 00:00:32,600
+a large ecosystem of many models,
+vendors, and markets.
+
+9
+00:00:32,600 --> 00:00:35,150
+And therefore our definition
+here is very general.

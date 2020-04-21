@@ -1,0 +1,100 @@
+1
+00:00:00,058 --> 00:00:04,670
+The goal of network monitoring is to
+detect and prevent attack traffic.
+
+2
+00:00:04,670 --> 00:00:06,720
+Attack traffic used to be obvious.
+
+3
+00:00:06,720 --> 00:00:11,430
+For example, the payload of a packet may
+contain exploit to a known vulnerability
+
+4
+00:00:11,430 --> 00:00:15,670
+and therefore a signature can
+be used to detect such attack.
+
+5
+00:00:15,670 --> 00:00:19,230
+Or a network monitor can detect,
+deny a service attack or
+
+6
+00:00:19,230 --> 00:00:24,270
+spam activity by analyzing the volume
+and rate of network traffic.
+
+7
+00:00:24,270 --> 00:00:28,130
+The typical network monitoring
+systems are the firewalls and
+
+8
+00:00:28,130 --> 00:00:30,350
+the network intrusion detection systems.
+
+9
+00:00:30,350 --> 00:00:32,720
+Increasingly, the traditional
+firewalls and
+
+10
+00:00:32,720 --> 00:00:35,380
+network IDS are becoming less effective.
+
+11
+00:00:35,380 --> 00:00:38,410
+First of all,
+mobile devices are now widely used.
+
+12
+00:00:38,410 --> 00:00:42,070
+A mobile device can be compromised
+when an employee is on travel.
+
+13
+00:00:42,070 --> 00:00:45,110
+And then when the employee
+brings the mobile device into
+
+14
+00:00:45,110 --> 00:00:50,250
+the company's network, it effectively
+has bypassed the perimeter defense.
+
+15
+00:00:50,250 --> 00:00:53,300
+In addition,
+attack traffic now is very subtle and
+
+16
+00:00:53,300 --> 00:00:55,210
+they often look like normal traffic.
+
+17
+00:00:55,210 --> 00:00:57,720
+For example,
+botnet HTTP-based command and
+
+18
+00:00:57,720 --> 00:01:01,130
+control traffic would look like
+normal legitimate web traffic.
+
+19
+00:01:01,130 --> 00:01:05,010
+Therefore, we need more advanced
+network monitoring systems to detect
+
+20
+00:01:05,010 --> 00:01:07,010
+this new generation of attacks.
+
+21
+00:01:07,010 --> 00:01:09,920
+In this lesson, we're going to
+discuss botnet detection systems.
+

@@ -1,0 +1,150 @@
+1
+00:00:00,360 --> 00:00:04,460
+Now let's discuss,
+content security policy, or CSP.
+
+2
+00:00:04,460 --> 00:00:08,650
+The goal of content security
+policy to prevent or
+
+3
+00:00:08,650 --> 00:00:12,260
+at least limit the damage
+of Course side scripting.
+
+4
+00:00:12,260 --> 00:00:16,966
+Recall that we discussed course
+side scripting attacks in CS
+
+5
+00:00:16,966 --> 00:00:21,608
+6035: Introduction to
+Information Security.
+
+6
+00:00:21,608 --> 00:00:24,350
+Essentially a course
+side scripting attack
+
+7
+00:00:24,350 --> 00:00:29,590
+bypasses the same origin policy by
+tricking a site into delivering
+
+8
+00:00:29,590 --> 00:00:32,580
+some malicious code along
+with the intended content.
+
+9
+00:00:33,600 --> 00:00:34,800
+For example,
+
+10
+00:00:34,800 --> 00:00:40,930
+a website is setup to echo the user
+input as a web page back to a browser.
+
+11
+00:00:40,930 --> 00:00:43,470
+Such as echoing the user's name.
+
+12
+00:00:43,470 --> 00:00:46,810
+But if the user input
+contains malicious code,
+
+13
+00:00:46,810 --> 00:00:52,380
+then the website will be sending
+malicious code to a web browser.
+
+14
+00:00:52,380 --> 00:00:57,830
+With CSP, the main idea is that
+a browser can be instructed
+
+15
+00:00:57,830 --> 00:01:01,590
+to load resources only
+from a white-list.
+
+16
+00:01:01,590 --> 00:01:05,680
+CSP prohibits inline scripts
+embedded in script tags,
+
+17
+00:01:05,680 --> 00:01:10,040
+inline event handlers,
+JavaScript, and URLs, etc, and
+
+18
+00:01:10,040 --> 00:01:14,980
+also disables JavaScript eval,
+new function and so on.
+
+19
+00:01:14,980 --> 00:01:18,100
+That means all the resources
+that a browser will load
+
+20
+00:01:18,100 --> 00:01:19,820
+can be statically checked.
+
+21
+00:01:19,820 --> 00:01:23,470
+And again the resources are loaded
+only from a white list.
+
+22
+00:01:24,640 --> 00:01:27,500
+Since there are many different
+types of web contents,
+
+23
+00:01:27,500 --> 00:01:33,850
+with CSP we can specify the white
+list for each type of web contents.
+
+24
+00:01:33,850 --> 00:01:38,490
+The sources of web contents
+can be specified and matched.
+
+25
+00:01:38,490 --> 00:01:44,360
+For example, they can be specified
+by scheme such as HTTPS or
+
+26
+00:01:44,360 --> 00:01:49,340
+HTTP, host name,
+then we match any origin on that host.
+
+27
+00:01:49,340 --> 00:01:55,370
+Or fully qualified URI such
+as https://example.com:443.
+
+28
+00:01:55,370 --> 00:02:02,560
+You can also specify how to match
+the sources listed on a white list,
+
+29
+00:02:02,560 --> 00:02:08,660
+such as, wildcards accepted,
+none, or self, and so on.
+
+30
+00:02:08,660 --> 00:02:12,886
+You can even create exceptions or
+allow inline JavaScripts or
+
+31
+00:02:12,886 --> 00:02:15,731
+allow eval functions.

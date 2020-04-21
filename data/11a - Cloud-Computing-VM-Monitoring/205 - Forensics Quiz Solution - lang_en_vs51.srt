@@ -1,0 +1,37 @@
+1
+00:00:00,280 --> 00:00:03,600
+Mobile devices tend to
+use specialized hardware.
+
+2
+00:00:03,600 --> 00:00:07,390
+Whereas stationary computers tend
+to use standardized hardware.
+
+3
+00:00:07,390 --> 00:00:11,220
+Mobile devices tend to use many
+different versions of operating systems.
+
+4
+00:00:11,220 --> 00:00:14,260
+For example, there are many
+different versions of Android.
+
+5
+00:00:14,260 --> 00:00:18,300
+Whereas stationary computers tend
+to run Windows, MAC OS or Linux.
+
+6
+00:00:18,300 --> 00:00:21,260
+They also have large storage capacity.
+
+7
+00:00:21,260 --> 00:00:25,300
+On the other hand, mobile devices tend
+to have a large number of accessories
+
+8
+00:00:25,300 --> 00:00:26,940
+such as cameras and GPS.

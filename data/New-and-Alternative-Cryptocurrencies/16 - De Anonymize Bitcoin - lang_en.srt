@@ -1,0 +1,180 @@
+1
+00:00:00,000 --> 00:00:01,520
+We know that in Bitcoin,
+
+2
+00:00:01,520 --> 00:00:03,675
+it is trivial to create a new address.
+
+3
+00:00:03,675 --> 00:00:06,300
+That is, all you need to do is to create
+
+4
+00:00:06,300 --> 00:00:11,295
+a new public key public key pair and a hash of the public key becomes a new address.
+
+5
+00:00:11,295 --> 00:00:16,225
+That is, a single user can own many addresses or many IDs.
+
+6
+00:00:16,225 --> 00:00:19,575
+In fact, the best practice is to use
+
+7
+00:00:19,575 --> 00:00:23,835
+a fresh new address for the recipient in any new transaction.
+
+8
+00:00:23,835 --> 00:00:29,395
+So, the question is, can the addresses and the transactions still be linked?
+
+9
+00:00:29,395 --> 00:00:31,325
+Let's consider an example.
+
+10
+00:00:31,325 --> 00:00:38,030
+Suppose Alice wants to buy a teapot from a store and a teapot cost eight Bitcoins.
+
+11
+00:00:38,030 --> 00:00:43,260
+Let's further assume that Alice has some Bitcoins in her different addresses.
+
+12
+00:00:43,260 --> 00:00:45,385
+In order to pay for this teapot,
+
+13
+00:00:45,385 --> 00:00:52,600
+Alice has to create a single transaction that includes input from two addresses.
+
+14
+00:00:52,600 --> 00:00:58,635
+But in doing so, Alice has revealed that these two addresses belong to the same user.
+
+15
+00:00:58,635 --> 00:01:02,300
+In other words, two previous transactions that
+
+16
+00:01:02,300 --> 00:01:06,760
+use these two addresses as recipients must be to the same user.
+
+17
+00:01:06,760 --> 00:01:11,465
+This example that if you're sure to spending for multiple addresses,
+
+18
+00:01:11,465 --> 00:01:13,760
+we're linking these addresses together.
+
+19
+00:01:13,760 --> 00:01:19,455
+This example shows that if multiple addresses are using the same spending transaction,
+
+20
+00:01:19,455 --> 00:01:23,400
+that means that these addresses are under joint control.
+
+21
+00:01:23,400 --> 00:01:26,835
+In other words, we can link these addresses together.
+
+22
+00:01:26,835 --> 00:01:30,595
+Further, address linkability is tentative.
+
+23
+00:01:30,595 --> 00:01:34,200
+Furthermore, we can propagate such linkability.
+
+24
+00:01:34,200 --> 00:01:36,185
+Let's consider another example.
+
+25
+00:01:36,185 --> 00:01:42,435
+Suppose now, the price of the teapot has gone up from eight Bitcoins to 8.5 bitcoins.
+
+26
+00:01:42,435 --> 00:01:48,620
+So, Alice will create a transaction where she will transfer Bitcoins from two of
+
+27
+00:01:48,620 --> 00:01:55,645
+her addresses to pay for the teapot and also send the change to her own address.
+
+28
+00:01:55,645 --> 00:02:00,845
+Therefore, Alice will create transaction where she transfers Bitcoins
+
+29
+00:02:00,845 --> 00:02:06,560
+from two of her addresses but also send a change to one of her addresses as well.
+
+30
+00:02:06,560 --> 00:02:11,720
+So, Alice will create a transaction where she would transfer Bitcoins from two of
+
+31
+00:02:11,720 --> 00:02:18,385
+her addresses to pay for a teapot but also send a change to another address of hers.
+
+32
+00:02:18,385 --> 00:02:23,105
+Now, let's consider the transaction from the viewpoint of an adversary.
+
+33
+00:02:23,105 --> 00:02:28,175
+He can deduce that these two input addresses belong to the same user.
+
+34
+00:02:28,175 --> 00:02:31,100
+The attacker might also suspect that one of
+
+35
+00:02:31,100 --> 00:02:34,890
+these output addresses also belongs to the same user.
+
+36
+00:02:34,890 --> 00:02:40,300
+If the attacker knows that a teapot cost more than 0.5 Bitcoin,
+
+37
+00:02:40,300 --> 00:02:44,250
+then he would know that this address also belong to the same user.
+
+38
+00:02:44,250 --> 00:02:46,285
+Therefore, in this example,
+
+39
+00:02:46,285 --> 00:02:51,475
+the attacker can know that these three addresses belong to the same user.
+
+40
+00:02:51,475 --> 00:02:55,900
+We can only link or cast the addresses that belong to the same user.
+
+41
+00:02:55,900 --> 00:03:02,625
+We can also see if any of these addresses reveals the real identity of a real user.
+
+42
+00:03:02,625 --> 00:03:08,870
+For example, an address may be used in transaction through a provider that is legally
+
+43
+00:03:08,870 --> 00:03:11,780
+required to know the true user behind
+
+44
+00:03:11,780 --> 00:03:16,540
+the address or a user may have posted an address in a public forum.
+
+45
+00:03:16,540 --> 00:03:19,780
+For example, because he's making a donation.
+

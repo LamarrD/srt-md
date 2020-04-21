@@ -1,0 +1,36 @@
+1
+00:00:00,000 --> 00:00:02,940
+Let's consider an example of feature construction.
+
+2
+00:00:02,940 --> 00:00:07,095
+Suppose here's the set of connection records associated with syn flood.
+
+3
+00:00:07,095 --> 00:00:11,705
+Using service as the access attribute and destination host as a reference attribute,
+
+4
+00:00:11,705 --> 00:00:13,800
+we can compute a frequent pattern.
+
+5
+00:00:13,800 --> 00:00:16,910
+Based on this pattern, we can construct these following features,
+
+6
+00:00:16,910 --> 00:00:20,935
+count the connections to the same destination host in the past two seconds,
+
+7
+00:00:20,935 --> 00:00:22,590
+and among these connections,
+
+8
+00:00:22,590 --> 00:00:24,615
+the percentage with the same service,
+
+9
+00:00:24,615 --> 00:00:27,210
+and the percentage that has the S0 flag.
+

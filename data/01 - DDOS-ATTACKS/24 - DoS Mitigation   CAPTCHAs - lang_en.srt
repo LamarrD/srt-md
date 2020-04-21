@@ -1,0 +1,61 @@
+1
+00:00:00,530 --> 00:00:02,940
+Let's discuss another
+mitigation technique.
+
+2
+00:00:02,940 --> 00:00:04,830
+You may be already familiar with this.
+
+3
+00:00:04,830 --> 00:00:07,150
+It is called CAPTCHA, which stands for
+
+4
+00:00:07,150 --> 00:00:13,140
+Completely Automated Public Turing test
+to tell Computers and Humans Apart.
+
+5
+00:00:13,140 --> 00:00:17,240
+The idea is that the server should
+verify that the connection is from
+
+6
+00:00:17,240 --> 00:00:21,820
+a human instead of, for example,
+from a bot or a malware.
+
+7
+00:00:21,820 --> 00:00:24,970
+So I'm sure many of you
+are familiar with this.
+
+8
+00:00:24,970 --> 00:00:29,480
+The idea is that only human
+can interpret this figure and
+
+9
+00:00:29,480 --> 00:00:32,790
+then type in the actual words.
+
+10
+00:00:32,790 --> 00:00:37,385
+During a denial of service attack,
+the server can generate CAPTCHAs and
+
+11
+00:00:37,385 --> 00:00:40,755
+process request only if the client
+
+12
+00:00:40,755 --> 00:00:44,535
+presents the actual valid solution
+to the CAPTCHA challenge.
+
+13
+00:00:44,535 --> 00:00:48,015
+Because that will prove that there's
+actual human behind the request.
+

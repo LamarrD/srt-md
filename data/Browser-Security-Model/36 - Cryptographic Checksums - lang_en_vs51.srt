@@ -1,0 +1,123 @@
+1
+00:00:00,290 --> 00:00:05,540
+Obviously, we can use cryptography to
+provide data integrity protection.
+
+2
+00:00:06,580 --> 00:00:10,650
+The main idea is that when
+a server sets a cookie attribute,
+
+3
+00:00:10,650 --> 00:00:14,710
+it will attach a integrity check
+value for the attribute, and
+
+4
+00:00:14,710 --> 00:00:18,910
+it can later on check whether
+that attribute has been modified.
+
+5
+00:00:18,910 --> 00:00:24,290
+So to do this, the server uses a secret
+key that is unknown to the browser,
+
+6
+00:00:24,290 --> 00:00:28,717
+and for each attribute value that is
+set, it computes a integrity check.
+
+7
+00:00:28,717 --> 00:00:34,350
+The courier tag T, that essentially
+is a message authentication code,
+
+8
+00:00:34,350 --> 00:00:38,180
+using the secret key k, and
+compute over the session ID the name and
+
+9
+00:00:38,180 --> 00:00:40,270
+value of the attribute.
+
+10
+00:00:40,270 --> 00:00:41,650
+And when it sets the cookie,
+
+11
+00:00:41,650 --> 00:00:46,500
+we attach the message authentication
+code to each attribute value.
+
+12
+00:00:46,500 --> 00:00:50,130
+When a browser, later on,
+presents the cookie to a server,
+
+13
+00:00:50,130 --> 00:00:54,470
+the server can then check the integrity
+of that cookie attribute value.
+
+14
+00:00:54,470 --> 00:00:57,550
+The server essentially
+uses the secret key and
+
+15
+00:00:57,550 --> 00:01:02,540
+compute over the session ID, name and
+value of the cookie attribute,
+
+16
+00:01:02,540 --> 00:01:06,520
+and then verify that
+the result is the same as T.
+
+17
+00:01:06,520 --> 00:01:10,680
+Again, because T is computed
+using the secret key,
+
+18
+00:01:10,680 --> 00:01:12,390
+the browser cannot compute it.
+
+19
+00:01:12,390 --> 00:01:17,600
+So that is, only the server can
+compute T, and the server can use T
+
+20
+00:01:17,600 --> 00:01:22,180
+to verify that the attribute value
+of the cookie is not changed.
+
+21
+00:01:22,180 --> 00:01:25,450
+Here's a example of how this
+can be done in the real world.
+
+22
+00:01:25,450 --> 00:01:27,810
+So a server key can be generated and
+
+23
+00:01:27,810 --> 00:01:32,290
+the integrity of a cookie can
+be protected using this key.
+
+24
+00:01:32,290 --> 00:01:34,880
+Similarly, integrity can be tracked.
+
+25
+00:01:34,880 --> 00:01:37,430
+Here, are the example
+APIs that you can use
+
+26
+00:01:37,430 --> 00:01:39,620
+to provide cookie integrity protection.

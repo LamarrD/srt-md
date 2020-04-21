@@ -1,0 +1,33 @@
+1
+00:00:00,290 --> 00:00:03,550
+So what are the defenses
+against cache poisoning attack?
+
+2
+00:00:03,550 --> 00:00:07,360
+The first few here simply make
+the attackers do a lot more work
+
+3
+00:00:07,360 --> 00:00:08,720
+in order to succeed.
+
+4
+00:00:08,720 --> 00:00:11,680
+For example we can increase
+the query ID size,
+
+5
+00:00:11,680 --> 00:00:15,590
+we can randomize the source port or
+we can query twice.
+
+6
+00:00:15,590 --> 00:00:19,450
+More fundamentally, we can use
+cryptography to provide authenticity
+
+7
+00:00:19,450 --> 00:00:22,740
+of DNS records, and
+that's the idea behind DNSSEC.

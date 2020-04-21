@@ -1,0 +1,8 @@
+1
+00:00:00,000 --> 00:00:01,535
+We need label data.
+
+2
+00:00:01,535 --> 00:00:04,920
+That is, we need known C&C communication examples.
+

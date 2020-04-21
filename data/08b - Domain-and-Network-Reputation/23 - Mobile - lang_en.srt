@@ -1,0 +1,48 @@
+1
+00:00:00,000 --> 00:00:05,560
+Now, let's discuss a study of mobile malware prevalence using domain amputation.
+
+2
+00:00:05,560 --> 00:00:09,205
+The motivation of our study is that most research
+
+3
+00:00:09,205 --> 00:00:13,120
+has been focusing on analyzing malicious mobile apps,
+
+4
+00:00:13,120 --> 00:00:14,735
+but the question remains,
+
+5
+00:00:14,735 --> 00:00:18,335
+how prevalence are the infections on mobile devices?
+
+6
+00:00:18,335 --> 00:00:22,225
+Our intuition is that mobile web is actually part of
+
+7
+00:00:22,225 --> 00:00:24,070
+the regular web and therefore
+
+8
+00:00:24,070 --> 00:00:27,460
+mobile malware will use similar command control infrastructure
+
+9
+00:00:27,460 --> 00:00:31,960
+and therefore our approach is to analyze DNS traffic obtained
+
+10
+00:00:31,960 --> 00:00:36,870
+from cellular network providers and identify domains looked up by mobile apps.
+
+11
+00:00:36,870 --> 00:00:40,720
+Then for the internet machines that host these domains,
+
+12
+00:00:40,720 --> 00:00:42,890
+we analyze their reputation.
+

@@ -1,0 +1,145 @@
+1
+00:00:00,210 --> 00:00:03,100
+Now let's discuss SubResource Integrity.
+
+2
+00:00:03,100 --> 00:00:06,300
+Integrity is a very
+important security goal.
+
+3
+00:00:06,300 --> 00:00:10,800
+In the context of web browsing,
+many pages load scripts and
+
+4
+00:00:10,800 --> 00:00:16,116
+styles from a wide variety of service
+and content delivery networks.
+
+5
+00:00:16,116 --> 00:00:20,746
+Given that contents can be from many
+different sources and content delivery
+
+6
+00:00:20,746 --> 00:00:25,605
+networks, how do we ensure the integrity
+of the contents that we're loading?
+
+7
+00:00:25,605 --> 00:00:26,609
+For example,
+
+8
+00:00:26,609 --> 00:00:32,040
+how do we protect against loading
+contents from a malicious server?
+
+9
+00:00:32,040 --> 00:00:33,031
+For example,
+
+10
+00:00:33,031 --> 00:00:37,823
+the browser gets to the malicious
+server because of DNS poisoning and
+
+11
+00:00:37,823 --> 00:00:42,942
+how do we ensure that contents that we
+load from a Content Delivery Network
+
+12
+00:00:42,942 --> 00:00:47,176
+has not been modified, for
+example, on purpose by the CDN?
+
+13
+00:00:47,176 --> 00:00:52,058
+The main ideas that the author
+of the content specifies and
+
+14
+00:00:52,058 --> 00:00:55,654
+makes available the hash
+of the contents.
+
+15
+00:00:55,654 --> 00:00:58,884
+And so
+when the browser loads the contents,
+
+16
+00:00:58,884 --> 00:01:01,947
+it use the hash value
+to check integrity.
+
+17
+00:01:01,947 --> 00:01:03,300
+For example,
+
+18
+00:01:03,300 --> 00:01:09,398
+the author of this stylesheet will
+specify the hash of the file.
+
+19
+00:01:09,398 --> 00:01:15,504
+Similarly, for JavaScript,
+the author can also specify its hash.
+
+20
+00:01:15,504 --> 00:01:20,637
+So basically, to use SubResource
+Integrity, our website author
+
+21
+00:01:20,637 --> 00:01:26,687
+who wishes to include a resource from a
+third party can specify a cryptographic
+
+22
+00:01:26,687 --> 00:01:32,370
+hash of that resource in addition
+to the location of the resource.
+
+23
+00:01:32,370 --> 00:01:36,600
+Then when a browser fetches
+the resource, it can compare
+
+24
+00:01:36,600 --> 00:01:42,280
+the hash provided by the website author
+with the has computed from the resource.
+
+25
+00:01:42,280 --> 00:01:46,390
+If the hashes don't match,
+the resource is discarded.
+
+26
+00:01:46,390 --> 00:01:49,420
+So, what happens when
+the integrity check fails?
+
+27
+00:01:49,420 --> 00:01:52,940
+By default,
+the browser can report the violation and
+
+28
+00:01:52,940 --> 00:01:56,160
+simply does not render,
+or execute the resource.
+
+29
+00:01:56,160 --> 00:02:01,050
+Or if the directive simply says,
+report that means the browser will
+
+30
+00:02:01,050 --> 00:02:05,680
+report the violation, but can still
+render or execute the resource.

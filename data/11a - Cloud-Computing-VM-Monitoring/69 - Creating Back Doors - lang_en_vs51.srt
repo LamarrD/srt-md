@@ -1,0 +1,36 @@
+1
+00:00:00,180 --> 00:00:03,784
+The first time gaining access to
+a network through an exploit is
+
+2
+00:00:03,784 --> 00:00:05,010
+always hard.
+
+3
+00:00:05,010 --> 00:00:08,900
+And you want subsequent access
+to be easy and look normal, so
+
+4
+00:00:08,900 --> 00:00:11,720
+you will create trap doors or
+back doors.
+
+5
+00:00:11,720 --> 00:00:13,560
+There are many techniques and tools.
+
+6
+00:00:13,560 --> 00:00:16,320
+For example,
+you can create fake user accounts, or
+
+7
+00:00:16,320 --> 00:00:18,940
+you can plant remote access services.
+
+8
+00:00:18,940 --> 00:00:21,785
+You can also schedule your
+activities at certain time.

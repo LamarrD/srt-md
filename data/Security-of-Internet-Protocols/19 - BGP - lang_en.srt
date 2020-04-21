@@ -1,0 +1,80 @@
+1
+00:00:00,320 --> 00:00:02,780
+Let's illustrate how BGP works.
+
+2
+00:00:02,780 --> 00:00:05,480
+Here, the nodes
+are the autonomous systems.
+
+3
+00:00:05,480 --> 00:00:08,730
+And the edges represent
+peering relations.
+
+4
+00:00:08,730 --> 00:00:14,270
+Here, nod 2 provides transit to node 7,
+and this information is propagated,
+
+5
+00:00:14,270 --> 00:00:18,740
+so all autonomous systems
+know how to reach node 7.
+
+6
+00:00:18,740 --> 00:00:23,440
+The main security issues of BGP
+are due to the fact that BGP path
+
+7
+00:00:23,440 --> 00:00:28,220
+information is not authenticated which
+means that anyone can inject false
+
+8
+00:00:28,220 --> 00:00:32,570
+advertisements and such advertisements
+will be propagated everywhere.
+
+9
+00:00:32,570 --> 00:00:36,350
+As a result, attackers can shape and
+route traffic to launch
+
+10
+00:00:36,350 --> 00:00:40,200
+denial of service attacks,
+send spams and perform eavesdroppings.
+
+11
+00:00:40,200 --> 00:00:43,330
+Here's an example of BGP path hijacking.
+
+12
+00:00:43,330 --> 00:00:45,480
+Here's a normal or legitimate path.
+
+13
+00:00:45,480 --> 00:00:50,057
+And then, there was path
+hijacking event in February 2013.
+
+14
+00:00:50,057 --> 00:00:53,789
+In this attack, only the path
+of this direction is changed.
+
+15
+00:00:53,789 --> 00:00:56,080
+The other direction is not changed.
+
+16
+00:00:56,080 --> 00:00:57,470
+Therefore, if you are in DC,
+
+17
+00:00:57,470 --> 00:01:01,985
+because this direction is not changed,
+you cannot tell by doing traceroute.
+

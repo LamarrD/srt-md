@@ -1,0 +1,8 @@
+1
+00:00:00,290 --> 00:00:03,100
+Now let's do a quiz on HTTPS.
+
+2
+00:00:03,100 --> 00:00:07,050
+Select all items that can
+be encrypted by HTTPS.

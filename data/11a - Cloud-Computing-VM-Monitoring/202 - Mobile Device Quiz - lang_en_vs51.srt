@@ -1,0 +1,22 @@
+1
+00:00:00,000 --> 00:00:03,876
+We are going to spend this lesson
+discussing mobile malware or
+
+2
+00:00:03,876 --> 00:00:06,100
+malware on mobile devices.
+
+3
+00:00:06,100 --> 00:00:09,990
+So let's take a moment to make sure
+that we all agree as to what we mean
+
+4
+00:00:09,990 --> 00:00:12,050
+when we say mobile device.
+
+5
+00:00:12,050 --> 00:00:15,870
+According to Wikipedia, which of
+these devices is a mobile device?

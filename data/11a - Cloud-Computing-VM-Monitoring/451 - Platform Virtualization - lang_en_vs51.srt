@@ -1,0 +1,33 @@
+1
+00:00:00,250 --> 00:00:03,860
+The most important technology for
+cloud computing is virtualization.
+
+2
+00:00:03,860 --> 00:00:07,689
+This is because cloud computing
+relies on separating applications
+
+3
+00:00:07,689 --> 00:00:09,490
+from the underlying infrastructure.
+
+4
+00:00:09,490 --> 00:00:11,978
+The key to virtualization
+is the hypervisor or
+
+5
+00:00:11,978 --> 00:00:15,697
+the virtual machine monitor in
+addition to increased utilization.
+
+6
+00:00:15,697 --> 00:00:19,022
+For example running many virtual
+machines on a single hardware,
+
+7
+00:00:19,022 --> 00:00:22,780
+virtualization can also improve
+security and we will discuss this next.

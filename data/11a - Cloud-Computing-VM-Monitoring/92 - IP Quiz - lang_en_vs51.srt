@@ -1,0 +1,9 @@
+1
+00:00:00,310 --> 00:00:02,870
+Now let's do a quiz on
+the Internet Protocol.
+
+2
+00:00:02,870 --> 00:00:05,820
+Select all the true statements
+about Internet Protocol.

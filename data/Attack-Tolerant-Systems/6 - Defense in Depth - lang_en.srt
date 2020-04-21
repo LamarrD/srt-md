@@ -1,0 +1,124 @@
+1
+00:00:00,000 --> 00:00:02,590
+We all know the principle of defense in depth.
+
+2
+00:00:02,590 --> 00:00:05,440
+That is, the first layer of defense is prevention.
+
+3
+00:00:05,440 --> 00:00:07,140
+The second layer is detection,
+
+4
+00:00:07,140 --> 00:00:09,640
+and the third layer is about surviving the attack.
+
+5
+00:00:09,640 --> 00:00:13,765
+The best way to survive an attack is to able to tolerate the attack.
+
+6
+00:00:13,765 --> 00:00:18,900
+That is, an attack will not be able to render our network or system ineffective.
+
+7
+00:00:18,900 --> 00:00:22,250
+When we say our network and systems should tolerate an attack,
+
+8
+00:00:22,250 --> 00:00:27,230
+we mean that our data and our services should tolerate the attacks.
+
+9
+00:00:27,230 --> 00:00:29,940
+For our data, we want the confidentiality,
+
+10
+00:00:29,940 --> 00:00:32,955
+integrity, and availability to remain intact.
+
+11
+00:00:32,955 --> 00:00:34,325
+For our system services,
+
+12
+00:00:34,325 --> 00:00:38,000
+we want the availability and integrity to remain intact.
+
+13
+00:00:38,000 --> 00:00:41,115
+Let's first look at how to make our data tolerate an attack.
+
+14
+00:00:41,115 --> 00:00:43,940
+Typically, data is stored in one place,
+
+15
+00:00:43,940 --> 00:00:45,770
+for example, a dedicated server.
+
+16
+00:00:45,770 --> 00:00:49,875
+So, all the attacker needs to do is to compromise that data storage server.
+
+17
+00:00:49,875 --> 00:00:53,105
+That is, if the attacker can compromise the data storage server,
+
+18
+00:00:53,105 --> 00:00:55,235
+then the confidentiality, integrity,
+
+19
+00:00:55,235 --> 00:00:57,670
+and availability of data are all compromised.
+
+20
+00:00:57,670 --> 00:01:02,065
+Now, what if we replicate the data and store the copies in multiple,
+
+21
+00:01:02,065 --> 00:01:03,775
+say n different servers,
+
+22
+00:01:03,775 --> 00:01:05,825
+would this scheme improve security?
+
+23
+00:01:05,825 --> 00:01:10,280
+That is, would this scheme make our data more tolerant towards attacks?
+
+24
+00:01:10,280 --> 00:01:14,045
+For confidentiality protection, this is actually a weaker scheme
+
+25
+00:01:14,045 --> 00:01:18,300
+because the attacker can get data from any of these n servers.
+
+26
+00:01:18,300 --> 00:01:20,935
+That is, the attacker now has more opportunities.
+
+27
+00:01:20,935 --> 00:01:23,870
+Whereas, if we use a majority voting scheme,
+
+28
+00:01:23,870 --> 00:01:27,710
+then integrity and availability are better protected because
+
+29
+00:01:27,710 --> 00:01:32,015
+now the attacker needs to compromise the majority of these n servers.
+
+30
+00:01:32,015 --> 00:01:33,965
+So, now the question is, for our data,
+
+31
+00:01:33,965 --> 00:01:36,200
+can we have a better confidentiality protection?
+

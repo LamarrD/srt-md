@@ -1,0 +1,115 @@
+1
+00:00:00,360 --> 00:00:04,180
+Now let's discuss the methodology
+of penetration testing.
+
+2
+00:00:04,180 --> 00:00:07,410
+Penetration testing
+includes several steps.
+
+3
+00:00:07,410 --> 00:00:09,380
+The first step is footprinting.
+
+4
+00:00:09,380 --> 00:00:13,310
+This is about finding the general
+information of your network.
+
+5
+00:00:13,310 --> 00:00:14,800
+Next step is scanning.
+
+6
+00:00:14,800 --> 00:00:18,200
+This is about finding more detailed
+information about your network,
+
+7
+00:00:18,200 --> 00:00:21,480
+such as the services
+available on your network.
+
+8
+00:00:21,480 --> 00:00:23,600
+The third step is enumeration.
+
+9
+00:00:23,600 --> 00:00:27,520
+It finds more target information
+such as user account.
+
+10
+00:00:27,520 --> 00:00:30,130
+The fourth step is gaining access.
+
+11
+00:00:30,130 --> 00:00:34,200
+It finds vulnerabilities associated
+with the network services, and
+
+12
+00:00:34,200 --> 00:00:38,570
+then exploit these vulnerabilities
+to gain access to the network.
+
+13
+00:00:38,570 --> 00:00:41,270
+The fifth step is escalating privilege.
+
+14
+00:00:41,270 --> 00:00:45,060
+The goal here is to gain
+route of super user access.
+
+15
+00:00:45,060 --> 00:00:47,570
+The sixth step is pilfering.
+
+16
+00:00:47,570 --> 00:00:51,550
+The goal here is to try to steal
+information from the network.
+
+17
+00:00:51,550 --> 00:00:56,280
+This is one of the standard activities
+that an attacker would do to a network.
+
+18
+00:00:56,280 --> 00:00:58,970
+The seventh step is covering the tracks.
+
+19
+00:00:58,970 --> 00:01:02,400
+The goal here is to hide
+an evidence of a break in so
+
+20
+00:01:02,400 --> 00:01:06,560
+that security amends cannot easily find
+out that the network has been breached.
+
+21
+00:01:06,560 --> 00:01:10,080
+The last step here is
+creating back doors.
+
+22
+00:01:10,080 --> 00:01:12,470
+The goal is to create easy access for
+
+23
+00:01:12,470 --> 00:01:15,120
+future malicious
+activities on the network.
+
+24
+00:01:15,120 --> 00:01:17,360
+The last few steps can be iterated for
+
+25
+00:01:17,360 --> 00:01:20,760
+example to move from one part
+of the network to another part.

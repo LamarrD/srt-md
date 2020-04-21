@@ -1,0 +1,8 @@
+1
+00:00:00,230 --> 00:00:02,090
+Let's do a quiz on spam.
+
+2
+00:00:02,090 --> 00:00:05,040
+What are the two defining
+characteristics of internet spam?

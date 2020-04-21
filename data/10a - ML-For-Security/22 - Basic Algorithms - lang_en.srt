@@ -1,0 +1,56 @@
+1
+00:00:00,000 --> 00:00:04,065
+The basic algorithms are the association rules and frequent episodes.
+
+2
+00:00:04,065 --> 00:00:07,245
+These algorithms can produce many useless patterns.
+
+3
+00:00:07,245 --> 00:00:10,890
+For example, these algorithms can produce associations
+
+4
+00:00:10,890 --> 00:00:14,865
+and frequent sequences involving source bytes and destination bytes.
+
+5
+00:00:14,865 --> 00:00:18,040
+These patterns are not useful for intrusion detection.
+
+6
+00:00:18,040 --> 00:00:21,140
+The reason is that, these patterns don't even involve
+
+7
+00:00:21,140 --> 00:00:24,335
+more important attributes such as a service and the flag.
+
+8
+00:00:24,335 --> 00:00:27,135
+Therefore, we modify the basic algorithms,
+
+9
+00:00:27,135 --> 00:00:30,370
+so that they only produce relevant or useful patterns.
+
+10
+00:00:30,370 --> 00:00:31,615
+The intuition is that,
+
+11
+00:00:31,615 --> 00:00:34,840
+development patterns must describe these essential features.
+
+12
+00:00:34,840 --> 00:00:36,770
+More specifically, we use some of
+
+13
+00:00:36,770 --> 00:00:39,590
+these essential features as a so-called axis attributes,
+
+14
+00:00:39,590 --> 00:00:43,440
+or reference attributes, to constrain how the patterns can be computed.
+

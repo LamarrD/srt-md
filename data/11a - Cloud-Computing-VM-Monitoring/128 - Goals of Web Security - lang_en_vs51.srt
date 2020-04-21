@@ -1,0 +1,63 @@
+1
+00:00:00,430 --> 00:00:03,550
+Now, let's discuss
+the goals of web security.
+
+2
+00:00:03,550 --> 00:00:07,140
+Obviously, we need to be able
+to browse the web safely.
+
+3
+00:00:07,140 --> 00:00:11,450
+This means that,
+when browsing a website, sensitive data
+
+4
+00:00:11,450 --> 00:00:15,980
+on the user's computer can not be
+stolen and uploaded to the web.
+
+5
+00:00:15,980 --> 00:00:22,020
+And that if the web browser has multiple
+open sessions with multiple sites.
+
+6
+00:00:22,020 --> 00:00:25,350
+For example,
+one session to a bank website, and
+
+7
+00:00:25,350 --> 00:00:28,810
+another session is to
+a social network site.
+
+8
+00:00:28,810 --> 00:00:31,920
+The sessions don't
+interfere with each other.
+
+9
+00:00:31,920 --> 00:00:36,150
+Intuitively, if the social
+network site is compromised,
+
+10
+00:00:36,150 --> 00:00:40,140
+it should not affect the user
+session with the bank site.
+
+11
+00:00:40,140 --> 00:00:43,210
+In addition, we need to ensure that
+
+12
+00:00:43,210 --> 00:00:47,030
+the web applications can have
+the same security protection,
+
+13
+00:00:47,030 --> 00:00:51,160
+as applications that run on
+the operating system on our computers.

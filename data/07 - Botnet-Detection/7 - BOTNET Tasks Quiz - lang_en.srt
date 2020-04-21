@@ -1,0 +1,9 @@
+1
+00:00:00,440 --> 00:00:02,890
+Here's a quiz on botnet activities.
+
+2
+00:00:02,890 --> 00:00:05,691
+Select all the activities
+that botnet commonly perform.
+

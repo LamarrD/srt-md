@@ -1,0 +1,40 @@
+1
+00:00:00,000 --> 00:00:05,600
+Similar to Notos, given examples of malicious and legitimate domains,
+
+2
+00:00:05,600 --> 00:00:08,175
+Kopis can use machine learning algorithm
+
+3
+00:00:08,175 --> 00:00:10,500
+to learn a scoring function based on the features.
+
+4
+00:00:10,500 --> 00:00:14,235
+Here, we show the detection performance of the scoring function.
+
+5
+00:00:14,235 --> 00:00:15,830
+As we can see here,
+
+6
+00:00:15,830 --> 00:00:17,570
+if we use more data,
+
+7
+00:00:17,570 --> 00:00:19,710
+meaning using a longer time window,
+
+8
+00:00:19,710 --> 00:00:21,315
+the accuracy is higher.
+
+9
+00:00:21,315 --> 00:00:24,005
+In particular, with a five-day time window,
+
+10
+00:00:24,005 --> 00:00:29,050
+we can achieve very high detection rate and very low false positive rate.
+

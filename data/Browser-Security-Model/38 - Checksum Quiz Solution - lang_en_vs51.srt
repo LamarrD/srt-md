@@ -1,0 +1,17 @@
+1
+00:00:00,260 --> 00:00:02,040
+The first and third statements are true.
+
+2
+00:00:02,040 --> 00:00:04,630
+The second statement is false.
+
+3
+00:00:04,630 --> 00:00:09,180
+A difficult hash function should be
+very hard for the attackers to analyze.
+
+4
+00:00:09,180 --> 00:00:12,050
+But we want all the hash function
+to be efficient to calculate

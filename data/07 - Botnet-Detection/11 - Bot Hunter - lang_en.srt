@@ -1,0 +1,165 @@
+1
+00:00:00,260 --> 00:00:03,660
+BotHunter is a system that
+performs vertical correlation.
+
+2
+00:00:03,660 --> 00:00:05,520
+We also call it dialog correlation.
+
+3
+00:00:05,520 --> 00:00:08,270
+That is,
+BotHunter correlates multiple events
+
+4
+00:00:08,270 --> 00:00:10,390
+that belong to the life cycle of a bot.
+
+5
+00:00:10,390 --> 00:00:13,710
+Let's use an example to
+illustrate the multiple steps or
+
+6
+00:00:13,710 --> 00:00:16,370
+types of activities in
+a bot's life cycle.
+
+7
+00:00:16,370 --> 00:00:21,170
+First, the attacker scan the network and
+identify vulnerable host.
+
+8
+00:00:21,170 --> 00:00:25,250
+It then sends the exploit to compromise
+the victim host and opens a back door.
+
+9
+00:00:25,250 --> 00:00:28,810
+The compromised computer then
+downloads the real bot malware,
+
+10
+00:00:28,810 --> 00:00:30,850
+it then connects to
+a command control server.
+
+11
+00:00:30,850 --> 00:00:33,670
+And from there,
+it can perform a number of activities.
+
+12
+00:00:33,670 --> 00:00:37,210
+For example image scan,
+for other number of hosts.
+
+13
+00:00:37,210 --> 00:00:41,370
+>From the phatbot example, we can
+extract the life cycle of a botnet.
+
+14
+00:00:41,370 --> 00:00:44,750
+You can include inbound scan and
+inbound infection, and
+
+15
+00:00:44,750 --> 00:00:47,520
+then outbound traffic
+to download the egg or
+
+16
+00:00:47,520 --> 00:00:52,068
+the bot malware and command control
+traffic, as well as other activities.
+
+17
+00:00:52,068 --> 00:00:54,010
+Such as outbound scan.
+
+18
+00:00:54,010 --> 00:00:58,370
+So the main idea behind BotHunter is
+to analyze network traffic to detect
+
+19
+00:00:58,370 --> 00:01:01,730
+patterns that suggest any of
+these activities belonging to
+
+20
+00:01:01,730 --> 00:01:02,960
+the BotNet lifecycle.
+
+21
+00:01:02,960 --> 00:01:05,410
+These observations don't have
+to follow this strict order,
+
+22
+00:01:05,410 --> 00:01:08,945
+but they do have to appear
+within the same period of time.
+
+23
+00:01:08,945 --> 00:01:13,130
+BotHunter uses a table to keep track
+of the evidence that it collects for
+
+24
+00:01:13,130 --> 00:01:13,840
+each host.
+
+25
+00:01:13,840 --> 00:01:17,670
+And here's an example for each internal
+host, BotHunter keeps track of
+
+26
+00:01:17,670 --> 00:01:22,350
+the specific activities that belong to
+each steps of the botnet life cycle.
+
+27
+00:01:22,350 --> 00:01:25,250
+There are timers associated
+with these observations.
+
+28
+00:01:25,250 --> 00:01:28,950
+That is they are valid as long
+as a timer has not expired.
+
+29
+00:01:28,950 --> 00:01:31,770
+The integration is that within
+a period of time that is
+
+30
+00:01:31,770 --> 00:01:35,860
+before the timer expired, if you
+see multiple evidence belonging to
+
+31
+00:01:35,860 --> 00:01:39,410
+the botnet life cycle then we can
+determine that this host is a bot.
+
+32
+00:01:39,410 --> 00:01:42,670
+And we give more weight to
+evidence that suggests that
+
+33
+00:01:42,670 --> 00:01:46,550
+an internal machine has been compromised
+and it is participating in botnet
+
+34
+00:01:46,550 --> 00:01:50,885
+activities such as egg downloading,
+outbound scanning and outbound spamming.
+

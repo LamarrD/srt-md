@@ -1,0 +1,60 @@
+1
+00:00:00,000 --> 00:00:05,355
+In fact there have been quite a few inferential Internet-Wide Network Studies.
+
+2
+00:00:05,355 --> 00:00:09,420
+For example, in 2012 researchers at
+
+3
+00:00:09,420 --> 00:00:12,000
+the University of Michigan released a paper
+
+4
+00:00:12,000 --> 00:00:16,420
+describing the weak keys used in network devices.
+
+5
+00:00:16,420 --> 00:00:22,380
+In particular, they found vulnerabilities in more than five percent of HTTPS hosts and
+
+6
+00:00:22,380 --> 00:00:29,520
+10 percent of SSH hosts but a study required a lot of computing powers and time.
+
+7
+00:00:29,520 --> 00:00:31,680
+Similarly there's a study from
+
+8
+00:00:31,680 --> 00:00:36,000
+the Electronic Frontier Foundation on public key certificates.
+
+9
+00:00:36,000 --> 00:00:39,630
+Again the study requires a lot of effort and
+
+10
+00:00:39,630 --> 00:00:44,365
+a comprehensive scan of the whole internet also requires months of efforts.
+
+11
+00:00:44,365 --> 00:00:49,945
+All these projects require heroic effort just to perform initial data collection.
+
+12
+00:00:49,945 --> 00:00:52,840
+As you can see these scans require
+
+13
+00:00:52,840 --> 00:00:59,040
+massive polarization and typically they also require an extended period of time.
+
+14
+00:00:59,040 --> 00:01:02,843
+Given the benefits of Internet-Wide Network Security Studies
+
+15
+00:01:02,843 --> 00:01:05,000
+we want to see just a few more of them.
+

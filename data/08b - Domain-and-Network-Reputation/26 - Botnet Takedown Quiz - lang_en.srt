@@ -1,0 +1,16 @@
+1
+00:00:00,000 --> 00:00:03,930
+Now, let's discuss botnet takedown using DNS reputation.
+
+2
+00:00:03,930 --> 00:00:07,740
+But, before we discuss the details, let's do a quiz.
+
+3
+00:00:07,740 --> 00:00:09,430
+With regards to botnets,
+
+4
+00:00:09,430 --> 00:00:11,490
+select all the true statements.
+

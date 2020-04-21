@@ -1,0 +1,124 @@
+1
+00:00:00,000 --> 00:00:04,028
+If we simply poll network actresses in numerical order,
+
+2
+00:00:04,028 --> 00:00:07,445
+we will risk overloading the destination networks.
+
+3
+00:00:07,445 --> 00:00:13,221
+However, we also don't want to have to track what host we have scanned or need to scan.
+
+4
+00:00:13,221 --> 00:00:16,749
+In order to scan according to a random permutation,
+
+5
+00:00:16,749 --> 00:00:19,407
+we select addresses according to a cyclic group.
+
+6
+00:00:19,407 --> 00:00:23,850
+Specifically, we iterate over a multiplicative group of
+
+7
+00:00:23,850 --> 00:00:29,730
+integers modulo a prime number slightly larger than 2^32.
+
+8
+00:00:29,730 --> 00:00:34,400
+Here's an example of how do we randomly iterate through all the numbers in a group.
+
+9
+00:00:34,400 --> 00:00:36,824
+Here, the generator is 5,
+
+10
+00:00:36,824 --> 00:00:38,410
+and we start with number 2.
+
+11
+00:00:38,410 --> 00:00:43,103
+The process is we multiply the current number by 5 mod 7,
+
+12
+00:00:43,103 --> 00:00:45,864
+and the result is the next number,
+
+13
+00:00:45,864 --> 00:00:49,250
+and all numbers will be enumerated or iterated.
+
+14
+00:00:49,250 --> 00:00:50,635
+For example, we start with 2.
+
+15
+00:00:50,635 --> 00:00:52,896
+2 multiply by 5 mod 7 is 3.
+
+16
+00:00:52,896 --> 00:00:56,230
+So we move 3.
+
+17
+00:00:56,230 --> 00:00:59,515
+3 times 5 mod 7 is 1, and so on.
+
+18
+00:00:59,515 --> 00:01:03,336
+As you can see we can iterate through all the numbers in a group.
+
+19
+00:01:03,336 --> 00:01:05,514
+Following that simple example,
+
+20
+00:01:05,514 --> 00:01:09,555
+here's how we can iterate through the addresses in address space.
+
+21
+00:01:09,555 --> 00:01:14,740
+Each scan is essentially a random permutation of the address space.
+
+22
+00:01:14,740 --> 00:01:18,540
+Again, we treat the address space as a multiplicative group.
+
+23
+00:01:18,540 --> 00:01:23,660
+So we first decide on the generator and then we choose a random starting address.
+
+24
+00:01:23,660 --> 00:01:26,455
+With this approach, we can guarantee that
+
+25
+00:01:26,455 --> 00:01:29,932
+all addresses in the address space can be iterated.
+
+26
+00:01:29,932 --> 00:01:34,820
+More importantly, there's very little state information we need to keep track of.
+
+27
+00:01:34,820 --> 00:01:36,971
+Essentially, for each scan,
+
+28
+00:01:36,971 --> 00:01:41,149
+we need to keep track of the primitive root or the generator and the current address
+
+29
+00:01:41,149 --> 00:01:44,330
+because when the first address is visited
+
+30
+00:01:44,330 --> 00:01:48,925
+again we know that we have iterated all the addresses in the address space.
+
+31
+00:01:48,925 --> 00:01:53,200
+As you can see, this is very little information to keep track of for each scan.
+

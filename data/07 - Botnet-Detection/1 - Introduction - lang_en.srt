@@ -1,0 +1,44 @@
+1
+00:00:00,000 --> 00:00:01,814
+With regards to malware,
+
+2
+00:00:01,814 --> 00:00:04,530
+the laws of engagements are changing.
+
+3
+00:00:04,530 --> 00:00:08,310
+In the past, the enemy was easy to distinguish,
+
+4
+00:00:08,310 --> 00:00:10,500
+we just needed to look.
+
+5
+00:00:10,500 --> 00:00:13,500
+The rise of sophisticated malware,
+
+6
+00:00:13,500 --> 00:00:17,490
+such as botnets and APTs have changed this dynamic.
+
+7
+00:00:17,490 --> 00:00:22,935
+We're now in the age where distinguishing friend from foe is more difficult.
+
+8
+00:00:22,935 --> 00:00:27,705
+In this lesson, we're going to examine methods to detect botnets.
+
+9
+00:00:27,705 --> 00:00:32,460
+We will discuss the subtle signs of botnet activities in our networks,
+
+10
+00:00:32,460 --> 00:00:34,335
+which will lead to, hopefully,
+
+11
+00:00:34,335 --> 00:00:37,340
+ways to mitigate the damage of botnets.
+

@@ -1,0 +1,54 @@
+1
+00:00:00,300 --> 00:00:02,028
+Now let's discuss Web Worker.
+
+2
+00:00:02,028 --> 00:00:07,250
+Web Workers were ultimately not
+intended for security, but they help
+
+3
+00:00:07,250 --> 00:00:11,725
+improve security because they allow
+JavaScript to run in isolated threads.
+
+4
+00:00:11,725 --> 00:00:16,550
+Here's an example of how
+do you create a Web Worker.
+
+5
+00:00:16,550 --> 00:00:19,588
+Again, it is loaded from JavaScript.
+
+6
+00:00:19,588 --> 00:00:24,464
+A Web Worker has the same origin
+as the frame that creates it, but
+
+7
+00:00:24,464 --> 00:00:26,464
+the Web Worker has no DOM.
+
+8
+00:00:26,464 --> 00:00:29,097
+It can communicate using postMessage.
+
+9
+00:00:29,097 --> 00:00:30,960
+So here's a simple example.
+
+10
+00:00:30,960 --> 00:00:35,028
+The main thread, meaning the main
+iframe thread, creates a worker.
+
+11
+00:00:35,028 --> 00:00:39,810
+It then starts the worker thread by
+sending a message using postMessage.
+
+12
+00:00:39,810 --> 00:00:42,290
+And here the worker
+actually performs the work.

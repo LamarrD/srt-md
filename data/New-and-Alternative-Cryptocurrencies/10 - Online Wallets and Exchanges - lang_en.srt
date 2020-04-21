@@ -1,0 +1,116 @@
+1
+00:00:00,000 --> 00:00:02,775
+Now, let's discuss bitcoin exchange.
+
+2
+00:00:02,775 --> 00:00:07,530
+Bitcoin exchange accepts deposits of Bitcoins and fiat currency.
+
+3
+00:00:07,530 --> 00:00:09,695
+For example, dollars, pounds,
+
+4
+00:00:09,695 --> 00:00:11,395
+euros, and so on.
+
+5
+00:00:11,395 --> 00:00:16,660
+These exchanges let customers make and receive bitcoin payments,
+
+6
+00:00:16,660 --> 00:00:20,315
+and buy and sell bitcoins using fiat currency.
+
+7
+00:00:20,315 --> 00:00:24,300
+You would typically match a bitcoin buyer with a bitcoin seller.
+
+8
+00:00:24,300 --> 00:00:28,320
+Of course, it promises to give the money back to the customer,
+
+9
+00:00:28,320 --> 00:00:32,465
+therefore, bitcoin exchanges are similar to banks.
+
+10
+00:00:32,465 --> 00:00:35,430
+As a result, bitcoin exchanges need to
+
+11
+00:00:35,430 --> 00:00:39,530
+meet a number of minimal requirements or expectations.
+
+12
+00:00:39,530 --> 00:00:44,300
+For example, bitcoin exchanges should meet the minimum reserve requirements,
+
+13
+00:00:44,300 --> 00:00:48,325
+that means they must hold some fraction of deposits in reserve.
+
+14
+00:00:48,325 --> 00:00:52,340
+A Bitcoin exchange needs to provide a proof of reserve to
+
+15
+00:00:52,340 --> 00:00:56,610
+give customers some comfort about the money that they have deposited.
+
+16
+00:00:56,610 --> 00:01:01,505
+The goal is for the exchange to prove that he has a fraction or reserve,
+
+17
+00:01:01,505 --> 00:01:07,885
+for example, from 35 percent to even 100 percent of the deposits that people have made.
+
+18
+00:01:07,885 --> 00:01:11,570
+We can break the Proof of Reserve problem into two pieces.
+
+19
+00:01:11,570 --> 00:01:15,910
+The first is to prove how much reserve you are holding.
+
+20
+00:01:15,910 --> 00:01:19,010
+The exchange can simply publish a valid
+
+21
+00:01:19,010 --> 00:01:23,140
+payment-to-self transaction of the claimed reserve amount.
+
+22
+00:01:23,140 --> 00:01:27,315
+That is, if he claims to have 100,000 bitcoins,
+
+23
+00:01:27,315 --> 00:01:31,320
+it creates a transaction in which he pays 100,000
+
+24
+00:01:31,320 --> 00:01:35,990
+bitcoins to herself and show that the transaction is valid.
+
+25
+00:01:35,990 --> 00:01:41,270
+Strictly speaking, this is not a proof that the exchange really owns this amount,
+
+26
+00:01:41,270 --> 00:01:46,935
+but only that whoever does own this amount is willing to support the exchange.
+
+27
+00:01:46,935 --> 00:01:50,180
+The second piece of the Proof of Reserve problem
+
+28
+00:01:50,180 --> 00:01:53,715
+is to prove that how many demand deposits you hold.
+
+29
+00:01:53,715 --> 00:01:55,730
+We will discuss this next.
+

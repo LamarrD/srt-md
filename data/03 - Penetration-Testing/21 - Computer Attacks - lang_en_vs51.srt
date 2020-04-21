@@ -1,0 +1,111 @@
+1
+00:00:00,250 --> 00:00:05,120
+Now let's discuss social engineering
+attacks that involves computers.
+
+2
+00:00:05,120 --> 00:00:07,550
+The first kind is popup windows.
+
+3
+00:00:07,550 --> 00:00:11,550
+For example, a popup window can
+pretend to be a login window.
+
+4
+00:00:11,550 --> 00:00:15,620
+This exploit will work if the users
+have not been properly trained
+
+5
+00:00:15,620 --> 00:00:19,840
+to tell the difference between the fake
+and the legitimate login windows.
+
+6
+00:00:19,840 --> 00:00:25,000
+The attacker can also use IM or
+IRC to fake a technical support desk.
+
+7
+00:00:25,000 --> 00:00:28,120
+And the users would be redirected
+to a malicious site and
+
+8
+00:00:28,120 --> 00:00:30,360
+malware can then be downloaded.
+
+9
+00:00:30,360 --> 00:00:33,880
+An attacker can also check
+the user to open an email and
+
+10
+00:00:33,880 --> 00:00:37,770
+download email attachment which
+includes malicious software.
+
+11
+00:00:37,770 --> 00:00:40,380
+There are many ways to
+hide malicious programs
+
+12
+00:00:40,380 --> 00:00:43,680
+in email attachments that
+may appear to be legitimate.
+
+13
+00:00:43,680 --> 00:00:48,060
+For example, PDF files can
+include executable macros and
+
+14
+00:00:48,060 --> 00:00:52,240
+a .exe file can be
+camouflaged into a .doc file.
+
+15
+00:00:52,240 --> 00:00:56,260
+And of course, we are familiar
+with various kinds of email scams.
+
+16
+00:00:56,260 --> 00:01:01,030
+the attackers can amplify the effects
+of email scams using chain emails.
+
+17
+00:01:01,030 --> 00:01:05,220
+For example, an email can be sent
+to everybody on your address book.
+
+18
+00:01:05,220 --> 00:01:08,950
+An attacker can create a website
+that claims to offer prizes but
+
+19
+00:01:08,950 --> 00:01:12,430
+require the user to create login and
+passwords.
+
+20
+00:01:12,430 --> 00:01:16,640
+The goal of the attacker is
+to harvest user credentials
+
+21
+00:01:16,640 --> 00:01:21,130
+since many users uses same username and
+password on many websites.
+
+22
+00:01:21,130 --> 00:01:25,420
+The attacker can then use the
+credentials obtained from his website
+
+23
+00:01:25,420 --> 00:01:26,200
+on other websites.

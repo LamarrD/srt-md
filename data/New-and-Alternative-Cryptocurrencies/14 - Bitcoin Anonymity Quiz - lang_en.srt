@@ -1,0 +1,8 @@
+1
+00:00:00,000 --> 00:00:02,365
+Let's do a quiz on bitcoin anonymity.
+
+2
+00:00:02,365 --> 00:00:04,460
+Check all the true statement.
+

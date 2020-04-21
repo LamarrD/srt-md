@@ -1,0 +1,66 @@
+1
+00:00:00,180 --> 00:00:02,250
+For example, after the user logs out,
+
+2
+00:00:02,250 --> 00:00:05,550
+he should be allowed to log
+in with a different account.
+
+3
+00:00:05,550 --> 00:00:09,640
+And a website should prevent
+a user from accessing content
+
+4
+00:00:09,640 --> 00:00:12,230
+left behind by a previous user.
+
+5
+00:00:12,230 --> 00:00:14,280
+So what should happen during a log out?
+
+6
+00:00:14,280 --> 00:00:18,060
+First, the session token on
+a browser should be deleted.
+
+7
+00:00:18,060 --> 00:00:22,980
+Second, on a server side, the session
+token should be marked as expired.
+
+8
+00:00:22,980 --> 00:00:26,281
+The problem is that many web sites do 1,
+but
+
+9
+00:00:26,281 --> 00:00:31,190
+not 2, this is especially dangerous for
+sites that use HTTPS for
+
+10
+00:00:31,190 --> 00:00:35,844
+login, but then fall back to
+the clear text HTTP after login.
+
+11
+00:00:35,844 --> 00:00:40,499
+This is because an active network
+attacker can intercept the clear
+
+12
+00:00:40,499 --> 00:00:44,416
+text HTTP traffic and
+steal a copy of the session token.
+
+13
+00:00:44,416 --> 00:00:48,122
+Then even after the user logs out,
+because the server does not
+
+14
+00:00:48,122 --> 00:00:52,981
+expire the session token, the attacker
+can continue to use that session token.

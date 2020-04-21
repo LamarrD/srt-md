@@ -1,0 +1,8 @@
+1
+00:00:00,000 --> 00:00:02,325
+Now let's do a quiz on entropy.
+
+2
+00:00:02,325 --> 00:00:05,130
+Fill in the blanks with the correct answers.
+

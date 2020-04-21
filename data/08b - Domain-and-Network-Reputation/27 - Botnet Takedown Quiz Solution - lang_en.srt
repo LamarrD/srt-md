@@ -1,0 +1,48 @@
+1
+00:00:00,000 --> 00:00:04,665
+The first statement, one of the most successful methods to taking down
+
+2
+00:00:04,665 --> 00:00:09,835
+a botnet requires investigators to find and target each bot in the net.
+
+3
+00:00:09,835 --> 00:00:12,045
+This is false because typically,
+
+4
+00:00:12,045 --> 00:00:15,310
+it is not possible to enumerate all paths in the net.
+
+5
+00:00:15,310 --> 00:00:19,350
+The second statement, a proven method to stop botnets require
+
+6
+00:00:19,350 --> 00:00:23,450
+isolating the C&C domain from the bot net. This is true.
+
+7
+00:00:23,450 --> 00:00:25,850
+If you take down the command control infrastructure,
+
+8
+00:00:25,850 --> 00:00:28,025
+the bot net will cease to function.
+
+9
+00:00:28,025 --> 00:00:30,955
+The third statement, with regards to take downs,
+
+10
+00:00:30,955 --> 00:00:35,670
+P2P-based networks are much easier than centralized C&C networks.
+
+11
+00:00:35,670 --> 00:00:39,070
+This is false because P2P-based networks use
+
+12
+00:00:39,070 --> 00:00:43,720
+distributed C&C and that's much harder to take down than centralized C&C.
+

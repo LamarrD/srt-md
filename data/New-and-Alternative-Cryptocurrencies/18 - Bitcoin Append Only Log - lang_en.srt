@@ -1,0 +1,72 @@
+1
+00:00:00,000 --> 00:00:03,425
+The Bitcoin system can be used for other applications.
+
+2
+00:00:03,425 --> 00:00:06,220
+For example, secure timestamping.
+
+3
+00:00:06,220 --> 00:00:12,660
+For example, we can prove knowledge of x or we know the value of x at a time
+
+4
+00:00:12,660 --> 00:00:15,435
+t. But we can do so without revealing
+
+5
+00:00:15,435 --> 00:00:19,650
+the actual value or knowledge of x at time t. Of course,
+
+6
+00:00:19,650 --> 00:00:23,365
+if we choose to, we can review x at some later time.
+
+7
+00:00:23,365 --> 00:00:27,110
+Recall that hash function is a one-way function.
+
+8
+00:00:27,110 --> 00:00:30,530
+That is, if you publish the hash value of x,
+
+9
+00:00:30,530 --> 00:00:33,200
+you're announcing a commitment to x.
+
+10
+00:00:33,200 --> 00:00:36,200
+Recall that a cryptographic hash function is
+
+11
+00:00:36,200 --> 00:00:39,600
+a one-way function and also loses in to collision.
+
+12
+00:00:39,600 --> 00:00:43,460
+Therefore, if we publish the hash value of x,
+
+13
+00:00:43,460 --> 00:00:46,475
+we essentially announcing the commitment to x.
+
+14
+00:00:46,475 --> 00:00:49,820
+In other words, everyone will know that we actually know
+
+15
+00:00:49,820 --> 00:00:53,440
+the true value of x by publishing the hash value of x,
+
+16
+00:00:53,440 --> 00:00:56,060
+and we don't have to reveal x to anyone.
+
+17
+00:00:56,060 --> 00:00:59,870
+In other words, we can later prove that we actually knew
+
+18
+00:00:59,870 --> 00:01:04,740
+the value of x because we had published the hash value of x.
+

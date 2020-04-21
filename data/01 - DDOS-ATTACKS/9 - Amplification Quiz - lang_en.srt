@@ -1,0 +1,60 @@
+1
+00:00:00,260 --> 00:00:04,640
+Now let's go over an application
+example and then do a quiz.
+
+2
+00:00:04,640 --> 00:00:09,150
+One example of attacks is to use
+the NTP, Network Time Protocol.
+
+3
+00:00:09,150 --> 00:00:13,950
+This protocol is used to
+synchronize machines to the clocks.
+
+4
+00:00:13,950 --> 00:00:19,670
+For example on a Mac, the day and time
+are set by an NTP server run by Apple.
+
+5
+00:00:19,670 --> 00:00:23,410
+When a computer request
+the time from the NTP server,
+
+6
+00:00:23,410 --> 00:00:26,620
+the server responds with
+the correct time and date.
+
+7
+00:00:26,620 --> 00:00:30,570
+In NTP, the data volume of
+the request from a machine
+
+8
+00:00:30,570 --> 00:00:33,580
+is much smaller than
+the response from the server.
+
+9
+00:00:33,580 --> 00:00:38,520
+Now you can imagine how NTP can be
+used for the now service attack.
+
+10
+00:00:38,520 --> 00:00:40,910
+So with that background,
+let's do a quiz.
+
+11
+00:00:40,910 --> 00:00:46,130
+Which of these are reasons why
+the UDP-based NTP protocol
+
+12
+00:00:46,130 --> 00:00:49,510
+is particularly vulnerable
+to amplification attacks?
+

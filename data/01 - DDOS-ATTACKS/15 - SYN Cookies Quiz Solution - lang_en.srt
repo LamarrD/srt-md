@@ -1,0 +1,39 @@
+1
+00:00:00,320 --> 00:00:06,120
+SYN cookies does not require modified
+version of TCP, so this is false.
+
+2
+00:00:06,120 --> 00:00:10,230
+SYN cookies are only applied
+when there's a SYN flood attack.
+
+3
+00:00:10,230 --> 00:00:14,530
+That is, during normal operations,
+or when a server does not experience
+
+4
+00:00:14,530 --> 00:00:17,550
+a overload,
+it does not require SYN cookies.
+
+5
+00:00:17,550 --> 00:00:21,550
+Therefore, SYN cookies should not
+lead to overall slower performance,
+
+6
+00:00:21,550 --> 00:00:23,980
+that is the second statement is false.
+
+7
+00:00:23,980 --> 00:00:27,130
+The third statement is true
+because during an attack,
+
+8
+00:00:27,130 --> 00:00:31,400
+the server uses SYN cookies and does
+not keep stay information in memory.
+

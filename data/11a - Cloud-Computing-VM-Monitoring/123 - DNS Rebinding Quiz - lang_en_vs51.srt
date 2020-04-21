@@ -1,0 +1,8 @@
+1
+00:00:00,270 --> 00:00:01,569
+Now, let's do a quiz.
+
+2
+00:00:01,569 --> 00:00:04,460
+Select all true statements
+about rebinding attacks.

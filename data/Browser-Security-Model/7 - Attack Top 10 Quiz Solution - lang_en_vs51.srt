@@ -1,0 +1,13 @@
+1
+00:00:00,330 --> 00:00:05,770
+According to OWASP 2013,
+injection is the most common.
+
+2
+00:00:05,770 --> 00:00:09,900
+Unvalidated redirects and
+forwards is the least common.
+
+3
+00:00:09,900 --> 00:00:11,820
+And the order of the rest is here.

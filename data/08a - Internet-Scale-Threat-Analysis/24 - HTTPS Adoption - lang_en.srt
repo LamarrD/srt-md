@@ -1,0 +1,24 @@
+1
+00:00:00,000 --> 00:00:02,760
+The researchers also find that within a year,
+
+2
+00:00:02,760 --> 00:00:07,900
+the number of HTTPS servers only increased by 10% and there's
+
+3
+00:00:07,900 --> 00:00:14,060
+a 23% increase in the number of Alexa top 1 million sites using the HTTPS.
+
+4
+00:00:14,060 --> 00:00:19,660
+And there's 11% increase in a raw number of browser trusted certificates.
+
+5
+00:00:19,660 --> 00:00:21,955
+So here's an example of how do we use
+
+6
+00:00:21,955 --> 00:00:26,000
+Internet-Wide Scan to check adoption of a technology.
+

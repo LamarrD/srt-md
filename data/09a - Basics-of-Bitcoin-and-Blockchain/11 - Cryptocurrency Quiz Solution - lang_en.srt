@@ -1,0 +1,40 @@
+1
+00:00:00,000 --> 00:00:05,645
+First, the security of cryptocurrency ledgers depends on the honesty of its miners.
+
+2
+00:00:05,645 --> 00:00:08,640
+This is true, and we will discuss some of the details later.
+
+3
+00:00:08,640 --> 00:00:11,400
+Second, most cryptocurrencies are designed to
+
+4
+00:00:11,400 --> 00:00:14,210
+maintain production to keep inflation in check.
+
+5
+00:00:14,210 --> 00:00:17,460
+This is false. Most cryptocurrencies are designed to
+
+6
+00:00:17,460 --> 00:00:20,810
+reduce production mimicking the markets of precious metals.
+
+7
+00:00:20,810 --> 00:00:24,255
+Third, since cryptocurrencies are pseudo-anonymous,
+
+8
+00:00:24,255 --> 00:00:27,840
+it is okay that they are more susceptible to law enforcement seizure.
+
+9
+00:00:27,840 --> 00:00:30,230
+This is false. Cryptocurrencies are
+
+10
+00:00:30,230 --> 00:00:33,790
+pseudo-anonymous and they are less susceptible to law enforcement seizure.
+

@@ -1,0 +1,64 @@
+1
+00:00:00,000 --> 00:00:03,850
+Here's a summary of Notos statistical and temporal features.
+
+2
+00:00:03,850 --> 00:00:08,425
+The network-based features are extracted from the set of related historic IPs.
+
+3
+00:00:08,425 --> 00:00:13,860
+The features include, the total number of IPs historically associated with a domain,
+
+4
+00:00:13,860 --> 00:00:17,050
+the diversity of their geographical locations,
+
+5
+00:00:17,050 --> 00:00:19,865
+the number of distinct autonomous systems, and so on.
+
+6
+00:00:19,865 --> 00:00:24,610
+The zone-based features are extracted from the set of related historic domains.
+
+7
+00:00:24,610 --> 00:00:28,190
+The features include, the average length of domain names,
+
+8
+00:00:28,190 --> 00:00:30,150
+the number of distinct top-level domains,
+
+9
+00:00:30,150 --> 00:00:33,135
+the occurrence frequency of different characters, and so on.
+
+10
+00:00:33,135 --> 00:00:35,660
+The evidence-based features include,
+
+11
+00:00:35,660 --> 00:00:38,860
+the number of distinct malware samples that contacted the domain,
+
+12
+00:00:38,860 --> 00:00:41,670
+and the same for any of its resolved IPs.
+
+13
+00:00:41,670 --> 00:00:47,760
+Here we show the result of clustering 250,000 domains using the Noto features.
+
+14
+00:00:47,760 --> 00:00:50,535
+As we can see, the clusters don't overlap.
+
+15
+00:00:50,535 --> 00:00:53,780
+This tells us that the Notos features are very good
+
+16
+00:00:53,780 --> 00:00:57,930
+at separating domains of different types into different clusters.
+

@@ -1,0 +1,28 @@
+1
+00:00:00,000 --> 00:00:01,515
+Now, let's do a quiz.
+
+2
+00:00:01,515 --> 00:00:03,930
+The context is applying machine learning to
+
+3
+00:00:03,930 --> 00:00:06,330
+the problem of detecting bonded command control.
+
+4
+00:00:06,330 --> 00:00:09,240
+Supposed we decide to use supervised learning,
+
+5
+00:00:09,240 --> 00:00:11,160
+that means data should be labeled,
+
+6
+00:00:11,160 --> 00:00:15,090
+and we want a high percentage of network flows to be correctly classified.
+
+7
+00:00:15,090 --> 00:00:19,320
+The question is which type of data do we need for C&C Protocol Detection?
+

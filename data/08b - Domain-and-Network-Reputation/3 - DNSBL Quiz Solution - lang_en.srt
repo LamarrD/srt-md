@@ -1,0 +1,32 @@
+1
+00:00:00,000 --> 00:00:03,900
+White means that this IP address is completely trusted.
+
+2
+00:00:03,900 --> 00:00:07,540
+Black means that there's no trust in this IP address.
+
+3
+00:00:07,540 --> 00:00:11,700
+Gray means that this IP address is not directly involved
+
+4
+00:00:11,700 --> 00:00:15,875
+in spamming but is associated with spam-like behaviors.
+
+5
+00:00:15,875 --> 00:00:18,920
+In other words, it's in the gray area.
+
+6
+00:00:18,920 --> 00:00:25,080
+Yellow means that this IP address is known to produce spam and non-spam e-mail.
+
+7
+00:00:25,080 --> 00:00:32,230
+NoBL means that this IP address does not send spam and should not be blacklisted,
+
+8
+00:00:32,230 --> 00:00:34,970
+but it is not fully trustworthy.
+

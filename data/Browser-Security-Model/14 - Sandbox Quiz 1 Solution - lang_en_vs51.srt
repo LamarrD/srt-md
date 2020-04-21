@@ -1,0 +1,58 @@
+1
+00:00:00,220 --> 00:00:05,760
+First, anything changed or created is
+not visible beyond its boundaries.
+
+2
+00:00:05,760 --> 00:00:10,260
+This can apply to both sandboxes and
+virtual machines.
+
+3
+00:00:10,260 --> 00:00:16,610
+Sandboxes will isolate applications so
+that other applications cannot see it.
+
+4
+00:00:16,610 --> 00:00:21,820
+To see changes in virtual machines
+you must be in the virtual machine.
+
+5
+00:00:21,820 --> 00:00:26,288
+Second, if data is not saved,
+it is lost when the application closes.
+
+6
+00:00:26,288 --> 00:00:29,370
+This is an advantage of sandbox.
+
+7
+00:00:29,370 --> 00:00:32,369
+And you can call it a security
+strength of the sandbox
+
+8
+00:00:32,369 --> 00:00:35,710
+because any malware
+downloaded will not be saved.
+
+9
+00:00:35,710 --> 00:00:41,330
+Third, virtual machines have their own
+copies of complete operating systems.
+
+10
+00:00:41,330 --> 00:00:45,920
+There can be multiple operating
+systems on a single hardware platform.
+
+11
+00:00:45,920 --> 00:00:49,770
+Four, sandbox is lightweight and
+easy to set up.
+
+12
+00:00:49,770 --> 00:00:55,200
+Fifth, for virtual machines, disc space
+must be allocated to the application.

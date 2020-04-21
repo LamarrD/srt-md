@@ -1,0 +1,90 @@
+1
+00:00:00,290 --> 00:00:02,290
+Let's discuss memory monitoring and
+
+2
+00:00:02,290 --> 00:00:04,920
+analysis in a virtualization
+environment.
+
+3
+00:00:04,920 --> 00:00:07,880
+The security in a controlled
+virtual machine are smaller,
+
+4
+00:00:07,880 --> 00:00:10,200
+because they can run a stripped down OS.
+
+5
+00:00:10,200 --> 00:00:12,810
+The security machine
+gets a raw memory view,
+
+6
+00:00:12,810 --> 00:00:16,980
+meaning that it has seized the physical
+memory from the other virtual machines.
+
+7
+00:00:16,980 --> 00:00:18,330
+If you want anything useful,
+
+8
+00:00:18,330 --> 00:00:21,370
+you need to rebuild the obstruction
+levels on your own.
+
+9
+00:00:21,370 --> 00:00:24,351
+And this is challenging, and
+we will discuss this shortly.
+
+10
+00:00:24,351 --> 00:00:25,986
+There are several types of monitoring.
+
+11
+00:00:25,986 --> 00:00:28,600
+The first is passive monitoring.
+
+12
+00:00:28,600 --> 00:00:32,280
+This means that the security virtual
+machine takes a snapshot of view,
+
+13
+00:00:32,280 --> 00:00:34,317
+of the raw memory of a virtual machine.
+
+14
+00:00:34,317 --> 00:00:36,770
+The second type is active monitoring.
+
+15
+00:00:36,770 --> 00:00:40,390
+This means that the security virtual
+machine takes a view of the memory of
+
+16
+00:00:40,390 --> 00:00:41,490
+another virtual machine,
+
+17
+00:00:41,490 --> 00:00:44,520
+when there's an event being
+triggered at that virtual machine.
+
+18
+00:00:44,520 --> 00:00:47,190
+An important goal of memory
+monitoring is to locate
+
+19
+00:00:47,190 --> 00:00:50,750
+the important data structures in
+memory for security analysis, for
+
+20
+00:00:50,750 --> 00:00:52,860
+example, examining the process list.

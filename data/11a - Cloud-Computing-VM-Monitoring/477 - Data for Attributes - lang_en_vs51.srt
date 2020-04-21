@@ -1,0 +1,19 @@
+1
+00:00:00,210 --> 00:00:03,640
+The data as we can obtain from
+the hospitals is encrypted.
+
+2
+00:00:03,640 --> 00:00:08,100
+On the other hand, there's information,
+or auxiliary data that is public.
+
+3
+00:00:08,100 --> 00:00:11,860
+We will show that using both
+the encrypted data and auxiliary data,
+
+4
+00:00:11,860 --> 00:00:15,500
+an attacker can launch inference
+attack to obtain plaintext data.

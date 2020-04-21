@@ -1,0 +1,60 @@
+1
+00:00:00,000 --> 00:00:02,960
+Since we can write whatever data we want into Bitcoin,
+
+2
+00:00:02,960 --> 00:00:07,520
+we can also view an entirely new currency system on top of Bitcoin,
+
+3
+00:00:07,520 --> 00:00:10,395
+without needing to develop a new consensus mechanism.
+
+4
+00:00:10,395 --> 00:00:15,550
+That is, we can simply use Bitcoin as it exists today as an append-only
+
+5
+00:00:15,550 --> 00:00:18,450
+log and write all the data that we need for
+
+6
+00:00:18,450 --> 00:00:22,125
+our new currency system directly into the Bitcoin blockchain.
+
+7
+00:00:22,125 --> 00:00:24,915
+We call this approach an overlay currency.
+
+8
+00:00:24,915 --> 00:00:28,610
+That is, Bitcoin serves as the underlying substrate,
+
+9
+00:00:28,610 --> 00:00:32,630
+and the data of the overlay currency is written into
+
+10
+00:00:32,630 --> 00:00:37,415
+the Bitcoin blockchain using unspendable transaction outputs.
+
+11
+00:00:37,415 --> 00:00:41,510
+Of course, Bitcoin miners will not actually validate what you're
+
+12
+00:00:41,510 --> 00:00:46,250
+writing into the blockchain because they don't know the new currency system.
+
+13
+00:00:46,250 --> 00:00:51,400
+Also, anyone can write anything as long as they're willing to pay the transaction fees.
+
+14
+00:00:51,400 --> 00:00:55,250
+Since this is a different new currency system,
+
+15
+00:00:55,250 --> 00:00:59,070
+you must develop your own logic for validating transactions.
+

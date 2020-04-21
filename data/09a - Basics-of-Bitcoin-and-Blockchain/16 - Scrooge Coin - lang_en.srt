@@ -1,0 +1,172 @@
+1
+00:00:00,000 --> 00:00:01,900
+To solve the double spending problem,
+
+2
+00:00:01,900 --> 00:00:03,795
+we will design another cryptocurrency,
+
+3
+00:00:03,795 --> 00:00:05,990
+which we will call Scrooge Coin.
+
+4
+00:00:05,990 --> 00:00:08,360
+Scrooge Coin is build of Goofy Coin,
+
+5
+00:00:08,360 --> 00:00:11,625
+but it is more complicated in terms of data structures.
+
+6
+00:00:11,625 --> 00:00:15,780
+The first key idea is that a designated entity called Scrooge,
+
+7
+00:00:15,780 --> 00:00:18,719
+publishes an append-only ledger that contains,
+
+8
+00:00:18,719 --> 00:00:21,810
+the history of all the transactions that have happened.
+
+9
+00:00:21,810 --> 00:00:24,230
+The append-only property ensures that
+
+10
+00:00:24,230 --> 00:00:27,095
+any data written to this ledger will remain forever.
+
+11
+00:00:27,095 --> 00:00:29,405
+If the ledger is truly append-only,
+
+12
+00:00:29,405 --> 00:00:32,750
+we can use it to defend against double-spending by requiring
+
+13
+00:00:32,750 --> 00:00:36,495
+that all transactions to be written to the larger before they accepted.
+
+14
+00:00:36,495 --> 00:00:39,050
+That way, it will be visible to anyone
+
+15
+00:00:39,050 --> 00:00:41,855
+if coins were previously sent to a different owner.
+
+16
+00:00:41,855 --> 00:00:44,205
+To implement this append-only feature,
+
+17
+00:00:44,205 --> 00:00:47,105
+Scrooge can be a blockchain that he will sign.
+
+18
+00:00:47,105 --> 00:00:50,500
+This blockchain is a series of data blocks.
+
+19
+00:00:50,500 --> 00:00:53,905
+Each with one transaction or multiple transactions,
+
+20
+00:00:53,905 --> 00:00:56,995
+each block contains the IDs of the transactions,
+
+21
+00:00:56,995 --> 00:00:58,710
+the contents of the transactions,
+
+22
+00:00:58,710 --> 00:01:01,055
+and a hash pointer to the previous block.
+
+23
+00:01:01,055 --> 00:01:03,325
+Scrooge signs a final hash pointer,
+
+24
+00:01:03,325 --> 00:01:05,120
+which binds all the data in
+
+25
+00:01:05,120 --> 00:01:09,990
+the entire blockchain and then publishes the signature along with the blockchain.
+
+26
+00:01:09,990 --> 00:01:12,500
+In Scrooge Coin, a transaction is only
+
+27
+00:01:12,500 --> 00:01:15,800
+valid if it is in the blockchain signed by Scrooge.
+
+28
+00:01:15,800 --> 00:01:19,845
+Anybody can verify that a transaction was endorsed by Scrooge,
+
+29
+00:01:19,845 --> 00:01:23,275
+by checking Scrooge's signature on the block that it appears in.
+
+30
+00:01:23,275 --> 00:01:25,895
+Scrooge makes sure that it doesn't endorse
+
+31
+00:01:25,895 --> 00:01:29,610
+a transaction that harm suitable span on already spent coin.
+
+32
+00:01:29,610 --> 00:01:31,355
+Why do we need a blockchain with
+
+33
+00:01:31,355 --> 00:01:34,905
+hash pointers in addition to having Scrooge sign each block?
+
+34
+00:01:34,905 --> 00:01:37,280
+This ensure the append-only property.
+
+35
+00:01:37,280 --> 00:01:39,575
+If Scrooge tries to add or remove
+
+36
+00:01:39,575 --> 00:01:42,800
+a transaction to the history or change an existing transaction,
+
+37
+00:01:42,800 --> 00:01:46,865
+it will affect all of the following blocks because of the hash pointers.
+
+38
+00:01:46,865 --> 00:01:52,340
+That is, as soon as someone is monitoring the latest hash pointer published by Scrooge,
+
+39
+00:01:52,340 --> 00:01:55,370
+the change will be obvious and easy to catch.
+
+40
+00:01:55,370 --> 00:01:58,340
+In a system where Scrooge sign blocks individually,
+
+41
+00:01:58,340 --> 00:02:02,420
+you will have to keep track of every single signature Scrooge ever issued.
+
+42
+00:02:02,420 --> 00:02:06,770
+A broad chain makes it easy for any two individuals to verify that they
+
+43
+00:02:06,770 --> 00:02:11,330
+have observed the exactly same history of transactions signed by Scrooge.
+

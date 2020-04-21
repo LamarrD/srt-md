@@ -1,0 +1,44 @@
+1
+00:00:00,000 --> 00:00:01,845
+Another interesting question is,
+
+2
+00:00:01,845 --> 00:00:07,740
+"Is one probe packet sufficient or is sending multiple packets beneficial?"
+
+3
+00:00:07,740 --> 00:00:11,010
+This is difficult to answer directly because there is
+
+4
+00:00:11,010 --> 00:00:14,697
+no ground truth for the number of live hosts on the Internet.
+
+5
+00:00:14,697 --> 00:00:17,590
+In order to estimate ZMap coverage,
+
+6
+00:00:17,590 --> 00:00:23,545
+multiples in packets were sent to one percent samples of the IPv4 address space.
+
+7
+00:00:23,545 --> 00:00:29,700
+If you look at the number of responses we clearly see a plateau after a SYN packets.
+
+8
+00:00:29,700 --> 00:00:34,190
+In fact, we should expect to see an eventual plateau in a number
+
+9
+00:00:34,190 --> 00:00:38,745
+of responsive hosts regardless of additional SYN packets sent.
+
+10
+00:00:38,745 --> 00:00:44,765
+Analyzing these results we can estimate that with a single packet the coverage is about
+
+11
+00:00:44,765 --> 00:00:51,000
+97.9 percent and with three packets the coverage is 99.4 percent.
+

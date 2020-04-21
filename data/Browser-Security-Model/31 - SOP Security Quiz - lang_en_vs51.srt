@@ -1,0 +1,24 @@
+1
+00:00:00,240 --> 00:00:03,450
+Now let's do a quiz on
+the same origin policy.
+
+2
+00:00:03,450 --> 00:00:07,030
+Given this website, for the requests
+that are submitted from the following
+
+3
+00:00:07,030 --> 00:00:11,300
+URLs, which of these URLs will
+result in a successful request, and
+
+4
+00:00:11,300 --> 00:00:15,010
+which will be rejected as not
+being from the same origin?
+
+5
+00:00:15,010 --> 00:00:18,850
+Determine the outcome, success or
+failure, for each URL.

@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:02,355
+First, I would like to acknowledge that
+
+2
+00:00:02,355 --> 00:00:05,975
+the slides that I'm going to present are from Joseph Bonneau,
+
+3
+00:00:05,975 --> 00:00:10,150
+Ed Felten, Arvind Narayanan, and Andrew Miller.
+

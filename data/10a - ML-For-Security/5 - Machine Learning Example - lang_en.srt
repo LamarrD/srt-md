@@ -1,0 +1,92 @@
+1
+00:00:00,000 --> 00:00:02,070
+Here is an example of machine learning.
+
+2
+00:00:02,070 --> 00:00:06,315
+Suppose you want to learn the name or predict the name of an object,
+
+3
+00:00:06,315 --> 00:00:07,590
+for machine learning purpose,
+
+4
+00:00:07,590 --> 00:00:11,435
+these objects are represented as feature vectors of their images.
+
+5
+00:00:11,435 --> 00:00:14,185
+For example, apple, tomato, and cow,
+
+6
+00:00:14,185 --> 00:00:16,625
+they're all represented as feature vectors,
+
+7
+00:00:16,625 --> 00:00:21,820
+and then our function based on these feature vectors can predict the type of the object.
+
+8
+00:00:21,820 --> 00:00:25,030
+So, let's go over the steps in this machine learning example.
+
+9
+00:00:25,030 --> 00:00:27,550
+We start with the images of these objects,
+
+10
+00:00:27,550 --> 00:00:30,810
+we then make exact features from these images so that
+
+11
+00:00:30,810 --> 00:00:34,250
+each of these objects now is represented as a feature vector.
+
+12
+00:00:34,250 --> 00:00:37,080
+Of course, we put the correct label to each object.
+
+13
+00:00:37,080 --> 00:00:39,200
+For example, all these are apples,
+
+14
+00:00:39,200 --> 00:00:41,340
+all these are pears, and so on.
+
+15
+00:00:41,340 --> 00:00:45,649
+Then, once we have the objects represented as feature vectors with their labels,
+
+16
+00:00:45,649 --> 00:00:49,335
+then we can apply machine learning algorithm to chain a predictive function.
+
+17
+00:00:49,335 --> 00:00:52,175
+This predictive function is the learned model.
+
+18
+00:00:52,175 --> 00:00:56,000
+In testing, again, we start with the image of an object,
+
+19
+00:00:56,000 --> 00:00:59,100
+we extract the same set of image features as in chaining.
+
+20
+00:00:59,100 --> 00:01:02,820
+That is, now the object is represented as a feature vector.
+
+21
+00:01:02,820 --> 00:01:05,910
+We then apply the learned model into this feature vector.
+
+22
+00:01:05,910 --> 00:01:08,540
+The learned model which is a predictive function is
+
+23
+00:01:08,540 --> 00:01:11,290
+going to tell us the prediction or the type of this object.
+

@@ -1,0 +1,38 @@
+1
+00:00:00,240 --> 00:00:05,110
+A doorway page is a web page that
+lists many keywords in hopes
+
+2
+00:00:05,110 --> 00:00:07,330
+of increasing search engine ranking.
+
+3
+00:00:07,330 --> 00:00:12,960
+And then, scripts on that page will
+redirect the visit to attackers website.
+
+4
+00:00:12,960 --> 00:00:18,550
+A crypter is a program that hides
+malicious code from anti-virus software.
+
+5
+00:00:18,550 --> 00:00:23,790
+A Blackhat Search Engine Optimizer,
+or Blackhat SEO, is one that tries
+
+6
+00:00:23,790 --> 00:00:29,250
+to increase traffic to the attacker's
+website by manipulating search engines.
+
+7
+00:00:29,250 --> 00:00:33,590
+A Trojan Download Manager is a piece
+of software that allows an attacker
+
+8
+00:00:33,590 --> 00:00:36,460
+to update or
+install malware on a victim's computer.

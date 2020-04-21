@@ -1,0 +1,28 @@
+1
+00:00:00,000 --> 00:00:03,555
+A dynamic malware-related domain detection system should:
+
+2
+00:00:03,555 --> 00:00:07,890
+have global visibility into DNS request and response messages,
+
+3
+00:00:07,890 --> 00:00:10,544
+it should not require data from other networks,
+
+4
+00:00:10,544 --> 00:00:15,525
+should be able to detect malware-related domains even if there's no repetition data.
+
+5
+00:00:15,525 --> 00:00:18,540
+Such a system should also be able to detect
+
+6
+00:00:18,540 --> 00:00:21,795
+malware domains before the infection which is a local network.
+
+7
+00:00:21,795 --> 00:00:25,030
+Therefore, the second statement is false.
+

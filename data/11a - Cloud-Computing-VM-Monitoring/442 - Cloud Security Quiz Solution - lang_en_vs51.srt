@@ -1,0 +1,34 @@
+1
+00:00:00,230 --> 00:00:03,928
+The first statement, most data in
+transit is encrypted, this is true.
+
+2
+00:00:03,928 --> 00:00:08,280
+Close to 90% of the service
+providers encrypt data in transit.
+
+3
+00:00:08,280 --> 00:00:12,440
+The second statement, most data at
+rest is encrypted, this is false.
+
+4
+00:00:12,440 --> 00:00:15,420
+Only 10% of the providers
+encrypt data at rest.
+
+5
+00:00:15,420 --> 00:00:19,960
+The third statement, all data at rest
+should be encrypted, this is false.
+
+6
+00:00:19,960 --> 00:00:24,020
+In reality there's plenty of data that
+does not require security protection,
+
+7
+00:00:24,020 --> 00:00:27,160
+and therefore such data does not
+need to be encrypted at rest

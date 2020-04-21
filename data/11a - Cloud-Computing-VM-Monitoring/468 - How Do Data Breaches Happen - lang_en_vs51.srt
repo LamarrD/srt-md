@@ -1,0 +1,132 @@
+1
+00:00:00,270 --> 00:00:03,990
+Let's discuss data privacy
+issues in a cloud environment.
+
+2
+00:00:03,990 --> 00:00:07,290
+First let's review how
+data breaches happen.
+
+3
+00:00:07,290 --> 00:00:10,840
+In a cloud environment
+the users use applications or
+
+4
+00:00:10,840 --> 00:00:12,900
+data stored in a cloud provider.
+
+5
+00:00:12,900 --> 00:00:16,470
+For example,
+the users can be doctors and nurses, and
+
+6
+00:00:16,470 --> 00:00:20,230
+the application can be the electronic
+medical record system.
+
+7
+00:00:20,230 --> 00:00:23,200
+And the data obviously
+is the medical records.
+
+8
+00:00:23,200 --> 00:00:27,970
+And the called EMR here can be
+a private called such as UCLA Health.
+
+9
+00:00:27,970 --> 00:00:31,770
+As another example,
+the users can be average consumers.
+
+10
+00:00:31,770 --> 00:00:34,000
+And the application can online dating.
+
+11
+00:00:34,000 --> 00:00:36,740
+And of course,
+the data can be the dating profiles.
+
+12
+00:00:36,740 --> 00:00:40,050
+In most cases, including
+the examples that we just discuss,
+
+13
+00:00:40,050 --> 00:00:43,290
+data is the most valuable
+target to the attacker.
+
+14
+00:00:43,290 --> 00:00:45,870
+For example,
+the attacker may want to steal the data.
+
+15
+00:00:45,870 --> 00:00:48,700
+Now the question is,
+how do we protect the data?
+
+16
+00:00:48,700 --> 00:00:51,320
+Obviously we can encrypt the data.
+
+17
+00:00:51,320 --> 00:00:52,100
+For example,
+
+18
+00:00:52,100 --> 00:00:56,920
+the users can have their own secret
+encryption key for their data.
+
+19
+00:00:56,920 --> 00:01:01,180
+And once the data is encrypted the
+adversary can no longer read the data.
+
+20
+00:01:01,180 --> 00:01:04,650
+The problem when the data is
+encrypted the applications
+
+21
+00:01:04,650 --> 00:01:07,250
+can no longer use the data as it is.
+
+22
+00:01:07,250 --> 00:01:11,000
+For example if the application
+is a word processing programm
+
+23
+00:01:11,000 --> 00:01:14,460
+such as Microsoft Word, it cannot
+process encrypted data directly.
+
+24
+00:01:14,460 --> 00:01:17,610
+Therefore, the real question
+is can we protect the data
+
+25
+00:01:17,610 --> 00:01:20,070
+while we also let the application work?
+
+26
+00:01:20,070 --> 00:01:23,890
+In other words, we want to protect
+the data by encrypting the data, so
+
+27
+00:01:23,890 --> 00:01:26,100
+that the adversary cannot read our data.
+
+28
+00:01:26,100 --> 00:01:29,570
+On the other hand, we also want
+the application to continue to work.

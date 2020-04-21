@@ -1,0 +1,37 @@
+1
+00:00:00,240 --> 00:00:04,000
+The first statement, IP is
+a connectionless and reliable protocol.
+
+2
+00:00:04,000 --> 00:00:08,500
+This statement is false because
+IP is not a reliable protocol.
+
+3
+00:00:08,500 --> 00:00:09,520
+The second statement,
+
+4
+00:00:09,520 --> 00:00:13,810
+IP provides only best effort delivery,
+it is not guaranteed.
+
+5
+00:00:13,810 --> 00:00:15,040
+This is true.
+
+6
+00:00:15,040 --> 00:00:18,800
+The third statement, due to
+the connectionless nature of IP, data
+
+7
+00:00:18,800 --> 00:00:23,650
+corruption, packet loss, duplication,
+and out-of-order delivery can occur.
+
+8
+00:00:23,650 --> 00:00:24,210
+This is true.
+

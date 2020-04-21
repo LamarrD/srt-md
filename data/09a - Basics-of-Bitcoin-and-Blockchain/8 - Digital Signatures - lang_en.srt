@@ -1,0 +1,84 @@
+1
+00:00:00,000 --> 00:00:03,165
+Now, let's have a quick review of digital signatures.
+
+2
+00:00:03,165 --> 00:00:07,950
+What we want from signatures is that only the owner of the private key can sign,
+
+3
+00:00:07,950 --> 00:00:12,510
+but anyone can modify because they can retrieve the owners public key.
+
+4
+00:00:12,510 --> 00:00:16,115
+Further, a signature is tied to a particular document.
+
+5
+00:00:16,115 --> 00:00:20,050
+Let's review how digital signatures are created and verified.
+
+6
+00:00:20,050 --> 00:00:23,960
+We have a private signing key and a public verification key.
+
+7
+00:00:23,960 --> 00:00:27,480
+The key pair can be created by specifying the key size.
+
+8
+00:00:27,480 --> 00:00:29,290
+Then, for particular message,
+
+9
+00:00:29,290 --> 00:00:31,650
+we can create a signature by essentially encrypting
+
+10
+00:00:31,650 --> 00:00:34,380
+the message using the private signing key.
+
+11
+00:00:34,380 --> 00:00:36,210
+Given the message and the signature,
+
+12
+00:00:36,210 --> 00:00:40,400
+any person who has obtained the public key can verify the signature.
+
+13
+00:00:40,400 --> 00:00:42,590
+The verification is performed by using
+
+14
+00:00:42,590 --> 00:00:46,390
+the public key to decrypt the signature and matching the result with the message.
+
+15
+00:00:46,390 --> 00:00:48,715
+What are the requirements for signatures?
+
+16
+00:00:48,715 --> 00:00:51,865
+Obviously, a valid signatures can be verified,
+
+17
+00:00:51,865 --> 00:00:54,430
+and no one can forge a signature.
+
+18
+00:00:54,430 --> 00:00:59,420
+Public key cryptography guarantees that although anyone can know the public key,
+
+19
+00:00:59,420 --> 00:01:00,730
+but without the private key,
+
+20
+00:01:00,730 --> 00:01:02,630
+which is only known to the owner,
+
+21
+00:01:02,630 --> 00:01:04,440
+no one can forge a signature.
+

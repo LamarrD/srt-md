@@ -1,0 +1,56 @@
+1
+00:00:00,320 --> 00:00:02,880
+The most challenging
+transparency requirement
+
+2
+00:00:02,880 --> 00:00:05,110
+is the identical notion of time.
+
+3
+00:00:05,110 --> 00:00:08,680
+In particular, if malware uses
+network timing measurements
+
+4
+00:00:08,680 --> 00:00:11,030
+to infer the presence of analyzer.
+
+5
+00:00:11,030 --> 00:00:13,650
+For example,
+the analyzer causes delay, or
+
+6
+00:00:13,650 --> 00:00:16,410
+the website that the malware
+connects to is not a real one.
+
+7
+00:00:16,410 --> 00:00:18,260
+There are many direct or
+
+8
+00:00:18,260 --> 00:00:21,140
+indirect measurements that
+a malware can perform and
+
+9
+00:00:21,140 --> 00:00:26,250
+it is impossible to identify all direct
+or indirect measurement techniques.
+
+10
+00:00:26,250 --> 00:00:31,360
+In fact, the problem of identifying all
+network-based timing measurements is
+
+11
+00:00:31,360 --> 00:00:36,400
+equivalent to the problem of detecting
+and removing all covert channels.
+
+12
+00:00:36,400 --> 00:00:39,120
+This problem has been
+proved to be undecidable.

@@ -1,0 +1,284 @@
+1
+00:00:00,330 --> 00:00:03,700
+Now let's discuss another
+Botnet Detection System, Botminer.
+
+2
+00:00:03,700 --> 00:00:07,150
+The first question is, why do we need
+another Botnet detection system.
+
+3
+00:00:07,150 --> 00:00:11,820
+Notice that Bot hunter is based on some
+specific Botnet infection life cycles.
+
+4
+00:00:11,820 --> 00:00:15,020
+But Botnet can have different
+infection life cycles and
+
+5
+00:00:15,020 --> 00:00:18,700
+they can change the protocols and
+structures of the command control.
+
+6
+00:00:18,700 --> 00:00:22,302
+For example, Botnet can use
+a centralized command-control system or
+
+7
+00:00:22,302 --> 00:00:25,470
+fully distributed
+peer-to-peer control system.
+
+8
+00:00:25,470 --> 00:00:28,970
+Our goal is to have a Botnet
+detection system that is independent
+
+9
+00:00:28,970 --> 00:00:31,090
+of the command-control protocol and
+structure.
+
+10
+00:00:31,090 --> 00:00:32,780
+In order to achieve this goal,
+
+11
+00:00:32,780 --> 00:00:35,880
+we need to focus on the intrinsic
+properties of Botnet.
+
+12
+00:00:35,880 --> 00:00:39,720
+In particular, Bots are for long-term
+use, and bot with the Botnet have
+
+13
+00:00:39,720 --> 00:00:43,220
+similar or coordinated communication and
+activities.
+
+14
+00:00:43,220 --> 00:00:46,190
+Therefore, we need to
+perform both vertical and
+
+15
+00:00:46,190 --> 00:00:49,510
+horizontal correlation,
+here's the architecture of BotMiner.
+
+16
+00:00:49,510 --> 00:00:53,270
+We arrive at this architecture based
+on the definition of a Botnet.
+
+17
+00:00:53,270 --> 00:00:57,410
+We coded a botnet is a coordinated
+group of malware instances,
+
+18
+00:00:57,410 --> 00:00:59,780
+they're controlled via
+Command Controlled Channels.
+
+19
+00:00:59,780 --> 00:01:02,150
+The C-Plane monitor here, is for
+
+20
+00:01:02,150 --> 00:01:05,670
+monitoring Command Controlled Traffic
+and A-Plane here, is for
+
+21
+00:01:05,670 --> 00:01:09,730
+monitoring malicious activities
+because these are malware instances.
+
+22
+00:01:09,730 --> 00:01:14,470
+On both planes, we perform clustering to
+detect groups they are in correlated or
+
+23
+00:01:14,470 --> 00:01:15,500
+similar ways.
+
+24
+00:01:15,500 --> 00:01:19,550
+Then we use cross-plane correlation to
+detect a group of machines that perform
+
+25
+00:01:19,550 --> 00:01:23,330
+similarly in both command control
+activities and malicious activities.
+
+26
+00:01:23,330 --> 00:01:27,730
+And these are parts of the same Botnet,
+here's a workflow of C-plane clustering.
+
+27
+00:01:27,730 --> 00:01:31,780
+First of all, a flow record for
+connection between a local host and
+
+28
+00:01:31,780 --> 00:01:35,160
+a remote service is defined
+by the protocol, source and
+
+29
+00:01:35,160 --> 00:01:39,030
+destination IP Destination port,
+time, and number of bytes.
+
+30
+00:01:39,030 --> 00:01:42,460
+All flow records go through a number
+of steps that include filtering,
+
+31
+00:01:42,460 --> 00:01:45,680
+aggregation, feature extraction,
+and clustering.
+
+32
+00:01:45,680 --> 00:01:48,010
+Here are some example of our features,
+
+33
+00:01:48,010 --> 00:01:52,140
+look at bytes per second,
+flows per hour, bytes per packet, and
+
+34
+00:01:52,140 --> 00:01:55,430
+packets per flow and
+we perform clustering in two steps.
+
+35
+00:01:55,430 --> 00:01:59,880
+In step one, we group C-flow records
+into course-grained clusters.
+
+36
+00:01:59,880 --> 00:02:03,580
+In step two, within each of
+these course-grained clusters,
+
+37
+00:02:03,580 --> 00:02:06,780
+we further position them
+into finer grain groups.
+
+38
+00:02:06,780 --> 00:02:10,199
+The main idea here is that we
+can use a small set of features
+
+39
+00:02:10,199 --> 00:02:12,310
+to perform course-grain clustering.
+
+40
+00:02:12,310 --> 00:02:14,840
+Because the number of features
+that we use is small,
+
+41
+00:02:14,840 --> 00:02:16,320
+this step is very efficient.
+
+42
+00:02:16,320 --> 00:02:19,410
+There within each course-grained
+cluster, you can afford to use the full
+
+43
+00:02:19,410 --> 00:02:22,066
+feature space to perform
+fine-grained clustering.
+
+44
+00:02:22,066 --> 00:02:26,320
+In A-plane clustering, we first
+cluster based on activity type, for
+
+45
+00:02:26,320 --> 00:02:30,678
+example, this is scan, spam,
+binary downloading or exploit.
+
+46
+00:02:30,678 --> 00:02:34,530
+Within each activity,refer
+to use the features
+
+47
+00:02:34,530 --> 00:02:36,600
+that tend traffic to perform clustering.
+
+48
+00:02:36,600 --> 00:02:41,200
+For example for scan, we can use the
+destination sump nets and the ports and
+
+49
+00:02:41,200 --> 00:02:43,580
+for spam we can use a spam template.
+
+50
+00:02:43,580 --> 00:02:46,390
+Again the main idea
+of A-plane clustering
+
+51
+00:02:46,390 --> 00:02:50,250
+is to capture similar activity
+patterns among the hosts.
+
+52
+00:02:50,250 --> 00:02:52,520
+In cross-plane correlation
+we are looking for
+
+53
+00:02:52,520 --> 00:02:56,040
+the intersection between a-plane and
+c-plane clusters.
+
+54
+00:02:56,040 --> 00:02:59,180
+Intuitively, hosts,
+there in the sections,
+
+55
+00:02:59,180 --> 00:03:03,680
+have similar malicious activities and
+similar C&amp;C patterns.
+
+56
+00:03:03,680 --> 00:03:07,940
+In particular, if two machines appear
+in the same activity clusters and
+
+57
+00:03:07,940 --> 00:03:10,450
+in at least in one common C-cluster.
+
+58
+00:03:10,450 --> 00:03:13,200
+That means they should be
+clustered together because
+
+59
+00:03:13,200 --> 00:03:14,110
+they're in the same Botnet.

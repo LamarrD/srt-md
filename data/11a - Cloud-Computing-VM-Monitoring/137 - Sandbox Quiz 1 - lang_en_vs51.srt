@@ -1,0 +1,41 @@
+1
+00:00:00,320 --> 00:00:05,330
+Sandboxes and virtual machines
+are often confused with one another.
+
+2
+00:00:05,330 --> 00:00:09,840
+Let's use this quiz to try and
+set the record straight about the two.
+
+3
+00:00:09,840 --> 00:00:14,460
+Next to each characteristic,
+put an S for Sandbox, V for
+
+4
+00:00:14,460 --> 00:00:17,090
+virtual machine, and B for both.
+
+5
+00:00:17,090 --> 00:00:22,710
+First, anything changed or created is
+not visible beyond its boundaries.
+
+6
+00:00:22,710 --> 00:00:28,110
+Second, if data is not saved,
+it is lost when the application closes.
+
+7
+00:00:28,110 --> 00:00:31,020
+Third, it is a machine within a machine.
+
+8
+00:00:31,020 --> 00:00:33,840
+Fourth, lightweight and easy to setup.
+
+9
+00:00:33,840 --> 00:00:37,760
+Fifth, disk space must be
+allocated to the application.

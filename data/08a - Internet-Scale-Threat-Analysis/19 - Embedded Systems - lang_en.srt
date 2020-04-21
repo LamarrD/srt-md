@@ -1,0 +1,108 @@
+1
+00:00:00,000 --> 00:00:05,600
+Now, let's look at why these embedded systems or network devices generate broken keys.
+
+2
+00:00:05,600 --> 00:00:09,120
+These embedded systems all run Linux and they
+
+3
+00:00:09,120 --> 00:00:13,315
+all use urandom to generate cryptographic keys.
+
+4
+00:00:13,315 --> 00:00:16,080
+Linux maintains several entropy pools.
+
+5
+00:00:16,080 --> 00:00:17,955
+As entropy is gathered,
+
+6
+00:00:17,955 --> 00:00:21,540
+it is stored in the input pool and is eventually mixed
+
+7
+00:00:21,540 --> 00:00:25,305
+into the non-blocking pool which feeds urandom.
+
+8
+00:00:25,305 --> 00:00:30,475
+However, many of these sources are not present on an embedded system.
+
+9
+00:00:30,475 --> 00:00:32,475
+For example, the system may not have
+
+10
+00:00:32,475 --> 00:00:37,535
+keyboard and many of them don't have spindle-based disks.
+
+11
+00:00:37,535 --> 00:00:42,790
+In fact, most of these embedded systems don't even support real-time clocks.
+
+12
+00:00:42,790 --> 00:00:46,690
+Therefore, with all of these random sources removed,
+
+13
+00:00:46,690 --> 00:00:50,155
+we end up with a deterministic source of randomness.
+
+14
+00:00:50,155 --> 00:00:53,200
+Furthermore, entropy is a mix from
+
+15
+00:00:53,200 --> 00:00:56,785
+the input pool to the non-blocking pool until there are more than,
+
+16
+00:00:56,785 --> 00:00:59,905
+192 bits of entropy have been collected.
+
+17
+00:00:59,905 --> 00:01:04,415
+Therefore, even if a small amount of entropy has been collected on a device,
+
+18
+00:01:04,415 --> 00:01:09,790
+none of it is available until the pool reaches this threshold.
+
+19
+00:01:09,790 --> 00:01:12,610
+This graph shows the build-up of entropy on
+
+20
+00:01:12,610 --> 00:01:16,800
+the first boot of a typical Ubuntu desktop server.
+
+21
+00:01:16,800 --> 00:01:19,580
+No randomness is added from the input pool to
+
+22
+00:01:19,580 --> 00:01:23,920
+urandom until 192 bits of entropy is available.
+
+23
+00:01:23,920 --> 00:01:26,530
+From the graph, we can tell that this did not
+
+24
+00:01:26,530 --> 00:01:30,180
+happen until fairly late in the boot process.
+
+25
+00:01:30,180 --> 00:01:33,085
+This is the so-called Boot-Time Entropy Hole problem,
+
+26
+00:01:33,085 --> 00:01:37,651
+which means that urandom may be predictable for a period after boot.
+
+27
+00:01:37,651 --> 00:01:43,000
+Unfortunately, cryptographic keys may be based on this predictable urandom.
+

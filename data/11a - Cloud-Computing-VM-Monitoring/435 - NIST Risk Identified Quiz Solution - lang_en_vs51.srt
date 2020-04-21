@@ -1,0 +1,41 @@
+1
+00:00:00,230 --> 00:00:05,120
+The blue circle includes risks such as
+data security, data locality risks and
+
+2
+00:00:05,120 --> 00:00:06,740
+unauthorized access.
+
+3
+00:00:06,740 --> 00:00:10,780
+And this circle is associated with
+the model software as a service.
+
+4
+00:00:10,780 --> 00:00:14,180
+In the orange circle we
+include SOA related issues,
+
+5
+00:00:14,180 --> 00:00:16,379
+API related issues and so on.
+
+6
+00:00:16,379 --> 00:00:20,130
+And this circle is associated
+with platform as a service model.
+
+7
+00:00:20,130 --> 00:00:23,910
+In the green circle, we include risks
+such as virtual machine security,
+
+8
+00:00:23,910 --> 00:00:26,160
+hypervisor security, and so on.
+
+9
+00:00:26,160 --> 00:00:29,540
+And this circle is associated with
+infrastructure as a service model.

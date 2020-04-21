@@ -1,0 +1,32 @@
+1
+00:00:00,000 --> 00:00:03,700
+Let's recap. To provide a proof of reserve, first,
+
+2
+00:00:03,700 --> 00:00:06,840
+the exchange proves that they have at least X amount of
+
+3
+00:00:06,840 --> 00:00:10,830
+reserve currency by doing a self transaction of X amount.
+
+4
+00:00:10,830 --> 00:00:15,955
+Then they prove that the customers have at most amount of Y deposited.
+
+5
+00:00:15,955 --> 00:00:20,735
+This shows that their reserve fraction is at least X divided by Y.
+
+6
+00:00:20,735 --> 00:00:24,695
+Notice that a bitcoin exchange can provide this proof,
+
+7
+00:00:24,695 --> 00:00:27,710
+that is independently verifiable by anybody,
+
+8
+00:00:27,710 --> 00:00:31,530
+and therefore, no central regulator is required.
+

@@ -1,0 +1,40 @@
+1
+00:00:00,000 --> 00:00:05,740
+The Byzantine generals problem is an example of asynchronous distributed system.
+
+2
+00:00:05,740 --> 00:00:10,250
+In such systems, we typically assume that the network is not reliable.
+
+3
+00:00:10,250 --> 00:00:13,725
+That is, there's no guarantee for reliable communications.
+
+4
+00:00:13,725 --> 00:00:17,264
+Furthermore, a faulty node may behave arbitrarily.
+
+5
+00:00:17,264 --> 00:00:20,100
+That means, its behavior is not defined.
+
+6
+00:00:20,100 --> 00:00:22,725
+Also, the nodes fail independently.
+
+7
+00:00:22,725 --> 00:00:26,900
+That means, there's no correlation of failures among the nodes.
+
+8
+00:00:26,900 --> 00:00:30,090
+On the other hand, we also assume that the attackers
+
+9
+00:00:30,090 --> 00:00:34,070
+cannot indefinitely block a node from providing service,
+
+10
+00:00:34,070 --> 00:00:36,620
+and the attacker cannot break crypto.
+

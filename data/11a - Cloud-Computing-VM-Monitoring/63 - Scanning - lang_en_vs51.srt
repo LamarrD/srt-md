@@ -1,0 +1,84 @@
+1
+00:00:00,012 --> 00:00:04,750
+Once you have the general information
+such as the IP ranges of a network,
+
+2
+00:00:04,750 --> 00:00:09,100
+now you gain more detailed information
+of the network using scanning.
+
+3
+00:00:09,100 --> 00:00:13,070
+You can find out which machine is up,
+and which ports are open.
+
+4
+00:00:13,070 --> 00:00:16,950
+Similarly on the servers
+what services are running.
+
+5
+00:00:16,950 --> 00:00:21,680
+You can even find out the versions and
+configurations of these services.
+
+6
+00:00:21,680 --> 00:00:25,720
+Then you can look up the corresponding
+vulnerability information on the web.
+
+7
+00:00:25,720 --> 00:00:29,330
+For example for a particular
+version of the Apache web server,
+
+8
+00:00:29,330 --> 00:00:33,320
+you can look it up on the web to see
+one of the known vulnerabilities,
+
+9
+00:00:33,320 --> 00:00:36,940
+such as what input can
+cause a buffer overflow.
+
+10
+00:00:36,940 --> 00:00:40,220
+Most promising avenues
+are typically associated with
+
+11
+00:00:40,220 --> 00:00:44,030
+services that are always up,
+such as the web services, so
+
+12
+00:00:44,030 --> 00:00:47,220
+you want to focus on
+analyzing these services.
+
+13
+00:00:47,220 --> 00:00:49,750
+On the other hand,
+you want to avoid detection so
+
+14
+00:00:49,750 --> 00:00:54,890
+you want to reduce the frequency and
+volume of your scanning and analysis.
+
+15
+00:00:54,890 --> 00:00:57,900
+Here are the different techniques and
+tools for scanning.
+
+16
+00:00:57,900 --> 00:01:02,690
+As you can see, Nmap is one of the most
+popular tools It can find out which
+
+17
+00:01:02,690 --> 00:01:07,460
+IP's up, which port is open and
+even perform OS finger prints.

@@ -1,0 +1,12 @@
+1
+00:00:00,260 --> 00:00:01,730
+The first statement is true.
+
+2
+00:00:01,730 --> 00:00:03,440
+The second is false.
+
+3
+00:00:03,440 --> 00:00:08,250
+Of these two methods, passive hijacking
+is less likely to raise suspicions.

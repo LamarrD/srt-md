@@ -1,0 +1,9 @@
+1
+00:00:00,240 --> 00:00:03,500
+Now lets take another quiz on HTTPS.
+
+2
+00:00:03,500 --> 00:00:07,420
+Which of the following are real
+disadvantages of using HTTPS?
+

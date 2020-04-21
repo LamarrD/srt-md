@@ -1,0 +1,52 @@
+1
+00:00:00,330 --> 00:00:05,290
+As we have discussed, there are quite a
+few types of bad actors in a cyber space
+
+2
+00:00:05,290 --> 00:00:08,240
+and they form
+an interconnected ecosystem.
+
+3
+00:00:08,240 --> 00:00:12,470
+For example, a botnet is created
+when computers are compromised,
+
+4
+00:00:12,470 --> 00:00:14,370
+a malware is installed and
+
+5
+00:00:14,370 --> 00:00:20,160
+a botnet is used to launch a number of
+malicious and fraudulent activities.
+
+6
+00:00:20,160 --> 00:00:24,450
+For example these are activities
+that can be launched by botnet,
+
+7
+00:00:24,450 --> 00:00:26,350
+in particular spam.
+
+8
+00:00:26,350 --> 00:00:31,730
+Spam can be used to facilitate a number
+of other activities such as phishing,
+
+9
+00:00:31,730 --> 00:00:34,970
+selling counterfeit goods or
+malware installation.
+
+10
+00:00:34,970 --> 00:00:39,265
+Again, the point here is that the bad
+actors form an interconnected
+
+11
+00:00:39,265 --> 00:00:43,770
+ecosystem because their activities or
+even structures support each other.

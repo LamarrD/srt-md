@@ -1,0 +1,61 @@
+1
+00:00:00,260 --> 00:00:04,910
+The first statement, application layer
+controls can protect application data,
+
+2
+00:00:04,910 --> 00:00:08,130
+and IP addresses,
+this statement is false.
+
+3
+00:00:08,130 --> 00:00:11,070
+IP addresses exist in a lower layer,
+and so
+
+4
+00:00:11,070 --> 00:00:15,010
+application layer controls
+cannot protect IP addresses.
+
+5
+00:00:15,010 --> 00:00:16,230
+The second statement,
+
+6
+00:00:16,230 --> 00:00:21,480
+IP information cannot be protect by
+transport layer controls, this is true.
+
+7
+00:00:21,480 --> 00:00:25,700
+The third statement, network layer
+controls can protect the data within
+
+8
+00:00:25,700 --> 00:00:29,870
+the packets as well as the IP
+information for each packet.
+
+9
+00:00:29,870 --> 00:00:30,990
+This statement's true,
+
+10
+00:00:30,990 --> 00:00:34,860
+because that is what network layer
+controls are supposed to do.
+
+11
+00:00:34,860 --> 00:00:36,170
+The fourth statement,
+
+12
+00:00:36,170 --> 00:00:40,920
+data link layer controls can protect
+connections comprised of multiple links.
+
+13
+00:00:40,920 --> 00:00:44,630
+This is false, they cannot protect
+connections with multiple links.

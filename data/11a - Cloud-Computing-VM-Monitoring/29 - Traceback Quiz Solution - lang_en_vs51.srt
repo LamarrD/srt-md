@@ -1,0 +1,22 @@
+1
+00:00:00,230 --> 00:00:04,019
+Attackers can generate unlimited
+types of packets, so this is false.
+
+2
+00:00:04,019 --> 00:00:07,210
+Attackers can indeed work alone or
+in groups.
+
+3
+00:00:07,210 --> 00:00:11,210
+And the Traceback will work regardless
+whether the attacker are aware of
+
+4
+00:00:11,210 --> 00:00:12,990
+the tracing mechanisms or not.
+
+5
+00:00:12,990 --> 00:00:14,090
+So this is false.

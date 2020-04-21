@@ -1,0 +1,9 @@
+1
+00:00:00,230 --> 00:00:03,040
+Now let's do a quiz on
+penetration testing.
+
+2
+00:00:03,040 --> 00:00:05,520
+Which events should trigger
+a penetration testing?

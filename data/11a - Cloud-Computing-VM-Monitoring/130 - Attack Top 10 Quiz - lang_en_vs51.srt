@@ -1,0 +1,47 @@
+1
+00:00:00,520 --> 00:00:04,490
+Now let's do a quiz
+relates to web attacks.
+
+2
+00:00:04,490 --> 00:00:07,820
+According to the OWASP in 2013,
+
+3
+00:00:07,820 --> 00:00:12,420
+the following are the top
+10 attacks on web security.
+
+4
+00:00:12,420 --> 00:00:16,840
+I would like you to rank them in order,
+1 for the most common and 10 for
+
+5
+00:00:16,840 --> 00:00:18,340
+the least common.
+
+6
+00:00:18,340 --> 00:00:21,970
+These attacks are,
+security misconfiguration,
+
+7
+00:00:21,970 --> 00:00:26,630
+insecure direct object references,
+missing function level access control,
+
+8
+00:00:27,770 --> 00:00:33,390
+sensitive data exposure, using
+components with known vulnerabilities,
+
+9
+00:00:33,390 --> 00:00:38,650
+cross site scripting,
+unvalidated redirects and forwards,
+
+10
+00:00:38,650 --> 00:00:44,380
+broken authentication and session,
+injection, cross site request forgery.

@@ -1,0 +1,48 @@
+1
+00:00:00,360 --> 00:00:04,460
+As we already discussed,
+the volume of request from a computer
+
+2
+00:00:04,460 --> 00:00:07,060
+is smaller than the response
+from the server.
+
+3
+00:00:07,060 --> 00:00:11,290
+That means a small command can
+generate a large response.
+
+4
+00:00:11,290 --> 00:00:14,030
+And the attack works
+because the attacker
+
+5
+00:00:14,030 --> 00:00:19,140
+can send the request to a server by
+spoofing the IP address of the target.
+
+6
+00:00:19,140 --> 00:00:22,176
+So that the servers response
+is sent through target and
+
+7
+00:00:22,176 --> 00:00:24,290
+that's how the attack works.
+
+8
+00:00:24,290 --> 00:00:28,440
+And it is difficult to ensure that
+the computers only communicate
+
+9
+00:00:28,440 --> 00:00:30,310
+with legitimate NTP servers.
+
+10
+00:00:30,310 --> 00:00:35,250
+This means that it is not easy to
+figure out responses from NTP servers.
+

@@ -1,0 +1,46 @@
+1
+00:00:00,380 --> 00:00:04,550
+In this lesson, we will discuss
+the first line of network defense.
+
+2
+00:00:04,550 --> 00:00:05,510
+The basic tools and
+
+3
+00:00:05,510 --> 00:00:09,850
+techniques of penetration testing and
+security assessments.
+
+4
+00:00:09,850 --> 00:00:13,060
+We will also discuss one
+of the most powerful tools
+
+5
+00:00:13,060 --> 00:00:15,410
+of the network hacker, you.
+
+6
+00:00:15,410 --> 00:00:17,440
+Yes, you and I.
+
+7
+00:00:17,440 --> 00:00:22,260
+In fact, everyone has a potential
+to be a hacker's best friend.
+
+8
+00:00:22,260 --> 00:00:27,450
+Social engineering is a fast,
+low risk method to gain access to data.
+
+9
+00:00:27,450 --> 00:00:30,330
+Pay close attention to
+the methods used and
+
+10
+00:00:30,330 --> 00:00:34,010
+think about how they can be deployed
+to make a network more secure.

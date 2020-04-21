@@ -1,0 +1,52 @@
+1
+00:00:00,000 --> 00:00:02,695
+Now, let's discuss a new blocklist model.
+
+2
+00:00:02,695 --> 00:00:05,970
+We know that static blocklist are increasingly ineffective.
+
+3
+00:00:05,970 --> 00:00:09,345
+What we need is a dynamic reputation system that
+
+4
+00:00:09,345 --> 00:00:13,970
+outputs the reputation score or the trustworthiness of a domain.
+
+5
+00:00:13,970 --> 00:00:16,290
+The intuition of this new model is
+
+6
+00:00:16,290 --> 00:00:21,120
+that legitimate use of domains and sites are different for malicious use.
+
+7
+00:00:21,120 --> 00:00:24,725
+The question is, how do we observe such differences?
+
+8
+00:00:24,725 --> 00:00:29,485
+Our intuition is that such differences can be observed in DNS traffic.
+
+9
+00:00:29,485 --> 00:00:35,160
+For example, we can look at the patterns of requests and the reputation of the requester,
+
+10
+00:00:35,160 --> 00:00:39,660
+the resolved IPs, and the network providers for these domains.
+
+11
+00:00:39,660 --> 00:00:43,999
+Therefore, our approach is to analyze DNS traffic,
+
+12
+00:00:43,999 --> 00:00:48,110
+extract temporal and statistical features and then apply machine learning
+
+13
+00:00:48,110 --> 00:00:52,960
+algorithms to learn models that can provide the dynamic score of a domain.
+

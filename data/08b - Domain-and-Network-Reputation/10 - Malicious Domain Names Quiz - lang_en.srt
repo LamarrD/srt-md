@@ -1,0 +1,20 @@
+1
+00:00:00,000 --> 00:00:04,975
+One of the methods used to detect malicious domain names involves name analysis.
+
+2
+00:00:04,975 --> 00:00:08,445
+Domain names are analyzed to determine the likelihood that
+
+3
+00:00:08,445 --> 00:00:12,035
+a name is used or created for not legitimate purposes.
+
+4
+00:00:12,035 --> 00:00:13,845
+Lists of types of characters
+
+5
+00:00:13,845 --> 00:00:18,370
+a malicious domain name detection program should look for in a domain name.
+

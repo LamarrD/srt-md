@@ -1,0 +1,20 @@
+1
+00:00:00,000 --> 00:00:01,980
+In our study, we used data from
+
+2
+00:00:01,980 --> 00:00:06,210
+a major US cellular provider and a major non-cellular ISP.
+
+3
+00:00:06,210 --> 00:00:08,335
+We find that, at least in the US,
+
+4
+00:00:08,335 --> 00:00:13,120
+the number of machines that are infected with no malware remains to be very small,
+
+5
+00:00:13,120 --> 00:00:19,090
+and iOS and Android devices are equally likely to look up these suspicious domains.
+

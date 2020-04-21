@@ -1,0 +1,56 @@
+1
+00:00:00,000 --> 00:00:01,550
+To summarize this lesson,
+
+2
+00:00:01,550 --> 00:00:04,710
+let's think about what a 51 percent attacker can do,
+
+3
+00:00:04,710 --> 00:00:09,005
+that is, an attacker that controls 51 percent of the computing power.
+
+4
+00:00:09,005 --> 00:00:11,030
+Can the attacker steal Bitcoins?
+
+5
+00:00:11,030 --> 00:00:14,225
+No, because digital signatures can prevent this.
+
+6
+00:00:14,225 --> 00:00:17,425
+Can the attacker suppress some transactions from the blockchain?
+
+7
+00:00:17,425 --> 00:00:21,875
+Yes, because this attacker can refuse to extend from that block.
+
+8
+00:00:21,875 --> 00:00:25,305
+Can the attacker suppress transactions from Peer-2-Peer network?
+
+9
+00:00:25,305 --> 00:00:29,425
+No, because the transitions are broadcasted to Peer-2- Peer network.
+
+10
+00:00:29,425 --> 00:00:31,140
+Can they change the block reward?
+
+11
+00:00:31,140 --> 00:00:33,805
+No. That is determined by the whole system.
+
+12
+00:00:33,805 --> 00:00:36,500
+Can the attacker destroy confidence in Bitcoin?
+
+13
+00:00:36,500 --> 00:00:41,030
+Yes. For example, by refusing to extend from the valid block,
+
+14
+00:00:41,030 --> 00:00:44,400
+then Bitcoin may become useless for valid transactions.
+

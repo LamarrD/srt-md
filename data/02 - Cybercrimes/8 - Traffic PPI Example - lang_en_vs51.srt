@@ -1,0 +1,39 @@
+1
+00:00:00,280 --> 00:00:03,480
+Let's look at a traffic
+paper install example.
+
+2
+00:00:03,480 --> 00:00:06,460
+There are three causes of actors
+in traffic paper install.
+
+3
+00:00:06,460 --> 00:00:10,020
+There are the victims,
+the exploit developers, and
+
+4
+00:00:10,020 --> 00:00:15,260
+the clients, or bad guys that use
+the exploits to dispute malware.
+
+5
+00:00:15,260 --> 00:00:19,100
+If you look at the traffic flow,
+we notice that the payment flows from
+
+6
+00:00:19,100 --> 00:00:25,270
+the clients or the bad guys who buy or
+rent the exploits to exploit developers.
+
+7
+00:00:25,270 --> 00:00:28,860
+The malware flows from these
+attackers to the victim.
+
+8
+00:00:28,860 --> 00:00:32,320
+The payment amount depends on
+the volume of malware installation.

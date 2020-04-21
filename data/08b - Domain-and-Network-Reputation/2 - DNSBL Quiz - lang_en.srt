@@ -1,0 +1,16 @@
+1
+00:00:00,000 --> 00:00:03,075
+Before we discuss domain name reputations,
+
+2
+00:00:03,075 --> 00:00:05,410
+let's do a quiz on DNBSL.
+
+3
+00:00:05,410 --> 00:00:08,830
+DNSBL stands for DNS black list.
+
+4
+00:00:08,830 --> 00:00:13,170
+Match the DNSBL level with its description.
+

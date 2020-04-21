@@ -1,0 +1,206 @@
+1
+00:00:00,300 --> 00:00:03,168
+Many botnets use DNS for
+command control.
+
+2
+00:00:03,168 --> 00:00:06,189
+A key advantage is that DNS
+is used whenever a machine
+
+3
+00:00:06,189 --> 00:00:08,592
+on the internet needs
+to talk to another,
+
+4
+00:00:08,592 --> 00:00:12,760
+because DNS stores the mapping
+between domain name and IP address.
+
+5
+00:00:12,760 --> 00:00:16,411
+That is DNS is always allowed
+in a network and using DNS for
+
+6
+00:00:16,411 --> 00:00:19,159
+command control won't standout easily.
+
+7
+00:00:19,159 --> 00:00:21,685
+Suppose a malware infects many machines,
+
+8
+00:00:21,685 --> 00:00:24,610
+that is many machines
+now have become bots.
+
+9
+00:00:24,610 --> 00:00:28,044
+The question is how can this
+bot organize into a botnet?
+
+10
+00:00:28,044 --> 00:00:32,369
+The bot malware has instructions to
+connect to this command control server.
+
+11
+00:00:32,369 --> 00:00:34,773
+But in order to connect to
+the command control server,
+
+12
+00:00:34,773 --> 00:00:36,351
+it will perform a DNS lookup first.
+
+13
+00:00:36,351 --> 00:00:40,237
+And with the IP address, the bot can
+connect to the command control server
+
+14
+00:00:40,237 --> 00:00:42,820
+and that's how the bot
+becomes part of a botnet.
+
+15
+00:00:42,820 --> 00:00:47,319
+The DNS service providers preferred
+by botnets are Dynamic DNS providers,
+
+16
+00:00:47,319 --> 00:00:51,957
+because they allow the frequent changes
+of the mapping between DNS domain name
+
+17
+00:00:51,957 --> 00:00:53,140
+and IP address.
+
+18
+00:00:53,140 --> 00:00:57,440
+That is the botmaster can change to use
+another machine on the internet for
+
+19
+00:00:57,440 --> 00:00:58,510
+command control and
+
+20
+00:00:58,510 --> 00:01:03,060
+all he needs to do is log into his
+Dynamic DNS provider, and make changes.
+
+21
+00:01:03,060 --> 00:01:07,261
+If we can detect that, a domain is used
+for botnet command control, then we can
+
+22
+00:01:07,261 --> 00:01:11,272
+detect which machine connects to this
+domain and this machine is a bot, but
+
+23
+00:01:11,272 --> 00:01:14,606
+how do we know this domain is used for
+botnet command control?
+
+24
+00:01:14,606 --> 00:01:18,368
+It terms out that way the bots look
+at the domain is different from how
+
+25
+00:01:18,368 --> 00:01:21,668
+machines look at instrument
+domain such as a news website,
+
+26
+00:01:21,668 --> 00:01:24,160
+because of normal use activities.
+
+27
+00:01:24,160 --> 00:01:27,716
+For example, a botnet CNC is looked
+up by hundreds of thousands of
+
+28
+00:01:27,716 --> 00:01:29,475
+machines across the internet.
+
+29
+00:01:29,475 --> 00:01:33,052
+And yet, it is so-called unknown
+according to Google search and
+
+30
+00:01:33,052 --> 00:01:34,620
+that's an anomaly.
+
+31
+00:01:34,620 --> 00:01:39,578
+We can use anomaly detection at the
+Dynamic DNS service provider by examine
+
+32
+00:01:39,578 --> 00:01:43,292
+queries in DNS domains to
+identify botnet CNC domains.
+
+33
+00:01:43,292 --> 00:01:46,604
+And once we identify a domain
+is used for botnet CNC,
+
+34
+00:01:46,604 --> 00:01:49,323
+then a number of
+responses are available.
+
+35
+00:01:49,323 --> 00:01:52,165
+One is for the service provider
+to disable a domain, but
+
+36
+00:01:52,165 --> 00:01:55,290
+it's one thing to occur when
+none such domain reply.
+
+37
+00:01:55,290 --> 00:01:56,600
+Another option is for
+
+38
+00:01:56,600 --> 00:02:00,000
+the provider to set a mapping
+of a domain to a single address.
+
+39
+00:02:00,000 --> 00:02:02,880
+So that instead of connecting to
+the botnet command control server,
+
+40
+00:02:02,880 --> 00:02:05,110
+the bots are now
+connected to a sinkhole.
+
+41
+00:02:05,110 --> 00:02:07,820
+The sinkhole in addition
+to disabling the botnet
+
+42
+00:02:07,820 --> 00:02:11,210
+security researchers can also learn
+where the bots are by looking at
+
+43
+00:02:11,210 --> 00:02:13,400
+the origins of the connections
+to the sinkhole.
+

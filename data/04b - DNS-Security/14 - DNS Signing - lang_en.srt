@@ -1,0 +1,52 @@
+1
+00:00:00,000 --> 00:00:02,959
+Here's an example of
+the DNS signing process.
+
+2
+00:00:02,959 --> 00:00:06,710
+Suppose a local DNS server
+looks up wikipedia.org.
+
+3
+00:00:06,710 --> 00:00:08,690
+They first query the root server.
+
+4
+00:00:08,690 --> 00:00:12,720
+The root server provides the IP
+address of .org and signs it.
+
+5
+00:00:12,720 --> 00:00:16,239
+The signature is based on
+private key of the root server.
+
+6
+00:00:16,239 --> 00:00:18,830
+The DNS server performs recursive query,
+
+7
+00:00:18,830 --> 00:00:21,520
+in this case sending
+the request to .org.
+
+8
+00:00:21,520 --> 00:00:26,400
+And the response contains the IP
+address of wikipedia.org signed
+
+9
+00:00:26,400 --> 00:00:28,330
+with the public key of .org.
+
+10
+00:00:28,330 --> 00:00:31,480
+The local DNS server can modify
+all these signatures and
+
+11
+00:00:31,480 --> 00:00:34,730
+be confident that the IP address
+that it receives is correct.
+

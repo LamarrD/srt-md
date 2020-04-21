@@ -1,0 +1,62 @@
+1
+00:00:00,150 --> 00:00:02,740
+Before we discuss web security,
+
+2
+00:00:02,740 --> 00:00:07,190
+let's remind ourselves as to
+why we need web security.
+
+3
+00:00:07,190 --> 00:00:12,040
+In this quiz,
+match the attacks to their descriptions.
+
+4
+00:00:12,040 --> 00:00:16,870
+So the attacks are, using components
+with known vulnerabilities,
+
+5
+00:00:16,870 --> 00:00:21,780
+missing function level access control,
+sensitive data exposure,
+
+6
+00:00:21,780 --> 00:00:27,260
+security misconfiguration,
+insecure direct object references,
+
+7
+00:00:27,260 --> 00:00:33,530
+cross site scripting, broken
+authentication and session, injection.
+
+8
+00:00:33,530 --> 00:00:38,930
+And the descriptions are, modifies
+back-end statement through user input,
+
+9
+00:00:38,930 --> 00:00:45,570
+inserts Javaccripts into trusted sites,
+program flaws allow bypass
+
+10
+00:00:45,570 --> 00:00:51,190
+of authentication methods,
+attackers modify file names,
+
+11
+00:00:51,190 --> 00:00:56,840
+abuses the lack of data encryption,
+exploits misconfigured servers,
+
+12
+00:00:56,840 --> 00:01:02,450
+privilege functionality is hidden rather
+than enforced through access controls,
+
+13
+00:01:02,450 --> 00:01:05,080
+uses unpatched third party components.

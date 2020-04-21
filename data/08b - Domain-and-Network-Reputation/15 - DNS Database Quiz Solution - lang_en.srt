@@ -1,0 +1,32 @@
+1
+00:00:00,000 --> 00:00:03,250
+Network-based features. These include,
+
+2
+00:00:03,250 --> 00:00:07,020
+the total number of IPs historically associated with a domain,
+
+3
+00:00:07,020 --> 00:00:09,610
+or the number of distinct autonomous systems.
+
+4
+00:00:09,610 --> 00:00:12,810
+Zone-based features. These include,
+
+5
+00:00:12,810 --> 00:00:14,970
+the average length of domain names,
+
+6
+00:00:14,970 --> 00:00:18,105
+the occurrence frequency of different characters, etcetera.
+
+7
+00:00:18,105 --> 00:00:20,135
+Evidence-based features.
+
+8
+00:00:20,135 --> 00:00:24,080
+These include, the number of distinct malware samples.
+

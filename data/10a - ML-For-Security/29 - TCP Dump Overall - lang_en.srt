@@ -1,0 +1,8 @@
+1
+00:00:00,000 --> 00:00:04,620
+This shows that our data mining and machine learning-based approach performed quite well.
+
+2
+00:00:04,620 --> 00:00:08,780
+Other approaches are all based on rules hand-coded by experts.
+

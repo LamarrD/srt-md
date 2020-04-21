@@ -1,0 +1,29 @@
+1
+00:00:00,280 --> 00:00:02,490
+You can also perform
+more targeted attack or
+
+2
+00:00:02,490 --> 00:00:07,220
+testing by figuring out which user
+accounts are poorly protected.
+
+3
+00:00:07,220 --> 00:00:11,220
+And obviously, this is more targeted and
+intrusive than scanning.
+
+4
+00:00:11,220 --> 00:00:14,570
+And here are the techniques and
+tools for enumeration.
+
+5
+00:00:14,570 --> 00:00:18,310
+For example, you can use these
+tools to list user accounts and
+
+6
+00:00:18,310 --> 00:00:21,360
+use these other tools to find
+out file sharing information.

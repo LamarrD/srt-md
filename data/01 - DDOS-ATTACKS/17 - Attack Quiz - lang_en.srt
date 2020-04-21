@@ -1,0 +1,14 @@
+1
+00:00:00,220 --> 00:00:02,650
+Now let's do a quiz on flooding attack.
+
+2
+00:00:02,650 --> 00:00:05,660
+With regards to a UDP
+base flooding attack,
+
+3
+00:00:05,660 --> 00:00:07,840
+which of the following
+statements are true?
+

@@ -1,0 +1,32 @@
+1
+00:00:00,000 --> 00:00:04,960
+First, proof of work is costly and time consuming to produce, this is true.
+
+2
+00:00:04,960 --> 00:00:10,150
+Second, proof of work is costly and time consuming to verify, this is false.
+
+3
+00:00:10,150 --> 00:00:12,050
+Third, to earn a coin,
+
+4
+00:00:12,050 --> 00:00:15,510
+miners of bitcoins must complete some of the work in the block,
+
+5
+00:00:15,510 --> 00:00:19,505
+this is false because minor must complete all the work in a block.
+
+6
+00:00:19,505 --> 00:00:22,515
+Fourth, changing a block requires degenerating
+
+7
+00:00:22,515 --> 00:00:26,660
+all the successors and re-doing the work that they contain, this is true.
+
+8
+00:00:26,660 --> 00:00:29,160
+In fact, this is a temporary system property.
+

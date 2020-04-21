@@ -1,0 +1,120 @@
+1
+00:00:00,000 --> 00:00:03,360
+The so-called hot storage is online,
+
+2
+00:00:03,360 --> 00:00:07,259
+and the so-called cold storage is offline.
+
+3
+00:00:07,259 --> 00:00:09,405
+Hot storage is online,
+
+4
+00:00:09,405 --> 00:00:12,555
+for example, on your computer or on your phone.
+
+5
+00:00:12,555 --> 00:00:16,320
+It's very convenient, but it's not very secure.
+
+6
+00:00:16,320 --> 00:00:19,755
+On the other hand, cold storage is offline,
+
+7
+00:00:19,755 --> 00:00:22,950
+not convenient, but it's safe.
+
+8
+00:00:22,950 --> 00:00:24,750
+The reason is obvious,
+
+9
+00:00:24,750 --> 00:00:26,820
+if the storage is offline,
+
+10
+00:00:26,820 --> 00:00:30,030
+then a cyber attacker cannot get to it easily.
+
+11
+00:00:30,030 --> 00:00:33,600
+In general, we can keep a top secret in
+
+12
+00:00:33,600 --> 00:00:38,060
+a cold storage and put the most frequent used keys.
+
+13
+00:00:38,060 --> 00:00:44,000
+Here's another way to look at the difference between hot storage and cold storage.
+
+14
+00:00:44,000 --> 00:00:50,470
+We can put a top secret or the less frequently used master secret in a cold storage.
+
+15
+00:00:50,470 --> 00:00:54,470
+We can put the most frequently used keys in hot storage.
+
+16
+00:00:54,470 --> 00:00:56,345
+As we just discussed,
+
+17
+00:00:56,345 --> 00:01:02,110
+storing your keys of Bitcoins on computers is storing them in a hot storage.
+
+18
+00:01:02,110 --> 00:01:05,495
+It is online, convenient, but somewhat risky.
+
+19
+00:01:05,495 --> 00:01:09,635
+On the other hand, you can put your keys of Bitcoins offline.
+
+20
+00:01:09,635 --> 00:01:12,485
+This is less convenient, but much safer.
+
+21
+00:01:12,485 --> 00:01:18,315
+You can have the best of both worlds by having both hot storage and cold storage.
+
+22
+00:01:18,315 --> 00:01:21,645
+For example, you can move coins back and forth,
+
+23
+00:01:21,645 --> 00:01:24,860
+but then you need to use separate keys and each side
+
+24
+00:01:24,860 --> 00:01:28,510
+needs to know each other's keys or the addresses.
+
+25
+00:01:28,510 --> 00:01:32,060
+You need to use separate keys because otherwise,
+
+26
+00:01:32,060 --> 00:01:37,550
+the coins in cold storage will be vulnerable if the hot storage is compromised.
+
+27
+00:01:37,550 --> 00:01:40,840
+You need to use separate keys because otherwise,
+
+28
+00:01:40,840 --> 00:01:46,280
+the coins in a cold storage will be vulnerable if the hot storage is compromised.
+
+29
+00:01:46,280 --> 00:01:51,490
+You will want to move the coins back and forth between the hot side and the cold side.
+
+30
+00:01:51,490 --> 00:01:56,420
+So, each side will need to note the others' addresses or public keys.
+

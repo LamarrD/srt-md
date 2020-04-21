@@ -1,0 +1,200 @@
+1
+00:00:00,000 --> 00:00:02,825
+Suppose for privacy or other reasons,
+
+2
+00:00:02,825 --> 00:00:06,850
+we won't to be able to receive each bitcoin at a separate address.
+
+3
+00:00:06,850 --> 00:00:10,890
+So, whenever we transfer coin from the hot side to the cold side,
+
+4
+00:00:10,890 --> 00:00:14,590
+we would like to use a fresh cold edges for that purpose.
+
+5
+00:00:14,590 --> 00:00:17,180
+But, since the cold side is offline,
+
+6
+00:00:17,180 --> 00:00:20,340
+how do the hot side find out those addresses?
+
+7
+00:00:20,340 --> 00:00:24,150
+The blunt solution is for the cold side to generate
+
+8
+00:00:24,150 --> 00:00:28,915
+a big batch of addresses and send those over to the hot side.
+
+9
+00:00:28,915 --> 00:00:33,130
+The drawback is that the hot side need to reconnect with
+
+10
+00:00:33,130 --> 00:00:37,380
+the cold side periodically in order to transfer more addresses.
+
+11
+00:00:37,380 --> 00:00:42,335
+A better solution is to use the so-called hierarchical wallet.
+
+12
+00:00:42,335 --> 00:00:48,999
+To review, previously we discussed key generation and digital signatures,
+
+13
+00:00:48,999 --> 00:00:52,595
+and we looked at a function called generateKeys.
+
+14
+00:00:52,595 --> 00:00:56,245
+This function generates a public key which acts
+
+15
+00:00:56,245 --> 00:01:00,175
+as an address and a secret or private key.
+
+16
+00:01:00,175 --> 00:01:01,990
+In a hierarchical wallet,
+
+17
+00:01:01,990 --> 00:01:04,780
+key generation works in different way.
+
+18
+00:01:04,780 --> 00:01:07,320
+Instead of generating a single address,
+
+19
+00:01:07,320 --> 00:01:11,615
+we generate what we called address generation information.
+
+20
+00:01:11,615 --> 00:01:13,640
+Rather than private key,
+
+21
+00:01:13,640 --> 00:01:17,815
+we generate what we call private key generation information.
+
+22
+00:01:17,815 --> 00:01:20,600
+Given the address generation information,
+
+23
+00:01:20,600 --> 00:01:23,335
+we can generate a sequence of addresses.
+
+24
+00:01:23,335 --> 00:01:26,570
+Likewise, we can generate a sequence of
+
+25
+00:01:26,570 --> 00:01:30,030
+public keys using the private key generation information.
+
+26
+00:01:30,030 --> 00:01:35,270
+The cryptographic magic that makes this useful is that for every i,
+
+27
+00:01:35,270 --> 00:01:39,745
+the ith address and the ith secret key match up.
+
+28
+00:01:39,745 --> 00:01:43,475
+That is, the ith secret or private key
+
+29
+00:01:43,475 --> 00:01:48,835
+controls and can be used to spend bitcoins from the ith address.
+
+30
+00:01:48,835 --> 00:01:53,400
+That is, the ith private key is paired up with ith address.
+
+31
+00:01:53,400 --> 00:01:58,370
+In other words, we have a sequence of regular key pairs.
+
+32
+00:01:58,370 --> 00:02:03,125
+The other important cryptographic property here is security, that is,
+
+33
+00:02:03,125 --> 00:02:06,050
+the address generation information here does
+
+34
+00:02:06,050 --> 00:02:09,025
+not leak any information about the private keys.
+
+35
+00:02:09,025 --> 00:02:12,530
+On the other hand, not all digital signature schemes can
+
+36
+00:02:12,530 --> 00:02:16,210
+be modified to support hierarchical key generation.
+
+37
+00:02:16,210 --> 00:02:20,960
+The good news is that the digital signature scheme used by bitcoin,
+
+38
+00:02:20,960 --> 00:02:24,915
+elliptic curve, does support hierarchical key generation.
+
+39
+00:02:24,915 --> 00:02:28,940
+As a result, the cold side can generate as many keys as it
+
+40
+00:02:28,940 --> 00:02:33,685
+wants and the hot side can generate the corresponding addresses.
+
+41
+00:02:33,685 --> 00:02:37,445
+To summarize, the cold side create and saves
+
+42
+00:02:37,445 --> 00:02:41,365
+private key generation information and address generation information.
+
+43
+00:02:41,365 --> 00:02:46,705
+It has a one-time transfer of the address generation information to the hot side.
+
+44
+00:02:46,705 --> 00:02:49,430
+The hot side generates a new address
+
+45
+00:02:49,430 --> 00:02:53,800
+sequentially every time it wants to send a coin to the cold side.
+
+46
+00:02:53,800 --> 00:02:55,904
+When a cold side reconnects,
+
+47
+00:02:55,904 --> 00:02:58,700
+it generates addresses sequentially and
+
+48
+00:02:58,700 --> 00:03:02,175
+checks the blockchain for transfers to these addresses.
+
+49
+00:03:02,175 --> 00:03:04,520
+It can also generate private keys
+
+50
+00:03:04,520 --> 00:03:09,030
+sequentially if it wants to send some coins back to the hot side.
+

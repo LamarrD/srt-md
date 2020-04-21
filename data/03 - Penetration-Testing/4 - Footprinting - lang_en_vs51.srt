@@ -1,0 +1,68 @@
+1
+00:00:00,240 --> 00:00:03,230
+Now, let's discuss these
+steps in more details.
+
+2
+00:00:03,230 --> 00:00:05,370
+The first step is footprinting.
+
+3
+00:00:05,370 --> 00:00:09,320
+In this step, the attacker, or
+tester, conducts reconnaissance and
+
+4
+00:00:09,320 --> 00:00:10,760
+information gathering.
+
+5
+00:00:10,760 --> 00:00:15,293
+The important network information
+includes network IP addresses,
+
+6
+00:00:15,293 --> 00:00:18,120
+the namespace, and topology.
+
+7
+00:00:18,120 --> 00:00:23,630
+Even a phone number range can be used
+for modem access or social engineering.
+
+8
+00:00:23,630 --> 00:00:25,580
+Such information is critical for
+
+9
+00:00:25,580 --> 00:00:28,820
+planning the next steps of testing or
+attacks.
+
+10
+00:00:28,820 --> 00:00:33,380
+Example, you will need the IP addresses
+to decide how to scan the network.
+
+11
+00:00:33,380 --> 00:00:36,870
+Here we'll list the different techniques
+and the corresponding tools for
+
+12
+00:00:36,870 --> 00:00:37,990
+footprinting.
+
+13
+00:00:37,990 --> 00:00:42,050
+For example, you can use Google to
+find out the company information, and
+
+14
+00:00:42,050 --> 00:00:46,590
+use Whois to find out the domain name
+information of the name servers and
+
+15
+00:00:46,590 --> 00:00:47,410
+IP ranges.

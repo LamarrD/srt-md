@@ -1,0 +1,68 @@
+1
+00:00:00,260 --> 00:00:03,040
+As we have discussed,
+the DNS responses and
+
+2
+00:00:03,040 --> 00:00:05,970
+in particular,
+the mapping between the IP address and
+
+3
+00:00:05,970 --> 00:00:10,610
+a domain are cached so that we can
+save time on repeated queries.
+
+4
+00:00:10,610 --> 00:00:13,960
+The NS records of
+the domains are also cached.
+
+5
+00:00:13,960 --> 00:00:18,942
+Therefore, if the browser
+looks up www.ece.gatech.edu,
+
+6
+00:00:18,942 --> 00:00:25,146
+the local DNS server only needs to start
+with gatech.edu instead of the root.
+
+7
+00:00:25,146 --> 00:00:31,470
+DNS servers can also cache the negative
+results such as a domain does not exist.
+
+8
+00:00:31,470 --> 00:00:37,230
+For example, if somebody misspelled
+gatech.edu to say gatech.ed,
+
+9
+00:00:37,230 --> 00:00:41,200
+the DNS query response will be
+this domain does not exist.
+
+10
+00:00:41,200 --> 00:00:43,050
+And this result is cached.
+
+11
+00:00:43,050 --> 00:00:46,665
+So that, next time if somebody
+mistype again the same way,
+
+12
+00:00:46,665 --> 00:00:50,150
+gatech.ed, the DNS cache can always say,
+
+13
+00:00:50,150 --> 00:00:53,650
+hey this domain does not exist,
+without having to query it.
+
+14
+00:00:53,650 --> 00:00:58,440
+And all cache data, whether it's
+positive or negative response has a TTL.
+

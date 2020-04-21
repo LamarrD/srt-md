@@ -1,0 +1,84 @@
+1
+00:00:00,000 --> 00:00:02,245
+Let's use an example to illustrate.
+
+2
+00:00:02,245 --> 00:00:05,415
+Suppose k is three and n is five.
+
+3
+00:00:05,415 --> 00:00:10,065
+Further, the ultra secret is seven and a0 is seven,
+
+4
+00:00:10,065 --> 00:00:15,485
+a1 is three and a2 is five and the modular prime number p is 11.
+
+5
+00:00:15,485 --> 00:00:21,490
+That is; qx is 5x squared plus 3x plus seven modular 11.
+
+6
+00:00:21,490 --> 00:00:23,130
+Since n is five,
+
+7
+00:00:23,130 --> 00:00:28,165
+we compute five shares of five points by setting x to be one,
+
+8
+00:00:28,165 --> 00:00:30,945
+two, three, four, and five,
+
+9
+00:00:30,945 --> 00:00:32,740
+and these are the shares.
+
+10
+00:00:32,740 --> 00:00:35,395
+Since k is three with three shares,
+
+11
+00:00:35,395 --> 00:00:37,600
+we should be able to reconstruct the secret.
+
+12
+00:00:37,600 --> 00:00:41,595
+Say we have three shares S1, S2, and S5.
+
+13
+00:00:41,595 --> 00:00:45,710
+Then we can use this formula due to Lagrange to compute qx.
+
+14
+00:00:45,710 --> 00:00:49,895
+So, we can plug in these points to the formula that is setting the x,
+
+15
+00:00:49,895 --> 00:00:51,665
+i or j's to be one,
+
+16
+00:00:51,665 --> 00:00:53,570
+two and five and setting the y,
+
+17
+00:00:53,570 --> 00:00:56,075
+i's to be four, zero, and four.
+
+18
+00:00:56,075 --> 00:00:59,110
+Then we have qx represented as this formula.
+
+19
+00:00:59,110 --> 00:01:06,065
+With simple arithmetic, you can verify that qx is five x squared plus 3x plus seven.
+
+20
+00:01:06,065 --> 00:01:10,385
+Then we set x to zero and q of zero is seven
+
+21
+00:01:10,385 --> 00:01:15,740
+which is the original secret and this is how we use Shamir's Secret Sharing Scheme.
+

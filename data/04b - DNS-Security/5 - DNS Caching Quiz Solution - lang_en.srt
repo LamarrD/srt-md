@@ -1,0 +1,90 @@
+1
+00:00:00,300 --> 00:00:02,840
+As illustrated in the previous example,
+
+2
+00:00:02,840 --> 00:00:08,000
+querying the IP address of a domain
+name can involve a number of steps.
+
+3
+00:00:08,000 --> 00:00:13,000
+To save time, the records are cached
+on a local server for reuse later.
+
+4
+00:00:13,000 --> 00:00:20,700
+For example, when the IP address of
+www.cc.gatech.edu has been obtained,
+
+5
+00:00:20,700 --> 00:00:24,940
+the mapping of this IP address and
+the domain is cached so
+
+6
+00:00:24,940 --> 00:00:30,430
+that the next time the browser
+is looking up www.cc.gatech.edu,
+
+7
+00:00:30,430 --> 00:00:35,210
+the DNS server does not have
+to go out to look it up again
+
+8
+00:00:35,210 --> 00:00:38,700
+because the mapping is
+already stored in the cache.
+
+9
+00:00:38,700 --> 00:00:40,890
+Obviously, this saves time.
+
+10
+00:00:40,890 --> 00:00:44,780
+On the other hand, each record,
+meaning the mapping of IP address and
+
+11
+00:00:44,780 --> 00:00:50,500
+domain that's being stored in the DNS
+cache, has a TTL, or time-to-live.
+
+12
+00:00:50,500 --> 00:00:54,820
+And, when this TTL expires,
+the cache entry is invalid.
+
+13
+00:00:54,820 --> 00:00:59,889
+Which means, if the browser
+looks up www.cc.gatech.edu,
+
+14
+00:00:59,889 --> 00:01:04,861
+after the TTL of the cache entry
+has expired, the DNS server,
+
+15
+00:01:04,861 --> 00:01:07,937
+then has to go out and look it up again.
+
+16
+00:01:07,937 --> 00:01:11,059
+TTL is useful because a server,
+
+17
+00:01:11,059 --> 00:01:17,350
+say www.cc.gatech.edu maybe
+moved to a new IP address.
+
+18
+00:01:17,350 --> 00:01:21,620
+So, you want the TTL to expire, so
+that the DNS servers can look up for
+
+19
+00:01:21,620 --> 00:01:22,300
+the new mapping.
+

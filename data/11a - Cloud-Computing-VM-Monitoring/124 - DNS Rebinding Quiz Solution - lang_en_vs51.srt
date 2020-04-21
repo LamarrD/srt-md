@@ -1,0 +1,36 @@
+1
+00:00:00,220 --> 00:00:03,370
+The first statement, the attacker
+needs to register a domain and
+
+2
+00:00:03,370 --> 00:00:06,890
+delegate it to a server under
+his control, this is true.
+
+3
+00:00:06,890 --> 00:00:08,100
+The second statement,
+
+4
+00:00:08,100 --> 00:00:12,210
+the attacker's server responds with
+a short TTL record, this is true.
+
+5
+00:00:12,210 --> 00:00:13,310
+The third statement,
+
+6
+00:00:13,310 --> 00:00:18,040
+a short TTL means that the page will
+be quickly cached, this is false.
+
+7
+00:00:18,040 --> 00:00:22,060
+The fourth statement, the attacker
+exploits the same origin policy,
+
+8
+00:00:22,060 --> 00:00:22,590
+this is true.

@@ -1,0 +1,76 @@
+1
+00:00:00,000 --> 00:00:03,105
+Public key can be used as an identity.
+
+2
+00:00:03,105 --> 00:00:07,409
+For example, if you can verify a signature using a person's public key,
+
+3
+00:00:07,409 --> 00:00:11,795
+you can think of it as a person who owns the public key has stated the message.
+
+4
+00:00:11,795 --> 00:00:16,025
+Of course, you can create a valid signature only because you have the private key.
+
+5
+00:00:16,025 --> 00:00:19,680
+Therefore, by creating a valid signature or speak of a message,
+
+6
+00:00:19,680 --> 00:00:24,075
+it means that you can prove to anybody that you're already the owner of the public key.
+
+7
+00:00:24,075 --> 00:00:27,780
+Here's how we can use public key to create a new identity.
+
+8
+00:00:27,780 --> 00:00:31,780
+First, we'll create a new random pair of public key and private key.
+
+9
+00:00:31,780 --> 00:00:36,190
+The public key or the hash of the public key becomes your name or your ID.
+
+10
+00:00:36,190 --> 00:00:40,355
+But the private key is really what you can use to prove your identity.
+
+11
+00:00:40,355 --> 00:00:45,000
+The advantage of this approach is that since only you who have the private key,
+
+12
+00:00:45,000 --> 00:00:47,255
+nobody can forge your identity;
+
+13
+00:00:47,255 --> 00:00:49,620
+and if the public key looks very random,
+
+14
+00:00:49,620 --> 00:00:51,555
+nobody really knows who you are.
+
+15
+00:00:51,555 --> 00:00:55,645
+Another advantage is the decentralized identity management.
+
+16
+00:00:55,645 --> 00:00:59,790
+That is, anybody can create a new identity at anytime.
+
+17
+00:00:59,790 --> 00:01:03,380
+In fact, you can make as many identities as you want.
+
+18
+00:01:03,380 --> 00:01:06,469
+There's no central point of control or coordination.
+
+19
+00:01:06,469 --> 00:01:10,770
+These public key-based identities are called addresses in Bitcoin
+

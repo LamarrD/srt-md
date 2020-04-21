@@ -1,0 +1,84 @@
+1
+00:00:00,000 --> 00:00:04,560
+Let's have a quick review of how certificates is used in Web browsing.
+
+2
+00:00:04,560 --> 00:00:08,650
+Browsers such as Firefox decide who they trust.
+
+3
+00:00:08,650 --> 00:00:13,320
+These certificates are stored as part of the browser or the operating system.
+
+4
+00:00:13,320 --> 00:00:18,150
+Browsers typically support a couple of hundred root certificates, such as this.
+
+5
+00:00:18,150 --> 00:00:24,450
+These root certificate authorities then agree to sign other certificates for example,
+
+6
+00:00:24,450 --> 00:00:29,760
+Equifax is a root certificate authority and agrees to sign Google with authority.
+
+7
+00:00:29,760 --> 00:00:31,620
+And this can go on in moving
+
+8
+00:00:31,620 --> 00:00:35,825
+multiple intermediates and we end up having a certificate chains.
+
+9
+00:00:35,825 --> 00:00:37,815
+That is, if you look at Google.com,
+
+10
+00:00:37,815 --> 00:00:40,800
+it's signed by a chain of certificates and a top
+
+11
+00:00:40,800 --> 00:00:44,340
+certificate is just a self-signed certificate.
+
+12
+00:00:44,340 --> 00:00:46,680
+This entire chain is presented by
+
+13
+00:00:46,680 --> 00:00:49,970
+Web browser to the client and the client can verify the signatures
+
+14
+00:00:49,970 --> 00:00:53,230
+by traversing the certificate chain
+
+15
+00:00:53,230 --> 00:00:57,250
+up to the browser trusted certificate, which is self-signed.
+
+16
+00:00:57,250 --> 00:01:00,260
+The researchers at the University of Michigan perform
+
+17
+00:01:00,260 --> 00:01:04,225
+regular scans to try the use of certificates.
+
+18
+00:01:04,225 --> 00:01:09,405
+They observe 3,700 browser trusted certificates in one year.
+
+19
+00:01:09,405 --> 00:01:13,775
+They also discovered two cases of misused certificates.
+
+20
+00:01:13,775 --> 00:01:20,145
+In one case, a signing certificate was accidentally issued to a Turkish transit provider.
+
+21
+00:01:20,145 --> 00:01:26,000
+In another case, 1,300 certificates were issued by the Korean government.
+

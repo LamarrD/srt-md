@@ -1,0 +1,23 @@
+1
+00:00:00,240 --> 00:00:02,855
+Recall that these attributes
+are encrypted using either
+
+2
+00:00:02,855 --> 00:00:06,500
+Equality-Preserving Encryption or
+Order-Preserving Encryption.
+
+3
+00:00:06,500 --> 00:00:09,225
+An attacker can use
+frequency analysis to defeat
+
+4
+00:00:09,225 --> 00:00:11,090
+Equality-Preserving Encryption.
+
+5
+00:00:11,090 --> 00:00:13,120
+And this attack can
+be further optimized.

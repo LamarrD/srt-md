@@ -1,0 +1,21 @@
+1
+00:00:00,230 --> 00:00:03,050
+The first is on demand self service.
+
+2
+00:00:03,050 --> 00:00:06,510
+The second is broad or
+wide network access.
+
+3
+00:00:06,510 --> 00:00:09,700
+The third is resource pooling or
+sharing.
+
+4
+00:00:09,700 --> 00:00:11,910
+The fourth is measured service.
+
+5
+00:00:11,910 --> 00:00:13,950
+The fifth is rapid elasticity.

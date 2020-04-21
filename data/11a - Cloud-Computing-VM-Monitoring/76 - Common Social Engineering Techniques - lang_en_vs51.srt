@@ -1,0 +1,42 @@
+1
+00:00:00,270 --> 00:00:03,650
+Now let's discuss the common
+social engineering techniques.
+
+2
+00:00:03,650 --> 00:00:06,420
+The first category is impersonation.
+
+3
+00:00:06,420 --> 00:00:08,816
+For example,
+you can impersonate help desks,
+
+4
+00:00:08,816 --> 00:00:12,540
+third-party authorization,
+technical support.
+
+5
+00:00:12,540 --> 00:00:17,950
+Or you can roam the halls or tailgate or
+you can impersonate a trusted authority.
+
+6
+00:00:17,950 --> 00:00:21,110
+And you can even send snail mail.
+
+7
+00:00:21,110 --> 00:00:25,420
+The other category of social engineering
+techniques involve the use of computers.
+
+8
+00:00:25,420 --> 00:00:30,490
+This include pop-up windows,
+instant messages and IRC,
+
+9
+00:00:30,490 --> 00:00:35,600
+email attachments, email scams,
+chain letters, efficient websites.

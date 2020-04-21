@@ -1,0 +1,20 @@
+1
+00:00:00,000 --> 00:00:01,995
+Since the length is three,
+
+2
+00:00:01,995 --> 00:00:03,585
+you should go to slot three,
+
+3
+00:00:03,585 --> 00:00:06,375
+but Sue is already in slot three.
+
+4
+00:00:06,375 --> 00:00:08,460
+Therefore, there is a collision,
+
+5
+00:00:08,460 --> 00:00:11,480
+in fact, that's the weakness of this hash function.
+

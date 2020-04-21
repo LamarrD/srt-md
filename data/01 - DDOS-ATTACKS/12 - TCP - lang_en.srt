@@ -1,0 +1,197 @@
+1
+00:00:00,350 --> 00:00:04,660
+Now let's take a look at the network
+protocols to understand why the internet
+
+2
+00:00:04,660 --> 00:00:07,520
+is vulnerable to DoS service attacks.
+
+3
+00:00:07,520 --> 00:00:10,980
+So the internet protocol or
+IP is connectionless.
+
+4
+00:00:10,980 --> 00:00:13,620
+This means that it is not reliable,
+
+5
+00:00:13,620 --> 00:00:18,140
+meaning that each packet will find it's
+way to destination and there is no
+
+6
+00:00:18,140 --> 00:00:23,940
+mechanism to ensure that all packets
+will arrive properly and in sequence
+
+7
+00:00:23,940 --> 00:00:28,340
+at least not at IP layer essentially
+it is the best effort delivery.
+
+8
+00:00:28,340 --> 00:00:32,409
+So here is the format of the IP header
+for the purpose of our discussion
+
+9
+00:00:32,409 --> 00:00:36,340
+let's focus on a source IP address and
+a destination IP address.
+
+10
+00:00:36,340 --> 00:00:39,840
+>From the security point of
+view the main weakness of IP
+
+11
+00:00:39,840 --> 00:00:43,880
+is that there is no authentication
+of the source IP address.
+
+12
+00:00:43,880 --> 00:00:47,940
+Which means that the attacker
+can spoof an IP source address.
+
+13
+00:00:47,940 --> 00:00:49,060
+Now let's take a look at TCP.
+
+14
+00:00:49,060 --> 00:00:54,480
+TCP is session based which
+means the destination is going
+
+15
+00:00:54,480 --> 00:00:59,330
+to make sure that all packets belonging
+to a same connection will arrive and
+
+16
+00:00:59,330 --> 00:01:00,540
+properly sequence.
+
+17
+00:01:00,540 --> 00:01:04,040
+And in order to achieve this
+there's congestion control and
+
+18
+00:01:04,040 --> 00:01:05,890
+in order delivery mechanisms.
+
+19
+00:01:05,890 --> 00:01:09,000
+These mechanisms ensure
+that the data loss or
+
+20
+00:01:09,000 --> 00:01:14,810
+packet loss is minimized and the need to
+retransmit packets is also minimized.
+
+21
+00:01:14,810 --> 00:01:17,190
+And here's the format of the TCP header.
+
+22
+00:01:17,190 --> 00:01:20,750
+Notice that we use a sequence number for
+each packet.
+
+23
+00:01:20,750 --> 00:01:25,070
+Acknowledgement number to
+acknowledge a packet as received.
+
+24
+00:01:25,070 --> 00:01:29,400
+And number flags to actually
+keep the state of the session.
+
+25
+00:01:29,400 --> 00:01:31,420
+Now let's take a look
+at TCP handshake or
+
+26
+00:01:31,420 --> 00:01:34,340
+the steps to establish a TCP connection.
+
+27
+00:01:34,340 --> 00:01:36,575
+Suppose our client wants
+to connect to a server.
+
+28
+00:01:36,575 --> 00:01:41,380
+It first sends a SYN packet,
+this packet has a SYN flag set and
+
+29
+00:01:41,380 --> 00:01:43,360
+also a sequence number.
+
+30
+00:01:43,360 --> 00:01:47,020
+The acknowledgement number is 0
+because this is the first packet.
+
+31
+00:01:47,020 --> 00:01:49,710
+The server responds
+with a SYN/ACK packet,
+
+32
+00:01:49,710 --> 00:01:53,450
+which means that both the SYN flap and
+the ACK flags are set.
+
+33
+00:01:53,450 --> 00:01:57,060
+The sequence number is
+a server sequence number and
+
+34
+00:01:57,060 --> 00:02:01,120
+acknowledgment number is
+the sequence number plus one.
+
+35
+00:02:01,120 --> 00:02:04,800
+This means that this SYN/ACK
+packet is an acknowledgement
+
+36
+00:02:04,800 --> 00:02:07,380
+of the initial SYN
+packet from the client.
+
+37
+00:02:07,380 --> 00:02:11,050
+And then the client sends a final
+ACK packet to the server.
+
+38
+00:02:11,050 --> 00:02:14,840
+In this ACK packet, it incremented
+its Its own sequence number and
+
+39
+00:02:14,840 --> 00:02:17,490
+acknowledge the sequence
+number from the server.
+
+40
+00:02:17,490 --> 00:02:22,480
+This tells the server that the client
+has received this SYN/ACK packet.
+
+41
+00:02:22,480 --> 00:02:25,370
+At this point,
+the TCP connection is established.
+

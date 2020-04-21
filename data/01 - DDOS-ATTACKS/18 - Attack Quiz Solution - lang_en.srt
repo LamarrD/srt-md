@@ -1,0 +1,29 @@
+1
+00:00:00,230 --> 00:00:03,330
+Attackers can obviously
+spoof the IP address.
+
+2
+00:00:03,330 --> 00:00:07,790
+The attack cannot be mitigated using
+firewalls because the idea is that
+
+3
+00:00:07,790 --> 00:00:11,070
+the packets involved in the attack,
+they all look legitimate.
+
+4
+00:00:11,070 --> 00:00:14,785
+In addition, even if the firewall
+is attempting to do filtering,
+
+5
+00:00:14,785 --> 00:00:17,370
+it itself is susceptible to flooding.
+
+6
+00:00:17,370 --> 00:00:21,470
+The reason is that the firewall now
+needs to examine many, many packets.
+

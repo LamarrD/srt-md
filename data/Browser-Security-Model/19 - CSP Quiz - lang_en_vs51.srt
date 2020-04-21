@@ -1,0 +1,37 @@
+1
+00:00:00,280 --> 00:00:02,480
+Now let's do a quiz on CSP.
+
+2
+00:00:02,480 --> 00:00:05,310
+Which of the following
+statements are true?
+
+3
+00:00:05,310 --> 00:00:10,520
+First, if you have third party forum
+software that has inline script,
+
+4
+00:00:10,520 --> 00:00:12,620
+CSP cannot be used.
+
+5
+00:00:12,620 --> 00:00:16,610
+Second, CSP will allow
+third party widgets,
+
+6
+00:00:16,610 --> 00:00:20,670
+such as Google +1 button,
+to be embedded on your site.
+
+7
+00:00:21,690 --> 00:00:27,170
+Third, for a really secure site,
+start with allowing everything,
+
+8
+00:00:27,170 --> 00:00:31,750
+then restrict once you know which
+sources will be used on your site.

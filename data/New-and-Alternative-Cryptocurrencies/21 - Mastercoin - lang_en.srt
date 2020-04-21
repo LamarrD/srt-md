@@ -1,0 +1,32 @@
+1
+00:00:00,000 --> 00:00:03,760
+An example of overlay currency is Mastercoin.
+
+2
+00:00:03,760 --> 00:00:06,919
+In an overlay currency system, such as Mastercoin,
+
+3
+00:00:06,919 --> 00:00:11,770
+there's no need to develop a new consensus algorithm and, therefore,
+
+4
+00:00:11,770 --> 00:00:15,930
+developers can instead focus on developing interesting features,
+
+5
+00:00:15,930 --> 00:00:18,110
+such as smart contracts.
+
+6
+00:00:18,110 --> 00:00:22,260
+On the other hand, such an approach can also be inefficient
+
+7
+00:00:22,260 --> 00:00:27,100
+because those on the overlay currency may need to process a lot of data.
+
+8
+00:00:27,100 --> 00:00:31,880
+This is because bitcoin nodes don't filter these transactions for you.
+

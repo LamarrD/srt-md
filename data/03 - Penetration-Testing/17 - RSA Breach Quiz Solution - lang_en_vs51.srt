@@ -1,0 +1,44 @@
+1
+00:00:00,200 --> 00:00:04,090
+The first step is to identify
+employees that are vulnerable.
+
+2
+00:00:04,090 --> 00:00:08,560
+The second step was crafting an email
+with an enticing subject line.
+
+3
+00:00:08,560 --> 00:00:13,760
+In particular, the subject line was
+a provocative 2011 recruitment plan.
+
+4
+00:00:13,760 --> 00:00:17,040
+And one employee was
+intrigued enough to open it.
+
+5
+00:00:17,040 --> 00:00:20,670
+The first step is to hide
+an executable file in the e-mail, so
+
+6
+00:00:20,670 --> 00:00:24,400
+that it will install on the victim's
+computer when the e-mail is opened.
+
+7
+00:00:24,400 --> 00:00:28,800
+In this case, the attachment is an Excel
+spreadsheet, that contains a zero day
+
+8
+00:00:28,800 --> 00:00:32,689
+exploit that leads to a back
+door through Adobe Flash.
+
+9
+00:00:32,689 --> 00:00:37,070
+This one e-mail resulted in
+a loss of $66 million for RSA.

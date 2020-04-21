@@ -1,0 +1,28 @@
+1
+00:00:00,240 --> 00:00:04,830
+Now let's review some of the security
+problems associated with TCP.
+
+2
+00:00:04,830 --> 00:00:07,440
+Eavesdropping is always a big concern.
+
+3
+00:00:07,440 --> 00:00:08,610
+And this is quite easy for
+
+4
+00:00:08,610 --> 00:00:13,000
+the attacker, if he can control your
+router or the Wi-Fi access points.
+
+5
+00:00:13,000 --> 00:00:17,860
+And such a hijacking is possible if
+the attacker can learn the TCP state.
+
+6
+00:00:17,860 --> 00:00:22,890
+And as discussed in our DDoS lesson, TCP
+is subject to denial service attacks.
+

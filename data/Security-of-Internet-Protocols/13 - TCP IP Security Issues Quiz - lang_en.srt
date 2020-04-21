@@ -1,0 +1,9 @@
+1
+00:00:00,230 --> 00:00:03,420
+Now let's do a quiz on
+the security of TCP IP.
+
+2
+00:00:03,420 --> 00:00:04,890
+Select all the true statements.
+

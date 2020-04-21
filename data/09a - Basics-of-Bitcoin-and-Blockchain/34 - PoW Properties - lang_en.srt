@@ -1,0 +1,72 @@
+1
+00:00:00,000 --> 00:00:02,430
+Because the target hash value is very small,
+
+2
+00:00:02,430 --> 00:00:04,830
+it is very hard to find a correct nonce.
+
+3
+00:00:04,830 --> 00:00:06,840
+In fact, only the nodes with a lot of
+
+4
+00:00:06,840 --> 00:00:10,550
+computing power these are kind of miners would do this proof of work.
+
+5
+00:00:10,550 --> 00:00:14,795
+Another nice property is that we can adjust the cost of proof of work.
+
+6
+00:00:14,795 --> 00:00:19,560
+For example, if the goal is to be able to create one block every 10 minutes,
+
+7
+00:00:19,560 --> 00:00:23,820
+then the nodes can automatically recalculate the target hash value every two weeks.
+
+8
+00:00:23,820 --> 00:00:27,830
+It is obvious that probability that Alice will win the next block
+
+9
+00:00:27,830 --> 00:00:32,060
+depends on the fraction of global computing hash power she can choose.
+
+10
+00:00:32,060 --> 00:00:35,420
+Therefore, the key security assumption is that attacks are
+
+11
+00:00:35,420 --> 00:00:40,345
+infeasible if the majority of the miners weighted by hash power follow the protocol.
+
+12
+00:00:40,345 --> 00:00:44,740
+In other words, the majority of the miners weighted by hash power are honest.
+
+13
+00:00:44,740 --> 00:00:48,525
+It is obvious that proof of work is very easy to verify.
+
+14
+00:00:48,525 --> 00:00:52,400
+In particular, the nonce value has to be published as part of the bulk.
+
+15
+00:00:52,400 --> 00:00:55,490
+Therefore, other miners can simply verify
+
+16
+00:00:55,490 --> 00:00:58,845
+that the hash value is smaller than target hash value.
+
+17
+00:00:58,845 --> 00:01:01,775
+Obviously, proof of work can be used as incentive
+
+18
+00:01:01,775 --> 00:01:05,020
+when the mining reward is greater than the mining cost.
+

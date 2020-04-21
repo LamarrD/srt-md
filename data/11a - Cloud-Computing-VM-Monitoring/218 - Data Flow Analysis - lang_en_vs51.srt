@@ -1,0 +1,106 @@
+1
+00:00:00,330 --> 00:00:03,630
+One of the most important
+analysis is data flow analysis.
+
+2
+00:00:03,630 --> 00:00:07,160
+Here's an example of data flow,
+the source is location data and
+
+3
+00:00:07,160 --> 00:00:10,300
+the sink is SMS or
+website on the internet.
+
+4
+00:00:10,300 --> 00:00:12,960
+Data flow analysis can
+be useful malware or
+
+5
+00:00:12,960 --> 00:00:16,379
+greyware analysis to find out
+what information is being stolen.
+
+6
+00:00:16,379 --> 00:00:20,540
+And based on the discoveries, we can
+improve enterprise specific policies.
+
+7
+00:00:20,540 --> 00:00:23,400
+Data flow analysis can be used
+to check the external app
+
+8
+00:00:23,400 --> 00:00:26,780
+to make sure that there's
+no API abuse or data theft.
+
+9
+00:00:26,780 --> 00:00:30,000
+Data flows gathered from an app
+can be used to inform users
+
+10
+00:00:30,000 --> 00:00:32,700
+about potential privacy implications.
+
+11
+00:00:32,700 --> 00:00:37,510
+Data flow analysis can also be used to
+discover abilities in applications.
+
+12
+00:00:37,510 --> 00:00:40,760
+For example,
+accepting data from untrusted sources.
+
+13
+00:00:40,760 --> 00:00:44,430
+However, analyzing data flows
+is a very challenging task.
+
+14
+00:00:44,430 --> 00:00:48,560
+For example, Android has more than three
+million lines of very complex code.
+
+15
+00:00:48,560 --> 00:00:51,990
+Performing data analysis on whole
+system would take a long time, and
+
+16
+00:00:51,990 --> 00:00:53,210
+it's not practical.
+
+17
+00:00:53,210 --> 00:00:56,990
+And of course to be useful,
+data flow analysis has to be accurate.
+
+18
+00:00:56,990 --> 00:01:00,510
+As we have just discussed,
+analyzing a app in a context
+
+19
+00:01:00,510 --> 00:01:04,840
+of full Android is very expensive
+because there is too much code involved.
+
+20
+00:01:04,840 --> 00:01:09,050
+The STAMP approach is to abstract
+the Android stack into models.
+
+21
+00:01:09,050 --> 00:01:11,410
+And these models include
+the following information.
+
+22
+00:01:11,410 --> 00:01:13,570
+We are going to focus on data flows.

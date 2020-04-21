@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:03,770
+Determining which nodes are the most connected is an interesting problem.
+
+2
+00:00:03,770 --> 00:00:08,045
+There are basically three different methods of determining node connectivities.
+
+3
+00:00:08,045 --> 00:00:12,930
+In this quiz, match the method of determining no connectivity to its definition.
+

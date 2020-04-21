@@ -1,0 +1,18 @@
+1
+00:00:00,290 --> 00:00:03,170
+Now that we have a general
+definition of cloud computing,
+
+2
+00:00:03,170 --> 00:00:06,290
+let's do a quiz on the characteristics
+of cloud computing.
+
+3
+00:00:06,290 --> 00:00:08,720
+Given out definition of cloud computing,
+
+4
+00:00:08,720 --> 00:00:11,510
+write the five essential cloud
+computing characteristics.

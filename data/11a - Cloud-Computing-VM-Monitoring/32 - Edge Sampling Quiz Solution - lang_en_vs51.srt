@@ -1,0 +1,31 @@
+1
+00:00:00,300 --> 00:00:03,830
+With edge sampling,
+multiple sources can be identified.
+
+2
+00:00:03,830 --> 00:00:06,950
+Therefore, multiple
+attackers can be identified.
+
+3
+00:00:06,950 --> 00:00:09,440
+As we can see, it's relatively easy for
+
+4
+00:00:09,440 --> 00:00:13,060
+a victim to reconstruct a path
+given the edge information.
+
+5
+00:00:13,060 --> 00:00:15,310
+So this second statement is false.
+
+6
+00:00:15,310 --> 00:00:18,720
+The edge information is stored
+in the IP packet header, so
+
+7
+00:00:18,720 --> 00:00:20,790
+therefore, the third statement is true.

@@ -1,0 +1,28 @@
+1
+00:00:00,000 --> 00:00:02,650
+To summarize what we have discussed so far,
+
+2
+00:00:02,650 --> 00:00:06,230
+Notos can be deployed at Large Local Network,
+
+3
+00:00:06,230 --> 00:00:07,630
+such as an ISP.
+
+4
+00:00:07,630 --> 00:00:11,610
+In other words, Notos use traffic to do recursive DNS servers
+
+5
+00:00:11,610 --> 00:00:16,580
+whereas Kopis is deployed at the upper level of the DNS hierarchy.
+
+6
+00:00:16,580 --> 00:00:21,430
+In particular, the authoritative name servers or the top-level domain servers.
+
+7
+00:00:21,430 --> 00:00:27,260
+In other words, Notos has local views and Kopis can have a global Internet view.
+

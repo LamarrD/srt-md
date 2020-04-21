@@ -1,0 +1,72 @@
+1
+00:00:00,000 --> 00:00:02,980
+Now, let's have a quick review of hash functions.
+
+2
+00:00:02,980 --> 00:00:06,805
+There are several important properties of cryptographic hash functions.
+
+3
+00:00:06,805 --> 00:00:09,105
+First, it is easy to compute.
+
+4
+00:00:09,105 --> 00:00:12,430
+You can compute the hash of a message of any size.
+
+5
+00:00:12,430 --> 00:00:13,930
+For a given hash function,
+
+6
+00:00:13,930 --> 00:00:16,235
+it produces fixed length output.
+
+7
+00:00:16,235 --> 00:00:19,465
+Hash function is a one-way function, that is,
+
+8
+00:00:19,465 --> 00:00:21,150
+given the hash of the message,
+
+9
+00:00:21,150 --> 00:00:23,765
+it is not easy to find the original message.
+
+10
+00:00:23,765 --> 00:00:27,470
+Hash functions are also designed to be collision resistant.
+
+11
+00:00:27,470 --> 00:00:29,895
+That is, given a particular message, m_1,
+
+12
+00:00:29,895 --> 00:00:34,020
+it is computationally infeasible to find a different message, m_2,
+
+13
+00:00:34,020 --> 00:00:36,180
+such that m_2 and m_1 have
+
+14
+00:00:36,180 --> 00:00:40,710
+the same hash value and that is the weak collision-resistant property.
+
+15
+00:00:40,710 --> 00:00:50,180
+A strong collision
+
+16
+00:00:50,180 --> 00:00:51,815
+resistant property states that,
+
+17
+00:00:51,815 --> 00:00:54,740
+computationally, it is infeasible to find
+
+18
+00:00:54,740 --> 00:00:58,070
+two different messages such that they've the same hash value.
+

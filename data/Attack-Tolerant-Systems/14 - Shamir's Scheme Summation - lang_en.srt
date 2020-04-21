@@ -1,0 +1,84 @@
+1
+00:00:00,000 --> 00:00:03,360
+In practice, if we set n equal to 2k minus one,
+
+2
+00:00:03,360 --> 00:00:06,095
+that will require an attacker to compromise
+
+3
+00:00:06,095 --> 00:00:10,430
+more than half of the shares in order to reconstruct the original secret.
+
+4
+00:00:10,430 --> 00:00:12,810
+In general, we typically assume that
+
+5
+00:00:12,810 --> 00:00:16,990
+an attacker cannot compromise the majority of our systems.
+
+6
+00:00:16,990 --> 00:00:21,230
+Let's summarize the security properties of Shamir's secret sharing scheme.
+
+7
+00:00:21,230 --> 00:00:23,790
+First of all, shares can be dynamically
+
+8
+00:00:23,790 --> 00:00:26,750
+added or deleted without affecting the other shares.
+
+9
+00:00:26,750 --> 00:00:30,865
+Second, security can be easily enhanced without changing a secret.
+
+10
+00:00:30,865 --> 00:00:33,295
+For example, we can change the polynomial,
+
+11
+00:00:33,295 --> 00:00:35,500
+recompute the shares, and then,
+
+12
+00:00:35,500 --> 00:00:37,810
+give the new shares to the participants.
+
+13
+00:00:37,810 --> 00:00:41,450
+Third, in organizations where hierarchy is important,
+
+14
+00:00:41,450 --> 00:00:46,260
+we can supply each participant different number of shares according to their importance.
+
+15
+00:00:46,260 --> 00:00:52,650
+For example, the CEO can have all the shares so that he alone can reconstruct the secret,
+
+16
+00:00:52,650 --> 00:00:57,190
+whereas three VPs are required together to reconstruct the secret.
+
+17
+00:00:57,190 --> 00:00:59,870
+Fourth, this scheme cannot be broken
+
+18
+00:00:59,870 --> 00:01:03,205
+even when the adversary has unlimited computing power.
+
+19
+00:01:03,205 --> 00:01:06,075
+That is, the attacker has to have k shares.
+
+20
+00:01:06,075 --> 00:01:08,905
+Otherwise, no matter how much power he has,
+
+21
+00:01:08,905 --> 00:01:10,470
+he can only be a random guest.
+

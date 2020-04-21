@@ -1,0 +1,10 @@
+1
+00:00:00,270 --> 00:00:03,020
+Let's do a quick review
+of the denial of service.
+
+2
+00:00:03,020 --> 00:00:06,640
+Match the denial of service attack
+classification with its description.
+

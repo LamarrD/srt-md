@@ -1,0 +1,28 @@
+1
+00:00:00,000 --> 00:00:02,730
+First, a timestamping service prevents
+
+2
+00:00:02,730 --> 00:00:06,125
+people from double-spending Bitcoins, this is true.
+
+3
+00:00:06,125 --> 00:00:11,405
+Second, each user has a single Bitcoin that is used in all transactions,
+
+4
+00:00:11,405 --> 00:00:13,195
+this is obviously false.
+
+5
+00:00:13,195 --> 00:00:17,695
+Third, the expenditure of individual coins cannot be tracked,
+
+6
+00:00:17,695 --> 00:00:20,340
+this is false because individual coins
+
+7
+00:00:20,340 --> 00:00:23,500
+can be tracked by their chain of digital signatures.
+

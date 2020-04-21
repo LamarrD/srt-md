@@ -1,0 +1,28 @@
+1
+00:00:00,230 --> 00:00:06,090
+The answers are, in 2015,
+there are 1 billion active websites.
+
+2
+00:00:06,090 --> 00:00:09,754
+And each day,
+Google quarantine 10,000 websites.
+
+3
+00:00:09,754 --> 00:00:14,840
+And 30,000 malicious websites
+are identified every day.
+
+4
+00:00:14,840 --> 00:00:18,180
+As you can see,
+web security is not a small issue.
+
+5
+00:00:18,180 --> 00:00:19,160
+Understanding and
+
+6
+00:00:19,160 --> 00:00:23,300
+stopping malicious actions is
+paramount to network security.

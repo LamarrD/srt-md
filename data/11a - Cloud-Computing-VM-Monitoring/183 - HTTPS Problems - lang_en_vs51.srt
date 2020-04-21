@@ -1,0 +1,336 @@
+1
+00:00:00,370 --> 00:00:05,600
+Let's discuss several security
+problems with HTTPS and the lock icon.
+
+2
+00:00:05,600 --> 00:00:10,613
+This include upgrade from HTTP to HTTPS.
+
+3
+00:00:10,613 --> 00:00:12,480
+Forged certificates.
+
+4
+00:00:12,480 --> 00:00:17,765
+First, let's discuss
+upgrade from HTTP to HTTPS.
+
+5
+00:00:17,765 --> 00:00:21,250
+There's an attack method
+called SSL stripped.
+
+6
+00:00:21,250 --> 00:00:23,299
+It prevents the browser from upgrading.
+
+7
+00:00:23,299 --> 00:00:28,195
+With SSL stripping, the browser won't
+display any SSL certificate errors,
+
+8
+00:00:28,195 --> 00:00:32,229
+and the user has no clue that
+such an attack is happening.
+
+9
+00:00:32,229 --> 00:00:36,130
+This attack is also known
+as HTTP downgrading attack.
+
+10
+00:00:36,130 --> 00:00:40,920
+The connection established between
+the victim user's browser and
+
+11
+00:00:40,920 --> 00:00:44,372
+the web server is downgraded
+from HTTPS to HTTP.
+
+12
+00:00:44,372 --> 00:00:49,230
+For example, when a user wants to
+transfer money to his account using
+
+13
+00:00:49,230 --> 00:00:54,173
+an online banking service, he enters
+the following URL in the address
+
+14
+00:00:54,173 --> 00:00:58,482
+bar of his browser,
+www.foobank.com/onlinebanking.
+
+15
+00:00:58,482 --> 00:01:02,790
+Of course, this URL is intended for
+the web server of the bank.
+
+16
+00:01:02,790 --> 00:01:03,895
+In the background,
+
+17
+00:01:03,895 --> 00:01:07,927
+the user's computer happen to be
+connected to the attacker's machine.
+
+18
+00:01:07,927 --> 00:01:11,440
+The attacker waits for
+a response from the bank server.
+
+19
+00:01:11,440 --> 00:01:15,637
+The attacker forwards the request to
+the bank and waits for the response.
+
+20
+00:01:15,637 --> 00:01:19,150
+The connection between the attacker and
+the bank is secure.
+
+21
+00:01:19,150 --> 00:01:23,470
+That means the traffic is
+transferred using an SSL tunnel.
+
+22
+00:01:23,470 --> 00:01:29,237
+Therefore, the login page from
+the bank's web server will
+
+23
+00:01:29,237 --> 00:01:34,680
+be
+https://www.foobank.com/onlinebanking.
+
+24
+00:01:34,680 --> 00:01:37,780
+The attacker has access
+to the login page and
+
+25
+00:01:37,780 --> 00:01:43,540
+can modify the response from
+the server from HTTPS to HTTP and
+
+26
+00:01:43,540 --> 00:01:48,380
+then forward the login page
+in HTTP to the client.
+
+27
+00:01:48,380 --> 00:01:57,654
+The user's browser now is connected to
+http://www.foobank.com/onlinebanking.
+
+28
+00:01:57,654 --> 00:02:00,270
+The user's browser is now connected
+
+29
+00:02:00,270 --> 00:02:03,710
+to the bank's website with
+an insecure connection.
+
+30
+00:02:03,710 --> 00:02:08,080
+From this point on, all the user's
+requests go out in plaintext, and
+
+31
+00:02:08,080 --> 00:02:11,730
+the attacker can access the data and
+collect the credentials.
+
+32
+00:02:11,730 --> 00:02:15,530
+While the server thinks that it's
+been using a secure connection, that
+
+33
+00:02:15,530 --> 00:02:20,170
+connection is really just between the
+web server of the bank and the attacker.
+
+34
+00:02:20,170 --> 00:02:25,790
+On the other hand, the user's browser
+is using the insecure HTTP connection,
+
+35
+00:02:25,790 --> 00:02:30,320
+thinking that that's what the bank's
+web server wants it to use.
+
+36
+00:02:30,320 --> 00:02:33,960
+The solution to SSL strip
+attack is to use HSTS,
+
+37
+00:02:33,960 --> 00:02:37,630
+which stands for
+Strict Transport Security.
+
+38
+00:02:37,630 --> 00:02:41,056
+This policy can be set for
+a maximum of one year.
+
+39
+00:02:41,056 --> 00:02:46,360
+It basically tells the web browser
+to always use HTTPS, even for
+
+40
+00:02:46,360 --> 00:02:47,760
+its subdomains.
+
+41
+00:02:47,760 --> 00:02:51,452
+When a web browser visits a website for
+the first time,
+
+42
+00:02:51,452 --> 00:02:55,074
+the website can tell the browser
+to always use HTTPS.
+
+43
+00:02:55,074 --> 00:02:59,925
+That is, for any subsequent visit,
+all connection must be over HTTPS,
+
+44
+00:02:59,925 --> 00:03:03,350
+and HTTP connections will be rejected.
+
+45
+00:03:03,350 --> 00:03:08,450
+A web browser can also have
+a preloaded list of HSTS websites.
+
+46
+00:03:08,450 --> 00:03:12,331
+Even before web browser
+visits a site on this list,
+
+47
+00:03:12,331 --> 00:03:14,777
+it knows that it must use HTTPS.
+
+48
+00:03:14,777 --> 00:03:19,623
+The HSTS flag set by a website can
+be cleared when the user selects
+
+49
+00:03:19,623 --> 00:03:21,247
+clear private data.
+
+50
+00:03:21,247 --> 00:03:25,390
+Another serious security
+problem is forged certificates.
+
+51
+00:03:25,390 --> 00:03:30,270
+For example, if a CA is hacked, the
+attacker can issue rogue certificates.
+
+52
+00:03:30,270 --> 00:03:32,238
+For example, for Gmail.
+
+53
+00:03:32,238 --> 00:03:34,842
+And once a rogue certificate is issued,
+
+54
+00:03:34,842 --> 00:03:39,780
+now the attacker can set up a fake
+website and calling itself Gmail.
+
+55
+00:03:39,780 --> 00:03:43,268
+In this website,
+we have the rogue certificate for Gmail.
+
+56
+00:03:43,268 --> 00:03:48,117
+And several countries have been caught
+issuing unauthorized certificates,
+
+57
+00:03:48,117 --> 00:03:52,376
+for example, for Google so the ISPs
+in these countries can play man in
+
+58
+00:03:52,376 --> 00:03:56,190
+the middle between a user and
+the real Google server.
+
+59
+00:03:56,190 --> 00:03:58,990
+This is further illustrated
+in this example.
+
+60
+00:03:58,990 --> 00:04:01,560
+Suppose a user wants
+to connect to a bank.
+
+61
+00:04:01,560 --> 00:04:03,360
+There's a bad guy in the middle, and
+
+62
+00:04:03,360 --> 00:04:08,370
+this attacker has a rogue certificate,
+therefore it can pretend to be the bank.
+
+63
+00:04:08,370 --> 00:04:11,060
+The user may think that he
+is connected to the bank
+
+64
+00:04:11,060 --> 00:04:15,860
+because the certificate says so, but
+however, the certificate is rogue,
+
+65
+00:04:15,860 --> 00:04:19,110
+meaning that the user is actually
+connected to the bad guy.
+
+66
+00:04:19,110 --> 00:04:22,089
+This illustrates that
+with a rogue certificate,
+
+67
+00:04:22,089 --> 00:04:26,880
+an attacker can play man in the middle,
+even in HTTPS connection.
+
+68
+00:04:26,880 --> 00:04:30,710
+The attacker plays the bank
+server to the user and
+
+69
+00:04:30,710 --> 00:04:32,230
+the user to the bank server.
+
+70
+00:04:32,230 --> 00:04:34,540
+And both sides of
+connections are in HTTPS.

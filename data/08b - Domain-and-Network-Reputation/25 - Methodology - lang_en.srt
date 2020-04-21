@@ -1,0 +1,120 @@
+1
+00:00:00,000 --> 00:00:03,670
+In our study, we first identified the mobile devices,
+
+2
+00:00:03,670 --> 00:00:07,825
+and then we attribute each DNS query to a device.
+
+3
+00:00:07,825 --> 00:00:13,115
+We then analyze the repetition of the resource records associated with the DNS query.
+
+4
+00:00:13,115 --> 00:00:15,615
+We use the Notos features to analyze
+
+5
+00:00:15,615 --> 00:00:20,130
+the hosting infrastructures of mobile domains and compute repetition scores.
+
+6
+00:00:20,130 --> 00:00:23,155
+The difference is that we use different features.
+
+7
+00:00:23,155 --> 00:00:26,055
+In particular, for mobile domain,
+
+8
+00:00:26,055 --> 00:00:30,840
+we first find the IP address of the machine that hosts this domain.
+
+9
+00:00:30,840 --> 00:00:32,915
+Then for each of these IP addresses,
+
+10
+00:00:32,915 --> 00:00:37,320
+we extract the following features: the historic non-cellular domains,
+
+11
+00:00:37,320 --> 00:00:39,635
+the related historic mobile domains,
+
+12
+00:00:39,635 --> 00:00:43,005
+any evidence of malware association with these domains,
+
+13
+00:00:43,005 --> 00:00:47,900
+as well as URLs for phishing and drive-by download associated with these domains,
+
+14
+00:00:47,900 --> 00:00:51,710
+and evidence that these domains have been blacklisted before.
+
+15
+00:00:51,710 --> 00:00:56,385
+With these features and examples of malicious and legitimate mobile domains,
+
+16
+00:00:56,385 --> 00:01:00,655
+Notos can then use machine learning algorithm to learn a scoring function.
+
+17
+00:01:00,655 --> 00:01:05,210
+This scoring function can tell us how likely a mobile domain is malicious.
+
+18
+00:01:05,210 --> 00:01:07,735
+Here are some results from our study.
+
+19
+00:01:07,735 --> 00:01:13,090
+This column is the breakdown of total number of DNS requests for mobile devices.
+
+20
+00:01:13,090 --> 00:01:18,135
+As you can see, there are lot more Android devices than iOS devices.
+
+21
+00:01:18,135 --> 00:01:21,280
+When a machine on Internet has filed a petition,
+
+22
+00:01:21,280 --> 00:01:23,055
+we call it as machine tainted.
+
+23
+00:01:23,055 --> 00:01:26,525
+Some mobile domains are hosted on these tainted machines.
+
+24
+00:01:26,525 --> 00:01:30,655
+This column shows the percentage of requests to this tainted hosts.
+
+25
+00:01:30,655 --> 00:01:33,860
+As we can see, the iOS and Android devices
+
+26
+00:01:33,860 --> 00:01:37,505
+are equally likely to connect to these tainted hosts.
+
+27
+00:01:37,505 --> 00:01:40,340
+We also measure the number of devices,
+
+28
+00:01:40,340 --> 00:01:45,000
+their lookup domains that are associated with known malware families.
+
+29
+00:01:45,000 --> 00:01:47,980
+As you can see, the number of devices we've known,
+
+30
+00:01:47,980 --> 00:01:50,600
+malware infection is small.
+

@@ -1,0 +1,10 @@
+1
+00:00:00,250 --> 00:00:04,950
+As we said, equality is preserved,
+but what is leaked is a frequency.
+
+2
+00:00:04,950 --> 00:00:08,090
+Because we now know that there's
+one value that appears twice.
+

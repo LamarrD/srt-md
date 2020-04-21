@@ -1,0 +1,56 @@
+1
+00:00:00,000 --> 00:00:05,055
+Getting a set of non-faulty services to reach consensus is actually quite challenging.
+
+2
+00:00:05,055 --> 00:00:07,385
+Let's use an example to illustrate.
+
+3
+00:00:07,385 --> 00:00:10,260
+The Byzantine Generals Problem refers to
+
+4
+00:00:10,260 --> 00:00:14,310
+a hypothetical situation in which a group of generals,
+
+5
+00:00:14,310 --> 00:00:17,860
+each commanding a portion of an army plan to attack a city.
+
+6
+00:00:17,860 --> 00:00:21,160
+The generals must decide to attack or wait.
+
+7
+00:00:21,160 --> 00:00:24,779
+Every General must agree on a common decision,
+
+8
+00:00:24,779 --> 00:00:27,020
+anything less will result in a defeat.
+
+9
+00:00:27,020 --> 00:00:30,380
+The problem is compounded by the fact that there may be
+
+10
+00:00:30,380 --> 00:00:34,540
+traitorous generals that do not vote for the best strategy.
+
+11
+00:00:34,540 --> 00:00:38,195
+Of course, there can be disagreement among the generals.
+
+12
+00:00:38,195 --> 00:00:41,005
+For example, some would vote for attack,
+
+13
+00:00:41,005 --> 00:00:43,155
+while others will go for wait.
+
+14
+00:00:43,155 --> 00:00:46,830
+As you can see, it's not easy to reach consensus.
+

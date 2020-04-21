@@ -1,0 +1,97 @@
+1
+00:00:00,240 --> 00:00:03,346
+We have discussed on equality
+preserving inscription.
+
+2
+00:00:03,346 --> 00:00:06,695
+Now, let's discuss a tax on
+order preserving inscription.
+
+3
+00:00:06,695 --> 00:00:11,017
+We can use sorting attack, but a more
+effective attack is cumulative attack.
+
+4
+00:00:11,017 --> 00:00:14,422
+Given a data column that has been
+encrypted using order preserving
+
+5
+00:00:14,422 --> 00:00:15,222
+inscription.
+
+6
+00:00:15,222 --> 00:00:18,177
+A nemissary can learn not
+only the frequencies, but
+
+7
+00:00:18,177 --> 00:00:21,213
+also the relative ordering
+of the encrypted values.
+
+8
+00:00:21,213 --> 00:00:25,503
+Combining ordering with frequencies,
+the attacker can tell for
+
+9
+00:00:25,503 --> 00:00:30,421
+each server text C, what fraction of
+the encrypted values are less than C.
+
+10
+00:00:30,421 --> 00:00:34,220
+More formally, this is known
+as the empirical cumulative
+
+11
+00:00:34,220 --> 00:00:37,250
+distribution function of the dataset or
+CDF.
+
+12
+00:00:37,250 --> 00:00:41,601
+In the cumulative attack,
+an attacker leveraged the CDF to improve
+
+13
+00:00:41,601 --> 00:00:44,670
+the ability to match
+plaintext to ciphertext.
+
+14
+00:00:44,670 --> 00:00:49,564
+Intuitively, if a given ciphertext is
+greater than 90% of the ciphertext in
+
+15
+00:00:49,564 --> 00:00:54,019
+the encrypted data, then we shall match
+it to a plaintext that is greater
+
+16
+00:00:54,019 --> 00:00:56,589
+than about 90% of the auxiliary data.
+
+17
+00:00:56,589 --> 00:01:00,800
+This problem belongs to a category
+of Linear Sum assignment Problem.
+
+18
+00:01:00,800 --> 00:01:05,646
+Therefore, we can use an algorithm
+to find the mapping of plaintexts to
+
+19
+00:01:05,646 --> 00:01:10,414
+ciphertext that minimizes the total
+sum of mismatch in frequency plus
+
+20
+00:01:10,414 --> 00:01:14,810
+the mismatch in CDFs across all
+plaintext, ciphertext pairs.

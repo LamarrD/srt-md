@@ -1,0 +1,68 @@
+1
+00:00:00,270 --> 00:00:02,620
+There are several cloud
+deployment models.
+
+2
+00:00:02,620 --> 00:00:04,780
+The first one is private cloud.
+
+3
+00:00:04,780 --> 00:00:08,940
+Here, the cloud infrastructure is
+operated solely for an organization.
+
+4
+00:00:08,940 --> 00:00:11,900
+It may be managed by the organization or
+a third party and
+
+5
+00:00:11,900 --> 00:00:14,960
+may exist on-premise or off-premise.
+
+6
+00:00:14,960 --> 00:00:18,800
+Here, the cloud infrastructure is
+shared by several organizations and
+
+7
+00:00:18,800 --> 00:00:22,770
+supports a specific community
+that has shared concerns.
+
+8
+00:00:22,770 --> 00:00:25,950
+It may be managed by the organizations
+or a third party, and
+
+9
+00:00:25,950 --> 00:00:29,050
+may exist on-premise or off-premise.
+
+10
+00:00:29,050 --> 00:00:31,420
+The third model is public cloud.
+
+11
+00:00:31,420 --> 00:00:35,400
+Here, the cloud infrastructure is made
+available to the general public or
+
+12
+00:00:35,400 --> 00:00:36,850
+a large industry group, and
+
+13
+00:00:36,850 --> 00:00:40,550
+is owned by an organization
+selling the cloud services.
+
+14
+00:00:40,550 --> 00:00:43,530
+The fourth one is hybrid,
+is a composition of two or
+
+15
+00:00:43,530 --> 00:00:44,790
+more of these models.

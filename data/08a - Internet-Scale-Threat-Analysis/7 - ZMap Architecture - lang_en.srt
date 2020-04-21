@@ -1,0 +1,88 @@
+1
+00:00:00,000 --> 00:00:03,270
+While there are many excellent multi-purpose network scanners,
+
+2
+00:00:03,270 --> 00:00:08,145
+these scanners were never intended or optimized for scanning the entire Internet.
+
+3
+00:00:08,145 --> 00:00:09,810
+ZMap, on the other hand,
+
+4
+00:00:09,810 --> 00:00:12,000
+was designed from the ground up for
+
+5
+00:00:12,000 --> 00:00:15,650
+the specific purpose of completely scanning the whole Internet.
+
+6
+00:00:15,650 --> 00:00:18,900
+Let's compare existing network scanners with ZMap.
+
+7
+00:00:18,900 --> 00:00:21,510
+Existing network scanners need quite immense amount of
+
+8
+00:00:21,510 --> 00:00:25,250
+resources to keep track of state of the entire Internet.
+
+9
+00:00:25,250 --> 00:00:26,490
+ZMap, on the other hand,
+
+10
+00:00:26,490 --> 00:00:29,280
+eliminate local per-connection state.
+
+11
+00:00:29,280 --> 00:00:33,000
+Existing scanners also spend a lot of resources keeping
+
+12
+00:00:33,000 --> 00:00:37,245
+track of which host is being scanned and which host have responded.
+
+13
+00:00:37,245 --> 00:00:39,325
+On the other hand, ZMap uses
+
+14
+00:00:39,325 --> 00:00:42,930
+Shotgun Scanning Approach and keeps minimum state information.
+
+15
+00:00:42,930 --> 00:00:47,965
+Previous scanners have been attempting to be more polite by slowing the scans.
+
+16
+00:00:47,965 --> 00:00:49,380
+ZMap, on the other hand,
+
+17
+00:00:49,380 --> 00:00:51,590
+distributes the scan across the Internet.
+
+18
+00:00:51,590 --> 00:00:53,760
+This allow ZMap to scan at
+
+19
+00:00:53,760 --> 00:00:58,100
+more aggressive rate without impacting the destination networks.
+
+20
+00:00:58,100 --> 00:01:00,600
+Finally, ZMap also bypasses
+
+21
+00:01:00,600 --> 00:01:02,370
+the inefficient network stack in
+
+22
+00:01:02,370 --> 00:01:06,000
+the operating system and generate outgoing packets directly.
+

@@ -1,0 +1,88 @@
+1
+00:00:00,000 --> 00:00:04,310
+We have discussed how we can scan [inaudible] state information,
+
+2
+00:00:04,310 --> 00:00:06,995
+but how do we validate the responses?
+
+3
+00:00:06,995 --> 00:00:12,720
+The idea here is that we can encode secrets into the fields of the probe packets.
+
+4
+00:00:12,720 --> 00:00:15,640
+This is similar to the SYN cookies.
+
+5
+00:00:15,640 --> 00:00:17,560
+Here are the formats of the Ethernet,
+
+6
+00:00:17,560 --> 00:00:19,600
+IP and TCP packets,
+
+7
+00:00:19,600 --> 00:00:23,470
+and some of the fields here can be used to encode the secrets.
+
+8
+00:00:23,470 --> 00:00:26,350
+In order to validate packets, we receive.
+
+9
+00:00:26,350 --> 00:00:30,900
+We encode a scan invocation and host-specific secret into
+
+10
+00:00:30,900 --> 00:00:35,995
+mutable fields that will have a recognizable effect on the probe responses.
+
+11
+00:00:35,995 --> 00:00:40,280
+Specifically, for each scan host ZMap computes
+
+12
+00:00:40,280 --> 00:00:46,120
+a hash of the destination address keyed by the scan's specific secret.
+
+13
+00:00:46,120 --> 00:00:49,570
+This MAC value or Message Authentication Code
+
+14
+00:00:49,570 --> 00:00:54,100
+is then spread across any appropriate and available fields.
+
+15
+00:00:54,100 --> 00:00:57,185
+In the case of using a TCP SYN packet for scanning,
+
+16
+00:00:57,185 --> 00:01:02,075
+we encode the secret into the source port and sequence number.
+
+17
+00:01:02,075 --> 00:01:04,750
+We know that the destination host will have to
+
+18
+00:01:04,750 --> 00:01:08,995
+include the port and sequence number to send a response.
+
+19
+00:01:08,995 --> 00:01:15,130
+For example, a sequence number will be encoded into the acknowledgement number field.
+
+20
+00:01:15,130 --> 00:01:20,870
+More precisely, in response packet the receiver port was the sender port in
+
+21
+00:01:20,870 --> 00:01:22,720
+the scanning packet and
+
+22
+00:01:22,720 --> 00:01:27,000
+the acknowledgement number is the sequence number of the scanning packet.
+

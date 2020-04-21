@@ -1,0 +1,95 @@
+1
+00:00:00,330 --> 00:00:04,025
+Let's analyze why the traditional
+security measures cannot detect Botnets
+
+2
+00:00:04,025 --> 00:00:04,772
+effectively.
+
+3
+00:00:04,772 --> 00:00:05,493
+First of all,
+
+4
+00:00:05,493 --> 00:00:09,222
+traditional signature-based
+anti-virus systems are not effective,
+
+5
+00:00:09,222 --> 00:00:13,150
+because bot codes are typically packed
+and they can use rootkit to hide.
+
+6
+00:00:13,150 --> 00:00:16,934
+And they also use frequent updates
+to defeat anti-virus tools.
+
+7
+00:00:16,934 --> 00:00:20,829
+The traditional IDS/IPS are not
+effective, because they typically look
+
+8
+00:00:20,829 --> 00:00:24,955
+at the specific aspect of an attack For
+example, let's be specific exploit.
+
+9
+00:00:24,955 --> 00:00:28,560
+Whereas Botnet typically perform
+multiple kinds of activities,
+
+10
+00:00:28,560 --> 00:00:30,627
+because they are for long-term use.
+
+11
+00:00:30,627 --> 00:00:34,897
+That is, although we can detect that a
+host has been compromised by an exploit,
+
+12
+00:00:34,897 --> 00:00:37,280
+we do not know that
+it belongs to Botnet.
+
+13
+00:00:37,280 --> 00:00:40,416
+Because we need to analyze its
+command control traffic and
+
+14
+00:00:40,416 --> 00:00:42,090
+daily malicious activities.
+
+15
+00:00:42,090 --> 00:00:44,710
+Honeypots and
+Honeynets are also not effective.
+
+16
+00:00:44,710 --> 00:00:47,516
+First of all,
+since they only passively waiting for
+
+17
+00:00:47,516 --> 00:00:51,493
+incoming connections they are to be
+lucky to capture botnet activities.
+
+18
+00:00:51,493 --> 00:00:56,063
+In addition, sophisticated bot malware
+can detect a honeypot because the lack
+
+19
+00:00:56,063 --> 00:00:57,914
+of realistic user activities.
+
+20
+00:00:57,914 --> 00:01:01,830
+And since a Honeypot is a single host
+it cannot detect a network of bots.
+

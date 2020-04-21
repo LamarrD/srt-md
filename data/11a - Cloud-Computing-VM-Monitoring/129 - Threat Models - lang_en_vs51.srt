@@ -1,0 +1,77 @@
+1
+00:00:00,420 --> 00:00:04,640
+Now let's discuss
+the Web Security Threat Model.
+
+2
+00:00:04,640 --> 00:00:09,700
+We use threat model to understand what
+the web attackers are likely to do.
+
+3
+00:00:09,700 --> 00:00:12,870
+And we're going to compare
+the Web Security Threat Model and
+
+4
+00:00:12,870 --> 00:00:15,320
+the Network Security Threat Model.
+
+5
+00:00:15,320 --> 00:00:20,370
+On the web, attacker can typically setup
+a malicious website and the attacker
+
+6
+00:00:20,370 --> 00:00:25,520
+waits for users to visit the malicious
+website so that the attack can be
+
+7
+00:00:25,520 --> 00:00:30,360
+launched through the malicious websites
+to compromise the user's computers.
+
+8
+00:00:30,360 --> 00:00:34,140
+A web attacker typically does
+not control the network.
+
+9
+00:00:34,140 --> 00:00:36,880
+Now let's look at
+the Network Security Threat Model.
+
+10
+00:00:36,880 --> 00:00:39,890
+A network attacker can
+be much more active.
+
+11
+00:00:39,890 --> 00:00:44,500
+Typically, we would assume that
+a network attacker can intercept and
+
+12
+00:00:44,500 --> 00:00:46,010
+control the network.
+
+13
+00:00:46,010 --> 00:00:50,320
+For example, the attacker can
+intercept and drop the traffic.
+
+14
+00:00:50,320 --> 00:00:53,420
+Or he can intercept and
+perform traffic analysis
+
+15
+00:00:53,420 --> 00:00:58,150
+to crack open the encryption key to
+read the data that's being transmitted.
+
+16
+00:00:58,150 --> 00:01:00,660
+Or he can inject malicious
+traffic into the network.

@@ -1,0 +1,32 @@
+1
+00:00:00,270 --> 00:00:04,750
+Recall that a network attacker can
+control network infrastructures
+
+2
+00:00:04,750 --> 00:00:07,350
+such as routers and DNS servers.
+
+3
+00:00:07,350 --> 00:00:12,207
+It can eavesdrop to learn traffic
+contents, inject data, block traffic, or
+
+4
+00:00:12,207 --> 00:00:14,460
+even modify the contents.
+
+5
+00:00:14,460 --> 00:00:18,680
+For example, such a network attacker
+can sit at an internet cafe or
+
+6
+00:00:18,680 --> 00:00:21,730
+hotel lobby to compromise the network.
+
+7
+00:00:21,730 --> 00:00:25,490
+HTTPS was designed to thwart
+such network attackers.
+

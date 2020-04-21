@@ -1,0 +1,218 @@
+1
+00:00:00,400 --> 00:00:03,930
+So how do we mitigate such
+denial of service attacks.
+
+2
+00:00:03,930 --> 00:00:06,910
+One solution is to use client puzzles.
+
+3
+00:00:06,910 --> 00:00:09,770
+The main idea is to
+slow down the attacker.
+
+4
+00:00:09,770 --> 00:00:13,368
+For example, we can ask
+the client to solve a problem.
+
+5
+00:00:13,368 --> 00:00:18,344
+For example, the server can
+challenge C to the client and
+
+6
+00:00:18,344 --> 00:00:23,009
+ask the client to find or
+compute X such that the n needs
+
+7
+00:00:23,009 --> 00:00:27,382
+significant bits of
+the SHA-1 hash are all 0s.
+
+8
+00:00:27,382 --> 00:00:32,191
+The assumption here is that it would
+take the client 2 to the n time to solve
+
+9
+00:00:32,191 --> 00:00:33,389
+this challenge.
+
+10
+00:00:33,389 --> 00:00:37,768
+For n=16, it would take 0.3
+seconds on a 1 gigahertz machine.
+
+11
+00:00:37,768 --> 00:00:41,903
+And of course, the client needs to
+present X back to the servers, and
+
+12
+00:00:41,903 --> 00:00:46,270
+it is very easy for server to check
+that the solution is correct.
+
+13
+00:00:46,270 --> 00:00:49,966
+This is because the server
+needs to only compute hash
+
+14
+00:00:49,966 --> 00:00:53,494
+1 whereas the client is to
+compute to the n times.
+
+15
+00:00:53,494 --> 00:00:56,306
+During a denial of
+service attack everyone,
+
+16
+00:00:56,306 --> 00:01:00,228
+that is including legitimate clients or
+possible attackers,
+
+17
+00:01:00,228 --> 00:01:03,560
+everyone must submit puzzle
+solution to the server.
+
+18
+00:01:03,560 --> 00:01:07,372
+And of course, when there's no attack,
+no one needs to solve the puzzle.
+
+19
+00:01:07,372 --> 00:01:11,280
+Here are some examples of how
+client puzzles can be deployed.
+
+20
+00:01:11,280 --> 00:01:13,240
+For TCP connection flooding,
+
+21
+00:01:13,240 --> 00:01:17,500
+the challenge C can be the TCP's
+server sequence number, and
+
+22
+00:01:17,500 --> 00:01:22,330
+the first data packet from the client
+must contain the puzzle solution.
+
+23
+00:01:22,330 --> 00:01:26,074
+Otherwise the server will
+terminate the TCP connection.
+
+24
+00:01:26,074 --> 00:01:28,986
+For SSL handshake denial
+of service attack,
+
+25
+00:01:28,986 --> 00:01:32,057
+the challenge C can be
+based on a TLS session ID.
+
+26
+00:01:32,057 --> 00:01:36,749
+And the server will check the puzzle
+solution before even attempting to do
+
+27
+00:01:36,749 --> 00:01:40,540
+RSA decrypt,
+because RSA decrypt is very expensive.
+
+28
+00:01:40,540 --> 00:01:44,190
+And similar ideas can be
+applied to application layer
+
+29
+00:01:44,190 --> 00:01:45,730
+denial of service attacks.
+
+30
+00:01:45,730 --> 00:01:50,030
+One advantage of the client puzzle is
+that the hardness of the challenge, or
+
+31
+00:01:50,030 --> 00:01:55,130
+in particular, n, can be decided
+based on the DoS attack volume.
+
+32
+00:01:55,130 --> 00:01:59,270
+For example, if the volume is high,
+you can set n to be higher so
+
+33
+00:01:59,270 --> 00:02:02,980
+that it takes more time for
+the client to find a solution.
+
+34
+00:02:02,980 --> 00:02:07,120
+In other words, this will reduce
+the volume of traffic to the server.
+
+35
+00:02:07,120 --> 00:02:12,280
+The limitation is that this requires
+changes to both the client code and
+
+36
+00:02:12,280 --> 00:02:13,630
+the server code.
+
+37
+00:02:13,630 --> 00:02:16,890
+It also hurts legitimate clients,
+in particular,
+
+38
+00:02:16,890 --> 00:02:22,850
+clients that use low power computing
+devices such as cellphones.
+
+39
+00:02:22,850 --> 00:02:27,480
+Another variant of client puzzle
+is to use memory-bound functions.
+
+40
+00:02:27,480 --> 00:02:32,770
+This is because CPU-bound functions such
+as the one we just discussed, cannot
+
+41
+00:02:32,770 --> 00:02:38,260
+be scaled to very hard puzzles for
+low end machines such as cell phones.
+
+42
+00:02:38,260 --> 00:02:42,435
+Whereas memory-bound functions
+can be easily scaled, even for
+
+43
+00:02:42,435 --> 00:02:43,950
+low-end machines.
+
+44
+00:02:43,950 --> 00:02:48,700
+There are several proposals to use
+memory-bound functions as puzzles.
+
+45
+00:02:48,700 --> 00:02:50,920
+You are encouraged to
+study these papers.

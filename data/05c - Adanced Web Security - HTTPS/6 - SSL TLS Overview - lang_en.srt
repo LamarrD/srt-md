@@ -1,0 +1,35 @@
+1
+00:00:00,210 --> 00:00:07,340
+Since HTTPS is HTTP over SSL,
+let's briefly review SSL/TLS.
+
+2
+00:00:07,340 --> 00:00:11,260
+It uses public key for
+authentication and key exchange.
+
+3
+00:00:11,260 --> 00:00:13,970
+As a quick review,
+in public key cryptography,
+
+4
+00:00:13,970 --> 00:00:18,480
+each user, say Bob, has a pair
+of public key and private key.
+
+5
+00:00:18,480 --> 00:00:21,610
+And Alice,
+after obtaining Bob's public key,
+
+6
+00:00:21,610 --> 00:00:26,650
+can use Bob's public key to encrypt
+message into cypher text, and a cypher
+
+7
+00:00:26,650 --> 00:00:31,550
+text can only be encrypted by Bob,
+using the corresponding private key.
+

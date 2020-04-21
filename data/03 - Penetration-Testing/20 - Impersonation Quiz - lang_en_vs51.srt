@@ -1,0 +1,7 @@
+1
+00:00:00,280 --> 00:00:02,940
+Now let's do a quiz on impersonation.
+
+2
+00:00:02,940 --> 00:00:04,840
+Match each tool with its description.

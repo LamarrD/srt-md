@@ -1,0 +1,38 @@
+1
+00:00:00,000 --> 00:00:03,620
+Let's discuss the foundational
+elements of cloud computing.
+
+2
+00:00:03,620 --> 00:00:06,330
+Cloud computing is built on
+a number of technologies.
+
+3
+00:00:06,330 --> 00:00:09,800
+These include virtualization,
+grid technology,
+
+4
+00:00:09,800 --> 00:00:13,230
+service oriented architectures,
+distributed computing.
+
+5
+00:00:13,230 --> 00:00:17,080
+Broadband networks,
+browser as a platform and free and
+
+6
+00:00:17,080 --> 00:00:18,550
+open source software.
+
+7
+00:00:18,550 --> 00:00:21,630
+Other technologies include
+autonomic systems, Web 2.0,
+
+8
+00:00:21,630 --> 00:00:25,740
+web application frameworks and
+service level agreements.

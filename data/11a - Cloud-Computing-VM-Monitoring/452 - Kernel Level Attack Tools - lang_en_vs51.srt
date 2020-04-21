@@ -1,0 +1,37 @@
+1
+00:00:00,298 --> 00:00:03,980
+Lets's first review what happens when we
+placed a security tool in the opening
+
+2
+00:00:03,980 --> 00:00:08,061
+system kernel, which has high
+privilege and user level applications.
+
+3
+00:00:08,061 --> 00:00:10,720
+A kernel-level security tool
+has a high privilege, and
+
+4
+00:00:10,720 --> 00:00:14,960
+therefore, it can detect and remove
+a malware process at a user level.
+
+5
+00:00:14,960 --> 00:00:18,800
+But since the security tool has a same
+privilege as the attacker in the kernel,
+
+6
+00:00:18,800 --> 00:00:21,940
+such as a rootkit, it can be compromise.
+
+7
+00:00:21,940 --> 00:00:24,920
+In other words,
+the security tool cannot be isolated or
+
+8
+00:00:24,920 --> 00:00:26,900
+protected from a kernel-level attacker.

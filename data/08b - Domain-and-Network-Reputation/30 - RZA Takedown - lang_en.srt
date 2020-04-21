@@ -1,0 +1,72 @@
+1
+00:00:00,000 --> 00:00:03,175
+Now, let's discuss an ideal takedown procedure.
+
+2
+00:00:03,175 --> 00:00:05,505
+Again, we start with a set of seed domains.
+
+3
+00:00:05,505 --> 00:00:09,015
+These domains are known to be associated with partner infrastructure.
+
+4
+00:00:09,015 --> 00:00:12,075
+We enumerate the infrastructure using passive DNS.
+
+5
+00:00:12,075 --> 00:00:16,065
+We get the malware associated with the domains and interrogate a malware.
+
+6
+00:00:16,065 --> 00:00:19,630
+If the malware tells us additional domains, we look back.
+
+7
+00:00:19,630 --> 00:00:22,440
+On the other hand, if there is no addition no domains,
+
+8
+00:00:22,440 --> 00:00:26,710
+then we take the set of domains that we know so far and revoke all of them.
+
+9
+00:00:26,710 --> 00:00:28,335
+That's how we take down the botnet.
+
+10
+00:00:28,335 --> 00:00:32,340
+If you find that the malware is using dynamically-generated domains,
+
+11
+00:00:32,340 --> 00:00:35,730
+then we need to first reverse engineer the algorithm,
+
+12
+00:00:35,730 --> 00:00:38,180
+then we need to tell the TLD operators and
+
+13
+00:00:38,180 --> 00:00:42,790
+DNS registrars to stop hosting or adjusting these new domains.
+
+14
+00:00:42,790 --> 00:00:46,265
+We will also revoke the set of non CNC domains.
+
+15
+00:00:46,265 --> 00:00:50,340
+If the malware exhibits behavior of using peer-to-peer network,
+
+16
+00:00:50,340 --> 00:00:52,970
+then we need to take down the peer-to-peer protocol.
+
+17
+00:00:52,970 --> 00:00:56,050
+For example, by penetrating into the peers.
+
+18
+00:00:56,050 --> 00:01:00,070
+We also need to revoke the set of non CNC domains.
+

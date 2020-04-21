@@ -1,0 +1,28 @@
+1
+00:00:00,000 --> 00:00:02,260
+The internet is a scale-free network.
+
+2
+00:00:02,260 --> 00:00:05,760
+We can infer that it has a high degree of tolerance
+
+3
+00:00:05,760 --> 00:00:10,220
+towards random failure and a low degree of tolerance against attacks.
+
+4
+00:00:10,220 --> 00:00:14,960
+The most successful attacks target the nodes that are the most connected.
+
+5
+00:00:14,960 --> 00:00:17,830
+When a highly connected node is attacked,
+
+6
+00:00:17,830 --> 00:00:22,275
+the internet begins to fracture and splinter into unconnected networks.
+
+7
+00:00:22,275 --> 00:00:26,540
+It is this characteristic of the internet that makes attacks so successful.
+

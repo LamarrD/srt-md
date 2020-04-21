@@ -1,0 +1,155 @@
+1
+00:00:00,420 --> 00:00:05,260
+Now let's discuss network denial of
+service attack in some more details.
+
+2
+00:00:05,260 --> 00:00:10,520
+The goal of network denial of service
+attack is to take out a large site
+
+3
+00:00:10,520 --> 00:00:14,820
+such as a web server with as little
+computing power as possible.
+
+4
+00:00:14,820 --> 00:00:17,490
+So how is network denial
+of service accomplished?
+
+5
+00:00:17,490 --> 00:00:20,230
+One of the main approaches
+is amplification.
+
+6
+00:00:20,230 --> 00:00:24,880
+This means that the attacker only needs
+to send a small number of packets and
+
+7
+00:00:24,880 --> 00:00:29,880
+can achieve a big effect such as
+rendering the targeted site unavailable.
+
+8
+00:00:29,880 --> 00:00:32,870
+There are two types of
+amplification attacks.
+
+9
+00:00:32,870 --> 00:00:37,650
+The first type is to exploit a bug or
+vulnerability on the server.
+
+10
+00:00:37,650 --> 00:00:42,804
+For example, if there's a design flaw or
+implementation error on the server code,
+
+11
+00:00:42,804 --> 00:00:45,997
+then the attacker machine
+can send a few packets that
+
+12
+00:00:45,997 --> 00:00:50,155
+contain input that would trigger
+the bug and then crash the server.
+
+13
+00:00:50,155 --> 00:00:52,973
+And of course,
+when the server program is crashed,
+
+14
+00:00:52,973 --> 00:00:55,530
+then the server become unavailable.
+
+15
+00:00:55,530 --> 00:00:59,840
+Another type of denial of service
+attack is to send a flood of packets.
+
+16
+00:00:59,840 --> 00:01:00,820
+For example,
+
+17
+00:01:00,820 --> 00:01:05,580
+an attacker can use a large botnet to
+send a lot of requests to the server.
+
+18
+00:01:05,580 --> 00:01:09,400
+Network denial of service attack
+can happen at any network layer.
+
+19
+00:01:09,400 --> 00:01:13,220
+As a quick review, there are multiple
+layers in a network stack.
+
+20
+00:01:13,220 --> 00:01:16,720
+For example, denial of service
+attack can happen at the link layer.
+
+21
+00:01:16,720 --> 00:01:20,660
+This means that the attacker
+simply sends a lot of traffic
+
+22
+00:01:20,660 --> 00:01:22,250
+to saturate the link.
+
+23
+00:01:22,250 --> 00:01:27,550
+Denial of service attack can happen at
+a TCP/UDP layer or the transport layer.
+
+24
+00:01:27,550 --> 00:01:28,560
+For example,
+
+25
+00:01:28,560 --> 00:01:33,180
+the server needs to use memory to
+hold the state of TCP connections, so
+
+26
+00:01:33,180 --> 00:01:38,170
+the attacker can send a lot of TCP
+packets to exhaust the server's memory.
+
+27
+00:01:38,170 --> 00:01:41,870
+Denial of service attack can also
+happen at the application layer.
+
+28
+00:01:41,870 --> 00:01:45,450
+For example, the attacker can
+request the server application
+
+29
+00:01:45,450 --> 00:01:47,780
+to fetch a large amount of data.
+
+30
+00:01:47,780 --> 00:01:52,840
+And if there are many such requests, the
+server's resources will be exhausted.
+
+31
+00:01:52,840 --> 00:01:56,450
+The sad truth is that
+the current Internet design
+
+32
+00:01:56,450 --> 00:01:59,040
+cannot handle distributed
+denial of service attacks.
+

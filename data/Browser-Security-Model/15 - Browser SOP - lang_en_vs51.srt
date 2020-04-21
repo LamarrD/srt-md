@@ -1,0 +1,46 @@
+1
+00:00:00,430 --> 00:00:04,400
+Origin is defined by protocol,
+domain, and port.
+
+2
+00:00:04,400 --> 00:00:07,460
+So the same origin means the same
+protocol, domain, and port.
+
+3
+00:00:08,730 --> 00:00:13,490
+For document objects or DOM in
+a browser, the same origin policy says
+
+4
+00:00:13,490 --> 00:00:20,210
+that origin A can access origin B's DOM
+if A and B have the same origin.
+
+5
+00:00:20,210 --> 00:00:24,620
+Meaning that they have the same
+protocol, domain, and port.
+
+6
+00:00:24,620 --> 00:00:28,970
+For cookies we say two
+cookies have the same origin
+
+7
+00:00:28,970 --> 00:00:31,120
+if they have the same domain and path.
+
+8
+00:00:31,120 --> 00:00:32,900
+The protocol is optional.
+
+9
+00:00:32,900 --> 00:00:36,560
+We're going to discuss in more
+detail the same origin policy for
+
+10
+00:00:36,560 --> 00:00:37,510
+cookies later.

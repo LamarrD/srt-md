@@ -1,0 +1,132 @@
+1
+00:00:00,250 --> 00:00:02,460
+There are several key security issues.
+
+2
+00:00:02,460 --> 00:00:03,270
+For example,
+
+3
+00:00:03,270 --> 00:00:06,435
+how do we trust the cloud computing
+environment because we don't manage it.
+
+4
+00:00:06,435 --> 00:00:10,006
+Furthermore, multiple different
+organizations may be using the same
+
+5
+00:00:10,006 --> 00:00:11,621
+cloud computing environment.
+
+6
+00:00:11,621 --> 00:00:13,895
+And in terms of data protection,
+obviously,
+
+7
+00:00:13,895 --> 00:00:16,930
+we should use encryption
+to protect confidentiality.
+
+8
+00:00:16,930 --> 00:00:20,030
+But we also need to consider
+various compliance issues.
+
+9
+00:00:20,030 --> 00:00:23,140
+These security issues become very
+challenging because the clouds
+
+10
+00:00:23,140 --> 00:00:25,280
+are massively complex systems.
+
+11
+00:00:25,280 --> 00:00:27,790
+Although the primitives and
+common functions are simple,
+
+12
+00:00:27,790 --> 00:00:31,110
+the complexity comes from the fact
+that these primitives and
+
+13
+00:00:31,110 --> 00:00:33,740
+function units are replicated
+thousands of times.
+
+14
+00:00:33,740 --> 00:00:36,100
+On the other hand,
+as we will discuss shortly,
+
+15
+00:00:36,100 --> 00:00:40,130
+cloud security is a tractable problem
+because there are both advantages and
+
+16
+00:00:40,130 --> 00:00:43,020
+challenges associated
+with cloud computing.
+
+17
+00:00:43,020 --> 00:00:45,520
+Let's first discuss the advantages.
+
+18
+00:00:45,520 --> 00:00:49,700
+First, you can put public data away
+from the internal network to the cloud.
+
+19
+00:00:49,700 --> 00:00:54,250
+And it is easy to manage testing and
+security patches when most systems
+
+20
+00:00:54,250 --> 00:00:57,240
+in a cloud computing environment
+use the same software.
+
+21
+00:00:57,240 --> 00:01:01,900
+And recovery is easy and fast because
+it is easy to set up the same system.
+
+22
+00:01:01,900 --> 00:01:03,690
+But there are also challenges.
+
+23
+00:01:03,690 --> 00:01:06,360
+First, you have to trust
+the cloud providers.
+
+24
+00:01:06,360 --> 00:01:09,759
+And you cannot respond to all
+the findings, or investigate directly,
+
+25
+00:01:09,759 --> 00:01:14,090
+because you have to rely on the cloud
+providers who are the direct admins, and
+
+26
+00:01:14,090 --> 00:01:17,120
+some software running in
+the cloud is proprietary.
+
+27
+00:01:17,120 --> 00:01:17,960
+And finally,
+
+28
+00:01:17,960 --> 00:01:21,730
+there is no physical control of
+the computing resources that you use.

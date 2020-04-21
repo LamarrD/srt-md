@@ -1,0 +1,53 @@
+1
+00:00:00,280 --> 00:00:03,110
+The question is can we have
+both the security benefit
+
+2
+00:00:03,110 --> 00:00:07,080
+provided by virtual machine monitoring
+which means out of VM monitoring and
+
+3
+00:00:07,080 --> 00:00:11,190
+the efficiency of traditional monitoring
+which means In-VM monitoring.
+
+4
+00:00:11,190 --> 00:00:14,580
+We have developed a secure
+In-VM monitoring approach.
+
+5
+00:00:14,580 --> 00:00:18,060
+We call this approach SIM for
+secure In-VM monitoring.
+
+6
+00:00:18,060 --> 00:00:21,480
+It provides the same security
+as the out of VM approach.
+
+7
+00:00:21,480 --> 00:00:25,580
+And its performance is similar to
+the traditional In-VM approach,
+
+8
+00:00:25,580 --> 00:00:28,850
+the main idea is to use hardware
+which virtualization features
+
+9
+00:00:28,850 --> 00:00:31,670
+to minimize the need to
+switch to hypervisor.
+
+10
+00:00:31,670 --> 00:00:33,420
+In other words we can read or
+
+11
+00:00:33,420 --> 00:00:36,820
+write the memory of an untrusted
+virtual machine at native speed.

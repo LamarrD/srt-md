@@ -1,0 +1,44 @@
+1
+00:00:00,000 --> 00:00:04,265
+The researchers found 1,800 signed certificates belonging to
+
+2
+00:00:04,265 --> 00:00:09,965
+683 organizations and these include various kinds of institutions.
+
+3
+00:00:09,965 --> 00:00:12,270
+The most worrisome finding is that
+
+4
+00:00:12,270 --> 00:00:14,926
+all major browser roots are selling
+
+5
+00:00:14,926 --> 00:00:18,750
+intermediates to third parties without any constraints.
+
+6
+00:00:18,750 --> 00:00:21,030
+By analyzing the certificate chains,
+
+7
+00:00:21,030 --> 00:00:26,140
+we see that 90 percent of the certificates are signed by five organizations.
+
+8
+00:00:26,140 --> 00:00:28,620
+They are sent from four roots and signed by
+
+9
+00:00:28,620 --> 00:00:32,700
+40 intermediates and there are only a few big players.
+
+10
+00:00:32,700 --> 00:00:35,940
+Another interesting fact is that 26 percent of
+
+11
+00:00:35,940 --> 00:00:40,000
+the trusted sites are signed by only a single intermediate certificate.
+

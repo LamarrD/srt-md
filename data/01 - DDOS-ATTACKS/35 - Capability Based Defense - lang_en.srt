@@ -1,0 +1,90 @@
+1
+00:00:00,450 --> 00:00:04,356
+Now let's discuss some novel idea
+to defend against denial of service
+
+2
+00:00:04,356 --> 00:00:05,650
+attacks.
+
+3
+00:00:05,650 --> 00:00:09,690
+There are a number of examples for
+capability-based defenses.
+
+4
+00:00:09,690 --> 00:00:12,260
+You're welcome to study these papers.
+
+5
+00:00:12,260 --> 00:00:15,000
+Here's a brief overview
+of these defenses.
+
+6
+00:00:15,000 --> 00:00:19,260
+The basic idea is that the receivers,
+such as a server,
+
+7
+00:00:19,260 --> 00:00:23,760
+can specify what packets they want,
+and this is called the capability.
+
+8
+00:00:23,760 --> 00:00:28,330
+When the sender sends a request to
+the receiver, he must include capability
+
+9
+00:00:28,330 --> 00:00:32,450
+in his SYN packet, meaning that
+he needs to tell the server that,
+
+10
+00:00:32,450 --> 00:00:34,484
+hey, I am the packet that you want.
+
+11
+00:00:34,484 --> 00:00:37,290
+When a client wants to
+connect to a server,
+
+12
+00:00:37,290 --> 00:00:39,970
+it needs to first request capability.
+
+13
+00:00:39,970 --> 00:00:42,447
+And such a request
+should be very limited.
+
+14
+00:00:42,447 --> 00:00:46,509
+And the server can respond with
+a capability that the sender can later
+
+15
+00:00:46,509 --> 00:00:48,785
+include in his packets.
+
+16
+00:00:48,785 --> 00:00:53,800
+Furthermore, all the routers will only
+forward packets with valid capability.
+
+17
+00:00:53,800 --> 00:00:58,361
+If a source is attacking,
+then its capability can be revoked, and
+
+18
+00:00:58,361 --> 00:01:02,360
+as a result, the routers will drop or
+block such packets.
+
+19
+00:01:02,360 --> 00:01:05,820
+And this can take place as close
+to the source as possible.
+

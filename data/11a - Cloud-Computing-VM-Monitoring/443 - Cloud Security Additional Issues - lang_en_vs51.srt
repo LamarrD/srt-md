@@ -1,0 +1,57 @@
+1
+00:00:00,240 --> 00:00:03,530
+There are some additional issues
+associated with cloud security.
+
+2
+00:00:03,530 --> 00:00:04,400
+In particular,
+
+3
+00:00:04,400 --> 00:00:09,200
+we need to consider the privacy impact
+when PII data is moved to the cloud.
+
+4
+00:00:09,200 --> 00:00:12,570
+PII stands for
+personal identifiable information, and
+
+5
+00:00:12,570 --> 00:00:16,780
+it is any data that could potentially
+identify a specific individual.
+
+6
+00:00:16,780 --> 00:00:20,380
+Customers should be aware that they need
+to negotiate with the cloud providers to
+
+7
+00:00:20,380 --> 00:00:23,380
+obtain a security
+service level agreement.
+
+8
+00:00:23,380 --> 00:00:26,510
+But then we need to make sure that
+we have proof that the service level
+
+9
+00:00:26,510 --> 00:00:28,520
+agreements have been satisfied.
+
+10
+00:00:28,520 --> 00:00:32,770
+Obviously, a cloud provider needs
+to plan for disaster recovery.
+
+11
+00:00:32,770 --> 00:00:36,960
+In addition, a cloud provider needs to
+consider a number of compliance issues.
+
+12
+00:00:36,960 --> 00:00:40,570
+For example, HIPAA for healthcare
+data and PCI for payment data.

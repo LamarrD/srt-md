@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:02,840
+Let's do a quiz. Check all true statements,
+
+2
+00:00:02,840 --> 00:00:04,250
+that pertain to a dynamic,
+
+3
+00:00:04,250 --> 00:00:06,940
+malware-related domain detection system.
+

@@ -1,0 +1,115 @@
+1
+00:00:00,290 --> 00:00:02,830
+And the answers are the first attack
+
+2
+00:00:02,830 --> 00:00:05,990
+using components with
+known vulnerabilities.
+
+3
+00:00:05,990 --> 00:00:11,470
+The description is uses
+unpatched third party components
+
+4
+00:00:11,470 --> 00:00:16,665
+because unpatched third party
+components have known vulnerabilities.
+
+5
+00:00:16,665 --> 00:00:20,025
+Second, missing function
+level access control.
+
+6
+00:00:20,025 --> 00:00:25,011
+For this attack, the description
+is privilege functionality is
+
+7
+00:00:25,011 --> 00:00:29,281
+hidden rather than enforced
+through access controls.
+
+8
+00:00:29,281 --> 00:00:34,450
+Because the attacks here says it's
+missing function level access control.
+
+9
+00:00:34,450 --> 00:00:37,730
+The third attack
+sensitive data exposure.
+
+10
+00:00:37,730 --> 00:00:41,360
+For that to work,
+the description is this one.
+
+11
+00:00:41,360 --> 00:00:44,120
+Abuses the lack of data encryption.
+
+12
+00:00:44,120 --> 00:00:47,850
+The next attack security
+misconfiguration.
+
+13
+00:00:47,850 --> 00:00:51,940
+The description is exploits
+misconfigured servers.
+
+14
+00:00:51,940 --> 00:00:56,480
+The next attack insecure
+direct object references.
+
+15
+00:00:56,480 --> 00:00:59,700
+The description is that
+the attacker can modify
+
+16
+00:00:59,700 --> 00:01:04,250
+file names because file names
+are direct object references.
+
+17
+00:01:04,250 --> 00:01:06,800
+The next attack, cross site scripting.
+
+18
+00:01:06,800 --> 00:01:11,860
+The description is,
+inserts Javascript into trusted sites.
+
+19
+00:01:11,860 --> 00:01:15,160
+The next one,
+broken authentication and session.
+
+20
+00:01:15,160 --> 00:01:20,340
+The description is, program flaws allow
+bypass of authentication methods.
+
+21
+00:01:21,340 --> 00:01:25,750
+Because the attack here exploits
+broken authentication and session.
+
+22
+00:01:25,750 --> 00:01:27,960
+The last one, injection,
+
+23
+00:01:27,960 --> 00:01:32,800
+the description is modifies back-end
+statement through user input.
+
+24
+00:01:32,800 --> 00:01:36,930
+In other words the attack action
+is injected through user input.

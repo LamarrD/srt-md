@@ -1,0 +1,32 @@
+1
+00:00:00,140 --> 00:00:02,505
+The next step is escalating privilege.
+
+2
+00:00:02,505 --> 00:00:05,166
+And the goal is to gain
+super user access so
+
+3
+00:00:05,166 --> 00:00:09,060
+that you can gain complete
+control of the system.
+
+4
+00:00:09,060 --> 00:00:10,830
+Here's some examples and tools.
+
+5
+00:00:10,830 --> 00:00:14,240
+Again, you can capture and
+crack the super user passwords.
+
+6
+00:00:14,240 --> 00:00:16,800
+There are tools that will
+exploit vulnerabilities
+
+7
+00:00:16,800 --> 00:00:20,360
+of privileged services in order
+to help you gain good access.

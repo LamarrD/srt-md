@@ -1,0 +1,128 @@
+1
+00:00:00,000 --> 00:00:01,830
+Recall that in bitcoin.
+
+2
+00:00:01,830 --> 00:00:06,700
+A valid transaction has information store in the blockchain,
+
+3
+00:00:06,700 --> 00:00:10,080
+but also the transactional information has to
+
+4
+00:00:10,080 --> 00:00:13,905
+also be signed by the owner's secret signing key,
+
+5
+00:00:13,905 --> 00:00:17,735
+or that's the private key of the public key pair.
+
+6
+00:00:17,735 --> 00:00:19,670
+Recall that in bitcoin,
+
+7
+00:00:19,670 --> 00:00:24,000
+a transaction information is store in the blockchain and it
+
+8
+00:00:24,000 --> 00:00:28,765
+also contains a signature signed by the owner's private key.
+
+9
+00:00:28,765 --> 00:00:32,200
+The owners need to keep their private key a secret.
+
+10
+00:00:32,200 --> 00:00:35,400
+So, this is about key management.
+
+11
+00:00:35,400 --> 00:00:40,180
+That is, how do you keep your private key secret and secure?
+
+12
+00:00:40,180 --> 00:00:45,710
+Of course, you can store your public key in a file on your computer or on your phone.
+
+13
+00:00:45,710 --> 00:00:48,215
+This is a very convenient approach.
+
+14
+00:00:48,215 --> 00:00:51,500
+On the other hand, if you're KeyStore is lost,
+
+15
+00:00:51,500 --> 00:00:54,195
+that means your private key is lost,
+
+16
+00:00:54,195 --> 00:00:57,200
+which means all your bitcoins are lost.
+
+17
+00:00:57,200 --> 00:00:59,930
+This is because without the private key,
+
+18
+00:00:59,930 --> 00:01:03,410
+you cannot prove that you're the owner of the matching public key.
+
+19
+00:01:03,410 --> 00:01:08,315
+Remember, all your coins are associated with that public key.
+
+20
+00:01:08,315 --> 00:01:12,900
+That is, your public key is your ID or address in bitcoin.
+
+21
+00:01:12,900 --> 00:01:15,710
+But, you have to use the private key to
+
+22
+00:01:15,710 --> 00:01:19,290
+prove that you're the owner of the public key or the ID.
+
+23
+00:01:19,290 --> 00:01:22,000
+Of course, your KeyStore can be compromised,
+
+24
+00:01:22,000 --> 00:01:24,445
+which means your public key can be stolen,
+
+25
+00:01:24,445 --> 00:01:28,820
+which means all the bitcoins can also be stolen because now
+
+26
+00:01:28,820 --> 00:01:34,325
+the attacker can claim that he's the owner of that public key or the ID.
+
+27
+00:01:34,325 --> 00:01:37,470
+Therefore, he has all your bitcoins.
+
+28
+00:01:37,470 --> 00:01:40,435
+For example, the stolen private key,
+
+29
+00:01:40,435 --> 00:01:43,205
+now the attacker can claim that he's the owner
+
+30
+00:01:43,205 --> 00:01:46,295
+of the ID that the bitcoins are associated with.
+
+31
+00:01:46,295 --> 00:01:50,755
+He can then pay those bitcoins to another address that he owns.
+
+32
+00:01:50,755 --> 00:01:53,660
+That way, he can steal all the bitcoins.
+

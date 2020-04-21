@@ -1,0 +1,24 @@
+1
+00:00:00,000 --> 00:00:02,025
+Now, the remaining question is,
+
+2
+00:00:02,025 --> 00:00:04,365
+how do we keep the cold storage safe?
+
+3
+00:00:04,365 --> 00:00:06,195
+There are multiple options.
+
+4
+00:00:06,195 --> 00:00:11,055
+For example, a user can use his pass phrase to encrypt information.
+
+5
+00:00:11,055 --> 00:00:14,040
+We can even print information on a piece of paper,
+
+6
+00:00:14,040 --> 00:00:18,990
+or we can use tamperproof device then use hardware to protect the keys.
+

@@ -1,0 +1,24 @@
+1
+00:00:00,230 --> 00:00:02,930
+This is a large lesson
+because the topic,
+
+2
+00:00:02,930 --> 00:00:06,650
+Advanced Web Security,
+is an expansive subject.
+
+3
+00:00:06,650 --> 00:00:11,510
+By the end of this lesson, you should be
+familiar with the web security model,
+
+4
+00:00:11,510 --> 00:00:16,740
+defenses against attacks on web
+applications, HTTPS, its goals and
+
+5
+00:00:16,740 --> 00:00:21,190
+pitfalls and content security
+policies and web workers.

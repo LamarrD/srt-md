@@ -1,0 +1,116 @@
+1
+00:00:00,000 --> 00:00:03,225
+Now we come to the core problem with ScroogeCoin.
+
+2
+00:00:03,225 --> 00:00:07,820
+ScroogeCoin will work in a sense that people can see which coins are valid.
+
+3
+00:00:07,820 --> 00:00:12,060
+It prevents double spending because everyone can look into the blockchain and see
+
+4
+00:00:12,060 --> 00:00:16,830
+that all the transactions are valid and that every coin is consumed only once.
+
+5
+00:00:16,830 --> 00:00:20,250
+But the problem is that Scrooge has too much influence.
+
+6
+00:00:20,250 --> 00:00:25,305
+He cannot create fake transactions because he cannot afford other people's signatures.
+
+7
+00:00:25,305 --> 00:00:27,900
+But Scrooge could stop endorsing transactions for
+
+8
+00:00:27,900 --> 00:00:31,890
+some users denying their service and making their coins unspendable,
+
+9
+00:00:31,890 --> 00:00:34,320
+or Scrooge can be greedy and he could
+
+10
+00:00:34,320 --> 00:00:37,225
+refuse to publish transactions unless he gets a fee.
+
+11
+00:00:37,225 --> 00:00:41,560
+Scrooge can of course create as many new coins for himself as he wants.
+
+12
+00:00:41,560 --> 00:00:43,895
+The problem here is centralization.
+
+13
+00:00:43,895 --> 00:00:46,030
+Although Scrooge is happy with the system,
+
+14
+00:00:46,030 --> 00:00:47,430
+the users might not be.
+
+15
+00:00:47,430 --> 00:00:51,650
+Cryptocurrencies with a central authority have largely failed to take off and
+
+16
+00:00:51,650 --> 00:00:54,110
+the main reason is that it is difficult for people to
+
+17
+00:00:54,110 --> 00:00:56,955
+accept a cryptocurrency with a centralized authority.
+
+18
+00:00:56,955 --> 00:00:59,990
+Therefore, a key technical challenge is that can we
+
+19
+00:00:59,990 --> 00:01:03,120
+create a cryptocurrency without a central authority.
+
+20
+00:01:03,120 --> 00:01:06,245
+To do this, we must figure out how we can agree upon
+
+21
+00:01:06,245 --> 00:01:09,810
+a single published blockchain with history of all the transactions.
+
+22
+00:01:09,810 --> 00:01:12,470
+The users must all agree which transactions are
+
+23
+00:01:12,470 --> 00:01:15,320
+valid and which transactions have actually occurred.
+
+24
+00:01:15,320 --> 00:01:19,495
+They also need to be able to assign IDs to things in a decentralized way.
+
+25
+00:01:19,495 --> 00:01:24,760
+Finally, the mining of new coins needs to be controlled in a decentralized way.
+
+26
+00:01:24,760 --> 00:01:26,960
+If we can solve all of these problems,
+
+27
+00:01:26,960 --> 00:01:29,105
+then we can build a currency that will be like
+
+28
+00:01:29,105 --> 00:01:32,030
+ScroogeCoin but without a centralized authority.
+
+29
+00:01:32,030 --> 00:01:35,360
+In fact, this will be a system very much like Bitcoin.
+

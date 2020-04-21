@@ -1,0 +1,26 @@
+1
+00:00:00,250 --> 00:00:02,360
+Now let's do a quiz on session token.
+
+2
+00:00:02,360 --> 00:00:04,300
+Check all the statements that are true.
+
+3
+00:00:04,300 --> 00:00:07,160
+First, the token must
+be stored somewhere.
+
+4
+00:00:07,160 --> 00:00:09,340
+Second, tokens expire, but
+
+5
+00:00:09,340 --> 00:00:12,680
+there should be mechanisms
+to revoke them if necessary.
+
+6
+00:00:12,680 --> 00:00:16,219
+Third, token size,
+like cookie size, is not a concern.

@@ -1,0 +1,27 @@
+1
+00:00:00,230 --> 00:00:04,850
+A Tier One network is one that can reach
+every other network through peering.
+
+2
+00:00:04,850 --> 00:00:08,930
+A Tier Two network is one that peers
+some of its network access and
+
+3
+00:00:08,930 --> 00:00:11,440
+purchase some of its network access.
+
+4
+00:00:11,440 --> 00:00:15,180
+A Tier Three network is one that
+purchases all of the transit
+
+5
+00:00:15,180 --> 00:00:16,600
+from other networks.
+
+6
+00:00:16,600 --> 00:00:21,129
+Just for your information, there are
+only 17 Tier One networks in the world.

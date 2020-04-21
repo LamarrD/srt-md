@@ -1,0 +1,44 @@
+1
+00:00:00,000 --> 00:00:02,610
+Here's a high level overview of this process.
+
+2
+00:00:02,610 --> 00:00:04,385
+We start with raw audit data.
+
+3
+00:00:04,385 --> 00:00:05,930
+For example, packets.
+
+4
+00:00:05,930 --> 00:00:08,300
+We summarize data into connection records.
+
+5
+00:00:08,300 --> 00:00:10,290
+Then we find frequent patterns,
+
+6
+00:00:10,290 --> 00:00:12,090
+and then we compare the patterns to
+
+7
+00:00:12,090 --> 00:00:15,165
+determine the unique patterns associated with intuitions.
+
+8
+00:00:15,165 --> 00:00:18,065
+We then construct features according to these patterns.
+
+9
+00:00:18,065 --> 00:00:20,940
+With these features, we can learn classification models.
+
+10
+00:00:20,940 --> 00:00:22,830
+This process is iterative.
+
+11
+00:00:22,830 --> 00:00:27,100
+In fact, each step can iterate it over and over to improve performance.
+

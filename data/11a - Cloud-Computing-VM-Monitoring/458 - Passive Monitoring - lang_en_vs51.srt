@@ -1,0 +1,71 @@
+1
+00:00:00,290 --> 00:00:02,330
+Here's an example of passive monitoring.
+
+2
+00:00:02,330 --> 00:00:05,625
+Again, this means that the security
+virtual machine monitors that
+
+3
+00:00:05,625 --> 00:00:09,555
+application periodically by getting the
+view of the memory from another virtual
+
+4
+00:00:09,555 --> 00:00:10,087
+machine.
+
+5
+00:00:10,087 --> 00:00:13,499
+This is known as performing
+virtual machine introspection.
+
+6
+00:00:13,499 --> 00:00:16,190
+And here are the main steps
+in passive monitoring.
+
+7
+00:00:16,190 --> 00:00:18,031
+In the security virtual machine,
+
+8
+00:00:18,031 --> 00:00:21,526
+the security tool performs an API
+call to access a kernel symbol.
+
+9
+00:00:21,526 --> 00:00:24,305
+The address of the kernel
+symbol has been looked up and
+
+10
+00:00:24,305 --> 00:00:27,394
+then page tables for
+the memory of the user virtual machines
+
+11
+00:00:27,394 --> 00:00:29,883
+are being traversed to
+locate the kernel data.
+
+12
+00:00:29,883 --> 00:00:33,785
+And then, the pointer to the memory
+is returned to the security monitor.
+
+13
+00:00:33,785 --> 00:00:37,881
+We use a virtual machine introspection
+library called libVMI to convert
+
+14
+00:00:37,881 --> 00:00:42,378
+the raw memory view into something
+meaningful, such as, virtual addresses,
+
+15
+00:00:42,378 --> 00:00:45,820
+kernel symbols, etc, and
+we will discuss libVMI shortly.

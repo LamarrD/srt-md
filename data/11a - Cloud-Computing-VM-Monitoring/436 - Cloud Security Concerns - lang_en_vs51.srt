@@ -1,0 +1,26 @@
+1
+00:00:00,280 --> 00:00:02,420
+Now let's discuss cloud security.
+
+2
+00:00:02,420 --> 00:00:06,180
+The first question is, is security
+important to cloud computing?
+
+3
+00:00:06,180 --> 00:00:07,470
+According to this survey,
+
+4
+00:00:07,470 --> 00:00:11,600
+security is the main concern when
+people consider moving to the cloud.
+
+5
+00:00:11,600 --> 00:00:15,410
+So, it's obvious that security is one
+of the most important concerns with
+
+6
+00:00:15,410 --> 00:00:16,050
+cloud computing.

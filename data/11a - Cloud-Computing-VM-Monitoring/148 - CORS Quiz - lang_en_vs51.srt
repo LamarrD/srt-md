@@ -1,0 +1,31 @@
+1
+00:00:00,420 --> 00:00:02,000
+Now, let's do a quiz.
+
+2
+00:00:02,000 --> 00:00:04,450
+Select all statements that are true.
+
+3
+00:00:04,450 --> 00:00:09,283
+First, cross-origin resource sharing
+allows cross-domain communication
+
+4
+00:00:09,283 --> 00:00:11,050
+from the browser.
+
+5
+00:00:11,050 --> 00:00:15,340
+Second, it requires coordination
+between the server and client.
+
+6
+00:00:16,360 --> 00:00:20,430
+Third, it is not widely
+supported by browsers.
+
+7
+00:00:20,430 --> 00:00:24,750
+Fourth, the header can be used to
+secure resources on a website.

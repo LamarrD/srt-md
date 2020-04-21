@@ -1,0 +1,8 @@
+1
+00:00:00,260 --> 00:00:01,960
+Now let's do a quiz on puzzle.
+
+2
+00:00:01,960 --> 00:00:03,690
+Which of the following
+statements are true?

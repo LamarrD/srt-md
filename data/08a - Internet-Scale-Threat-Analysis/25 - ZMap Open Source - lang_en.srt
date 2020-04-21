@@ -1,0 +1,20 @@
+1
+00:00:00,000 --> 00:00:02,925
+The researchers at the University of Michigan have
+
+2
+00:00:02,925 --> 00:00:06,315
+released ZMap as an open source project.
+
+3
+00:00:06,315 --> 00:00:11,490
+You can download ZMap and use it for your own Internet wide security study.
+
+4
+00:00:11,490 --> 00:00:15,870
+Of course, please remember to be a good citizen on the Internet.
+
+5
+00:00:15,870 --> 00:00:19,110
+There's also a repository of data from previous scans.
+

@@ -1,0 +1,28 @@
+1
+00:00:00,000 --> 00:00:02,025
+We can look for the number of characters.
+
+2
+00:00:02,025 --> 00:00:04,165
+Malicious domain names tend to be long.
+
+3
+00:00:04,165 --> 00:00:06,375
+We can also look for the number of hyphens.
+
+4
+00:00:06,375 --> 00:00:09,900
+Again, malicious domain names tend to have a lot more hyphens.
+
+5
+00:00:09,900 --> 00:00:11,595
+We can look the number of digits.
+
+6
+00:00:11,595 --> 00:00:15,170
+Again, malicious domain names tend to have a lot more digits.
+
+7
+00:00:15,170 --> 00:00:17,480
+Similarly, with numbers.
+

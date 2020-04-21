@@ -1,0 +1,168 @@
+1
+00:00:00,000 --> 00:00:05,195
+In Scrooge coin, there are two kinds of transactions: the first kind is CreateCoins.
+
+2
+00:00:05,195 --> 00:00:09,645
+In this example, a CreateCoins transaction creates multiple coins.
+
+3
+00:00:09,645 --> 00:00:12,885
+Each coin has a serial number within a transaction number.
+
+4
+00:00:12,885 --> 00:00:14,750
+Each transaction has an ID,
+
+5
+00:00:14,750 --> 00:00:17,760
+and each coin has a serial number within a transaction.
+
+6
+00:00:17,760 --> 00:00:19,470
+Each coin has a value,
+
+7
+00:00:19,470 --> 00:00:23,990
+meaning it's worth a certain number of Scrooge coins and also recipient,
+
+8
+00:00:23,990 --> 00:00:26,000
+which is the recipient's public key.
+
+9
+00:00:26,000 --> 00:00:30,165
+In this example, a CreateCoins transaction creates multiple coins.
+
+10
+00:00:30,165 --> 00:00:32,430
+A transaction has a transaction ID.
+
+11
+00:00:32,430 --> 00:00:35,425
+Each coin has a serial number within a transaction.
+
+12
+00:00:35,425 --> 00:00:37,595
+Each coin has a value, that is,
+
+13
+00:00:37,595 --> 00:00:40,350
+it's worth a certain number of Scrooge coins,
+
+14
+00:00:40,350 --> 00:00:42,050
+and each coin has a recipient,
+
+15
+00:00:42,050 --> 00:00:44,140
+which is the public key of the recipient.
+
+16
+00:00:44,140 --> 00:00:49,250
+A Scrooge coin transaction is always valid by definition if it is signed by Scrooge.
+
+17
+00:00:49,250 --> 00:00:52,440
+The second kind of transaction is called PayCoins.
+
+18
+00:00:52,440 --> 00:00:54,345
+It consumes some coins, that is,
+
+19
+00:00:54,345 --> 00:00:57,500
+destroy them and creates new coins of the same total value.
+
+20
+00:00:57,500 --> 00:00:59,800
+The new coins might belong to different people,
+
+21
+00:00:59,800 --> 00:01:01,610
+that is, different public keys.
+
+22
+00:01:01,610 --> 00:01:05,900
+This transaction has to be signed by everyone who's paying in a coin,
+
+23
+00:01:05,900 --> 00:01:08,360
+that is, if you're the owner of one of the coins,
+
+24
+00:01:08,360 --> 00:01:10,620
+there's going to be consumed in this transaction,
+
+25
+00:01:10,620 --> 00:01:12,890
+then you have to sign this transaction to say that
+
+26
+00:01:12,890 --> 00:01:15,310
+you're really okay with spending this coin.
+
+27
+00:01:15,310 --> 00:01:17,480
+The rules of Scrooge coin say that
+
+28
+00:01:17,480 --> 00:01:21,130
+a PayCoins transaction is valid if four things are true.
+
+29
+00:01:21,130 --> 00:01:23,100
+First, the consumed coins are valid.
+
+30
+00:01:23,100 --> 00:01:26,150
+They really were created in previous transactions.
+
+31
+00:01:26,150 --> 00:01:31,220
+Second, the consumed coins were not already consumed in some previous transaction,
+
+32
+00:01:31,220 --> 00:01:33,330
+that is, this is not a double-spending.
+
+33
+00:01:33,330 --> 00:01:36,560
+Third, the total value of the coins that come out of
+
+34
+00:01:36,560 --> 00:01:40,510
+this transaction is equal to the total value of the coins that went in,
+
+35
+00:01:40,510 --> 00:01:43,435
+that is, only Scrooge can create new value.
+
+36
+00:01:43,435 --> 00:01:48,515
+Forth, the transaction is correctly signed by owners of all the consumed coins.
+
+37
+00:01:48,515 --> 00:01:50,750
+If all of these conditions are met,
+
+38
+00:01:50,750 --> 00:01:54,310
+then this PayCoins transaction is valid and Scrooge will accept it.
+
+39
+00:01:54,310 --> 00:01:57,910
+He'll write it into the history by appending it to the blockchain,
+
+40
+00:01:57,910 --> 00:02:01,615
+after which everyone can see that this transaction has happened.
+
+41
+00:02:01,615 --> 00:02:04,070
+It is only at this point that the participants can
+
+42
+00:02:04,070 --> 00:02:06,730
+accept that this transaction has actually occurred.
+

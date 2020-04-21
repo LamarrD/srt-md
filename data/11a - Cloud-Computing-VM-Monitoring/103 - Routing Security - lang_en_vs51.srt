@@ -1,0 +1,126 @@
+1
+00:00:00,290 --> 00:00:02,763
+Again, from the perspective of routing,
+
+2
+00:00:02,763 --> 00:00:06,483
+the Internet is a collection of
+domains or autonomous systems.
+
+3
+00:00:06,483 --> 00:00:10,977
+An autonomous system is a connected
+group of computers where their
+
+4
+00:00:10,977 --> 00:00:15,872
+IP addresses share some common prefixes,
+and they're using a single or
+
+5
+00:00:15,872 --> 00:00:18,060
+common routing policy.
+
+6
+00:00:18,060 --> 00:00:22,660
+The routing between these
+domains is determined by BGP.
+
+7
+00:00:22,660 --> 00:00:27,980
+And the routing within each domain is
+determined by protocols such as OSPF.
+
+8
+00:00:27,980 --> 00:00:30,780
+Now let's discuss the security
+of routing protocols.
+
+9
+00:00:30,780 --> 00:00:36,013
+Recall that the ARP protocol
+maps IP address to MAC address.
+
+10
+00:00:36,013 --> 00:00:40,429
+Now, suppose there's an ARP request
+asking for the MAC address for
+
+11
+00:00:40,429 --> 00:00:42,590
+node B's IP address.
+
+12
+00:00:42,590 --> 00:00:46,180
+This ARP request is broadcasted
+to the whole network.
+
+13
+00:00:46,180 --> 00:00:48,080
+Now if node A is malicious,
+
+14
+00:00:48,080 --> 00:00:52,420
+it can send ARP reply to the gateway
+with its own Mac address.
+
+15
+00:00:52,420 --> 00:00:57,180
+If this reply arrives at the gateway
+before the reply of node B does,
+
+16
+00:00:57,180 --> 00:01:00,430
+then the gateway will think
+that node A is node B.
+
+17
+00:01:00,430 --> 00:01:05,050
+Which means that node A now is right
+in the middle, and you can read or
+
+18
+00:01:05,050 --> 00:01:08,010
+inject packets into node B sessions.
+
+19
+00:01:08,010 --> 00:01:10,493
+The Border Gateway Protocol, or BGP,
+
+20
+00:01:10,493 --> 00:01:14,189
+decides the routing policy
+between autonomous systems.
+
+21
+00:01:14,189 --> 00:01:18,888
+However, in BGP routing information,
+and in particular route updates,
+
+22
+00:01:18,888 --> 00:01:20,463
+are not authenticated.
+
+23
+00:01:20,463 --> 00:01:24,645
+Therefore, through a false
+advertisement, an attacker can cause
+
+24
+00:01:24,645 --> 00:01:29,209
+traffic to a victim host to instead
+route to the attacker's own address.
+
+25
+00:01:29,209 --> 00:01:32,344
+There are plenty of examples
+illustrating the danger of
+
+26
+00:01:32,344 --> 00:01:34,580
+false route advertisement.
+
+27
+00:01:34,580 --> 00:01:37,540
+Essentially, anyone can
+hijack route to victim

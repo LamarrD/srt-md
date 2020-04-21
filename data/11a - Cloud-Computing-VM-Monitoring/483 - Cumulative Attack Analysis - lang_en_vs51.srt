@@ -1,0 +1,18 @@
+1
+00:00:00,250 --> 00:00:04,810
+Here are some results of this attack and
+the highlights are for disease severity,
+
+2
+00:00:04,810 --> 00:00:09,240
+admission month, mortality risk,
+length of stay 100% of the patients for
+
+3
+00:00:09,240 --> 00:00:11,870
+100% of the hospitals were recovered.
+
+4
+00:00:11,870 --> 00:00:16,540
+And for age, 83% of the patients for
+99% of the hospitals were recovered.

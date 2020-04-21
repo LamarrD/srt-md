@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:02,850
+Before we discuss the remaining problems with Bitcoin,
+
+2
+00:00:02,850 --> 00:00:05,190
+let's do a quick review of Sybil attack.
+
+3
+00:00:05,190 --> 00:00:06,710
+Which statements are true?
+

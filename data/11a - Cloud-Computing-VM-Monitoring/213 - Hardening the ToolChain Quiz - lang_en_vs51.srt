@@ -1,0 +1,18 @@
+1
+00:00:00,330 --> 00:00:03,469
+We now know that toolchain have
+occurred and will continue.
+
+2
+00:00:03,469 --> 00:00:06,600
+So, the question is,
+can you hold on the toolchain?
+
+3
+00:00:06,600 --> 00:00:07,490
+In this quiz,
+
+4
+00:00:07,490 --> 00:00:11,490
+list the four areas of the C based
+toolchain where hardening can occur.

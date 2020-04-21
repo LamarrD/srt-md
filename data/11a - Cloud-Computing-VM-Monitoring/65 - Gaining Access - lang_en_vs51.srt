@@ -1,0 +1,54 @@
+1
+00:00:00,290 --> 00:00:04,390
+Once you have obtained the relevant
+information of network services and
+
+2
+00:00:04,390 --> 00:00:08,630
+user accounts, now you can exploit and
+gain access to the network.
+
+3
+00:00:08,630 --> 00:00:10,960
+Typically, there are all
+the existing tools and
+
+4
+00:00:10,960 --> 00:00:14,040
+scripts associated with
+known vulnerabilities.
+
+5
+00:00:14,040 --> 00:00:17,600
+But of course, you can customize
+them to suit your needs.
+
+6
+00:00:17,600 --> 00:00:22,240
+On the other hand, if the vulnerability
+is new or there does not exist a tool or
+
+7
+00:00:22,240 --> 00:00:25,590
+script, then you have to
+develop the exploit yourself.
+
+8
+00:00:25,590 --> 00:00:29,790
+In general, this is a manual process and
+can be quite difficult.
+
+9
+00:00:29,790 --> 00:00:33,790
+Here are some examples of techniques and
+tools for gaining access.
+
+10
+00:00:33,790 --> 00:00:38,060
+For example, you can use tools
+to capture and crack password.
+
+11
+00:00:38,060 --> 00:00:42,680
+And there are tools that will exploit
+vulnerabilities in widely used services.

@@ -1,0 +1,103 @@
+1
+00:00:00,220 --> 00:00:03,670
+In 2012,
+some of these scammers got breached and
+
+2
+00:00:03,670 --> 00:00:07,470
+their data were dumped and
+made publicly available.
+
+3
+00:00:07,470 --> 00:00:11,730
+The data contained complete
+logs of sales, customers, and
+
+4
+00:00:11,730 --> 00:00:13,520
+affiliate relationships.
+
+5
+00:00:13,520 --> 00:00:18,940
+So researchers study this data and
+publish their findings in this paper.
+
+6
+00:00:18,940 --> 00:00:23,090
+Here's a look at the transaction
+volumes per week for these scammers.
+
+7
+00:00:23,090 --> 00:00:26,870
+We can see that these scammers
+were around for a long time.
+
+8
+00:00:26,870 --> 00:00:29,760
+We can see here that
+the repeat customers or
+
+9
+00:00:29,760 --> 00:00:33,270
+the repeat orders are an important
+part of the business.
+
+10
+00:00:33,270 --> 00:00:37,150
+This data presents a counter-point
+to the conventional wisdom
+
+11
+00:00:37,150 --> 00:00:40,020
+that online pharmacies are pure scams.
+
+12
+00:00:40,020 --> 00:00:44,320
+They don't simply take credit card and
+either never providing goods, or
+
+13
+00:00:44,320 --> 00:00:46,620
+providing goods of no quality.
+
+14
+00:00:46,620 --> 00:00:50,580
+Because if that is true,
+then we would not see repeat customers.
+
+15
+00:00:50,580 --> 00:00:53,080
+Here's a breakdown of
+the different types of drugs
+
+16
+00:00:53,080 --> 00:00:55,370
+being purchased by customers.
+
+17
+00:00:55,370 --> 00:00:58,472
+Here we see that pharma scams
+bring in a lot of revenue,
+
+18
+00:00:58,472 --> 00:01:00,370
+but there are also a lot of costs.
+
+19
+00:01:00,370 --> 00:01:04,319
+The actual net revenue,
+or profit is not huge.
+
+20
+00:01:04,319 --> 00:01:07,460
+These costs include
+payment to the affiliates.
+
+21
+00:01:07,460 --> 00:01:11,360
+Cost of the network infrastructure,
+and payment to spammers and
+
+22
+00:01:11,360 --> 00:01:12,300
+botnet operators.

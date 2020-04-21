@@ -1,0 +1,142 @@
+1
+00:00:00,258 --> 00:00:02,410
+A DNS Lookup is an iterative or
+
+2
+00:00:02,410 --> 00:00:06,040
+recursive process carrying
+the hierarchy code database.
+
+3
+00:00:06,040 --> 00:00:13,255
+For example, suppose your browser
+is looking up www.cc.gatech.edu.
+
+4
+00:00:13,255 --> 00:00:17,848
+The local DNS service is handling
+this request of looking up the IP
+
+5
+00:00:17,848 --> 00:00:19,943
+address of this domain name.
+
+6
+00:00:19,943 --> 00:00:24,410
+The query will start on the root or
+top level domain servers.
+
+7
+00:00:24,410 --> 00:00:28,438
+That is,
+the local DNS server asks the root and
+
+8
+00:00:28,438 --> 00:00:34,958
+top level domain servers what is
+the IP address of www.cc.gatech.edu.
+
+9
+00:00:34,958 --> 00:00:40,190
+And these servers say, I don't know, but
+I know the main server of gatech.edu.
+
+10
+00:00:40,190 --> 00:00:45,490
+So the local DNS server then
+asks gatech.edu DNS server
+
+11
+00:00:45,490 --> 00:00:50,236
+what is the IP address
+of www.cc.gatech.edu.
+
+12
+00:00:50,236 --> 00:00:54,082
+And the gatech.edu DNS server says,
+I don't know but
+
+13
+00:00:54,082 --> 00:00:57,016
+I know the name server cc.gatech.edu.
+
+14
+00:00:57,016 --> 00:01:01,913
+So finally,
+the name server cc.gatech.edu says,
+
+15
+00:01:01,913 --> 00:01:07,344
+I know the IP address of
+www.cc.gatech.edu and here it is.
+
+16
+00:01:07,344 --> 00:01:12,219
+So that's an example of looking up
+a domain name in most iterative or
+
+17
+00:01:12,219 --> 00:01:14,794
+recursive queries to DNS servers.
+
+18
+00:01:14,794 --> 00:01:19,410
+There are several types of DNS
+records in the response to DNS query.
+
+19
+00:01:19,410 --> 00:01:21,250
+One is the NS record.
+
+20
+00:01:21,250 --> 00:01:23,310
+This points to a name server.
+
+21
+00:01:23,310 --> 00:01:23,946
+That is,
+
+22
+00:01:23,946 --> 00:01:28,883
+this record contains the IP address
+of a name server such as gatech.edu.
+
+23
+00:01:28,883 --> 00:01:31,130
+And then there's A record.
+
+24
+00:01:31,130 --> 00:01:35,475
+This contains the address of
+the domain name in the original query.
+
+25
+00:01:35,475 --> 00:01:40,465
+For example, www.cc.gatech.edu.
+
+26
+00:01:40,465 --> 00:01:42,767
+And then there's MX record.
+
+27
+00:01:42,767 --> 00:01:46,830
+This contains the address of
+the mail server for the domain.
+
+28
+00:01:46,830 --> 00:01:49,725
+For example, mail.gatech.edu.
+
+29
+00:01:49,725 --> 00:01:52,415
+And finally, there's a TXT record.
+
+30
+00:01:52,415 --> 00:01:55,990
+It contains all the useful
+information about a domain.
+
+31
+00:01:55,990 --> 00:01:59,310
+For example, it can be used
+to distribute public keys.

@@ -1,0 +1,20 @@
+1
+00:00:00,000 --> 00:00:03,840
+First, the attacker creates a lot of fake identities and use them
+
+2
+00:00:03,840 --> 00:00:08,005
+to change voting outcomes and control the network. This is true.
+
+3
+00:00:08,005 --> 00:00:13,210
+Second, a Sybil attack is designed to attack reputation system in a peer-to-peer network.
+
+4
+00:00:13,210 --> 00:00:16,425
+This is also true. Third, Sybil attack can be stopped
+
+5
+00:00:16,425 --> 00:00:19,970
+if users are willing to give up anonymity. This is also true.
+

@@ -1,0 +1,16 @@
+1
+00:00:00,270 --> 00:00:03,000
+As a quick review let's do a quiz.
+
+2
+00:00:03,000 --> 00:00:05,720
+Recall that a same-origin policy
+
+3
+00:00:05,720 --> 00:00:11,050
+requires that requests to access
+data must be from the same origin.
+
+4
+00:00:11,050 --> 00:00:13,380
+But what is the definition of an origin?

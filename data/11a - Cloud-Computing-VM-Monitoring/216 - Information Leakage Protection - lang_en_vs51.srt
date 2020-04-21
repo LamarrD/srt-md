@@ -1,0 +1,53 @@
+1
+00:00:00,290 --> 00:00:02,738
+Information leakage is a big concern,
+and
+
+2
+00:00:02,738 --> 00:00:07,430
+apps that leak sensitive information can
+often be considered malware even though
+
+3
+00:00:07,430 --> 00:00:09,678
+many think that they are in a gray area.
+
+4
+00:00:09,678 --> 00:00:13,014
+There are several approaches to
+detect leakage, for example,
+
+5
+00:00:13,014 --> 00:00:17,200
+PiOS performs static analysis
+to detect information leakage.
+
+6
+00:00:17,200 --> 00:00:21,258
+TaintDroid uses taint tracking to
+perform information flow analysis.
+
+7
+00:00:21,258 --> 00:00:24,010
+That is,
+it analyzes how data from a source,
+
+8
+00:00:24,010 --> 00:00:28,170
+such as address book, flows to the sync,
+such as the internet.
+
+9
+00:00:28,170 --> 00:00:32,150
+Another approach is to check if an app
+does what it promises to do, for
+
+10
+00:00:32,150 --> 00:00:36,680
+example, WhyPer compares the app's
+permissions against its description.
+
+11
+00:00:36,680 --> 00:00:39,920
+And the analysis is based on natural
+language processing techniques.

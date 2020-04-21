@@ -1,0 +1,269 @@
+1
+00:00:00,320 --> 00:00:03,050
+Now, let's discuss
+browser security model.
+
+2
+00:00:03,050 --> 00:00:08,150
+Let's take a step back and compare
+operating system with web browser.
+
+3
+00:00:08,150 --> 00:00:13,220
+An operating system supports multiple
+applications to run on a computer at
+
+4
+00:00:13,220 --> 00:00:18,350
+the same time and allows them to
+share the resources on a computer.
+
+5
+00:00:18,350 --> 00:00:24,190
+Similarly, a web browser can render
+multiple webpages to different sites.
+
+6
+00:00:24,190 --> 00:00:28,690
+And each page can contain data and
+code from multiple sources.
+
+7
+00:00:28,690 --> 00:00:32,790
+So it is instructive to compare
+the operating system and
+
+8
+00:00:32,790 --> 00:00:34,760
+web browser security models.
+
+9
+00:00:34,760 --> 00:00:36,040
+For Operating System,
+
+10
+00:00:36,040 --> 00:00:41,840
+the primitives are system calls,
+processes, and disk storage.
+
+11
+00:00:41,840 --> 00:00:46,040
+For Web Browser, the primitives
+are Document Object Model or
+
+12
+00:00:46,040 --> 00:00:49,980
+DOM, frames, cookies and local storage.
+
+13
+00:00:49,980 --> 00:00:54,150
+The principles on the operating
+system are users, and
+
+14
+00:00:54,150 --> 00:00:58,950
+associated with users is
+the discretionary access control policy.
+
+15
+00:00:58,950 --> 00:01:02,270
+For web browser,
+the principles are origins and
+
+16
+00:01:02,270 --> 00:01:04,950
+mandatory access control is used.
+
+17
+00:01:04,950 --> 00:01:08,470
+Vulnerabilities in operating system
+can lead to buffer overflow,
+
+18
+00:01:08,470 --> 00:01:10,340
+root exploit and so on.
+
+19
+00:01:10,340 --> 00:01:12,210
+Whereas on web browser,
+
+20
+00:01:12,210 --> 00:01:15,134
+such vulnerabilities can
+lead to cross-scripting,
+
+21
+00:01:15,134 --> 00:01:19,420
+cross-site request forgery,
+cache history attacks, and so on.
+
+22
+00:01:19,420 --> 00:01:23,720
+Now let's take a look at
+the execution model of web browsers.
+
+23
+00:01:23,720 --> 00:01:27,930
+Given a webpage,
+the browser goes through these steps.
+
+24
+00:01:27,930 --> 00:01:30,200
+First, load the contents.
+
+25
+00:01:30,200 --> 00:01:32,700
+Second, renders the contents.
+
+26
+00:01:32,700 --> 00:01:36,063
+That is,
+the browser processes the HTML pages and
+
+27
+00:01:36,063 --> 00:01:40,690
+runs each JavaScripts to display
+the contents of the page.
+
+28
+00:01:40,690 --> 00:01:45,300
+The page may include images and
+frames and so on.
+
+29
+00:01:45,300 --> 00:01:48,160
+And then the browser response to events.
+
+30
+00:01:48,160 --> 00:01:50,780
+What are the events
+handled by a web browser?
+
+31
+00:01:50,780 --> 00:01:56,530
+The main events are user actions,
+such as clicking, moving the mouse.
+
+32
+00:01:56,530 --> 00:01:59,150
+Rendering, like loading a page.
+
+33
+00:01:59,150 --> 00:02:01,370
+Timing such as Timeout.
+
+34
+00:02:01,370 --> 00:02:04,940
+The contents being rendered
+can be from many sources.
+
+35
+00:02:04,940 --> 00:02:07,450
+For example, you could have scripts,
+
+36
+00:02:07,450 --> 00:02:11,250
+frames loading HTML pages,
+Flash objects, etc.
+
+37
+00:02:13,220 --> 00:02:17,130
+By specifying allowscriptaccess,
+the Flash object
+
+38
+00:02:17,130 --> 00:02:21,680
+can communicate with external data,
+such as external scripts and
+
+39
+00:02:21,680 --> 00:02:25,640
+navigate external frames and
+opening windows, etc.
+
+40
+00:02:25,640 --> 00:02:30,410
+The point is that there are many
+contents from many sources, and
+
+41
+00:02:30,410 --> 00:02:32,470
+they can interact with each other.
+
+42
+00:02:32,470 --> 00:02:37,540
+Obviously, this makes it challenging for
+enforcing security policies.
+
+43
+00:02:37,540 --> 00:02:42,855
+The basic idea of browser security
+is to Sandbox web contents.
+
+44
+00:02:42,855 --> 00:02:47,260
+More specifically, we want to
+safely execute JavaScript code.
+
+45
+00:02:47,260 --> 00:02:49,535
+Because it can be from a remote website,
+
+46
+00:02:49,535 --> 00:02:55,035
+this means that a JavaScript code
+cannot access the file system directly.
+
+47
+00:02:55,035 --> 00:02:59,190
+It can only have limited access to
+the operating system, the network and
+
+48
+00:02:59,190 --> 00:03:03,520
+browser data,
+as well as content from other websites.
+
+49
+00:03:03,520 --> 00:03:08,130
+The main policy is the so-called
+Same Origin Policy.
+
+50
+00:03:08,130 --> 00:03:09,880
+That means active code,
+
+51
+00:03:09,880 --> 00:03:14,790
+such as JavaScript, can only
+read properties of documents and
+
+52
+00:03:14,790 --> 00:03:21,260
+windows from the same origin defined
+as the same protocol, domain and port.
+
+53
+00:03:21,260 --> 00:03:23,917
+Now exceptions to this
+policy can be allowed.
+
+54
+00:03:23,917 --> 00:03:28,845
+That means scripts that are assigned
+by legitimate developers that a user
+
+55
+00:03:28,845 --> 00:03:33,787
+can trust, such as scripts signed
+by Microsoft, Google, Apple, etc.
+
+56
+00:03:33,787 --> 00:03:38,212
+For example, the user can
+grant these privileges such as
+
+57
+00:03:38,212 --> 00:03:43,480
+UniversalBrowserRead/Write,
+UniversalFileRead, and so on.

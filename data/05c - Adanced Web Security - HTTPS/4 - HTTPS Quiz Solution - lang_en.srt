@@ -1,0 +1,27 @@
+1
+00:00:00,200 --> 00:00:02,890
+The first four can be
+encrypted by HTTPS.
+
+2
+00:00:03,980 --> 00:00:07,740
+Host address and port numbers
+are used to route traffic and
+
+3
+00:00:07,740 --> 00:00:09,360
+so they're not encrypted.
+
+4
+00:00:09,360 --> 00:00:11,110
+The amount of transferred data and
+
+5
+00:00:11,110 --> 00:00:14,910
+length of session can be inferred
+by observing the traffic.
+
+6
+00:00:14,910 --> 00:00:16,530
+So the attacker can learn this.
+

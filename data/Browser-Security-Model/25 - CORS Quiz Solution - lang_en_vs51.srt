@@ -1,0 +1,22 @@
+1
+00:00:00,200 --> 00:00:01,804
+The first two are true.
+
+2
+00:00:01,804 --> 00:00:06,703
+The first statement is false because
+it is not widely supported by many
+
+3
+00:00:06,703 --> 00:00:07,980
+browsers.
+
+4
+00:00:07,980 --> 00:00:12,740
+The fourth is also false because
+the cross-origin resource sharing header
+
+5
+00:00:12,740 --> 00:00:16,020
+cannot be used as a substitute for
+sound security.

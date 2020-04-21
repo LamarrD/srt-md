@@ -1,0 +1,80 @@
+1
+00:00:00,210 --> 00:00:02,840
+Let's review how TCP Handshake works.
+
+2
+00:00:02,840 --> 00:00:05,460
+The client sends a SYN packet to server.
+
+3
+00:00:05,460 --> 00:00:07,910
+We randomly generated
+initial sequence number.
+
+4
+00:00:07,910 --> 00:00:10,760
+The server sends a SYN/ACK
+packet to the client.
+
+5
+00:00:10,760 --> 00:00:13,630
+It also has a randomly generated
+initial sequence number.
+
+6
+00:00:13,630 --> 00:00:16,490
+And also acknowledged the sequence
+number of the SYN packet
+
+7
+00:00:16,490 --> 00:00:17,490
+from the client.
+
+8
+00:00:17,490 --> 00:00:20,530
+And then the client sends the ACK
+packet back to the server.
+
+9
+00:00:20,530 --> 00:00:24,800
+It also acknowledges the sequence number
+of the SYN/ACK packet from the server.
+
+10
+00:00:24,800 --> 00:00:27,540
+At this point the connection
+is established.
+
+11
+00:00:27,540 --> 00:00:31,800
+Once a connection is established both
+sides can expect that their next packet
+
+12
+00:00:31,800 --> 00:00:36,150
+will have the sequence number that is
+increment from the previous packets.
+
+13
+00:00:36,150 --> 00:00:39,540
+Now of course packets
+can arrive out of order.
+
+14
+00:00:39,540 --> 00:00:43,260
+But one can expect that the sequence
+number should not be too far
+
+15
+00:00:43,260 --> 00:00:44,620
+out of the current window.
+
+16
+00:00:44,620 --> 00:00:48,130
+Therefore, if packets arrives
+with a sequence number
+
+17
+00:00:48,130 --> 00:00:50,870
+that's too far out of the current
+window it would be dropped.

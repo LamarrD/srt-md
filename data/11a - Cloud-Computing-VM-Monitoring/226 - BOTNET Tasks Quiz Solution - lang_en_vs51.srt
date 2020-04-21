@@ -1,0 +1,13 @@
+1
+00:00:00,450 --> 00:00:03,890
+All of these tasks are commonly
+performed by botnets.
+
+2
+00:00:03,890 --> 00:00:05,540
+Other than span and DDoS,
+
+3
+00:00:05,540 --> 00:00:08,330
+these other attacks can look
+a lot like normal traffic.

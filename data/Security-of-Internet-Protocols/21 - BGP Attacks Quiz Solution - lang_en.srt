@@ -1,0 +1,123 @@
+1
+00:00:00,250 --> 00:00:01,550
+Denial of service attack.
+
+2
+00:00:01,550 --> 00:00:05,440
+The attacker hacks the routing table and
+either adds a false route or
+
+3
+00:00:05,440 --> 00:00:06,950
+kills a legitimate one.
+
+4
+00:00:06,950 --> 00:00:07,760
+Sniffing.
+
+5
+00:00:07,760 --> 00:00:11,570
+An attacker needs to control a device
+along the communication route.
+
+6
+00:00:11,570 --> 00:00:17,200
+To do this, the attacker can BGP to
+detour traffic through a malicious site.
+
+7
+00:00:17,200 --> 00:00:19,930
+Routing to endpoints
+in malicious networks.
+
+8
+00:00:19,930 --> 00:00:23,900
+This requires that the attacker
+redirect traffic away
+
+9
+00:00:23,900 --> 00:00:27,150
+from a legitimate host to
+an attacker-controlled site.
+
+10
+00:00:27,150 --> 00:00:29,340
+Creating route instabilities.
+
+11
+00:00:29,340 --> 00:00:32,560
+This has not been
+exploited by attackers yet.
+
+12
+00:00:32,560 --> 00:00:35,310
+These instabilities
+are too unpredictable and
+
+13
+00:00:35,310 --> 00:00:38,500
+can cause attacker to be
+affected by their own attack.
+
+14
+00:00:38,500 --> 00:00:41,842
+However, there is a possibility
+that script kiddies
+
+15
+00:00:41,842 --> 00:00:43,740
+could begin to exploit them.
+
+16
+00:00:43,740 --> 00:00:46,070
+Revelation of network topologies.
+
+17
+00:00:46,070 --> 00:00:50,000
+This begins with attacker gaining
+access to the routing table and
+
+18
+00:00:50,000 --> 00:00:55,040
+can, with patience, discover
+the peer relations among the ASs.
+
+19
+00:00:55,040 --> 00:00:59,410
+Now let's discuss some solutions
+to the BGP security issues.
+
+20
+00:00:59,410 --> 00:01:03,560
+One solution is around PKI,
+or Public Key Infrastructure.
+
+21
+00:01:03,560 --> 00:01:07,900
+Here, each AS obtains
+a certificate to certify each
+
+22
+00:01:07,900 --> 00:01:12,850
+route origination authority from
+the regional Internet register, and
+
+23
+00:01:12,850 --> 00:01:16,300
+then attach the ROA to
+path advertisement.
+
+24
+00:01:16,300 --> 00:01:22,270
+Essentially, each AS that advertise
+a path is a route origination authority.
+
+25
+00:01:22,270 --> 00:01:25,246
+Another solution is to use SBGP.
+
+26
+00:01:25,246 --> 00:01:29,330
+The main idea here is to sign
+every hop of a path advertisement.
+

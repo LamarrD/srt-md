@@ -1,0 +1,21 @@
+1
+00:00:00,290 --> 00:00:03,480
+First, let's take a moment to
+think about how virtual machines
+
+2
+00:00:03,480 --> 00:00:04,840
+can be exploited.
+
+3
+00:00:04,840 --> 00:00:07,470
+Here's a quiz on VirtualBox security.
+
+4
+00:00:07,470 --> 00:00:11,110
+Which of the following steps is
+considered safe when working with
+
+5
+00:00:11,110 --> 00:00:11,700
+virtual machines?

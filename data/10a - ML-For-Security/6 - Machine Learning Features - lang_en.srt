@@ -1,0 +1,20 @@
+1
+00:00:00,000 --> 00:00:04,220
+The features using machine learning are very much application-dependent.
+
+2
+00:00:04,220 --> 00:00:07,880
+For images, these are useful features: the raw pixels,
+
+3
+00:00:07,880 --> 00:00:09,825
+the histogram, and GIST,
+
+4
+00:00:09,825 --> 00:00:13,070
+which is a representation of the scene, and so on.
+
+5
+00:00:13,070 --> 00:00:16,790
+We are going to discuss features useful for network monitoring later.
+

@@ -1,0 +1,8 @@
+1
+00:00:00,000 --> 00:00:04,635
+Let's start with a quiz on how attackers can gather intelligence.
+
+2
+00:00:04,635 --> 00:00:07,970
+Match each phrase with its description.
+

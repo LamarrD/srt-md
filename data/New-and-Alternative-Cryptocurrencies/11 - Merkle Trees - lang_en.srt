@@ -1,0 +1,244 @@
+1
+00:00:00,000 --> 00:00:05,970
+The second piece of proval reserve is to prove how many demand deposits you hold,
+
+2
+00:00:05,970 --> 00:00:07,530
+and here is a scheme.
+
+3
+00:00:07,530 --> 00:00:13,140
+Recall that a Merkle tree is a binary tree that is built with hash pointers,
+
+4
+00:00:13,140 --> 00:00:18,670
+so that each of the pointers not only sets where we can get a piece of information,
+
+5
+00:00:18,670 --> 00:00:22,775
+but also what a cryptographic hash of that information is.
+
+6
+00:00:22,775 --> 00:00:25,980
+A bitcoin exchange executes a prove of
+
+7
+00:00:25,980 --> 00:00:30,040
+how many demand deposits it holds by constructing Merkle tree.
+
+8
+00:00:30,040 --> 00:00:31,505
+In this Merkle tree,
+
+9
+00:00:31,505 --> 00:00:34,940
+each hash pointer also includes an attribute.
+
+10
+00:00:34,940 --> 00:00:39,300
+This attribute is a number that represents the total value in
+
+11
+00:00:39,300 --> 00:00:45,500
+bitcoins of all of the deposits that are in a subtree underneath this hash pointer.
+
+12
+00:00:45,500 --> 00:00:49,045
+For this to be true, the attribute value of
+
+13
+00:00:49,045 --> 00:00:55,055
+each hash pointer has to be the sum of the values of the two hash pointers beneath it.
+
+14
+00:00:55,055 --> 00:00:58,940
+A bitcoin exchange constructs this tree and size
+
+15
+00:00:58,940 --> 00:01:03,195
+the root pointer along with the route attribute value and publishes it.
+
+16
+00:01:03,195 --> 00:01:05,310
+The root value is, of course.
+
+17
+00:01:05,310 --> 00:01:07,800
+The total liabilities. That is,
+
+18
+00:01:07,800 --> 00:01:11,110
+by constructing this tree and publishing its root value,
+
+19
+00:01:11,110 --> 00:01:15,290
+the exchange is making the claim that all users are represented in
+
+20
+00:01:15,290 --> 00:01:20,410
+the leaves of the tree and that the deposit values are represented correctly.
+
+21
+00:01:20,410 --> 00:01:25,670
+Furthermore, the deposited values are propagated correctly up the tree,
+
+22
+00:01:25,670 --> 00:01:30,580
+so that the root value is the sum of all the users' deposit amounts.
+
+23
+00:01:30,580 --> 00:01:34,010
+Now, each customer can go to the exchange and ask
+
+24
+00:01:34,010 --> 00:01:37,880
+for proof of correct inclusion of his deposit.
+
+25
+00:01:37,880 --> 00:01:40,760
+The exchange must then show the customer
+
+26
+00:01:40,760 --> 00:01:44,850
+the puzzle tree from the user's leaf up to the root.
+
+27
+00:01:44,850 --> 00:01:48,045
+The customers then verifies that first.
+
+28
+00:01:48,045 --> 00:01:51,000
+The root hash pointer and root value are the
+
+29
+00:01:51,000 --> 00:01:54,600
+same as to what exchange has signed and published.
+
+30
+00:01:54,600 --> 00:01:58,570
+Second, the hashpointers are consistent all the way down.
+
+31
+00:01:58,570 --> 00:02:04,880
+That is, each hash value is indeed the cryptographic hash of the node it points to.
+
+32
+00:02:04,880 --> 00:02:09,320
+Third, the leaves contains correct use account information.
+
+33
+00:02:09,320 --> 00:02:12,830
+For example, user ID and the deposit amount.
+
+34
+00:02:12,830 --> 00:02:18,635
+Fourth, each value is the sum of the values of the two values beneath it.
+
+35
+00:02:18,635 --> 00:02:22,910
+The good news here is that if every customer does this,
+
+36
+00:02:22,910 --> 00:02:25,815
+then every branch of the tree will get explored,
+
+37
+00:02:25,815 --> 00:02:29,755
+and someone will verify that for every hash pointer,
+
+38
+00:02:29,755 --> 00:02:34,935
+its associative value equals the sum of the values of its two children.
+
+39
+00:02:34,935 --> 00:02:38,180
+It's very important that the exchange cannot
+
+40
+00:02:38,180 --> 00:02:42,255
+present different values in any part of the tree to different customers.
+
+41
+00:02:42,255 --> 00:02:46,460
+That's because doing so would either imply that the ability to find
+
+42
+00:02:46,460 --> 00:02:48,890
+a hash collision or presenting
+
+43
+00:02:48,890 --> 00:02:53,910
+different root values to different customers which we assume is not possible.
+
+44
+00:02:53,910 --> 00:02:56,685
+The customer then verifies that, first,
+
+45
+00:02:56,685 --> 00:02:59,600
+the root hash pointer and root value are the
+
+46
+00:02:59,600 --> 00:03:03,260
+same as what the exchange has signed and published.
+
+47
+00:03:03,260 --> 00:03:06,780
+Second, the hash pointer are consistent all the way down.
+
+48
+00:03:06,780 --> 00:03:13,040
+That is, each hash value is indeed the cryptographic hash of the node it points to.
+
+49
+00:03:13,040 --> 00:03:17,085
+Third, the leaf contains correct user account information.
+
+50
+00:03:17,085 --> 00:03:20,340
+For example, user ID and a deposit amount.
+
+51
+00:03:20,340 --> 00:03:25,770
+Fourth, each value is the sum of the values of the two values beneath it.
+
+52
+00:03:25,770 --> 00:03:29,450
+The good news is that if every customer does this,
+
+53
+00:03:29,450 --> 00:03:32,440
+then every branch of the tree will get explored,
+
+54
+00:03:32,440 --> 00:03:36,540
+and somehow we verified that for every hash pointer it's
+
+55
+00:03:36,540 --> 00:03:41,075
+associative value equals the sum of the values of its two children.
+
+56
+00:03:41,075 --> 00:03:44,330
+It is very important to note that the change
+
+57
+00:03:44,330 --> 00:03:47,510
+cannot present different values in any part of a tree to
+
+58
+00:03:47,510 --> 00:03:50,090
+different customers because that will imply
+
+59
+00:03:50,090 --> 00:03:53,885
+that either the exchange can find a hash collision,
+
+60
+00:03:53,885 --> 00:03:57,670
+or it can present different root values to different customers,
+
+61
+00:03:57,670 --> 00:03:59,860
+which we think is not possible.
+

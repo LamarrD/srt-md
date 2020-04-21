@@ -1,0 +1,10 @@
+1
+00:00:00,230 --> 00:00:03,290
+Before we go on,
+let's do a quiz on encryption.
+
+2
+00:00:03,290 --> 00:00:05,770
+Match the characteristics
+of each encryption.
+

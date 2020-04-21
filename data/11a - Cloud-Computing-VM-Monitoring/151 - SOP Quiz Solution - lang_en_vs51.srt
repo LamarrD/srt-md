@@ -1,0 +1,18 @@
+1
+00:00:00,480 --> 00:00:04,939
+An origin is the combination
+of a URI which stands for
+
+2
+00:00:04,939 --> 00:00:09,245
+UniformResource Identifier scheme,
+such as HTTP or
+
+3
+00:00:09,245 --> 00:00:14,480
+HTTPS, and hostname, and port number.
+
+4
+00:00:14,480 --> 00:00:17,230
+Here are some examples
+of URI references.

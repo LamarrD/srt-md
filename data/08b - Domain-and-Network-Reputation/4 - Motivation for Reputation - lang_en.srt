@@ -1,0 +1,48 @@
+1
+00:00:00,000 --> 00:00:05,765
+Traditionally, when an IP address is discovered to have been used to send spam,
+
+2
+00:00:05,765 --> 00:00:07,950
+it is added to a blacklist.
+
+3
+00:00:07,950 --> 00:00:10,395
+This is called a static blacklist.
+
+4
+00:00:10,395 --> 00:00:12,920
+If an IP address is in a blacklist,
+
+5
+00:00:12,920 --> 00:00:16,770
+then emails coming from this IP address can be blocked.
+
+6
+00:00:16,770 --> 00:00:22,145
+This is a great idea except that attackers also know about the blacklist.
+
+7
+00:00:22,145 --> 00:00:27,050
+So spammers can circumvent the blacklist by using new IP addresses,
+
+8
+00:00:27,050 --> 00:00:29,765
+and by the time an IP address is discovered
+
+9
+00:00:29,765 --> 00:00:33,005
+to have been used to send spam and edit to blacklist,
+
+10
+00:00:33,005 --> 00:00:36,550
+the spammers can then move on to use a new IP address.
+
+11
+00:00:36,550 --> 00:00:41,150
+We need to change this model to be in line with our philosophy about network security,
+
+12
+00:00:41,150 --> 00:00:45,330
+and that is an IP address should not be trusted by default.
+

@@ -1,0 +1,54 @@
+1
+00:00:00,240 --> 00:00:04,180
+Property Preserving Encryption
+is one way to protect data
+
+2
+00:00:04,180 --> 00:00:06,460
+while allowing application
+to continue to work.
+
+3
+00:00:06,460 --> 00:00:10,600
+And this approach is widely deployed
+in various environments including
+
+4
+00:00:10,600 --> 00:00:11,720
+the Cloud.
+
+5
+00:00:11,720 --> 00:00:15,700
+For example, Microsoft advertises
+that data is always encrypted.
+
+6
+00:00:15,700 --> 00:00:19,010
+On the other hand,
+the applications continue to work.
+
+7
+00:00:19,010 --> 00:00:22,520
+Property Preserving Encryption
+has several advantages.
+
+8
+00:00:22,520 --> 00:00:25,730
+There's no need to change
+application and database servers,
+
+9
+00:00:25,730 --> 00:00:29,840
+it supports common data retrieval
+methods, including SQL queries.
+
+10
+00:00:29,840 --> 00:00:32,970
+It is reasonably efficient,
+but what about security?
+
+11
+00:00:32,970 --> 00:00:36,680
+Although it widely believed that it is
+secure, we should take a closer look.
+

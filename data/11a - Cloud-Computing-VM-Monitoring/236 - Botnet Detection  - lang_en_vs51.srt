@@ -1,0 +1,76 @@
+1
+00:00:00,390 --> 00:00:03,870
+So far, we have discussed botnet
+detection in the Enterprise network.
+
+2
+00:00:03,870 --> 00:00:07,170
+Now, let's discuss how we
+detect botnets on the internet.
+
+3
+00:00:07,170 --> 00:00:10,520
+We observed that a botnet must
+use internet protocols and
+
+4
+00:00:10,520 --> 00:00:13,770
+services in order to maintain
+a network infrastructure.
+
+5
+00:00:13,770 --> 00:00:14,760
+For example,
+
+6
+00:00:14,760 --> 00:00:19,120
+in order to maintain its network
+structure must use some sort of look-up
+
+7
+00:00:19,120 --> 00:00:22,760
+services to find command-and-control
+servers or the peers.
+
+8
+00:00:22,760 --> 00:00:26,120
+And you know that to support is
+various kinds of malicious activities,
+
+9
+00:00:26,120 --> 00:00:30,180
+a botnet must use hosting services,
+for example to store and
+
+10
+00:00:30,180 --> 00:00:33,060
+distribute attack data and
+for malware download.
+
+11
+00:00:33,060 --> 00:00:37,460
+A botnet can also use transport services
+to route or hide its attack traffic.
+
+12
+00:00:37,460 --> 00:00:41,380
+Therefore by identifying the abnormal
+use of internet services,
+
+13
+00:00:41,380 --> 00:00:44,190
+we can detect botnet
+activities on the internet.
+
+14
+00:00:44,190 --> 00:00:46,540
+In this lesson, let's focus on DNS.
+
+15
+00:00:46,540 --> 00:00:50,990
+And the reason is that most bots use
+DNS to locate command control and
+
+16
+00:00:50,990 --> 00:00:51,820
+hosting service.

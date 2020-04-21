@@ -1,0 +1,24 @@
+1
+00:00:00,000 --> 00:00:03,170
+In this lesson, we will review machine learning,
+
+2
+00:00:03,170 --> 00:00:08,835
+then use it to determine if a network flow is benign anomaly or adversarial.
+
+3
+00:00:08,835 --> 00:00:12,840
+The goal of applying machine learning to intrusion and detection is to
+
+4
+00:00:12,840 --> 00:00:17,175
+be able to automatically and quickly identify new attacks.
+
+5
+00:00:17,175 --> 00:00:19,950
+The earlier we can detect bad behavior,
+
+6
+00:00:19,950 --> 00:00:22,340
+the faster we can stop it.
+

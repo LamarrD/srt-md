@@ -1,0 +1,26 @@
+1
+00:00:00,380 --> 00:00:03,210
+Fully automatic tools
+should be first performed,
+
+2
+00:00:03,210 --> 00:00:05,040
+they are typically the easiest.
+
+3
+00:00:05,040 --> 00:00:07,530
+Static analysis should be tried next.
+
+4
+00:00:07,530 --> 00:00:11,660
+Interactive analysis requires
+more skills and time to set up.
+
+5
+00:00:11,660 --> 00:00:14,890
+The most difficult one is
+manual reverse engineering.
+
+6
+00:00:14,890 --> 00:00:16,730
+It requires a lot of skills and time.

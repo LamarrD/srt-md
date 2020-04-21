@@ -1,0 +1,42 @@
+1
+00:00:00,104 --> 00:00:03,920
+Wikipedia says that a mobile
+device must be mobile.
+
+2
+00:00:03,920 --> 00:00:07,388
+Therefore, a smartphone
+by itself is not mobile.
+
+3
+00:00:07,388 --> 00:00:10,450
+However, a smarthone held
+by a person can be mobile
+
+4
+00:00:10,450 --> 00:00:13,750
+because it is a non mobile
+device with a mobile host.
+
+5
+00:00:13,750 --> 00:00:17,841
+These are examples of true mobile
+devices because either myself can be
+
+6
+00:00:17,841 --> 00:00:18,410
+mobile.
+
+7
+00:00:18,410 --> 00:00:22,080
+We are not going to use the strict
+definition of mobile device.
+
+8
+00:00:22,080 --> 00:00:25,060
+Instead, we're going to use
+this common definition.
+
+9
+00:00:25,060 --> 00:00:27,290
+That is a smartphone is a mobile device.

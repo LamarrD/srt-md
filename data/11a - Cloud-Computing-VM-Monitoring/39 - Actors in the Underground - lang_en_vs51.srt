@@ -1,0 +1,164 @@
+1
+00:00:00,290 --> 00:00:02,620
+Now let's talk about
+underground economy.
+
+2
+00:00:02,620 --> 00:00:05,820
+To understand the underground
+economy of server crimes
+
+3
+00:00:05,820 --> 00:00:09,910
+we have to first understand who
+are the actors in the underground.
+
+4
+00:00:09,910 --> 00:00:12,600
+The first are the ones
+who write exploits.
+
+5
+00:00:12,600 --> 00:00:17,750
+They discover bugs that can be exploited
+to cause security to be compromised and
+
+6
+00:00:17,750 --> 00:00:20,010
+they sell them for a profit.
+
+7
+00:00:20,010 --> 00:00:24,660
+Then there are the botnet masters,
+or bad guys that create and
+
+8
+00:00:24,660 --> 00:00:29,430
+operate a malicious network
+composed of compromised computers.
+
+9
+00:00:29,430 --> 00:00:34,060
+Essentially, they buy exploits and
+turn them into malware and
+
+10
+00:00:34,060 --> 00:00:37,380
+they put in the botnet command and
+control components.
+
+11
+00:00:37,380 --> 00:00:41,860
+So when they release the malware,
+they have a botnet under their control.
+
+12
+00:00:41,860 --> 00:00:45,277
+Then they rent out the botnet
+to other bad actors for
+
+13
+00:00:45,277 --> 00:00:47,990
+malicious and fraudulent activities.
+
+14
+00:00:47,990 --> 00:00:51,442
+One of the utilities of
+a botnet is to send spam.
+
+15
+00:00:51,442 --> 00:00:56,636
+And so the bot master of a botnet can
+simply rent out his botnet to a spammer,
+
+16
+00:00:56,636 --> 00:01:02,720
+and the spammer in turn sends out a spam
+contents on behalf of other bad actors.
+
+17
+00:01:02,720 --> 00:01:08,160
+One type of bad actors that can use
+to help of spammers are the phishers.
+
+18
+00:01:08,160 --> 00:01:11,487
+They set up scam sites
+to steal information and
+
+19
+00:01:11,487 --> 00:01:17,710
+they ask the spammers to send the URL's
+to victim users to the scam sites.
+
+20
+00:01:17,710 --> 00:01:23,070
+Similarly, counterfeiters use spams
+to sell their counterfeit goods and
+
+21
+00:01:23,070 --> 00:01:27,440
+obviously, they need to be able to
+collect money from the victim users.
+
+22
+00:01:27,440 --> 00:01:30,192
+For example, from their credit cards.
+
+23
+00:01:30,192 --> 00:01:35,110
+A bad actor in a cyberspace needs
+to consider the possibility that
+
+24
+00:01:35,110 --> 00:01:39,540
+his operation, in particular his
+websites, may be detected and
+
+25
+00:01:39,540 --> 00:01:42,250
+shut down by the law enforcement.
+
+26
+00:01:42,250 --> 00:01:46,900
+And so he needs to find a so-called
+bulletproof hosting providers.
+
+27
+00:01:46,900 --> 00:01:52,330
+These providers typically operate in
+lawless places and they are expensive.
+
+28
+00:01:52,330 --> 00:01:55,650
+A majority of the bad actors
+are in it for the money.
+
+29
+00:01:55,650 --> 00:02:00,100
+And on the Internet, what they can steal
+are the bank accounts and credit cards.
+
+30
+00:02:00,100 --> 00:02:01,860
+And so they need to turn them into cash.
+
+31
+00:02:01,860 --> 00:02:06,580
+They allow carders, cashiers,
+and mules to do just that.
+
+32
+00:02:06,580 --> 00:02:12,260
+The crowdturfers leverage human powered
+crowd sourcing platforms to create and
+
+33
+00:02:12,260 --> 00:02:16,250
+manage fake accounts that
+are not tired to real users.
+
+34
+00:02:16,250 --> 00:02:19,390
+And they can use crowd
+sourcing to solve captures.

@@ -1,0 +1,14 @@
+1
+00:00:00,210 --> 00:00:02,990
+Before we begin our discussion
+on routing security,
+
+2
+00:00:02,990 --> 00:00:06,960
+let's do a quiz to refresh our
+knowledge of routing protocols.
+
+3
+00:00:06,960 --> 00:00:09,050
+Match the protocol with its description.
+

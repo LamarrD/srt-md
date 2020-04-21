@@ -1,0 +1,304 @@
+1
+00:00:00,260 --> 00:00:04,260
+Now let's discuss DNC cache
+poisoning attacks in more detail.
+
+2
+00:00:04,260 --> 00:00:07,210
+Let's start with traditional
+poisoning attack.
+
+3
+00:00:07,210 --> 00:00:12,620
+Suppose the attacker wants to poison the
+cache of the DNS server at gartech.edu.
+
+4
+00:00:12,620 --> 00:00:18,317
+In particular, the attacker wants to
+forge the IP address of www.google.com.
+
+5
+00:00:18,317 --> 00:00:22,660
+The attacker first sends a query
+to the local DNS server.
+
+6
+00:00:22,660 --> 00:00:26,500
+This can be done, for example, through a
+compromised machine within gartech,edu.
+
+7
+00:00:26,500 --> 00:00:30,330
+The local DNS server is
+now going to perform
+
+8
+00:00:30,330 --> 00:00:33,980
+a recursive query with
+the query ID 12345.
+
+9
+00:00:33,980 --> 00:00:37,560
+And at some point the main server,
+ns1.google.com,
+
+10
+00:00:37,560 --> 00:00:40,450
+is going to provide
+an authoritative answer
+
+11
+00:00:40,450 --> 00:00:45,790
+given the IP address of www.google.com
+with a matching query ID.
+
+12
+00:00:45,790 --> 00:00:49,093
+Now the attacker knows that this
+recursive query is taking place.
+
+13
+00:00:49,093 --> 00:00:53,180
+Because he has an inside hub that
+initiated the original lookup.
+
+14
+00:00:53,180 --> 00:00:56,505
+So the attacker is going to forge
+a response claiming it is from
+
+15
+00:00:56,505 --> 00:00:58,520
+ns1.google.com.
+
+16
+00:00:58,520 --> 00:01:01,710
+And in that response it's
+going to use the IP address
+
+17
+00:01:01,710 --> 00:01:06,224
+of evil.com instead of the real
+IP address of www.google.com.
+
+18
+00:01:06,224 --> 00:01:09,800
+But the attacker does not
+know the real query ID, so
+
+19
+00:01:09,800 --> 00:01:14,880
+all he can do is send a flood of
+responses, each with a guest query ID.
+
+20
+00:01:14,880 --> 00:01:19,480
+So this is a matter of the attacker
+being able to guess the correct query ID
+
+21
+00:01:19,480 --> 00:01:22,090
+and reach the local
+DNS server faster than
+
+22
+00:01:22,090 --> 00:01:26,100
+the legitimate response from
+the real DNS server of Google.
+
+23
+00:01:26,100 --> 00:01:27,530
+If the attack succeeds,
+
+24
+00:01:27,530 --> 00:01:31,550
+then the incorrect answer will be
+cached resulting in cache poisoning.
+
+25
+00:01:31,550 --> 00:01:35,690
+But if the attacker's attempt fails,
+the legitimate IP will be cached and
+
+26
+00:01:35,690 --> 00:01:37,080
+the attacker has to wait for
+
+27
+00:01:37,080 --> 00:01:40,480
+TTL to expire before launching
+the whole attack again.
+
+28
+00:01:40,480 --> 00:01:41,390
+As you can see,
+
+29
+00:01:41,390 --> 00:01:45,190
+the traditional poisoning attack
+is hard to successfully implement.
+
+30
+00:01:45,190 --> 00:01:48,630
+But then Kaminsky found
+an approach that's drastically
+
+31
+00:01:48,630 --> 00:01:51,040
+more effective than
+the traditional attack.
+
+32
+00:01:51,040 --> 00:01:54,610
+The general approach is the same
+as the traditional attack.
+
+33
+00:01:54,610 --> 00:01:57,930
+But the key difference is
+the nature of the forged payload.
+
+34
+00:01:57,930 --> 00:02:01,940
+The intention of cache poisoning
+is to poison the final answer
+
+35
+00:02:01,940 --> 00:02:04,670
+that is the A record
+with the IP address.
+
+36
+00:02:04,670 --> 00:02:08,750
+But what then Kaminsky discovered
+is that we can go up one level and
+
+37
+00:02:08,750 --> 00:02:11,250
+hijack the authority records instead.
+
+38
+00:02:11,250 --> 00:02:15,240
+As in the previous example, let's assume
+that the attacker wants to poison
+
+39
+00:02:15,240 --> 00:02:18,280
+the cache of the DNS server caltech.edu.
+
+40
+00:02:18,280 --> 00:02:23,350
+And he wants to forge the IP
+address of www.google.com.
+
+41
+00:02:23,350 --> 00:02:26,490
+But this time the inside help
+is going to send a query
+
+42
+00:02:26,490 --> 00:02:30,744
+of a random domain
+within www.google.com.
+
+43
+00:02:30,744 --> 00:02:36,080
+For example, 12345678.www.google.com.
+
+44
+00:02:36,080 --> 00:02:40,090
+And as before the DNS Server is
+going to perform a recursive query.
+
+45
+00:02:40,090 --> 00:02:44,610
+Now the legitimate response, you say
+that this random domain does not exist.
+
+46
+00:02:44,610 --> 00:02:49,430
+But you will provide the IP
+address of www.google.com.
+
+47
+00:02:49,430 --> 00:02:51,760
+The attacker is attempting
+to do the same thing.
+
+48
+00:02:51,760 --> 00:02:56,180
+The goal is to have the DNS
+server cache this raw IP address.
+
+49
+00:02:56,180 --> 00:02:58,210
+And you may ask, what's new here?
+
+50
+00:02:58,210 --> 00:03:02,050
+Isn't the attacker facing the same
+challenge of guessing correctly
+
+51
+00:03:02,050 --> 00:03:06,350
+the query ID before the response from
+Google In the traditional attack.
+
+52
+00:03:06,350 --> 00:03:10,930
+When the first attempt fails, the
+attacker has a way for TTL to expire.
+
+53
+00:03:10,930 --> 00:03:14,080
+What's new here in
+the Kaminsky's Poisoning Attack is that
+
+54
+00:03:14,080 --> 00:03:17,920
+when a first attempt fails, the attacker
+can start immediately again.
+
+55
+00:03:17,920 --> 00:03:19,620
+That is, it doesn't have two wait for
+
+56
+00:03:19,620 --> 00:03:24,680
+TTL to expire and the reason is he can
+simply use a different random domain and
+
+57
+00:03:24,680 --> 00:03:27,190
+that will immediately
+result in another query.
+
+58
+00:03:27,190 --> 00:03:29,550
+So that he can flood
+the DNS server again.
+
+59
+00:03:29,550 --> 00:03:31,650
+That is, the attacker can repeatedly and
+
+60
+00:03:31,650 --> 00:03:36,000
+continuously force the local DNS
+server to query a random domain.
+
+61
+00:03:36,000 --> 00:03:40,146
+And keep flooding the local DNS server
+until the poisoning attack succeeds.
+
+62
+00:03:40,146 --> 00:03:41,793
+Yet when you put it that,
+
+63
+00:03:41,793 --> 00:03:46,350
+such Kaminsky's Poisoning Attack
+can succeed in mere ten seconds.
+

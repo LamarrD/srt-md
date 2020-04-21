@@ -1,0 +1,86 @@
+1
+00:00:00,500 --> 00:00:03,959
+Let's discuss a more recent type
+of denial-of-service attack called
+
+2
+00:00:03,959 --> 00:00:05,670
+reflector attack.
+
+3
+00:00:05,670 --> 00:00:10,270
+So here, the attacker spoofed
+the victim's source IP address and
+
+4
+00:00:10,270 --> 00:00:13,840
+sends DNS query to many DNS servers.
+
+5
+00:00:13,840 --> 00:00:17,600
+And all DNS servers will
+respond to this query and
+
+6
+00:00:17,600 --> 00:00:21,340
+send their response to
+the victim machine.
+
+7
+00:00:21,340 --> 00:00:24,500
+And, of course, the result is
+that the victim is flooded.
+
+8
+00:00:24,500 --> 00:00:26,770
+In addition to DNS example,
+
+9
+00:00:26,770 --> 00:00:31,790
+there are other examples that use
+web servers and Gnutella servers.
+
+10
+00:00:31,790 --> 00:00:35,434
+A reflector attack is typically
+launched by a bot master.
+
+11
+00:00:35,434 --> 00:00:40,310
+Commanding many bots, each of them
+will send a lot of requests to many
+
+12
+00:00:40,310 --> 00:00:45,420
+reflectors, such as DNS servers,
+web servers and the Gnutella servers.
+
+13
+00:00:45,420 --> 00:00:49,810
+And these requests will spoof
+the victim IP address and
+
+14
+00:00:49,810 --> 00:00:54,520
+as a result, the reflectors will
+send the response to the victim.
+
+15
+00:00:54,520 --> 00:00:58,870
+Since the actual flooding traffic is
+from the reflectors to the victim,
+
+16
+00:00:58,870 --> 00:01:03,856
+a traceback scheme will trace the attack
+packets back to the reflectors.
+
+17
+00:01:03,856 --> 00:01:07,901
+And the reflectors may not do any
+marking or keep any state, so
+
+18
+00:01:07,901 --> 00:01:12,770
+there's no traceback from the reflector
+back to the bots or bot master.

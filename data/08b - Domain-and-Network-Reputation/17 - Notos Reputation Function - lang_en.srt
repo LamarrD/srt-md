@@ -1,0 +1,80 @@
+1
+00:00:00,000 --> 00:00:04,210
+Now, let's discuss how Notos computes reputation of a domain.
+
+2
+00:00:04,210 --> 00:00:07,495
+First, Notos needs to chain a repetition function,
+
+3
+00:00:07,495 --> 00:00:10,980
+given a set of domains known to be legitimate or malicious.
+
+4
+00:00:10,980 --> 00:00:17,050
+Notos extract features for each of these domains and give label 1 to malicious domains,
+
+5
+00:00:17,050 --> 00:00:19,275
+and label 0 to legitimate domains.
+
+6
+00:00:19,275 --> 00:00:21,295
+Then, given this training data set,
+
+7
+00:00:21,295 --> 00:00:24,900
+Notos can use a machine learning algorithm to learn a function that,
+
+8
+00:00:24,900 --> 00:00:27,540
+given the Notos feature vector of a domain,
+
+9
+00:00:27,540 --> 00:00:28,780
+it will output a label,
+
+10
+00:00:28,780 --> 00:00:30,245
+meaning 0 or 1,
+
+11
+00:00:30,245 --> 00:00:35,145
+and the reputation score of this domain is simply the confidence of this label.
+
+12
+00:00:35,145 --> 00:00:38,545
+That is, the probability that this domain is malicious.
+
+13
+00:00:38,545 --> 00:00:40,185
+As we can see here,
+
+14
+00:00:40,185 --> 00:00:41,810
+this function is very accurate.
+
+15
+00:00:41,810 --> 00:00:46,365
+That is, it has a very high true positive array and very low false positive rate.
+
+16
+00:00:46,365 --> 00:00:49,100
+Here, we show that Notos can detect
+
+17
+00:00:49,100 --> 00:00:53,825
+many malicious domains days or weeks before they show up in any blacklist.
+
+18
+00:00:53,825 --> 00:00:58,100
+Sometimes that's even months before they show up in any blacklist.
+
+19
+00:00:58,100 --> 00:01:00,620
+This is true for all the malicious domains
+
+20
+00:01:00,620 --> 00:01:03,810
+and also for different types of malicious domains
+

@@ -1,0 +1,172 @@
+1
+00:00:00,280 --> 00:00:03,831
+Now let's discuss how SIM can
+satisfy both the performance and
+
+2
+00:00:03,831 --> 00:00:05,307
+security requirements.
+
+3
+00:00:05,307 --> 00:00:09,840
+Recall that in operating systems,
+paging-based virtual memory is generated
+
+4
+00:00:09,840 --> 00:00:14,182
+by creating page tables that map virtual
+addresses to physical addresses.
+
+5
+00:00:14,182 --> 00:00:17,930
+An operating system creates a separate
+page table for each process so
+
+6
+00:00:17,930 --> 00:00:20,915
+that it can have its own
+virtual memory address space.
+
+7
+00:00:20,915 --> 00:00:23,474
+And the necessary
+isolation can be achieved.
+
+8
+00:00:23,474 --> 00:00:27,288
+The SIM address space here
+contains all kernel code data and
+
+9
+00:00:27,288 --> 00:00:30,040
+also the SIM data in
+its own address space.
+
+10
+00:00:30,040 --> 00:00:34,609
+Therefore, the instruction as part
+of the security monitor can access
+
+11
+00:00:34,609 --> 00:00:35,643
+in native speed.
+
+12
+00:00:35,643 --> 00:00:39,622
+Notice that the guest operating system
+has it's own virtual address space.
+
+13
+00:00:39,622 --> 00:00:43,221
+That is, although we put SIM into
+the same virtual machine as the guest
+
+14
+00:00:43,221 --> 00:00:45,905
+operating system,
+they have their own separate and
+
+15
+00:00:45,905 --> 00:00:47,675
+different module address space.
+
+16
+00:00:47,675 --> 00:00:49,698
+In order to perform security monitoring,
+
+17
+00:00:49,698 --> 00:00:52,967
+SIM needs to look at the address
+space of the guest operating system.
+
+18
+00:00:52,967 --> 00:00:55,979
+And this can only be done
+through the Entry Gate and
+
+19
+00:00:55,979 --> 00:01:00,078
+the Exit Gate since this requires
+the switching of address spaces.
+
+20
+00:01:00,078 --> 00:01:03,391
+We need to modify the CR3
+register contents directly.
+
+21
+00:01:03,391 --> 00:01:07,133
+Intel VT, contains a feature that
+doesn't check out a VM exit to
+
+22
+00:01:07,133 --> 00:01:11,778
+the hypervisor, if the CR3 is switched
+to an address space that's predefined
+
+23
+00:01:11,778 --> 00:01:13,670
+and maintained by hypervisor.
+
+24
+00:01:13,670 --> 00:01:16,552
+Therefore, by predefining
+the SIM address space and
+
+25
+00:01:16,552 --> 00:01:21,109
+system address space we can achieve fast
+switching without exiting to hypervisor.
+
+26
+00:01:21,109 --> 00:01:25,198
+We also use the Hypervisor memory
+protection to protect the security of
+
+27
+00:01:25,198 --> 00:01:28,617
+the SIM address space and
+protect the entry and exit gates.
+
+28
+00:01:28,617 --> 00:01:32,518
+The entry gates and exit gates are the
+only ways to switch between the SIM
+
+29
+00:01:32,518 --> 00:01:35,002
+address space and
+the system address space.
+
+30
+00:01:35,002 --> 00:01:39,493
+We use inter-hardware feature called the
+last branch recording in the invocation
+
+31
+00:01:39,493 --> 00:01:40,079
+checker.
+
+32
+00:01:40,079 --> 00:01:41,469
+We last branch recording.
+
+33
+00:01:41,469 --> 00:01:44,604
+We know the last few basic blocks
+leading to the entry gate.
+
+34
+00:01:44,604 --> 00:01:48,589
+The SIM security tool is self contained,
+meaning that it does not caught any
+
+35
+00:01:48,589 --> 00:01:51,962
+quote or using any data from
+the kernel of the untrusted region.
+
+36
+00:01:51,962 --> 00:01:55,180
+The SIM security tool can read
+my memory in native speeds.

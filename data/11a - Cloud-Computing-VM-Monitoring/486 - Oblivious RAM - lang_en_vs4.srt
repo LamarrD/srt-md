@@ -1,0 +1,115 @@
+1
+00:00:00,240 --> 00:00:05,420
+A promising approach to eliminate this
+kind of leakage is to use oblivious RAM,
+
+2
+00:00:05,420 --> 00:00:06,330
+or ORAM.
+
+3
+00:00:06,330 --> 00:00:08,540
+ORAM can hide access patterns.
+
+4
+00:00:08,540 --> 00:00:12,850
+The main idea is that using ORAM, while
+the cloud provider can still observe
+
+5
+00:00:12,850 --> 00:00:17,850
+data access, the access patterns are
+independent of the actual data requests.
+
+6
+00:00:17,850 --> 00:00:20,890
+Some of the main techniques
+include O data access
+
+7
+00:00:20,890 --> 00:00:23,110
+operating on fixed size data blocks.
+
+8
+00:00:23,110 --> 00:00:26,950
+The data is encrypted, not using
+property preserving encryption.
+
+9
+00:00:26,950 --> 00:00:31,950
+In addition, ORAM also use dummy
+accesses, or re-encrypt data and
+
+10
+00:00:31,950 --> 00:00:33,270
+shuffle data around.
+
+11
+00:00:33,270 --> 00:00:36,590
+Here's a high level pictorial
+example of ORAM at work.
+
+12
+00:00:36,590 --> 00:00:39,550
+The application needs to
+access confidential data
+
+13
+00:00:39,550 --> 00:00:42,790
+such as getting an encryption key,
+encrypt and store data, and
+
+14
+00:00:42,790 --> 00:00:44,290
+getting another encryption key.
+
+15
+00:00:44,290 --> 00:00:46,750
+For each of these access requests,
+
+16
+00:00:46,750 --> 00:00:49,610
+there are multiple requests
+to the cloud server.
+
+17
+00:00:49,610 --> 00:00:53,060
+These requests all fixed
+sized data objects, and
+
+18
+00:00:53,060 --> 00:00:54,710
+they are both read and writes.
+
+19
+00:00:54,710 --> 00:00:58,190
+That is, regardless whether
+the original request is for read or
+
+20
+00:00:58,190 --> 00:01:02,760
+write, the actual dummy accesses
+include both read and writes.
+
+21
+00:01:02,760 --> 00:01:05,349
+And the data objects
+are all of fixed size and
+
+22
+00:01:05,349 --> 00:01:07,270
+not distinguishable from each other.
+
+23
+00:01:07,270 --> 00:01:10,880
+And this is how you hide the access
+pattern from the cloud provider.
+
+24
+00:01:10,880 --> 00:01:13,150
+ORAM is an active research area, and
+
+25
+00:01:13,150 --> 00:01:15,460
+if you are interested,
+here are some papers.

@@ -1,0 +1,31 @@
+1
+00:00:00,250 --> 00:00:02,930
+We begin our discussion
+of network security
+
+2
+00:00:02,930 --> 00:00:05,750
+with an attack that all
+of us are familiar with.
+
+3
+00:00:05,750 --> 00:00:07,220
+Large scale attacks.
+
+4
+00:00:07,220 --> 00:00:10,690
+Specifically, distributed
+denial of service attacks, and
+
+5
+00:00:10,690 --> 00:00:11,870
+malware based attacks.
+
+6
+00:00:11,870 --> 00:00:14,370
+We will discuss the methods used and
+
+7
+00:00:14,370 --> 00:00:17,920
+the security weaknesses that
+are exploited in these attacks.

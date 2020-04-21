@@ -1,0 +1,24 @@
+1
+00:00:00,000 --> 00:00:01,690
+First, we should recognize that,
+
+2
+00:00:01,690 --> 00:00:03,930
+there's no perfect way of labeling data and
+
+3
+00:00:03,930 --> 00:00:06,700
+therefore there's really no perfect IDS dataset.
+
+4
+00:00:06,700 --> 00:00:10,240
+What we can do, is select a baseline dataset for network.
+
+5
+00:00:10,240 --> 00:00:12,420
+Then, also use a dataset,
+
+6
+00:00:12,420 --> 00:00:14,630
+that has a range of intuition examples.
+

@@ -1,0 +1,19 @@
+1
+00:00:00,260 --> 00:00:02,850
+The first two statements
+are obviously true.
+
+2
+00:00:02,850 --> 00:00:06,910
+The third statement is false, because
+depending on how much information you
+
+3
+00:00:06,910 --> 00:00:09,830
+store in it,
+tokens can become quite large.
+
+4
+00:00:09,830 --> 00:00:12,060
+Cookies, on the other hand,
+are quite small.

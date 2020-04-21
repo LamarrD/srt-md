@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:03,855
+Before I start, let me acknowledge that
+
+2
+00:00:03,855 --> 00:00:07,980
+the initial slides were created by Joseph Bonneau,
+
+3
+00:00:07,980 --> 00:00:13,100
+Ed Felten, Arvind Narayanan, and Andrew Miller.
+

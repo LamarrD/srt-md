@@ -1,0 +1,14 @@
+1
+00:00:00,260 --> 00:00:04,450
+Filtering should take place as far
+from the victim as possible, so
+
+2
+00:00:04,450 --> 00:00:06,580
+the first statement is false.
+
+3
+00:00:06,580 --> 00:00:11,010
+Server redundancy is always helpful and
+rate limiting is always helpful.
+

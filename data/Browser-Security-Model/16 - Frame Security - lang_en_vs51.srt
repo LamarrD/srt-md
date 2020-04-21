@@ -1,0 +1,202 @@
+1
+00:00:00,360 --> 00:00:04,090
+Frame and
+iFrame are like many browser windows.
+
+2
+00:00:04,090 --> 00:00:10,315
+A frame is typically rigid or fixed on
+a page, whereas iFrame can be floating.
+
+3
+00:00:10,315 --> 00:00:11,992
+Here's an example of iFrame.
+
+4
+00:00:11,992 --> 00:00:16,853
+It essentially says that here is the
+width and height of the frame window and
+
+5
+00:00:16,853 --> 00:00:19,400
+it will display this page.
+
+6
+00:00:19,400 --> 00:00:23,370
+So why do we discuss frames
+in a context of web security?
+
+7
+00:00:23,370 --> 00:00:26,740
+Or in more general,
+why do we even use frames?
+
+8
+00:00:26,740 --> 00:00:32,229
+As the previous simple example shows,
+we can display a webpage within a frame,
+
+9
+00:00:32,229 --> 00:00:34,300
+or a minute browser window.
+
+10
+00:00:34,300 --> 00:00:39,310
+So, from this example,
+it is obvious that frames provide
+
+11
+00:00:39,310 --> 00:00:44,060
+a natural isolation of separation
+of different web contents.
+
+12
+00:00:44,060 --> 00:00:49,020
+For example, we can delegate screen
+area to content from another source.
+
+13
+00:00:49,020 --> 00:00:52,700
+And a browser provides
+isolation based on frames.
+
+14
+00:00:52,700 --> 00:00:57,180
+And, even if a frame is broken,
+the parent window can still work.
+
+15
+00:00:57,180 --> 00:01:02,430
+Again, to display web contents from two
+different sides, A and B, we can have
+
+16
+00:01:02,430 --> 00:01:05,950
+two different browser windows,
+such as what we see here, A and B.
+
+17
+00:01:07,320 --> 00:01:10,670
+On the other hand,
+we can achieve the same result
+
+18
+00:01:10,670 --> 00:01:15,300
+by having just one browser window,
+let's say B here on the right-hand side.
+
+19
+00:01:15,300 --> 00:01:20,570
+And within it, we have a frame
+that display contents from A.
+
+20
+00:01:20,570 --> 00:01:24,830
+The point is that we should be able
+to achieve the same kind of isolation
+
+21
+00:01:24,830 --> 00:01:29,340
+whether we use two different browser
+windows or use a frame within a window.
+
+22
+00:01:30,430 --> 00:01:35,830
+Again, we apply the same origin
+policy to achieve frame security.
+
+23
+00:01:35,830 --> 00:01:39,580
+Specifically, each frame
+of a page has an origin,
+
+24
+00:01:39,580 --> 00:01:44,190
+that's defined as protocol,
+host, and port.
+
+25
+00:01:44,190 --> 00:01:48,200
+A frame can access only
+the data from its own origin.
+
+26
+00:01:48,200 --> 00:01:53,560
+That is, a frame cannot access data
+associated with a different origin.
+
+27
+00:01:53,560 --> 00:01:57,890
+Therefore, for example, even though we
+have a frame within a browser window and
+
+28
+00:01:57,890 --> 00:02:01,992
+they display contents from different
+sites, for example, A and B.
+
+29
+00:02:01,992 --> 00:02:06,700
+The same-origin policy guarantees that
+these two sessions, the frame and
+
+30
+00:02:06,700 --> 00:02:10,360
+the browser window,
+they don't interfere with each other.
+
+31
+00:02:10,360 --> 00:02:13,360
+So there was the default
+same origin policy.
+
+32
+00:02:13,360 --> 00:02:19,030
+In addition, frame-to-frame access
+control policy can also be specified.
+
+33
+00:02:19,030 --> 00:02:22,290
+For example, we can say canScript(A,B).
+
+34
+00:02:22,290 --> 00:02:26,380
+That means Frame A can execute
+a script that manipulates
+
+35
+00:02:26,380 --> 00:02:28,690
+DOM elements of Frame B.
+
+36
+00:02:28,690 --> 00:02:32,240
+We can use canNavigate to specify that
+
+37
+00:02:32,240 --> 00:02:36,650
+Frame A can change the origin
+of content for Frame B.
+
+38
+00:02:37,690 --> 00:02:42,420
+Likewise, we can specify policy for
+frame to access principle.
+
+39
+00:02:42,420 --> 00:02:46,950
+For example, we can use readCookie,
+writeCookie,
+
+40
+00:02:46,950 --> 00:02:51,990
+to specify that can Frame A read/write
+cookies from a site.
+
+41
+00:02:51,990 --> 00:02:55,350
+You can read more about the web
+browser security mottos
+
+42
+00:02:55,350 --> 00:02:56,670
+by following these links.

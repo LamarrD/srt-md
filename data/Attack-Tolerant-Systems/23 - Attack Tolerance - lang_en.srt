@@ -1,0 +1,108 @@
+1
+00:00:00,000 --> 00:00:04,260
+So far we have discussed fault tolerance for system services,
+
+2
+00:00:04,260 --> 00:00:07,470
+but what about attack tolerance for system services?
+
+3
+00:00:07,470 --> 00:00:13,705
+Can we apply fault tolerance techniques to achieve attack tolerance? The answer is no.
+
+4
+00:00:13,705 --> 00:00:15,485
+Because in fault tolerance,
+
+5
+00:00:15,485 --> 00:00:18,270
+we use redundancy which means we use
+
+6
+00:00:18,270 --> 00:00:22,910
+replicas of a system and all replicas runs the same program.
+
+7
+00:00:22,910 --> 00:00:26,685
+That means the same attack can compromise all replicas.
+
+8
+00:00:26,685 --> 00:00:31,145
+Therefore, redundancy is not a solution for attack tolerance.
+
+9
+00:00:31,145 --> 00:00:33,075
+To achieve attack tolerance,
+
+10
+00:00:33,075 --> 00:00:35,150
+we need to use diversification.
+
+11
+00:00:35,150 --> 00:00:37,430
+That is each instance to use
+
+12
+00:00:37,430 --> 00:00:41,670
+a different implementation and this applies to all layers of the stack.
+
+13
+00:00:41,670 --> 00:00:45,055
+Which can include network and application protocols,
+
+14
+00:00:45,055 --> 00:00:48,400
+programming languages, operating systems and so on.
+
+15
+00:00:48,400 --> 00:00:52,310
+Each instance can use a different security protection mechanism
+
+16
+00:00:52,310 --> 00:00:56,400
+or apply a security mechanism to different part of the program.
+
+17
+00:00:56,400 --> 00:00:59,420
+This can achieve efficiency for example
+
+18
+00:00:59,420 --> 00:01:02,845
+because not all operations are checked all the time.
+
+19
+00:01:02,845 --> 00:01:05,900
+It can also help us identify the attacks based
+
+20
+00:01:05,900 --> 00:01:09,785
+on which protection mechanism works and which fails.
+
+21
+00:01:09,785 --> 00:01:15,935
+Of course, it is very costly to implement and very complex to manage diversification.
+
+22
+00:01:15,935 --> 00:01:19,970
+We can take the idea of diversification one step further to
+
+23
+00:01:19,970 --> 00:01:24,830
+use what we call moving target techniques to achieve attack tolerance.
+
+24
+00:01:24,830 --> 00:01:29,690
+That is, we can dynamically change our network and system configurations.
+
+25
+00:01:29,690 --> 00:01:34,925
+For example, we can have many instances of the system and network services.
+
+26
+00:01:34,925 --> 00:01:38,000
+Each instance can have a different implementation,
+
+27
+00:01:38,000 --> 00:01:41,380
+and these instances can be composed on-the-fly.
+

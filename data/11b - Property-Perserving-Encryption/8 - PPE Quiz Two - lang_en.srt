@@ -1,0 +1,28 @@
+1
+00:00:00,240 --> 00:00:04,030
+Now let’s take a look at another example
+of property-preserving encryption.
+
+2
+00:00:04,030 --> 00:00:07,160
+Again, we want to encrypt
+the age information.
+
+3
+00:00:07,160 --> 00:00:09,420
+And this time, we preserve the order.
+
+4
+00:00:09,420 --> 00:00:10,540
+As we can see,
+
+5
+00:00:10,540 --> 00:00:15,420
+in the encrypted data, the order of
+the original values is preserved.
+
+6
+00:00:15,420 --> 00:00:18,880
+The question is, what is leaked
+in order-preserving encryption?
+

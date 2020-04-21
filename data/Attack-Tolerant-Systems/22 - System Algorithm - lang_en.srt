@@ -1,0 +1,28 @@
+1
+00:00:00,000 --> 00:00:05,130
+So here is a sketch of how a client can get service from this system.
+
+2
+00:00:05,130 --> 00:00:10,675
+A client sends a request to invoke a service operation to the primary service replica.
+
+3
+00:00:10,675 --> 00:00:14,190
+The primary multicasts the request to the backups,
+
+4
+00:00:14,190 --> 00:00:16,160
+meaning the group of replicas.
+
+5
+00:00:16,160 --> 00:00:20,040
+The replicas execute the request and send a reply to the client.
+
+6
+00:00:20,040 --> 00:00:25,590
+The client waits for f plus one replies from different replicas with the same result,
+
+7
+00:00:25,590 --> 00:00:28,000
+and that is the result of the operation.
+

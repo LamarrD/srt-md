@@ -1,0 +1,24 @@
+1
+00:00:00,000 --> 00:00:03,465
+In this lesson, we continue our focus on The Cloud.
+
+2
+00:00:03,465 --> 00:00:07,125
+What a concept of shared sources is an excellent idea.
+
+3
+00:00:07,125 --> 00:00:10,515
+It is also rabbit hole of security issues.
+
+4
+00:00:10,515 --> 00:00:14,495
+We will examine and analyze a number of Cloud oriented attacks.
+
+5
+00:00:14,495 --> 00:00:17,070
+In particular, we discussed attacks on
+
+6
+00:00:17,070 --> 00:00:20,850
+data privacy and the challenges in data privacy protection.
+

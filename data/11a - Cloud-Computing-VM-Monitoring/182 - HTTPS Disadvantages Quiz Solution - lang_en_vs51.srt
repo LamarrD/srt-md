@@ -1,0 +1,31 @@
+1
+00:00:00,300 --> 00:00:02,320
+You need to buy an SSL certificate.
+
+2
+00:00:02,320 --> 00:00:06,680
+Mixed modes issues, loading
+insecure content on a secure site.
+
+3
+00:00:06,680 --> 00:00:09,020
+This will continue to be
+the problem until many,
+
+4
+00:00:09,020 --> 00:00:12,010
+many sites are all using HTTPS.
+
+5
+00:00:12,010 --> 00:00:15,360
+Proxy caching problems,
+public caching cannot occur.
+
+6
+00:00:15,360 --> 00:00:18,310
+This is because all
+traffic is encrypted, so
+
+7
+00:00:18,310 --> 00:00:20,030
+there's no public caching possible.

@@ -1,0 +1,28 @@
+1
+00:00:00,000 --> 00:00:03,510
+Many machine learning applications or classification problems,
+
+2
+00:00:03,510 --> 00:00:05,640
+that is the training data set contains
+
+3
+00:00:05,640 --> 00:00:08,900
+records with attributes or features and class labels.
+
+4
+00:00:08,900 --> 00:00:12,450
+Then, the machine learning algorithm is to produce a model that
+
+5
+00:00:12,450 --> 00:00:16,395
+would output the class label based on a set of attributes or features.
+
+6
+00:00:16,395 --> 00:00:17,700
+Once we have this model,
+
+7
+00:00:17,700 --> 00:00:20,220
+we can then use it to classify future data.
+

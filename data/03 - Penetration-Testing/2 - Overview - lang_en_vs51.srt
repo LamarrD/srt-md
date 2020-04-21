@@ -1,0 +1,73 @@
+1
+00:00:00,220 --> 00:00:04,760
+Let's have an overview of what
+penetration testing is all about.
+
+2
+00:00:04,760 --> 00:00:09,410
+Penetration testing is used to
+evaluate the security of a network.
+
+3
+00:00:09,410 --> 00:00:10,720
+More specifically,
+
+4
+00:00:10,720 --> 00:00:15,210
+penetration testing is used to
+evaluate all security controls.
+
+5
+00:00:15,210 --> 00:00:20,209
+These include the security procedures,
+the operations, and the technologies.
+
+6
+00:00:21,210 --> 00:00:25,870
+With penetration testing, you can find
+out how secure your network really is.
+
+7
+00:00:25,870 --> 00:00:29,550
+In particular, you can discover
+security vulnerabilities.
+
+8
+00:00:29,550 --> 00:00:32,240
+And by actually exploiting
+the vulnerabilities,
+
+9
+00:00:32,240 --> 00:00:36,210
+you can also demonstrate how likely
+the threats can take place and
+
+10
+00:00:36,210 --> 00:00:40,120
+what are the likely damages
+associated with these threats.
+
+11
+00:00:40,120 --> 00:00:44,270
+The scope of penetration testing
+include not just technical or
+
+12
+00:00:44,270 --> 00:00:48,420
+cyber operations, it can also
+include social engineering, and
+
+13
+00:00:48,420 --> 00:00:52,080
+also gaining physical access
+to your organization.
+
+14
+00:00:52,080 --> 00:00:55,580
+The scale of the testing
+includes the entire network.
+
+15
+00:00:55,580 --> 00:01:00,070
+For example, the testing may include
+your mobile devices, or BYOD.

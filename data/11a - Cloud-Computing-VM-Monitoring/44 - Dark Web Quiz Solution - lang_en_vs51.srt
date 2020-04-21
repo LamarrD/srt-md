@@ -1,0 +1,74 @@
+1
+00:00:00,210 --> 00:00:03,080
+A deep web is one that's not indexed
+
+2
+00:00:03,080 --> 00:00:05,990
+by the standard search
+engines such as Google.
+
+3
+00:00:05,990 --> 00:00:10,928
+A dark web refers to also invisible
+web or hidden web where the web
+
+4
+00:00:10,928 --> 00:00:15,338
+content typically only exists
+on so-called darknets.
+
+5
+00:00:15,338 --> 00:00:17,420
+And so what is a darknet?
+
+6
+00:00:17,420 --> 00:00:21,885
+It is an overlayed network that can
+only be assessed with specific software,
+
+7
+00:00:21,885 --> 00:00:23,440
+configurations or
+
+8
+00:00:23,440 --> 00:00:28,960
+authorization, often using non-standard
+communication protocols and ports.
+
+9
+00:00:28,960 --> 00:00:33,430
+Two example darknet are the friend
+to friend peer to peer networks and
+
+10
+00:00:33,430 --> 00:00:37,290
+the privacy network such as tor,
+T-O-R, tor.
+
+11
+00:00:37,290 --> 00:00:41,490
+And a surface web is one that we
+are probably most familiar with.
+
+12
+00:00:41,490 --> 00:00:45,040
+It contains web contents that
+are public, searchable and
+
+13
+00:00:45,040 --> 00:00:47,360
+indexed by standard search engines.
+
+14
+00:00:47,360 --> 00:00:51,270
+When we think of the Internet we're
+usually referring to the surface web.
+
+15
+00:00:51,270 --> 00:00:53,420
+As you can see in this visual,
+
+16
+00:00:53,420 --> 00:00:56,770
+the surface web is actually a very
+small part of the Internet.

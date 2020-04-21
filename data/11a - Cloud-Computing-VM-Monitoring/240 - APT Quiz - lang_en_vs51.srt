@@ -1,0 +1,13 @@
+1
+00:00:00,320 --> 00:00:02,100
+Now let's do a quiz on APT.
+
+2
+00:00:02,100 --> 00:00:04,830
+Which of the following
+information should we consider
+
+3
+00:00:04,830 --> 00:00:07,830
+in order to identify
+the source of an APT attack?

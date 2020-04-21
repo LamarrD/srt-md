@@ -1,0 +1,36 @@
+1
+00:00:00,000 --> 00:00:04,270
+In Footprinting, the attacker gathers information about target.
+
+2
+00:00:04,270 --> 00:00:07,380
+The kind of information gathered is: DNS,
+
+3
+00:00:07,380 --> 00:00:10,365
+email servers, and the IP address range.
+
+4
+00:00:10,365 --> 00:00:12,960
+In Scanning, the attacker uses
+
+5
+00:00:12,960 --> 00:00:16,605
+the internet to obtain information on specific IP addresses.
+
+6
+00:00:16,605 --> 00:00:19,590
+The kind of information gathered is: Operating System,
+
+7
+00:00:19,590 --> 00:00:23,400
+services, and architecture of the target system.
+
+8
+00:00:23,400 --> 00:00:29,369
+In Enumeration, the attacker gathers information on network user and group names,
+
+9
+00:00:29,369 --> 00:00:33,040
+routing tables and simple network management protocol.
+

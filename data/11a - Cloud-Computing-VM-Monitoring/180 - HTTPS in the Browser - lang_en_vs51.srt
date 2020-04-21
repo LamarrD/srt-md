@@ -1,0 +1,67 @@
+1
+00:00:00,230 --> 00:00:06,330
+HTTPS is integrated into a browser, or
+it is indicated in the browser GUI.
+
+2
+00:00:06,330 --> 00:00:09,710
+The goal is to let the user
+know where a page came from.
+
+3
+00:00:09,710 --> 00:00:13,430
+And it tells the users that the page
+contents are protected, meaning that
+
+4
+00:00:13,430 --> 00:00:17,970
+they're encrypted so that a network
+attacker cannot see them or modify them.
+
+5
+00:00:17,970 --> 00:00:21,080
+In reality,
+there are several security problems.
+
+6
+00:00:21,080 --> 00:00:23,570
+When the lock icon is
+displayed on the browser,
+
+7
+00:00:23,570 --> 00:00:27,780
+it means that all the elements on
+the page are fetched using HTTPS.
+
+8
+00:00:27,780 --> 00:00:32,360
+But for the browser to even
+accept this HTTPS connection,
+
+9
+00:00:32,360 --> 00:00:36,026
+it means that the browser has
+trusted the certificate and
+
+10
+00:00:36,026 --> 00:00:39,280
+verified that the certificate is valid.
+
+11
+00:00:39,280 --> 00:00:43,170
+And also,
+the domain URL matches the CommonName or
+
+12
+00:00:43,170 --> 00:00:46,100
+SubjectAlternativeName in
+the certificate.
+
+13
+00:00:46,100 --> 00:00:46,976
+For example,
+
+14
+00:00:46,976 --> 00:00:51,870
+the certificate of google.com can simply
+supply a list of alternative names.

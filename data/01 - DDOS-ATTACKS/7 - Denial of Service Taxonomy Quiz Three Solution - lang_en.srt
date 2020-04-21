@@ -1,0 +1,34 @@
+1
+00:00:00,598 --> 00:00:04,360
+If the denial-of-service attack
+targets server application,
+
+2
+00:00:04,360 --> 00:00:09,050
+it means that the target is a specific
+application on a target server.
+
+3
+00:00:09,050 --> 00:00:14,470
+If the target is Network Access, that
+means the attack is used to overload or
+
+4
+00:00:14,470 --> 00:00:17,580
+crash the communication
+mechanism of a network, so
+
+5
+00:00:17,580 --> 00:00:21,130
+that Network Access now is unavailable.
+
+6
+00:00:21,130 --> 00:00:25,630
+If the target is Infrastructure,
+that means the attack is aimed at
+
+7
+00:00:25,630 --> 00:00:30,410
+the crucial services of the global
+Internet, for example, the core routers.
+

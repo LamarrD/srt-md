@@ -1,0 +1,48 @@
+1
+00:00:00,000 --> 00:00:01,840
+Now, let's take a look at Kopis.
+
+2
+00:00:01,840 --> 00:00:05,140
+Recall that Kopis is similar to Notos except that
+
+3
+00:00:05,140 --> 00:00:09,000
+Kopis is deployed at the upper level of the DNS hierarchy.
+
+4
+00:00:09,000 --> 00:00:14,310
+Therefore, the main difference between Kopis and Notos is in their features.
+
+5
+00:00:14,310 --> 00:00:18,435
+In particular, Kopis analyzes requester diversity.
+
+6
+00:00:18,435 --> 00:00:22,680
+This requester diversity features characterize if the machines that
+
+7
+00:00:22,680 --> 00:00:27,580
+query a given domain name are localized or are globally distributed.
+
+8
+00:00:27,580 --> 00:00:32,595
+The requester profile features distinguish request from a small network
+
+9
+00:00:32,595 --> 00:00:34,665
+versus a large network because
+
+10
+00:00:34,665 --> 00:00:38,010
+a larger network would have a larger number of infected machines.
+
+11
+00:00:38,010 --> 00:00:43,130
+The resolved IP reputation futures look at whether the IP address space pointed
+
+12
+00:00:43,130 --> 00:00:49,060
+to by a given domain name has been historically linked with known malicious activities.
+

@@ -1,0 +1,44 @@
+1
+00:00:00,000 --> 00:00:02,895
+First, it can rot or lost,
+
+2
+00:00:02,895 --> 00:00:04,950
+or be torn, or stolen.
+
+3
+00:00:04,950 --> 00:00:06,645
+That's paper storage.
+
+4
+00:00:06,645 --> 00:00:10,395
+Second. If make of magnesium, tin,
+
+5
+00:00:10,395 --> 00:00:14,415
+lead, it can be destroyed by fire. That's coin.
+
+6
+00:00:14,415 --> 00:00:18,210
+Third. Multiple overwriting attempts are not
+
+7
+00:00:18,210 --> 00:00:22,470
+enough to ensure that discarded computers cannot be hacked.
+
+8
+00:00:22,470 --> 00:00:25,065
+That's online cold storage.
+
+9
+00:00:25,065 --> 00:00:30,060
+Fourth. Data can be hard to recover if the storage device is old.
+
+10
+00:00:30,060 --> 00:00:34,650
+That's USB. Fifth. Can be damaged by magnets.
+
+11
+00:00:34,650 --> 00:00:37,110
+That's offline Bitcoin wallet.
+

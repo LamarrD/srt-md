@@ -1,0 +1,152 @@
+1
+00:00:00,000 --> 00:00:02,785
+We start with raw data captured from the network tab,
+
+2
+00:00:02,785 --> 00:00:04,535
+for example, your pickup data.
+
+3
+00:00:04,535 --> 00:00:05,800
+From the pickup data,
+
+4
+00:00:05,800 --> 00:00:08,835
+we can summarize the data into connection records.
+
+5
+00:00:08,835 --> 00:00:10,955
+Each record has a set of attributes,
+
+6
+00:00:10,955 --> 00:00:13,700
+for example, time stamp, duration,
+
+7
+00:00:13,700 --> 00:00:16,080
+source IP, destination IP,
+
+8
+00:00:16,080 --> 00:00:18,035
+number of bytes, the service,
+
+9
+00:00:18,035 --> 00:00:19,695
+and the flag, and so on.
+
+10
+00:00:19,695 --> 00:00:24,155
+For example, SF means the connection has gone through both SYN and FIN,
+
+11
+00:00:24,155 --> 00:00:27,700
+and REJ means that the connection request has been rejected.
+
+12
+00:00:27,700 --> 00:00:29,275
+As we have discussed earlier,
+
+13
+00:00:29,275 --> 00:00:33,680
+having small features is the key to building effective classification models.
+
+14
+00:00:33,680 --> 00:00:36,360
+This is known as the feature construction problem.
+
+15
+00:00:36,360 --> 00:00:38,335
+In the context of intrusion detection,
+
+16
+00:00:38,335 --> 00:00:41,820
+the attributes or features of the connection records are not very useful.
+
+17
+00:00:41,820 --> 00:00:43,775
+For example, if you look at SYN flag,
+
+18
+00:00:43,775 --> 00:00:46,910
+that means, we only see the initial SYN packet.
+
+19
+00:00:46,910 --> 00:00:48,485
+Of course, with SYN flag,
+
+20
+00:00:48,485 --> 00:00:51,495
+we'll see a lot of connection attempts with SYN flag.
+
+21
+00:00:51,495 --> 00:00:55,310
+Of course, normal data can also have this S0 flag,
+
+22
+00:00:55,310 --> 00:00:58,620
+for example, because the connection request or response is lost.
+
+23
+00:00:58,620 --> 00:01:00,940
+That is, by looking at the feature flag,
+
+24
+00:01:00,940 --> 00:01:03,180
+it is not sufficient to detect intrusion.
+
+25
+00:01:03,180 --> 00:01:05,600
+On the other hand, if you look at the percentage of
+
+26
+00:01:05,600 --> 00:01:08,100
+S0 flag connections to particular host,
+
+27
+00:01:08,100 --> 00:01:12,100
+then we can see that this feature can distinguish intrusion from normal.
+
+28
+00:01:12,100 --> 00:01:15,070
+In other words, this feature has high information gain.
+
+29
+00:01:15,070 --> 00:01:19,155
+The problem is that this feature is not in the original feature set,
+
+30
+00:01:19,155 --> 00:01:22,835
+which means we need to construct features that have high information gains.
+
+31
+00:01:22,835 --> 00:01:26,885
+So, the question is how do we construct features that have high information gains?
+
+32
+00:01:26,885 --> 00:01:31,280
+That is, features that are useful to distinguish normal versus intrusions.
+
+33
+00:01:31,280 --> 00:01:37,005
+Our approach is to use temporal and statistical patterns associated with intrusions,
+
+34
+00:01:37,005 --> 00:01:40,670
+for example, a lot of S0 connections to the same service and host,
+
+35
+00:01:40,670 --> 00:01:42,155
+within a short period of time.
+
+36
+00:01:42,155 --> 00:01:45,040
+This pattern is associated with SYN flag.
+
+37
+00:01:45,040 --> 00:01:46,465
+Once we have these patterns,
+
+38
+00:01:46,465 --> 00:01:51,130
+we can then construct features accordingly that can be used to detect these intrusions.
+

@@ -1,0 +1,16 @@
+1
+00:00:00,000 --> 00:00:02,280
+Now, let's do a quiz on Decision Tree.
+
+2
+00:00:02,280 --> 00:00:06,705
+Select the true statements with regards to decision tree based detection models.
+
+3
+00:00:06,705 --> 00:00:10,500
+That is if we use a decision tree based models for intrusion detection,
+
+4
+00:00:10,500 --> 00:00:11,920
+which statements are true?
+

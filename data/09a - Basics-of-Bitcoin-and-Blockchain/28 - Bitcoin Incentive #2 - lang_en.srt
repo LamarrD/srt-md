@@ -1,0 +1,48 @@
+1
+00:00:00,000 --> 00:00:04,350
+Another incentive that Bitcoin can provide is the so-called transaction fees.
+
+2
+00:00:04,350 --> 00:00:06,765
+Suppose we have a lot of new Bitcoins,
+
+3
+00:00:06,765 --> 00:00:08,940
+then we'll now create a new block.
+
+4
+00:00:08,940 --> 00:00:10,855
+How do we reward this node?
+
+5
+00:00:10,855 --> 00:00:13,440
+Remember, a block contains transaction and
+
+6
+00:00:13,440 --> 00:00:16,480
+therefore this block creator can collect transaction fees.
+
+7
+00:00:16,480 --> 00:00:18,690
+That is, the creator of transactions can
+
+8
+00:00:18,690 --> 00:00:21,470
+choose to make output value less than input value.
+
+9
+00:00:21,470 --> 00:00:24,485
+The difference is the fee paid to the block creator.
+
+10
+00:00:24,485 --> 00:00:26,455
+Currently, this is like a tip.
+
+11
+00:00:26,455 --> 00:00:28,750
+But in the future, when Bitcoins run out,
+
+12
+00:00:28,750 --> 00:00:30,230
+this may become monetary.
+

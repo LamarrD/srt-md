@@ -1,0 +1,20 @@
+1
+00:00:00,000 --> 00:00:02,940
+Cryptographic hash functions do not have a key.
+
+2
+00:00:02,940 --> 00:00:06,780
+Second, a major drawback of cryptographic functions is
+
+3
+00:00:06,780 --> 00:00:11,055
+that it is easy to find two messages that have the same hash value.
+
+4
+00:00:11,055 --> 00:00:14,625
+That is false. Third, cryptographic hash functions
+
+5
+00:00:14,625 --> 00:00:18,000
+are primarily used for message integrity. That is true.
+

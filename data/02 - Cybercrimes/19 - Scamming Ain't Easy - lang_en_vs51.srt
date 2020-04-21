@@ -1,0 +1,177 @@
+1
+00:00:00,270 --> 00:00:02,130
+With the example storm botnets,
+
+2
+00:00:02,130 --> 00:00:05,730
+you may think that making money
+is easy in the underground.
+
+3
+00:00:05,730 --> 00:00:07,540
+Actually, it is not easy.
+
+4
+00:00:07,540 --> 00:00:11,960
+In fact, scamming is supported by
+a whole ecosystem that includes
+
+5
+00:00:11,960 --> 00:00:14,450
+network infrastructure and
+payment system.
+
+6
+00:00:14,450 --> 00:00:17,770
+For example, we're going to
+start the pharmaceutical scams.
+
+7
+00:00:17,770 --> 00:00:22,240
+Suppose you want to set up a website
+called canadianpharma.com.
+
+8
+00:00:22,240 --> 00:00:24,730
+The question is that how do you do this?
+
+9
+00:00:24,730 --> 00:00:26,900
+What sort of infrastructure do you need?
+
+10
+00:00:26,900 --> 00:00:30,750
+Because obviously you should worry
+about law enforcement agencies
+
+11
+00:00:30,750 --> 00:00:32,780
+shutting down your website.
+
+12
+00:00:32,780 --> 00:00:36,460
+Even before that, you should worry
+about that legitimate registers
+
+13
+00:00:36,460 --> 00:00:39,400
+may not even let you
+register your domain name.
+
+14
+00:00:39,400 --> 00:00:43,030
+So you go to the shady registrars,
+but they would charge you more.
+
+15
+00:00:43,030 --> 00:00:44,730
+After you obtain your domain,
+
+16
+00:00:44,730 --> 00:00:49,450
+you want a DNS server that map
+the domain name into an IP address.
+
+17
+00:00:49,450 --> 00:00:53,470
+Some DNS providers will shut down
+your domain if they hear complaints.
+
+18
+00:00:53,470 --> 00:00:56,330
+So you go to the so-called
+bulletproof DNS providers,
+
+19
+00:00:56,330 --> 00:00:59,790
+that operates in lawless land,
+but they are expensive.
+
+20
+00:00:59,790 --> 00:01:03,360
+Now to set up your website,
+you need to stand up a web server.
+
+21
+00:01:03,360 --> 00:01:05,260
+For example, a machine in ISP.
+
+22
+00:01:05,260 --> 00:01:09,930
+But, the ISP or law enforcement
+can shut down your website.
+
+23
+00:01:09,930 --> 00:01:13,150
+So, you want to go to
+the bulletproof network providers.
+
+24
+00:01:13,150 --> 00:01:15,120
+Again, they're expensive.
+
+25
+00:01:15,120 --> 00:01:19,640
+There are indeed service providers that
+offer very low priced, resilient hosting
+
+26
+00:01:19,640 --> 00:01:23,900
+services, but obviously they
+are very expensive after you set up
+
+27
+00:01:23,900 --> 00:01:28,560
+the network infrastructure, now you need
+to consider how do you receive payments.
+
+28
+00:01:28,560 --> 00:01:31,250
+Basically you need to handle
+credit card payments and
+
+29
+00:01:31,250 --> 00:01:33,580
+get money out of these accounts.
+
+30
+00:01:33,580 --> 00:01:35,800
+The trouble is that most banks and
+
+31
+00:01:35,800 --> 00:01:39,380
+credit card processors won't
+do business with scammers.
+
+32
+00:01:39,380 --> 00:01:43,790
+Again your solution is to go to a few
+banks in some lawless countries
+
+33
+00:01:43,790 --> 00:01:45,610
+to handle your payment.
+
+34
+00:01:45,610 --> 00:01:47,460
+To be successful in scamming,
+
+35
+00:01:47,460 --> 00:01:50,130
+you almost have to learn it
+like a legitimate business.
+
+36
+00:01:50,130 --> 00:01:54,290
+For example, you should ship
+products to customers, why?
+
+37
+00:01:54,290 --> 00:01:57,920
+Because if the customers are not happy,
+they will complain and
+
+38
+00:01:57,920 --> 00:02:00,330
+the processors and
+banks will shut down your accounts.

@@ -1,0 +1,36 @@
+1
+00:00:00,000 --> 00:00:03,180
+The first one, the main task is to find patterns,
+
+2
+00:00:03,180 --> 00:00:06,120
+structures or knowledge in unlabeled data
+
+3
+00:00:06,120 --> 00:00:09,410
+that is unsupervised because the data is not labeled.
+
+4
+00:00:09,410 --> 00:00:14,245
+That is the machine learning algorithm is not told which label belongs to which data.
+
+5
+00:00:14,245 --> 00:00:19,360
+Second, the task is to find the function or model that explains the data.
+
+6
+00:00:19,360 --> 00:00:23,280
+This is supervised because the data is labeled and machine-learning is
+
+7
+00:00:23,280 --> 00:00:27,510
+going to produce a function that model the relationship between the data and its label.
+
+8
+00:00:27,510 --> 00:00:31,130
+Third, some of the data is labeled during acquisition.
+
+9
+00:00:31,130 --> 00:00:32,830
+This is semi-supervised.
+

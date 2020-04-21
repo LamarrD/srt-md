@@ -1,0 +1,72 @@
+1
+00:00:00,000 --> 00:00:01,865
+Of the 45 active Botnet,
+
+2
+00:00:01,865 --> 00:00:05,490
+we find that too had TGA based backup mechanisms,
+
+3
+00:00:05,490 --> 00:00:08,120
+and one had a peer-to-peer based backup mechanism.
+
+4
+00:00:08,120 --> 00:00:12,645
+On the other hand, 42 of them are subject to DNS only Takedown.
+
+5
+00:00:12,645 --> 00:00:15,570
+To summarize the drawbacks of current Takedown efforts,
+
+6
+00:00:15,570 --> 00:00:17,660
+there ad hoc meaning that they don't
+
+7
+00:00:17,660 --> 00:00:20,120
+have complete knowledge of the Botnet infrastructure.
+
+8
+00:00:20,120 --> 00:00:21,600
+There's a valid oversight,
+
+9
+00:00:21,600 --> 00:00:24,320
+meaning that different groups may step on each other,
+
+10
+00:00:24,320 --> 00:00:26,395
+and the success rate is not high.
+
+11
+00:00:26,395 --> 00:00:28,145
+Therefore, we believe that
+
+12
+00:00:28,145 --> 00:00:31,725
+a central authority to coordinate Takedown efforts is necessary.
+
+13
+00:00:31,725 --> 00:00:35,220
+Icons policies can provide an example framework.
+
+14
+00:00:35,220 --> 00:00:39,095
+For example, there is policy for domain name dispute resolution.
+
+15
+00:00:39,095 --> 00:00:41,675
+There's also system for rapid suspension.
+
+16
+00:00:41,675 --> 00:00:45,465
+Therefore, we should study policy criteria for Takedowns,
+
+17
+00:00:45,465 --> 00:00:48,244
+and have the community to review such criterias.
+
+18
+00:00:48,244 --> 00:00:52,200
+We can test the policy with the newly created top-level domains.
+

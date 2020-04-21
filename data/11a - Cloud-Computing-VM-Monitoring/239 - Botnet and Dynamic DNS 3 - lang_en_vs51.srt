@@ -1,0 +1,262 @@
+1
+00:00:00,260 --> 00:00:05,220
+Now let's discuss how we detect
+botnets in large networks such an ISP.
+
+2
+00:00:05,220 --> 00:00:07,710
+Here, we can focus on the DNS queries
+
+3
+00:00:07,710 --> 00:00:11,010
+that can be observed by the recursive
+DNS server and the ISP.
+
+4
+00:00:11,010 --> 00:00:14,490
+That is, we can analyze the Internet
+traffic from the internal host to
+
+5
+00:00:14,490 --> 00:00:15,490
+the DNS server.
+
+6
+00:00:15,490 --> 00:00:16,239
+In particular,
+
+7
+00:00:16,239 --> 00:00:20,090
+we can detect any abnormal growth
+of the popularity of a domain name.
+
+8
+00:00:20,090 --> 00:00:23,440
+It can suggest that this domain name
+is used for botnet command-control.
+
+9
+00:00:23,440 --> 00:00:26,300
+Intuitively, the reason
+that a botnet will grow
+
+10
+00:00:26,300 --> 00:00:29,630
+is that more machines become infected,
+and become bots.
+
+11
+00:00:29,630 --> 00:00:33,340
+Therefore, the growth pattern of
+a botnet corresponds to the propagation
+
+12
+00:00:33,340 --> 00:00:35,010
+pattern of an infection.
+
+13
+00:00:35,010 --> 00:00:38,655
+According to studies, exploit-based
+infection grows exponentially.
+
+14
+00:00:38,655 --> 00:00:42,620
+Email-based infection grows
+exponentially or linearly.
+
+15
+00:00:42,620 --> 00:00:45,870
+And dry-by downloads
+growth likely sublinear.
+
+16
+00:00:45,870 --> 00:00:49,500
+In a large ISP, there are many domain
+names being looked up every day.
+
+17
+00:00:49,500 --> 00:00:51,560
+But we don't have to
+analyze all domain names.
+
+18
+00:00:51,560 --> 00:00:55,110
+In fact, we can focus on
+a few anomalous domain names.
+
+19
+00:00:55,110 --> 00:00:57,340
+These are domain names
+that look suspicious.
+
+20
+00:00:57,340 --> 00:01:01,310
+In particular, many regularly spelled,
+easily sounding domain names
+
+21
+00:01:01,310 --> 00:01:04,300
+have been taken up by businesses and
+individuals already.
+
+22
+00:01:04,300 --> 00:01:08,580
+Therefore botnets are forced to use
+very random looking domain names.
+
+23
+00:01:08,580 --> 00:01:11,890
+In other words, these random looking
+domain names are suspicious.
+
+24
+00:01:11,890 --> 00:01:14,330
+And then we need to
+analyze the growth pattern
+
+25
+00:01:14,330 --> 00:01:16,160
+of these suspicious domain names.
+
+26
+00:01:16,160 --> 00:01:18,420
+In particular, we look for
+the exponential or
+
+27
+00:01:18,420 --> 00:01:20,890
+linear growth of their popularities.
+
+28
+00:01:20,890 --> 00:01:22,740
+Here's a sketch of our ideas.
+
+29
+00:01:22,740 --> 00:01:25,370
+We assume a baseline of N days,
+and we assume that,
+
+30
+00:01:25,370 --> 00:01:28,120
+within this N days,
+all domains are legitimate.
+
+31
+00:01:28,120 --> 00:01:31,110
+Therefore, we record these
+domains In a Bloom filter.
+
+32
+00:01:31,110 --> 00:01:34,310
+A Bloom filter is a very
+efficient representation of set.
+
+33
+00:01:34,310 --> 00:01:37,820
+That is, we use the Bloom filter
+to record a set of domains
+
+34
+00:01:37,820 --> 00:01:39,450
+observed within these N days.
+
+35
+00:01:39,450 --> 00:01:43,870
+We also use a Markov model to model
+how these domain names are spelled.
+
+36
+00:01:43,870 --> 00:01:47,410
+After this baseline, whenever we
+observe a new domain, that is,
+
+37
+00:01:47,410 --> 00:01:51,540
+a domain that is not in our Bloom
+filter on a set of recorded domains.
+
+38
+00:01:51,540 --> 00:01:54,610
+And if this domain does
+not fit our Markov model,
+
+39
+00:01:54,610 --> 00:01:58,120
+that means it is spelled in
+a different way and looks suspicious.
+
+40
+00:01:58,120 --> 00:02:00,610
+Then we know that we have a new and
+suspicious domain.
+
+41
+00:02:00,610 --> 00:02:04,740
+Then we analyze the lookup sequence
+to this new and suspicious domain.
+
+42
+00:02:04,740 --> 00:02:06,770
+And if the growth is linear or
+
+43
+00:02:06,770 --> 00:02:10,660
+exponential, then we know that
+this domain is used for botnets.
+
+44
+00:02:10,660 --> 00:02:13,020
+So far we have discussed
+botnet detection.
+
+45
+00:02:13,020 --> 00:02:15,950
+The latest threats are more targeted and
+more advanced.
+
+46
+00:02:15,950 --> 00:02:19,920
+For example, the use custom built
+malware on zero-day exploits,
+
+47
+00:02:19,920 --> 00:02:23,240
+their activities are low-and-slow and
+they move within network and
+
+48
+00:02:23,240 --> 00:02:24,510
+covering their tracks.
+
+49
+00:02:24,510 --> 00:02:27,500
+Even the existing botnet detection
+systems are not effective
+
+50
+00:02:27,500 --> 00:02:30,120
+against these targeted advanced threats.
+
+51
+00:02:30,120 --> 00:02:32,250
+In order to counteract
+these targeted and
+
+52
+00:02:32,250 --> 00:02:35,880
+advanced threats, we need
+multifaceted monitoring and analysis.
+
+53
+00:02:35,880 --> 00:02:40,620
+That is we need malware analysis,
+host-based monitoring, forensics, and
+
+54
+00:02:40,620 --> 00:02:44,560
+recovery, network monitoring,
+Internet monitoring, threat analysis,
+
+55
+00:02:44,560 --> 00:02:45,180
+and attribution.

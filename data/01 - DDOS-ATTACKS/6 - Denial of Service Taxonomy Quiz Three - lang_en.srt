@@ -1,0 +1,13 @@
+1
+00:00:00,320 --> 00:00:01,560
+Here's another quiz.
+
+2
+00:00:01,560 --> 00:00:05,720
+Again, let's match the denial of
+service attack classification with this
+
+3
+00:00:05,720 --> 00:00:06,570
+description.
+

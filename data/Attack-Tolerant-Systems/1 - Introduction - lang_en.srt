@@ -1,0 +1,20 @@
+1
+00:00:00,000 --> 00:00:02,720
+We have networks with valuable data on them.
+
+2
+00:00:02,720 --> 00:00:06,690
+These networks have been attacked or will be attacked.
+
+3
+00:00:06,690 --> 00:00:10,620
+We can do everything humanly possible to stop attacks,
+
+4
+00:00:10,620 --> 00:00:14,630
+but we also need to build systems that can withstand attacks.
+
+5
+00:00:14,630 --> 00:00:18,550
+In this lesson, we learned about attack tolerant systems.
+

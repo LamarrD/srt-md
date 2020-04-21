@@ -1,0 +1,40 @@
+1
+00:00:00,000 --> 00:00:03,045
+A good machine learning model should be able to generalize
+
+2
+00:00:03,045 --> 00:00:06,415
+from the data that it was trained on to new test data set.
+
+3
+00:00:06,415 --> 00:00:10,755
+That is, we don't want to just learn the data from the training data set.
+
+4
+00:00:10,755 --> 00:00:13,100
+That is, given the objects in a training data set,
+
+5
+00:00:13,100 --> 00:00:15,230
+for example, the different apples here,
+
+6
+00:00:15,230 --> 00:00:19,230
+we want the machine learning algorithm to be able to learn the general characteristics of
+
+7
+00:00:19,230 --> 00:00:21,510
+the apples so that given an image of
+
+8
+00:00:21,510 --> 00:00:24,590
+apple that was not previously seen in the training data set,
+
+9
+00:00:24,590 --> 00:00:28,810
+the learned model is able to correctly predict that it is indeed an apple.
+
+10
+00:00:28,810 --> 00:00:32,900
+In short, generalization is the most important property of machine learning.
+

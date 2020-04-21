@@ -1,0 +1,244 @@
+1
+00:00:00,000 --> 00:00:02,915
+Secure timestamping has many applications.
+
+2
+00:00:02,915 --> 00:00:05,020
+We have discussed proof of knowledge.
+
+3
+00:00:05,020 --> 00:00:09,445
+We can also use it as proof of receipt and so on.
+
+4
+00:00:09,445 --> 00:00:11,110
+As we have discussed,
+
+5
+00:00:11,110 --> 00:00:15,385
+to make a commitment, we need to publish the hash value of the data.
+
+6
+00:00:15,385 --> 00:00:18,880
+The simplest solution in bitcoin system is
+
+7
+00:00:18,880 --> 00:00:22,510
+that instead of sending money to the hash of a public key,
+
+8
+00:00:22,510 --> 00:00:25,285
+just send it to the hash of your data,
+
+9
+00:00:25,285 --> 00:00:28,270
+and then by announcing the transaction,
+
+10
+00:00:28,270 --> 00:00:30,660
+you're announcing the hash of your data.
+
+11
+00:00:30,660 --> 00:00:36,430
+The caveat here is that the coin you sent can be lost forever because you
+
+12
+00:00:36,430 --> 00:00:39,010
+don't know who actually happens to own
+
+13
+00:00:39,010 --> 00:00:42,470
+the address that corresponds to the hash of your data.
+
+14
+00:00:42,470 --> 00:00:44,940
+This approach is indeed very simple,
+
+15
+00:00:44,940 --> 00:00:46,715
+but we have to burn coins.
+
+16
+00:00:46,715 --> 00:00:49,760
+More importantly, the bitcoin miners don't know
+
+17
+00:00:49,760 --> 00:00:52,865
+that the coin you send to this address is lost forever.
+
+18
+00:00:52,865 --> 00:00:57,160
+So, they must check it forever just like any other legitimate bitcoins.
+
+19
+00:00:57,160 --> 00:01:00,385
+A more sophisticated approach is called CommitCoin.
+
+20
+00:01:00,385 --> 00:01:03,875
+It allows you to encode your data into the private key.
+
+21
+00:01:03,875 --> 00:01:07,820
+Recall that elliptic curve public key is used in bitcoin.
+
+22
+00:01:07,820 --> 00:01:10,050
+Just like other public key systems,
+
+23
+00:01:10,050 --> 00:01:11,960
+we need good randomness,
+
+24
+00:01:11,960 --> 00:01:14,495
+otherwise the private key can be leaked.
+
+25
+00:01:14,495 --> 00:01:20,295
+A property of elliptic curve is that if you use bad randomness in making a signature,
+
+26
+00:01:20,295 --> 00:01:22,150
+it will leak the private key.
+
+27
+00:01:22,150 --> 00:01:24,740
+CommitCoin exploits this property.
+
+28
+00:01:24,740 --> 00:01:28,130
+CommitCoin generates a new private key that
+
+29
+00:01:28,130 --> 00:01:32,000
+encodes a commitment and derive its corresponding public key.
+
+30
+00:01:32,000 --> 00:01:34,910
+We can then send a tiny transaction to
+
+31
+00:01:34,910 --> 00:01:38,390
+that address that corresponds to the public key and then
+
+32
+00:01:38,390 --> 00:01:42,290
+the address also sends back another transaction and we
+
+33
+00:01:42,290 --> 00:01:46,380
+use the same randomness in signing both of these transactions.
+
+34
+00:01:46,380 --> 00:01:51,225
+In CmomitCoin, we generate a new public key that encodes our commitment,
+
+35
+00:01:51,225 --> 00:01:53,885
+and we derive its corresponding public key.
+
+36
+00:01:53,885 --> 00:01:58,265
+We then send a tiny transaction to the address that corresponds
+
+37
+00:01:58,265 --> 00:02:02,785
+to the public key and we then send it back two chunks of bitcoins.
+
+38
+00:02:02,785 --> 00:02:06,750
+When doing so, we'll use the same randomness to sign
+
+39
+00:02:06,750 --> 00:02:11,090
+both chunks in the transaction and when sending it back,
+
+40
+00:02:11,090 --> 00:02:14,745
+we'll use the same randomness both times for signing the transaction.
+
+41
+00:02:14,745 --> 00:02:19,040
+This allows anyone looking at the blockchain to compute the public key
+
+42
+00:02:19,040 --> 00:02:23,900
+using these two signatures and the private key contains the commitment.
+
+43
+00:02:23,900 --> 00:02:27,200
+CommitCoin avoids the need to burn coins and
+
+44
+00:02:27,200 --> 00:02:31,090
+the miners don't have to keep track of unspendable output forever.
+
+45
+00:02:31,090 --> 00:02:33,475
+However, it is quite complex.
+
+46
+00:02:33,475 --> 00:02:36,560
+As of 2014, the preferred way to do
+
+47
+00:02:36,560 --> 00:02:40,925
+bitcoin timestamping is with the OP_RETURN transaction.
+
+48
+00:02:40,925 --> 00:02:45,090
+The OP_RETURN instruction returns immediately with an error,
+
+49
+00:02:45,090 --> 00:02:48,660
+so that this script can never be run successfully,
+
+50
+00:02:48,660 --> 00:02:52,250
+and the data that is encoded in the transaction is ignored.
+
+51
+00:02:52,250 --> 00:02:55,500
+This can be used to encode arbitrary data.
+
+52
+00:02:55,500 --> 00:03:00,845
+As of 2015, OP_RETURN allows 80 bytes of data to be pushed,
+
+53
+00:03:00,845 --> 00:03:04,075
+which is more than enough for a hash-function output.
+
+54
+00:03:04,075 --> 00:03:06,735
+For example, shot to 56,
+
+55
+00:03:06,735 --> 00:03:09,415
+the output length is 32 bytes.
+
+56
+00:03:09,415 --> 00:03:11,480
+As of late 2014,
+
+57
+00:03:11,480 --> 00:03:14,580
+there are already several websites that help with this.
+
+58
+00:03:14,580 --> 00:03:16,720
+They collect a bunch of commitments from
+
+59
+00:03:16,720 --> 00:03:20,440
+different users and combine them into a large Merkle tree,
+
+60
+00:03:20,440 --> 00:03:25,135
+then they publish one unspendable output containing the Merkle tree root.
+
+61
+00:03:25,135 --> 00:03:30,860
+This acts like a commitment for all the data that users wanted to timestamp that day.
+

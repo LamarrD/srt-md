@@ -1,0 +1,204 @@
+1
+00:00:00,000 --> 00:00:03,490
+Now, let's discuss an evaluation of our approach.
+
+2
+00:00:03,490 --> 00:00:05,975
+We use the darpa evolution dataset.
+
+3
+00:00:05,975 --> 00:00:11,700
+There are 38 attack types in the data and these attack types are in four categories,
+
+4
+00:00:11,700 --> 00:00:14,795
+denial service, probing, remote to local,
+
+5
+00:00:14,795 --> 00:00:16,285
+and user to root.
+
+6
+00:00:16,285 --> 00:00:19,515
+In particular, remote to local means that gaining
+
+7
+00:00:19,515 --> 00:00:23,995
+local axis and user to root means that gaining superuser privilege.
+
+8
+00:00:23,995 --> 00:00:26,805
+In this evaluation, training dataset is provided
+
+9
+00:00:26,805 --> 00:00:30,105
+but 40 percent of the attack types are only in test data.
+
+10
+00:00:30,105 --> 00:00:33,790
+That is these attack types are new to the intrusion detection systems.
+
+11
+00:00:33,790 --> 00:00:37,815
+Here are the features that we defined and constructed for each connection record.
+
+12
+00:00:37,815 --> 00:00:40,350
+The intrinsic features such as protocol,
+
+13
+00:00:40,350 --> 00:00:44,935
+duration and flag, these are the ones that are inherent to any connection.
+
+14
+00:00:44,935 --> 00:00:49,325
+In other words, they can be used for many applications not just intrusion detection.
+
+15
+00:00:49,325 --> 00:00:52,570
+We construct a feature for the purpose of intrusion detection.
+
+16
+00:00:52,570 --> 00:00:55,960
+The content features are based on analysis of the payload.
+
+17
+00:00:55,960 --> 00:00:59,210
+For example, we can tell how many failed login attempts.
+
+18
+00:00:59,210 --> 00:01:01,735
+Whether the login was successful or not,
+
+19
+00:01:01,735 --> 00:01:03,200
+number of root shells,
+
+20
+00:01:03,200 --> 00:01:05,405
+whether a su root has been attempted,
+
+21
+00:01:05,405 --> 00:01:08,550
+number of access to security control files and so on.
+
+22
+00:01:08,550 --> 00:01:11,625
+We compute a frequent patterns from the connection record and
+
+23
+00:01:11,625 --> 00:01:15,365
+then we construct temporal and statistical features accordingly.
+
+24
+00:01:15,365 --> 00:01:18,905
+These include number of connections to the same destination host
+
+25
+00:01:18,905 --> 00:01:22,585
+as the current connection in the past two seconds and among these connections,
+
+26
+00:01:22,585 --> 00:01:24,285
+number of rejected connections,
+
+27
+00:01:24,285 --> 00:01:26,540
+number of connections with syn errors,
+
+28
+00:01:26,540 --> 00:01:28,120
+number of different services,
+
+29
+00:01:28,120 --> 00:01:31,070
+percentage of connections they have the same service,
+
+30
+00:01:31,070 --> 00:01:33,800
+percentage of different or unique services,
+
+31
+00:01:33,800 --> 00:01:35,540
+and number of connections they have
+
+32
+00:01:35,540 --> 00:01:38,955
+the same service as the current connection and among these connections,
+
+33
+00:01:38,955 --> 00:01:40,350
+number of rejected conditions,
+
+34
+00:01:40,350 --> 00:01:42,600
+number of connections with syn errors,
+
+35
+00:01:42,600 --> 00:01:45,115
+number of different destination hosts,
+
+36
+00:01:45,115 --> 00:01:48,000
+percentage of connections they have the same destination host,
+
+37
+00:01:48,000 --> 00:01:51,095
+percentage of different or unique designation hosts.
+
+38
+00:01:51,095 --> 00:01:55,605
+Here we showed examples of the values of content features interconnection record.
+
+39
+00:01:55,605 --> 00:01:59,270
+We also label each connection as normal or one of the attacks.
+
+40
+00:01:59,270 --> 00:02:02,390
+Here is some example rules produced by machine learning.
+
+41
+00:02:02,390 --> 00:02:05,510
+For example, a buffer overflow attack can be detected
+
+42
+00:02:05,510 --> 00:02:08,780
+because there are a number of indicators of compromise.
+
+43
+00:02:08,780 --> 00:02:12,670
+A root shell has to be attained and su root has not be attempted.
+
+44
+00:02:12,670 --> 00:02:15,945
+Here we show examples of the values of traffic features.
+
+45
+00:02:15,945 --> 00:02:20,360
+Again, each connection record is labeled as normal or one of the attacks,
+
+46
+00:02:20,360 --> 00:02:23,430
+and here are some example rules produced by machine learning.
+
+47
+00:02:23,430 --> 00:02:25,475
+For example, in a smurf attack
+
+48
+00:02:25,475 --> 00:02:30,080
+ICMP echo request has been sent to the same service on the same host.
+
+49
+00:02:30,080 --> 00:02:32,750
+Satan is a probing attack and therefore there are
+
+50
+00:02:32,750 --> 00:02:36,730
+many different ports or services being probed and since many of them are closed,
+
+51
+00:02:36,730 --> 00:02:38,940
+many connection attempts are rejected.
+

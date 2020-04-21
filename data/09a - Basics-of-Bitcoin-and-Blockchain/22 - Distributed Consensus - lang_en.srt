@@ -1,0 +1,168 @@
+1
+00:00:00,000 --> 00:00:02,790
+Since there's no centralized authority in Bitcoin,
+
+2
+00:00:02,790 --> 00:00:07,310
+it is very important for us to understand how we can achieve distributed consensus.
+
+3
+00:00:07,310 --> 00:00:10,545
+In Bitcoin, there's no centralized authority and therefore
+
+4
+00:00:10,545 --> 00:00:13,830
+we need to understand how we can achieve distributed consensus.
+
+5
+00:00:13,830 --> 00:00:16,950
+There are two basic requirements for distributed consensus.
+
+6
+00:00:16,950 --> 00:00:22,430
+First, the consensus protocol terminates when all correct nodes decide on a same value,
+
+7
+00:00:22,430 --> 00:00:25,675
+and the value must have been proposed by some correct node.
+
+8
+00:00:25,675 --> 00:00:28,860
+There has been a lot of research on distributed consensus.
+
+9
+00:00:28,860 --> 00:00:31,635
+Now let's look at a unique setting of Bitcoin.
+
+10
+00:00:31,635 --> 00:00:34,060
+First, Bitcoin is a peer-to-peer system.
+
+11
+00:00:34,060 --> 00:00:36,110
+When Alice wants to pay Bob,
+
+12
+00:00:36,110 --> 00:00:39,720
+she simply broadcasts a transaction to all Bitcoin nodes.
+
+13
+00:00:39,720 --> 00:00:42,620
+In fact, Alice doesn't know where Bob's computer
+
+14
+00:00:42,620 --> 00:00:45,900
+really is and the computer may not be online.
+
+15
+00:00:45,900 --> 00:00:51,300
+Achieving consensus in a peer-to-peer system is very hard because some nodes may crash,
+
+16
+00:00:51,300 --> 00:00:53,085
+some nodes may be malicious,
+
+17
+00:00:53,085 --> 00:00:55,910
+the network is not perfect because not all pairs of
+
+18
+00:00:55,910 --> 00:00:59,330
+nodes are connected and there are network faults and latency.
+
+19
+00:00:59,330 --> 00:01:02,960
+Now let's discuss how we can achieve consensus in Bitcoin.
+
+20
+00:01:02,960 --> 00:01:05,630
+The trick is to use incentive and this is
+
+21
+00:01:05,630 --> 00:01:09,440
+possible only because Bitcoin is a currency and we embrace
+
+22
+00:01:09,440 --> 00:01:12,740
+randomness or the imperfect nature of the peer to peer network by
+
+23
+00:01:12,740 --> 00:01:16,540
+doing away with the exact termination point of the consensus protocol.
+
+24
+00:01:16,540 --> 00:01:20,650
+The protocol is that achieves consensus over a long timescale,
+
+25
+00:01:20,650 --> 00:01:22,495
+for example, in about an hour.
+
+26
+00:01:22,495 --> 00:01:25,605
+The key idea here is implicit consensus.
+
+27
+00:01:25,605 --> 00:01:28,170
+At each round a random node is picked,
+
+28
+00:01:28,170 --> 00:01:31,565
+this node then proposes the next block in the block chain.
+
+29
+00:01:31,565 --> 00:01:34,960
+Other nodes implicitly accept or reject this block.
+
+30
+00:01:34,960 --> 00:01:38,510
+If they accept they will extend the block chain from this block.
+
+31
+00:01:38,510 --> 00:01:41,150
+If they reject they will ignore this block and
+
+32
+00:01:41,150 --> 00:01:44,165
+instead extend the block chain from an earlier block.
+
+33
+00:01:44,165 --> 00:01:47,150
+Every block here contains not only the transactions,
+
+34
+00:01:47,150 --> 00:01:50,370
+but also a hash pointer to the block that it extends.
+
+35
+00:01:50,370 --> 00:01:53,600
+Here is a high level discussion of the consensus algorithm.
+
+36
+00:01:53,600 --> 00:01:57,235
+First, new transactions are broadcast to all nodes,
+
+37
+00:01:57,235 --> 00:02:00,480
+each node collects new transactions into a block,
+
+38
+00:02:00,480 --> 00:02:04,700
+at each round a random node gets a chance to broadcast its block.
+
+39
+00:02:04,700 --> 00:02:09,220
+Other nodes would accept this block if all of the transactions in it are valid,
+
+40
+00:02:09,220 --> 00:02:12,820
+that is the signatures are valid and it is not double spend.
+
+41
+00:02:12,820 --> 00:02:14,630
+If the nodes accept this block,
+
+42
+00:02:14,630 --> 00:02:18,950
+they will include a hash pointer to this block in the next block that they create.
+

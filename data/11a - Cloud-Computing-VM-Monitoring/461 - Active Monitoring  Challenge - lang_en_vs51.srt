@@ -1,0 +1,39 @@
+1
+00:00:00,240 --> 00:00:02,890
+There are several challenges
+emerge in machine monitoring.
+
+2
+00:00:02,890 --> 00:00:04,890
+The first is high overhead.
+
+3
+00:00:04,890 --> 00:00:06,980
+The overhead comes from several sources.
+
+4
+00:00:06,980 --> 00:00:08,800
+The first is invocation.
+
+5
+00:00:08,800 --> 00:00:12,020
+Switching from a virtual machine to
+the hypervisor into a virtual machine
+
+6
+00:00:12,020 --> 00:00:13,300
+is very expensive.
+
+7
+00:00:13,300 --> 00:00:15,950
+The second source overhead
+is introspection.
+
+8
+00:00:15,950 --> 00:00:18,950
+Again, accessing the memory
+of another virtual machine
+
+9
+00:00:18,950 --> 00:00:20,530
+requires calls to the hypervisor.

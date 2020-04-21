@@ -1,0 +1,48 @@
+1
+00:00:00,000 --> 00:00:04,175
+Now, let's discuss the temporal and statistical features of Notos.
+
+2
+00:00:04,175 --> 00:00:05,720
+Given a resource record,
+
+3
+00:00:05,720 --> 00:00:09,395
+and that is a tuple of domain name and its resolve IP,
+
+4
+00:00:09,395 --> 00:00:13,945
+Notos uses the passive DNS data to extract network based features.
+
+5
+00:00:13,945 --> 00:00:17,645
+These features are based on the related historic IPs.
+
+6
+00:00:17,645 --> 00:00:20,120
+It also extracts the zone features.
+
+7
+00:00:20,120 --> 00:00:23,855
+These features are based on the related historic domains.
+
+8
+00:00:23,855 --> 00:00:27,720
+Notos also constructs the so-called evidence features
+
+9
+00:00:27,720 --> 00:00:30,480
+by analyzing the blacklist and honeypot data,
+
+10
+00:00:30,480 --> 00:00:33,840
+and look for evidence associated with these IPs and domains.
+
+11
+00:00:33,840 --> 00:00:36,540
+These features are then combined and forwarded to
+
+12
+00:00:36,540 --> 00:00:40,610
+the reputation engine which computes a reputation score for this domain.
+

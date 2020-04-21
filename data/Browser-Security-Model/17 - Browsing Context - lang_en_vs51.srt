@@ -1,0 +1,251 @@
+1
+00:00:00,350 --> 00:00:04,700
+So far we have described the classic
+web browser security models.
+
+2
+00:00:04,700 --> 00:00:07,720
+To understand the more
+modern mechanisms,
+
+3
+00:00:07,720 --> 00:00:10,790
+let's define browsing context.
+
+4
+00:00:10,790 --> 00:00:14,710
+A browsing context may
+be a frame with its DOM,
+
+5
+00:00:14,710 --> 00:00:17,420
+that is a frame with web contents.
+
+6
+00:00:17,420 --> 00:00:20,730
+Or web worker,
+which does not have a DOM.
+
+7
+00:00:20,730 --> 00:00:26,550
+A web worker as defined by
+the World Wide Web Consortium or W3C and
+
+8
+00:00:26,550 --> 00:00:32,320
+the Web Hypertext Application Technology
+Working Group is a Javascript executed
+
+9
+00:00:32,320 --> 00:00:37,990
+from HTML page that runs in the
+background independently of other user
+
+10
+00:00:37,990 --> 00:00:43,880
+interface scripts that may also have
+been executed from the same HTML page.
+
+11
+00:00:43,880 --> 00:00:48,810
+In short, a web worker is a Javascript
+that runs in the background and
+
+12
+00:00:48,810 --> 00:00:52,470
+it is independent of
+the user interface elements.
+
+13
+00:00:52,470 --> 00:00:56,270
+Now, every browsing
+context has an origin.
+
+14
+00:00:56,270 --> 00:01:00,940
+Again, an origin is determined
+by protocol, host, and port.
+
+15
+00:01:00,940 --> 00:01:06,080
+And as such, our browsing context
+is isolated from another context
+
+16
+00:01:06,080 --> 00:01:07,810
+by the same-origin policy.
+
+17
+00:01:07,810 --> 00:01:12,240
+Different browsing contexts may
+communicate using postMessage.
+
+18
+00:01:12,240 --> 00:01:16,990
+And they can make network
+requests through XHR or tags.
+
+19
+00:01:16,990 --> 00:01:20,470
+XHR stands for XML HTTP Request.
+
+20
+00:01:20,470 --> 00:01:24,620
+It is an API available to Javascript.
+
+21
+00:01:24,620 --> 00:01:32,710
+Typically, XHR is used to send HTTP or
+HTTPS requests to a web server.
+
+22
+00:01:32,710 --> 00:01:36,440
+And lo, the server responds
+data back into the script.
+
+23
+00:01:36,440 --> 00:01:43,340
+That is, a Javascript use XHR to
+request contents from a web server.
+
+24
+00:01:43,340 --> 00:01:48,190
+There are similarities between
+browsing context and process context.
+
+25
+00:01:48,190 --> 00:01:53,200
+An opening system uses separation and
+isolation to allow multiple
+
+26
+00:01:53,200 --> 00:01:57,819
+execution context and provide local
+storage and communication services.
+
+27
+00:01:59,070 --> 00:02:05,160
+Similarly while a web browser provides
+common local storage it uses isolation
+
+28
+00:02:05,160 --> 00:02:10,280
+and separation to provide security
+protection to the browsing contexts.
+
+29
+00:02:10,280 --> 00:02:13,030
+The modern browser mechanisms
+that can be used for
+
+30
+00:02:13,030 --> 00:02:17,610
+security protection include
+HTML5 iframe Sandbox.
+
+31
+00:02:17,610 --> 00:02:19,450
+Content security policy.
+
+32
+00:02:19,450 --> 00:02:21,800
+Cross Origin resource sharing.
+
+33
+00:02:21,800 --> 00:02:24,150
+And HTML Web Workers.
+
+34
+00:02:24,150 --> 00:02:26,090
+Sub Resource Integrity.
+
+35
+00:02:26,090 --> 00:02:29,690
+And we're going to discuss
+these mechanisms now.
+
+36
+00:02:29,690 --> 00:02:34,450
+As in operating systems, sandbox is
+very useful for browser security.
+
+37
+00:02:34,450 --> 00:02:37,250
+The idea is to restrict frame actions.
+
+38
+00:02:37,250 --> 00:02:42,130
+When we used a directive Sandbox for
+frame essentially
+
+39
+00:02:42,130 --> 00:02:47,095
+we are insuring that the iframe has
+unique origin, cannot submit forms, and
+
+40
+00:02:47,095 --> 00:02:52,300
+APIs are disabled, and
+it can prevent contents from plugins.
+
+41
+00:02:52,300 --> 00:02:57,280
+On the other hand when we create
+iframe if we use Sandbox allow-scripts
+
+42
+00:02:57,280 --> 00:03:02,820
+directive, then we only ensure
+that iframe has unique origin.
+
+43
+00:03:02,820 --> 00:03:05,670
+But we can allow
+the rest of the actions.
+
+44
+00:03:05,670 --> 00:03:09,160
+For example,
+here's a Twitter button in iframe.
+
+45
+00:03:09,160 --> 00:03:12,780
+In this example,
+there's no Sandbox related directive.
+
+46
+00:03:12,780 --> 00:03:15,840
+So this you can call
+it the classic iframe.
+
+47
+00:03:15,840 --> 00:03:19,580
+Now we can use a Sandbox directive here.
+
+48
+00:03:19,580 --> 00:03:22,000
+We specified the Sandbox directive.
+
+49
+00:03:22,000 --> 00:03:25,610
+But then we also specified that
+we will allow Javascripts and
+
+50
+00:03:25,610 --> 00:03:28,250
+allow form submissions and so on.
+
+51
+00:03:28,250 --> 00:03:32,900
+This simple example shows that we can
+use the Sandbox directive associated
+
+52
+00:03:32,900 --> 00:03:38,750
+with the iframe in order to specify
+the security policy that's appropriate.
+
+53
+00:03:38,750 --> 00:03:43,210
+Here are the list of Sandbox permissions
+that you can specify for iframe.

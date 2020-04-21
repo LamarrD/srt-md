@@ -1,0 +1,44 @@
+1
+00:00:00,000 --> 00:00:03,900
+There are a lot of benefits from Internet Wide Security Scanning.
+
+2
+00:00:03,900 --> 00:00:07,685
+For example, we can discover new vulnerabilities,
+
+3
+00:00:07,685 --> 00:00:12,720
+we can understand how a defensive mechanism has been adopted.
+
+4
+00:00:12,720 --> 00:00:16,675
+On the other hand, Internet Wide Security Scanning means that
+
+5
+00:00:16,675 --> 00:00:20,870
+we have to probe the entire address space and with existing tools,
+
+6
+00:00:20,870 --> 00:00:23,920
+this is very difficult and slow task.
+
+7
+00:00:23,920 --> 00:00:26,410
+On the other hand, some of the Security Studies
+
+8
+00:00:26,410 --> 00:00:29,805
+does require the scanning of the entire address space.
+
+9
+00:00:29,805 --> 00:00:34,900
+For example, if we can obtain the cryptographic keys in the entire address space,
+
+10
+00:00:34,900 --> 00:00:37,015
+then we can understand the ecosystem of
+
+11
+00:00:37,015 --> 00:00:40,040
+public key infrastructure and its vulnerabilities.
+

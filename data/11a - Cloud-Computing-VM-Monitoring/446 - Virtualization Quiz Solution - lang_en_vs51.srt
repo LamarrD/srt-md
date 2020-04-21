@@ -1,0 +1,19 @@
+1
+00:00:00,290 --> 00:00:03,810
+Virtualization requires at least
+one instance of an application or
+
+2
+00:00:03,810 --> 00:00:07,230
+resource that is to be shared
+by different organizations.
+
+3
+00:00:07,230 --> 00:00:11,200
+Sharing between organizations is
+accomplished by assigning a logical name
+
+4
+00:00:11,200 --> 00:00:14,780
+to the resource and then giving each
+request a pointer to the resource.

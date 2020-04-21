@@ -1,0 +1,55 @@
+1
+00:00:00,280 --> 00:00:02,420
+Now, let's discuss active monitoring.
+
+2
+00:00:02,420 --> 00:00:06,960
+Active monitoring is event driven which
+allows for enforcing security policy and
+
+3
+00:00:06,960 --> 00:00:08,980
+stopping attacks before they happen.
+
+4
+00:00:08,980 --> 00:00:11,250
+Here's an example of active monitoring.
+
+5
+00:00:11,250 --> 00:00:15,150
+The security application receives event
+notification from the guest virtual
+
+6
+00:00:15,150 --> 00:00:18,640
+machine when the code execution,
+which is one of the hooks,
+
+7
+00:00:18,640 --> 00:00:22,970
+hooks invoke trampoline which transfer
+the control to the security application.
+
+8
+00:00:22,970 --> 00:00:26,900
+The hooks in the associated code in
+the guest virtual machine are protected
+
+9
+00:00:26,900 --> 00:00:30,050
+using the memory protection
+provided by the hyperviser.
+
+10
+00:00:30,050 --> 00:00:34,030
+Of course, when a security application
+receives an event notification,
+
+11
+00:00:34,030 --> 00:00:36,920
+it's going to perform virtual
+machine inspection, for
+
+12
+00:00:36,920 --> 00:00:39,030
+example, using the lip VMI.

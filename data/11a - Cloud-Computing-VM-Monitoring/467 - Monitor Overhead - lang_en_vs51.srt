@@ -1,0 +1,18 @@
+1
+00:00:00,270 --> 00:00:03,469
+We perform experiments to
+measure the overhead of SIM and
+
+2
+00:00:03,469 --> 00:00:06,520
+compare it with the out-of-VM
+monitoring approach.
+
+3
+00:00:06,520 --> 00:00:08,010
+And here are the results,
+
+4
+00:00:08,010 --> 00:00:11,240
+we an see that SIM is much
+faster than Out-of-VM approach.

@@ -1,0 +1,224 @@
+1
+00:00:00,000 --> 00:00:03,160
+Now let's start with very simple cryptocurrencies.
+
+2
+00:00:03,160 --> 00:00:07,075
+GoofyCoin is about the simplest cryptocurrency we can imagine.
+
+3
+00:00:07,075 --> 00:00:09,855
+There are just two rules of GoofyCoin.
+
+4
+00:00:09,855 --> 00:00:13,710
+The first rule is that Goofy can create new coins anytime he
+
+5
+00:00:13,710 --> 00:00:18,375
+wants and the second rule is that the newly created coins belong to Goofy.
+
+6
+00:00:18,375 --> 00:00:22,250
+To create a coin, Goofy generates a uniqueCoinID,
+
+7
+00:00:22,250 --> 00:00:24,790
+that is, ID that he's never used before.
+
+8
+00:00:24,790 --> 00:00:28,560
+Then he construct a string, CreateCoin[uniqueCoinID].
+
+9
+00:00:28,560 --> 00:00:33,270
+He then computes the digital signature of the string using his private signing key.
+
+10
+00:00:33,270 --> 00:00:37,800
+He then computes the signature on this string using his private signing key.
+
+11
+00:00:37,800 --> 00:00:41,120
+The string, together with his signature is a coin.
+
+12
+00:00:41,120 --> 00:00:43,955
+Anyone can verify that the coin contains
+
+13
+00:00:43,955 --> 00:00:49,625
+Goofy's valid signature of a CreateCoin statement and is therefore a valid coin.
+
+14
+00:00:49,625 --> 00:00:52,370
+Another rule of GoofyCoin is that whoever
+
+15
+00:00:52,370 --> 00:00:55,375
+owns a coin can transfer the coin to someone else.
+
+16
+00:00:55,375 --> 00:00:57,935
+Transferring a coin is not simply a matter
+
+17
+00:00:57,935 --> 00:01:00,645
+of sending a coin data structure to the recipient,
+
+18
+00:01:00,645 --> 00:01:03,385
+it is done using cryptographic operations.
+
+19
+00:01:03,385 --> 00:01:07,360
+Let's say Goofy wants to transfer a coin that he equated to Alice.
+
+20
+00:01:07,360 --> 00:01:12,435
+To do this, he creates a new statement that says "Pay this to Alice" where this
+
+21
+00:01:12,435 --> 00:01:14,970
+is a hash pointer that references the coin that
+
+22
+00:01:14,970 --> 00:01:17,725
+he created and that he wants to transfer to Alice.
+
+23
+00:01:17,725 --> 00:01:19,270
+As we discussed earlier,
+
+24
+00:01:19,270 --> 00:01:21,935
+identities are just public keys and therefore
+
+25
+00:01:21,935 --> 00:01:24,945
+Alice here is really the public key of Alice.
+
+26
+00:01:24,945 --> 00:01:28,700
+Goofy also signs the statement because he owns the coin and
+
+27
+00:01:28,700 --> 00:01:32,450
+therefore he has to sign any transaction that spends the coin.
+
+28
+00:01:32,450 --> 00:01:36,455
+Let's say Goofy wants to transfer a coin that he created to Alice.
+
+29
+00:01:36,455 --> 00:01:38,985
+To do this, he creates a new statement that says,
+
+30
+00:01:38,985 --> 00:01:42,900
+"Pay this to Alice" where this is hash a pointer that
+
+31
+00:01:42,900 --> 00:01:47,255
+references the coin that he created and then he wants to transfer to Alice.
+
+32
+00:01:47,255 --> 00:01:49,055
+As we have discussed earlier,
+
+33
+00:01:49,055 --> 00:01:52,040
+identities are just public keys and therefore
+
+34
+00:01:52,040 --> 00:01:55,620
+Alice here is represented by the public key of Alice.
+
+35
+00:01:55,620 --> 00:01:59,765
+Goofy also signs the string that represents this transfer statement.
+
+36
+00:01:59,765 --> 00:02:03,040
+That is, since Goofy is the original owner of the coin,
+
+37
+00:02:03,040 --> 00:02:06,230
+he has a sign any transaction that spends the coin.
+
+38
+00:02:06,230 --> 00:02:10,480
+Once this data structure in particular with Goofy signature is created,
+
+39
+00:02:10,480 --> 00:02:12,320
+Alice now owns the coin.
+
+40
+00:02:12,320 --> 00:02:15,425
+She can prove to anyone that she owns the coin because
+
+41
+00:02:15,425 --> 00:02:18,855
+she can present the data structure with Goofy's valid signature.
+
+42
+00:02:18,855 --> 00:02:23,460
+In particular, this data structure contains not only the statement signed by Goofy,
+
+43
+00:02:23,460 --> 00:02:26,675
+it also points to a very coin that was owned by Goofy.
+
+44
+00:02:26,675 --> 00:02:29,990
+Therefore, anyone can verify that this transfer is
+
+45
+00:02:29,990 --> 00:02:33,770
+valid and that Alice is now the new owner of the coin.
+
+46
+00:02:33,770 --> 00:02:35,495
+Once Alice owns the coin,
+
+47
+00:02:35,495 --> 00:02:37,140
+she can spend it in turn.
+
+48
+00:02:37,140 --> 00:02:39,490
+To do this, she creates a statement that says,
+
+49
+00:02:39,490 --> 00:02:42,260
+"Pay this to Bob's public key" where this is
+
+50
+00:02:42,260 --> 00:02:45,500
+a hash pointer to the coin that was owned by her and of course,
+
+51
+00:02:45,500 --> 00:02:47,090
+she signs the statement.
+
+52
+00:02:47,090 --> 00:02:52,565
+Now Bob owns the coin and anyone can verify that Bob is really the new owner.
+
+53
+00:02:52,565 --> 00:02:55,715
+That is, anyone can follow the chain of hash pointers
+
+54
+00:02:55,715 --> 00:02:58,900
+to the coin's creation and verify that at each step,
+
+55
+00:02:58,900 --> 00:03:01,265
+the rightful owner signed a statement that says,
+
+56
+00:03:01,265 --> 00:03:03,230
+"Pay this coin to a new owner".
+

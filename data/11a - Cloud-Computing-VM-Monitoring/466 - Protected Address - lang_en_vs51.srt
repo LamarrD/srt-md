@@ -1,0 +1,41 @@
+1
+00:00:00,290 --> 00:00:04,130
+Let's compare the memory layout between
+the SIM virtual address space and
+
+2
+00:00:04,130 --> 00:00:06,180
+a system virtual address space.
+
+3
+00:00:06,180 --> 00:00:07,990
+As you can see the SIM code and
+
+4
+00:00:07,990 --> 00:00:10,630
+data cannot be viewed by
+the untrusted system.
+
+5
+00:00:10,630 --> 00:00:14,140
+The entry gate and
+exit gate are executable in both spaces.
+
+6
+00:00:14,140 --> 00:00:17,959
+Their security is provided by memory
+protection in the hypervisor and
+
+7
+00:00:17,959 --> 00:00:20,150
+the invocation checker in SIM.
+
+8
+00:00:20,150 --> 00:00:23,810
+The kernel code and data from the
+untrusted system can be read directly
+
+9
+00:00:23,810 --> 00:00:27,540
+by SIMbut y SIM does not execute
+such untrusted code and data.

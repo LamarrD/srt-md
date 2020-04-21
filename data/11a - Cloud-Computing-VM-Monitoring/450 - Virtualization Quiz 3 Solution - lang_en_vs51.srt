@@ -1,0 +1,40 @@
+1
+00:00:00,260 --> 00:00:03,100
+Which one does not have
+any host operating system
+
+2
+00:00:03,100 --> 00:00:05,460
+because they are installed
+on a bare system?
+
+3
+00:00:05,460 --> 00:00:07,360
+That's a Type 1 hypervisor.
+
+4
+00:00:07,360 --> 00:00:10,950
+Here, notice that the operating
+system runs in a virtual machine
+
+5
+00:00:10,950 --> 00:00:12,690
+on top of the hypervisor.
+
+6
+00:00:12,690 --> 00:00:13,610
+Second question.
+
+7
+00:00:13,610 --> 00:00:17,960
+Which one emulates the devices with
+which a system normally interacts?
+
+8
+00:00:17,960 --> 00:00:19,740
+That's the Type 2 hypervisor.
+
+9
+00:00:19,740 --> 00:00:22,260
+Here, the hypervisor
+emulates the hardware.

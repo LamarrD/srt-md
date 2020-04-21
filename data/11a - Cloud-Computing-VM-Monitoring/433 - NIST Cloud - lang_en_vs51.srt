@@ -1,0 +1,63 @@
+1
+00:00:00,260 --> 00:00:02,630
+To summarize what we
+have discussed thus far.
+
+2
+00:00:02,630 --> 00:00:06,100
+Let's go over the NIST cloud
+definition framework, there are several
+
+3
+00:00:06,100 --> 00:00:10,430
+deployment models and each can
+use one of these service models.
+
+4
+00:00:10,430 --> 00:00:14,850
+Again, the deployment models include
+Hybrid, Private, Community and
+
+5
+00:00:14,850 --> 00:00:18,770
+Public and the service models
+include software as a service,
+
+6
+00:00:18,770 --> 00:00:22,140
+platform as a service and
+infrastructure as a service.
+
+7
+00:00:22,140 --> 00:00:25,730
+All Cloud environments share
+some essential characteristics.
+
+8
+00:00:25,730 --> 00:00:28,130
+These include On Demand Self-Service,
+
+9
+00:00:28,130 --> 00:00:33,310
+Broad Network Access, Resource Pooling,
+Rapid Elasticity, Measured Service.
+
+10
+00:00:33,310 --> 00:00:36,020
+And they also share some
+common characteristics.
+
+11
+00:00:36,020 --> 00:00:39,170
+This includes Massive Scale,
+Homogeneity,
+
+12
+00:00:39,170 --> 00:00:42,650
+Virtualization, Low Cost Software,
+Resilient Computing,
+
+13
+00:00:42,650 --> 00:00:46,650
+Geographic Distribution, Service
+Orientation, and Advanced Security.

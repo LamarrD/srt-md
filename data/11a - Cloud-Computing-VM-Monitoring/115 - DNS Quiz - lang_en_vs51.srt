@@ -1,0 +1,7 @@
+1
+00:00:00,300 --> 00:00:01,740
+Now let's do a quiz.
+
+2
+00:00:01,740 --> 00:00:03,820
+Select the true statements about DNS.

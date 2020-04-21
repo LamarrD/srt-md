@@ -1,0 +1,125 @@
+1
+00:00:00,290 --> 00:00:05,689
+At the IP layer, the IP Protocol
+routes packet from host a to host b
+
+2
+00:00:05,689 --> 00:00:07,970
+approaching never
+boundaries if necessary.
+
+3
+00:00:07,970 --> 00:00:14,010
+The routing is connectionless because
+it is best effort only and unreliable.
+
+4
+00:00:14,010 --> 00:00:16,090
+Meaning that, it's not guaranteed that,
+
+5
+00:00:16,090 --> 00:00:19,930
+all packets from host
+a will arrive at host b.
+
+6
+00:00:19,930 --> 00:00:23,590
+And of course, for each IP packet,
+the source IP address and
+
+7
+00:00:23,590 --> 00:00:26,440
+the destination IP address
+must be specified.
+
+8
+00:00:26,440 --> 00:00:30,810
+The ports are not part of the IP header
+because they're for the transport layer.
+
+9
+00:00:30,810 --> 00:00:32,780
+Here's an example of IP routing.
+
+10
+00:00:32,780 --> 00:00:36,900
+Suppose, we have a packet with
+source and destination IP addresses.
+
+11
+00:00:36,900 --> 00:00:40,560
+Typically, a route will
+involve multiple hops.
+
+12
+00:00:40,560 --> 00:00:46,650
+An IP routing has no guarantee of the
+order or even delivery of the packets.
+
+13
+00:00:46,650 --> 00:00:50,510
+In this example, the packet
+starts from the source IP address
+
+14
+00:00:50,510 --> 00:00:55,550
+reaches the gateway of its ISP, across
+network boundary to reach the gateway of
+
+15
+00:00:55,550 --> 00:01:00,030
+the destination network and then finally
+reaches the destination IP address.
+
+16
+00:01:00,030 --> 00:01:05,980
+The summary from this example, the IP
+host knows how to reach the gateway and
+
+17
+00:01:05,980 --> 00:01:08,980
+the gateway knows how to
+reach other networks.
+
+18
+00:01:08,980 --> 00:01:13,790
+If a data segment is too large, it may
+be fragmented into multiple IP packets.
+
+19
+00:01:13,790 --> 00:01:18,090
+At the receiving end, these fragments
+will be assembled back together.
+
+20
+00:01:18,090 --> 00:01:20,920
+If the destination did not
+receive a packet or fragment,
+
+21
+00:01:20,920 --> 00:01:24,810
+you can send an ICMP packet to
+the source to report the error.
+
+22
+00:01:24,810 --> 00:01:28,520
+ICMP stands for
+Internet Control Message Protocol.
+
+23
+00:01:28,520 --> 00:01:31,880
+The IP header can also
+include a TTL field.
+
+24
+00:01:31,880 --> 00:01:37,600
+TTL stands for Time to Live and this
+field is decremented after every hop and
+
+25
+00:01:37,600 --> 00:01:40,510
+a packet is dropped if TTL reaches 0.
+
+26
+00:01:40,510 --> 00:01:43,470
+TTL is useful to prevent infinite loops.

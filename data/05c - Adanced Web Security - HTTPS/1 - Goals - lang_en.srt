@@ -1,0 +1,10 @@
+1
+00:00:00,250 --> 00:00:05,520
+Let's discuss HTTPS and how it is
+integrated into the web browser.
+
+2
+00:00:05,520 --> 00:00:09,920
+And we are going to discuss a number
+of security problems with HTTPS.
+

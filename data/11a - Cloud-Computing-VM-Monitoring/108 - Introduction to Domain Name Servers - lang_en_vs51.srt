@@ -1,0 +1,13 @@
+1
+00:00:00,550 --> 00:00:04,650
+In this lesson, we will discuss
+domain name systems or DNS.
+
+2
+00:00:04,650 --> 00:00:07,320
+We will explore there weaknesses and
+
+3
+00:00:07,320 --> 00:00:11,370
+the security measures that have been
+implemented to protect the internet.

@@ -1,0 +1,42 @@
+1
+00:00:00,260 --> 00:00:03,620
+First, set the clipboard sharing
+between the virtual machine and
+
+2
+00:00:03,620 --> 00:00:06,082
+the host to be bidirectional,
+this is not safe.
+
+3
+00:00:06,082 --> 00:00:10,641
+Second, allow the VM to read and write
+files on the host machine with the same
+
+4
+00:00:10,641 --> 00:00:14,146
+privilege as the host machine,
+again, this is not safe.
+
+5
+00:00:14,146 --> 00:00:18,189
+This is similar to allowing an attacker
+to write files on your machine.
+
+6
+00:00:18,189 --> 00:00:21,882
+The final statement, disconnect the
+virtual machine from the internet when
+
+7
+00:00:21,882 --> 00:00:23,367
+opening questionable files.
+
+8
+00:00:23,367 --> 00:00:27,302
+This is safe because this will prevent
+potential malware from contacting its
+
+9
+00:00:27,302 --> 00:00:28,640
+command control server.

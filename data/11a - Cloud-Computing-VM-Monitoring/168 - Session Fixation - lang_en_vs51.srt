@@ -1,0 +1,76 @@
+1
+00:00:00,260 --> 00:00:06,030
+In addition to stealing tokens, an
+attacker can also fake session tokens.
+
+2
+00:00:06,030 --> 00:00:06,790
+For example,
+
+3
+00:00:06,790 --> 00:00:11,330
+the attacker can trick the user into
+clicking a URL that sets a session
+
+4
+00:00:11,330 --> 00:00:16,810
+token, or it can use cross-scripting
+attacks to set token values.
+
+5
+00:00:16,810 --> 00:00:21,420
+Here's an example of how an attacker
+can use session fixation attack
+
+6
+00:00:21,420 --> 00:00:25,840
+to elevate his anonymous token
+to a user logged-in token.
+
+7
+00:00:25,840 --> 00:00:30,482
+First the attacker gets anonymous
+browsing session token from site.com.
+
+8
+00:00:30,482 --> 00:00:35,260
+He then sends a URL to the user
+with the attacker's session token.
+
+9
+00:00:35,260 --> 00:00:38,900
+The user clicks on the URL and
+logs in www.site.com.
+
+10
+00:00:38,900 --> 00:00:43,910
+Now the attacker can use the elevated
+token to hijack user's session.
+
+11
+00:00:43,910 --> 00:00:48,630
+To mitigate such attacks when elevating
+a user from anonymous to logged in,
+
+12
+00:00:48,630 --> 00:00:52,250
+a website should always
+issue a new session token.
+
+13
+00:00:52,250 --> 00:00:55,000
+So with this, after the user logs in,
+
+14
+00:00:55,000 --> 00:00:58,780
+the token will change to a different
+value unknown to the attacker.
+
+15
+00:00:58,780 --> 00:01:02,530
+That is, the anonymous token that
+the attacker had originally obtained
+
+16
+00:01:02,530 --> 00:01:03,240
+is not elevated.

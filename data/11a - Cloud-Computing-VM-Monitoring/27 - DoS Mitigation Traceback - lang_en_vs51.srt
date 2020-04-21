@@ -1,0 +1,122 @@
+1
+00:00:00,370 --> 00:00:03,800
+Now let's discuss another
+source identification technique
+
+2
+00:00:03,800 --> 00:00:05,060
+called Traceback.
+
+3
+00:00:05,060 --> 00:00:09,570
+The goal is that given a set of attack
+packets, we want to determine the paths
+
+4
+00:00:09,570 --> 00:00:14,520
+of these packets and use a path to
+determine the source of these packets.
+
+5
+00:00:14,520 --> 00:00:18,750
+And the way to do this is to change
+the Internet routers to record
+
+6
+00:00:18,750 --> 00:00:21,610
+some path information into the packet.
+
+7
+00:00:21,610 --> 00:00:23,370
+There are a few assumptions here.
+
+8
+00:00:23,370 --> 00:00:27,410
+First, most the routers
+remain uncompromised,
+
+9
+00:00:27,410 --> 00:00:31,350
+meaning that these routers can
+record information faithfully.
+
+10
+00:00:31,350 --> 00:00:34,340
+Second, the attackers send many packets,
+and
+
+11
+00:00:34,340 --> 00:00:39,260
+the route from the attackers source to
+the victim remains relatively stable.
+
+12
+00:00:39,260 --> 00:00:41,640
+Here's a naive strawman method.
+
+13
+00:00:41,640 --> 00:00:45,580
+We can have each router at its
+own IP address in the packet.
+
+14
+00:00:45,580 --> 00:00:49,270
+So, at the end, the victim can
+read a path from the packet
+
+15
+00:00:49,270 --> 00:00:52,450
+because each router has
+written its own IP address.
+
+16
+00:00:52,450 --> 00:00:56,109
+The problem with this is that
+it requires space in packet and
+
+17
+00:00:56,109 --> 00:00:58,606
+this can be a problem
+when a path is long.
+
+18
+00:00:58,606 --> 00:01:02,615
+There's no extra fields in the current
+IP format to record this whole
+
+19
+00:01:02,615 --> 00:01:04,260
+path information.
+
+20
+00:01:04,260 --> 00:01:07,830
+If we expect the packet format
+to be changed to include this
+
+21
+00:01:07,830 --> 00:01:12,550
+path information it would take years,
+if ever, to get this implemented.
+
+22
+00:01:12,550 --> 00:01:14,014
+So here's a better idea.
+
+23
+00:01:14,014 --> 00:01:17,423
+We observe that the non-service
+attack involve many,
+
+24
+00:01:17,423 --> 00:01:21,991
+many packets on a same path, so we can
+have each router to take a probability
+
+25
+00:01:21,991 --> 00:01:24,860
+to store its own address in a packet.
+
+26
+00:01:24,860 --> 00:01:29,340
+This required only a fixed amount of
+space regardless of the path length.

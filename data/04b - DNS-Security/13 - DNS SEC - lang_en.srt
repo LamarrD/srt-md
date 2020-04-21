@@ -1,0 +1,28 @@
+1
+00:00:00,240 --> 00:00:02,260
+So let's discuss the DNSSEC.
+
+2
+00:00:02,260 --> 00:00:06,660
+The goals of DNSSEC is to provide
+guarantees of the authenticity
+
+3
+00:00:06,660 --> 00:00:10,690
+of the DNS servers as well as
+the integrity of their responses.
+
+4
+00:00:10,690 --> 00:00:15,330
+These guarantees are accomplished by
+having the DNS servers sign responses
+
+5
+00:00:15,330 --> 00:00:16,670
+every step of the way.
+
+6
+00:00:16,670 --> 00:00:20,030
+It is also assumed that the DNS
+servers themselves can be secured.
+

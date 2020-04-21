@@ -1,0 +1,40 @@
+1
+00:00:00,000 --> 00:00:02,570
+Now, let's discuss how do we find patterns.
+
+2
+00:00:02,570 --> 00:00:05,560
+We use data mining algorithms to find patterns.
+
+3
+00:00:05,560 --> 00:00:08,390
+We first find the associations among the features.
+
+4
+00:00:08,390 --> 00:00:13,780
+For example, this association tells us that there are a lot of S0 HTTP connections.
+
+5
+00:00:13,780 --> 00:00:15,930
+We then find the patterns that describe how
+
+6
+00:00:15,930 --> 00:00:18,615
+the associations tend to appear in a sequence.
+
+7
+00:00:18,615 --> 00:00:20,450
+For example, this pattern says that,
+
+8
+00:00:20,450 --> 00:00:21,690
+if you see the first two,
+
+9
+00:00:21,690 --> 00:00:24,265
+there's 80 percent chance that you will see the third one,
+
+10
+00:00:24,265 --> 00:00:26,870
+and all these are within a two second terminal.
+

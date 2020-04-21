@@ -1,0 +1,9 @@
+1
+00:00:00,240 --> 00:00:02,240
+Let's do a quiz on Traceback.
+
+2
+00:00:02,240 --> 00:00:05,600
+Which of the following are assumptions
+that can be made about Traceback?
+

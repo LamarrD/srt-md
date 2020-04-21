@@ -1,0 +1,16 @@
+1
+00:00:00,000 --> 00:00:04,850
+Average node degree, look at nodes with the largest number of nodes connected to them.
+
+2
+00:00:04,850 --> 00:00:08,490
+Node persistence, look at a snapshot of the internet traffic,
+
+3
+00:00:08,490 --> 00:00:11,700
+these nodes are the ones that are most likely to appear.
+
+4
+00:00:11,700 --> 00:00:16,390
+Temporal closeness, look at nodes that interact with the largest number of nodes.
+

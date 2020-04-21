@@ -1,0 +1,13 @@
+1
+00:00:00,240 --> 00:00:03,948
+Now let's do a quiz on the risks
+associated with cloud computing.
+
+2
+00:00:03,948 --> 00:00:06,430
+Given the risks listed in each circle,
+
+3
+00:00:06,430 --> 00:00:09,800
+please identify the service model
+associated with each circle.

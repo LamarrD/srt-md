@@ -1,0 +1,175 @@
+1
+00:00:00,290 --> 00:00:04,000
+Now let's discuss the main
+vulnerabilities of DNS.
+
+2
+00:00:04,000 --> 00:00:07,290
+First of all, we must be able
+to trust the domain name and
+
+3
+00:00:07,290 --> 00:00:09,910
+address mapping provided by DNS.
+
+4
+00:00:09,910 --> 00:00:13,230
+In fact,
+many security policies depend on this.
+
+5
+00:00:13,230 --> 00:00:18,270
+For example, the same origin policy
+in browsers, or URL-based filtering.
+
+6
+00:00:18,270 --> 00:00:23,200
+Obviously if the host address mapping
+provided by DNS can be forged,
+
+7
+00:00:23,200 --> 00:00:24,925
+then the traffic intended for
+
+8
+00:00:24,925 --> 00:00:30,598
+the original legitimate host is now
+destined to the wrong or malicious host.
+
+9
+00:00:30,598 --> 00:00:32,049
+This means that the wrong or
+
+10
+00:00:32,049 --> 00:00:35,970
+forged host can now intercept
+the legitimate traffic.
+
+11
+00:00:35,970 --> 00:00:40,250
+What if the host address mapping
+provided by DNS can be forged?
+
+12
+00:00:40,250 --> 00:00:44,270
+For example, instead of getting
+the IP address of gmail.com,
+
+13
+00:00:44,270 --> 00:00:48,410
+the browser instead gets
+the IP address of evil.com.
+
+14
+00:00:48,410 --> 00:00:53,021
+The result is that, traffic will
+be routed to evil.com instead.
+
+15
+00:00:53,021 --> 00:00:57,030
+Which means evil.com can
+intercept traffic to gmail.com.
+
+16
+00:00:57,030 --> 00:01:01,360
+There are several ways to forge
+the host as just mapping.
+
+17
+00:01:01,360 --> 00:01:04,750
+For example, the attackers can
+compromise the DNS servers,
+
+18
+00:01:04,750 --> 00:01:08,240
+including cache poisoning,
+which we're going to discuss shortly.
+
+19
+00:01:08,240 --> 00:01:12,300
+Or the attackers can control
+the access point or gateway and
+
+20
+00:01:12,300 --> 00:01:16,050
+intercept DNS queries and
+forge a response.
+
+21
+00:01:16,050 --> 00:01:20,880
+A solution is to authenticate each
+request and response using cryptography.
+
+22
+00:01:20,880 --> 00:01:23,490
+And DNSsec is such a solution.
+
+23
+00:01:23,490 --> 00:01:28,280
+Now let's discuss attacks on the inner
+server, in particular cache poisoning.
+
+24
+00:01:28,280 --> 00:01:32,450
+The basic idea is that the attacker
+would provide to the local DNA server
+
+25
+00:01:32,450 --> 00:01:35,830
+some false records and
+get the records cached.
+
+26
+00:01:35,830 --> 00:01:40,430
+For example, if the local DNS server
+queries the domain gmail.com and
+
+27
+00:01:40,430 --> 00:01:45,560
+the attacker is able to inject a
+response with the IP address of evil.com
+
+28
+00:01:45,560 --> 00:01:50,560
+and have that IP address of evil.com
+cached by the local DNS server and
+
+29
+00:01:50,560 --> 00:01:54,800
+then subsequent traffic to gmail.com
+will be routed to evil.com.
+
+30
+00:01:54,800 --> 00:01:59,090
+The existing defense in DNS is
+the users 16-bit request ID
+
+31
+00:01:59,090 --> 00:02:01,490
+to link a respond with a query.
+
+32
+00:02:01,490 --> 00:02:04,530
+That is,
+the attackers response must have the ID
+
+33
+00:02:04,530 --> 00:02:07,650
+that matches the ID of
+the original query and
+
+34
+00:02:07,650 --> 00:02:11,650
+we will discuss how an attacker
+can overcome this defense.
+
+35
+00:02:11,650 --> 00:02:16,220
+A DNS cache can be easily poisoned
+if the DNS server does not use
+
+36
+00:02:16,220 --> 00:02:19,200
+the IDs properly, or
+the IDS are predictable
+

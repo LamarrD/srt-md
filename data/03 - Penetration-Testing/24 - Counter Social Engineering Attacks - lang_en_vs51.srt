@@ -1,0 +1,61 @@
+1
+00:00:00,270 --> 00:00:04,760
+Here's how we should educate users to
+counter social engineering attacks.
+
+2
+00:00:04,760 --> 00:00:07,480
+Never disclose passwords to anybody.
+
+3
+00:00:07,480 --> 00:00:11,280
+Only the IT staff should discussed
+details of the network and
+
+4
+00:00:11,280 --> 00:00:15,840
+system configurations and IT staff
+should not answers survey calls.
+
+5
+00:00:15,840 --> 00:00:19,660
+This also check with the call
+from the vendor is legitimate.
+
+6
+00:00:19,660 --> 00:00:23,060
+Also, we should limit information
+in all auto-reply emails.
+
+7
+00:00:23,060 --> 00:00:27,030
+Keep information in all auto-reply
+emails to a bare minimum.
+
+8
+00:00:27,030 --> 00:00:29,440
+We should always escort our guests.
+
+9
+00:00:29,440 --> 00:00:34,960
+This protects against attacks such as
+attackers dressing up like repairmen or
+
+10
+00:00:34,960 --> 00:00:36,860
+trusted authority figure.
+
+11
+00:00:36,860 --> 00:00:39,670
+We should always question
+people that we don't know.
+
+12
+00:00:39,670 --> 00:00:44,830
+We should educate all employees about
+security, both physical and IT security.
+
+13
+00:00:44,830 --> 00:00:48,640
+We should have a central reporting and
+management of all suspicious behavior.

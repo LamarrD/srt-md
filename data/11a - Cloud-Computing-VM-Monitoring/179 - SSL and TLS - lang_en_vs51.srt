@@ -1,0 +1,67 @@
+1
+00:00:00,290 --> 00:00:03,200
+Let's briefly review SSL/TLS.
+
+2
+00:00:03,200 --> 00:00:06,890
+The goal of this handshake is
+to authenticate the server and
+
+3
+00:00:06,890 --> 00:00:10,520
+optimally the browser and
+more importantly, at the end,
+
+4
+00:00:10,520 --> 00:00:15,088
+both will have a shared secret key that
+can be used to encrypt HTTP traffic.
+
+5
+00:00:15,088 --> 00:00:18,070
+The client sends a hello
+message to a server and
+
+6
+00:00:18,070 --> 00:00:22,090
+the severs response includes
+a proper key certificate.
+
+7
+00:00:22,090 --> 00:00:24,680
+The browser verifies the certificate,
+
+8
+00:00:24,680 --> 00:00:29,210
+meaning that now the browser knows
+the server's valid public key.
+
+9
+00:00:29,210 --> 00:00:32,850
+And with that, the browser
+can now perform key exchange.
+
+10
+00:00:32,850 --> 00:00:37,340
+For example, it can use Elliptic
+curve Diffie-Hellman key exchange.
+
+11
+00:00:37,340 --> 00:00:40,440
+With a server's public key,
+the browser and the server
+
+12
+00:00:40,440 --> 00:00:45,600
+can perform secure key exchange and
+prevent man-in-the-middle attack.
+
+13
+00:00:45,600 --> 00:00:49,490
+And the result is that they now
+establish a shared secret key and
+
+14
+00:00:49,490 --> 00:00:53,120
+they can use this shared secret
+key to encrypt HTTP data.

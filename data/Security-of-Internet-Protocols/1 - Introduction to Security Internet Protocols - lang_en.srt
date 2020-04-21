@@ -1,0 +1,23 @@
+1
+00:00:00,450 --> 00:00:04,900
+Everything on the internet must use
+internet protocols to communicate.
+
+2
+00:00:04,900 --> 00:00:10,000
+In this lesson, we will discuss
+the weaknesses of these protocols and
+
+3
+00:00:10,000 --> 00:00:12,190
+what can be done to improve security.
+
+4
+00:00:12,190 --> 00:00:14,170
+When we are done with this lesson,
+
+5
+00:00:14,170 --> 00:00:19,369
+you should have a clear understanding of
+the security and abilities of TCP/IP.
+

@@ -1,0 +1,115 @@
+1
+00:00:00,230 --> 00:00:04,070
+Another important mitigation
+is source identification.
+
+2
+00:00:04,070 --> 00:00:08,310
+The goal is to identify
+the source of attack packets so
+
+3
+00:00:08,310 --> 00:00:12,080
+that ultimately we can block
+the attack at each source.
+
+4
+00:00:12,080 --> 00:00:15,020
+You may think that this problem
+should be easy because, for example,
+
+5
+00:00:15,020 --> 00:00:19,730
+we discussed that many of the packets
+involved a denial of service attacks,
+
+6
+00:00:19,730 --> 00:00:22,920
+they have spoof or
+random source IP addresses.
+
+7
+00:00:22,920 --> 00:00:27,740
+So the question is, why don't we
+just ask the ISPs to filter out
+
+8
+00:00:27,740 --> 00:00:32,159
+source IP addresses that are not
+legitimate or valid for the ISP?
+
+9
+00:00:32,159 --> 00:00:33,130
+For example,
+
+10
+00:00:33,130 --> 00:00:38,360
+if the router expects that all traffic
+is from this particular prefix, then
+
+11
+00:00:38,360 --> 00:00:43,680
+it can drop all packets with a source
+IP address other than from this prefix.
+
+12
+00:00:43,680 --> 00:00:46,580
+That way smooth packets can be dropped.
+
+13
+00:00:46,580 --> 00:00:52,240
+The biggest problem for this proposal is
+that it requires all ISPs to do this.
+
+14
+00:00:52,240 --> 00:00:57,400
+Because, as we will show, if only 10%
+of ISPs do not implement, then there's
+
+15
+00:00:57,400 --> 00:01:01,740
+actually no defense against denial
+of service for the whole Internet.
+
+16
+00:01:01,740 --> 00:01:05,030
+Then the problem becomes that
+every ISP is waiting for
+
+17
+00:01:05,030 --> 00:01:07,820
+everyone else to implement this first.
+
+18
+00:01:07,820 --> 00:01:10,500
+As we have shown in
+the previous example,
+
+19
+00:01:10,500 --> 00:01:14,570
+if only 3 ISPs do not
+implement ingress filtering,
+
+20
+00:01:14,570 --> 00:01:18,140
+the attackers can already launch
+a big denial of service attack.
+
+21
+00:01:18,140 --> 00:01:19,200
+As of 2014,
+
+22
+00:01:19,200 --> 00:01:24,610
+a quarter of the autonomous systems
+are mostly ISPs or big enterprises.
+
+23
+00:01:24,610 --> 00:01:26,990
+They do not implement ingress filtering.
+
+24
+00:01:26,990 --> 00:01:32,070
+In total, that means 13% of
+the IP addresses can be spoofed.
+

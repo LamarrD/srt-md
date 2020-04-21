@@ -1,0 +1,38 @@
+1
+00:00:00,270 --> 00:00:01,930
+For random scanning,
+
+2
+00:00:01,930 --> 00:00:06,770
+it means that each compromised
+computer probes random addresses.
+
+3
+00:00:06,770 --> 00:00:10,160
+For permutation scanning,
+all compromised computers
+
+4
+00:00:10,160 --> 00:00:15,200
+share a common pseudo-random
+permutation of the IP address space.
+
+5
+00:00:15,200 --> 00:00:19,030
+Signpost scanning uses
+the communication patterns
+
+6
+00:00:19,030 --> 00:00:22,740
+of the compromised computer
+to find new target.
+
+7
+00:00:22,740 --> 00:00:24,057
+In hitlist scanning,
+
+8
+00:00:24,057 --> 00:00:28,090
+a portion of a list of targets is
+supplied to a compromised computer.
+

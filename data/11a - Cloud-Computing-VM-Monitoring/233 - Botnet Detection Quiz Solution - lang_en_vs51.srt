@@ -1,0 +1,14 @@
+1
+00:00:00,270 --> 00:00:05,190
+Generating DNS requests by itself is
+not indicative of Botnet activities.
+
+2
+00:00:05,190 --> 00:00:09,960
+However, if multiple machines looking up
+the same domains at the same time and
+
+3
+00:00:09,960 --> 00:00:13,100
+the domain is not on a Y list,
+that is quite suspicious.

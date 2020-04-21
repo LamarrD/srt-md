@@ -1,0 +1,19 @@
+1
+00:00:00,190 --> 00:00:05,140
+Client puzzles should not be hard for
+a server to construct, so this is false.
+
+2
+00:00:05,140 --> 00:00:08,370
+Client puzzles should be stateless,
+this will keep a client
+
+3
+00:00:08,370 --> 00:00:13,230
+from being able to guess the puzzle and
+find a solution before even being asked.
+
+4
+00:00:13,230 --> 00:00:16,900
+Puzzle complexity should increase
+as the attack volume increases.

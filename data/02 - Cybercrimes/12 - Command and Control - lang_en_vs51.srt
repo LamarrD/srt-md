@@ -1,0 +1,249 @@
+1
+00:00:00,260 --> 00:00:05,010
+The key to a botnet success is efficient
+and robust command and control.
+
+2
+00:00:05,010 --> 00:00:07,190
+And this is not always easy.
+
+3
+00:00:07,190 --> 00:00:07,970
+The simplest,
+
+4
+00:00:07,970 --> 00:00:12,870
+most efficient way to perform command
+control is through centralized control.
+
+5
+00:00:12,870 --> 00:00:14,930
+For example through IRC command or
+
+6
+00:00:14,930 --> 00:00:18,500
+command, he can instruct
+the bots to send spam.
+
+7
+00:00:18,500 --> 00:00:22,000
+However this kind of command
+control is not robust.
+
+8
+00:00:22,000 --> 00:00:25,930
+Even though it's very efficient, because
+it has a single point of failure.
+
+9
+00:00:25,930 --> 00:00:28,790
+There's only one command
+channel from the attacker.
+
+10
+00:00:28,790 --> 00:00:31,590
+For example the IRC
+channel can be taken down.
+
+11
+00:00:31,590 --> 00:00:34,080
+Or the twitter account can be shut down.
+
+12
+00:00:34,080 --> 00:00:38,870
+A more robust command control structure
+is to use peer to peer network.
+
+13
+00:00:38,870 --> 00:00:41,960
+Here, the botmaster can
+connect to a number of bots
+
+14
+00:00:41,960 --> 00:00:43,280
+in this peer to peer network.
+
+15
+00:00:43,280 --> 00:00:46,630
+And upload his commands,
+and update to the malware.
+
+16
+00:00:46,630 --> 00:00:50,920
+And make advertisements, so
+that other bots can get the command and
+
+17
+00:00:50,920 --> 00:00:52,620
+updates from the peers.
+
+18
+00:00:52,620 --> 00:00:56,170
+The drawback is that the botmaster
+does not have direct
+
+19
+00:00:56,170 --> 00:00:58,950
+synchronized communication with autobot.
+
+20
+00:00:58,950 --> 00:01:04,450
+In fact, the Botmaster does not know how
+many bots get it's commands and when.
+
+21
+00:01:04,450 --> 00:01:08,250
+Nowadays, the most popular approach for
+command control is for
+
+22
+00:01:08,250 --> 00:01:11,820
+all the bots to connect to
+a command control website.
+
+23
+00:01:11,820 --> 00:01:13,580
+Obviously, this is very efficient.
+
+24
+00:01:13,580 --> 00:01:17,360
+And the Botmaster can make
+this set up more robust.
+
+25
+00:01:17,360 --> 00:01:22,380
+For example, the Botmaster can map this
+website to different IP addresses.
+
+26
+00:01:22,380 --> 00:01:26,430
+The website is not always
+fixed on one physical server.
+
+27
+00:01:26,430 --> 00:01:28,810
+It can be moved to different servers.
+
+28
+00:01:28,810 --> 00:01:33,920
+In fact, in Fast Flux, the Botmaster
+can change the DNS IP mapping for
+
+29
+00:01:33,920 --> 00:01:36,290
+the website every ten seconds.
+
+30
+00:01:36,290 --> 00:01:40,520
+This can defeat detection or
+blocking, based on IP addresses.
+
+31
+00:01:40,520 --> 00:01:42,910
+But since the domain
+name is not changed,
+
+32
+00:01:42,910 --> 00:01:47,400
+this domain can still be detected as
+using for botnet command control.
+
+33
+00:01:47,400 --> 00:01:51,050
+And the ISPs can't block
+access to this domain.
+
+34
+00:01:51,050 --> 00:01:55,220
+Instead of using fixed domains
+that can be detected and blocked.
+
+35
+00:01:55,220 --> 00:01:58,230
+Botmaster's now used
+random domain generation.
+
+36
+00:01:59,290 --> 00:02:04,460
+On each day, a bot will generate a large
+number of random looking domain names
+
+37
+00:02:04,460 --> 00:02:05,790
+and lock them up.
+
+38
+00:02:05,790 --> 00:02:10,460
+The Botmaster will knows exactly
+the same set of random domain each day.
+
+39
+00:02:10,460 --> 00:02:13,970
+Because each domains are generated
+using the same algorithm.
+
+40
+00:02:13,970 --> 00:02:17,650
+And same random seeker seed
+straight between the botmaster and
+
+41
+00:02:17,650 --> 00:02:19,060
+the bot malware.
+
+42
+00:02:19,060 --> 00:02:23,380
+In the botmaster, only register
+a few of these random domains.
+
+43
+00:02:23,380 --> 00:02:28,620
+Although each bot generates many random
+domain names, and look up each of them.
+
+44
+00:02:28,620 --> 00:02:32,120
+Only few of them will actually
+connect to the websites.
+
+45
+00:02:32,120 --> 00:02:35,520
+These are the sites that
+are registered to the botmaster.
+
+46
+00:02:35,520 --> 00:02:40,130
+And of course, these sites can use fast
+flux to move around on the internet.
+
+47
+00:02:40,130 --> 00:02:43,490
+By mapping to different IP
+addresses every ten seconds.
+
+48
+00:02:43,490 --> 00:02:44,230
+This command and
+
+49
+00:02:44,230 --> 00:02:48,430
+control approach is very robust,
+because it is hard for detection.
+
+50
+00:02:48,430 --> 00:02:52,920
+This is because each of these command
+control domains are randomly looking.
+
+51
+00:02:52,920 --> 00:02:53,850
+And they're new.
+
+52
+00:02:53,850 --> 00:02:56,320
+And they are only used for
+a very short period of time.
+
+53
+00:02:56,320 --> 00:02:57,000
+Say, one day.

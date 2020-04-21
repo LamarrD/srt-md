@@ -1,0 +1,235 @@
+1
+00:00:00,240 --> 00:00:03,100
+Now, let's discuss session
+management on the web.
+
+2
+00:00:03,100 --> 00:00:04,500
+What is a session?
+
+3
+00:00:04,500 --> 00:00:09,690
+A session is a sequence of requests and
+responses from a browser to a server.
+
+4
+00:00:09,690 --> 00:00:11,220
+A server can be long.
+
+5
+00:00:11,220 --> 00:00:12,640
+Without session management,
+
+6
+00:00:12,640 --> 00:00:17,200
+a user can be asked to reauthenticate
+himself again and again.
+
+7
+00:00:17,200 --> 00:00:21,450
+So, the goal of session management
+is to authenticate user only once.
+
+8
+00:00:21,450 --> 00:00:25,890
+So that all subsequent requests
+are tied to the authenticated user.
+
+9
+00:00:25,890 --> 00:00:30,680
+So, the general idea behind session
+management is to use session tokens.
+
+10
+00:00:30,680 --> 00:00:34,840
+So, for example, there's the initial
+handshake that's in the browser and
+
+11
+00:00:34,840 --> 00:00:36,050
+the web server.
+
+12
+00:00:36,050 --> 00:00:40,330
+And then, as the user wants to
+access some more secure content,
+
+13
+00:00:40,330 --> 00:00:42,840
+he may be asked to authenticate himself.
+
+14
+00:00:42,840 --> 00:00:46,900
+And once the user has been
+authenticated, the server can elevate
+
+15
+00:00:46,900 --> 00:00:51,950
+the token from anonymous browsing
+token to a authenticated token.
+
+16
+00:00:51,950 --> 00:00:53,940
+And when the user logs out or
+
+17
+00:00:53,940 --> 00:00:57,850
+checks out, this login session
+token should be cleared.
+
+18
+00:00:57,850 --> 00:01:00,790
+There are many ways to
+restore the session tokens.
+
+19
+00:01:00,790 --> 00:01:03,670
+Obviously, we can use browser cookie.
+
+20
+00:01:03,670 --> 00:01:08,010
+For example, we can create a session
+token cookie or session cookie.
+
+21
+00:01:08,010 --> 00:01:11,030
+The problem with browser
+cookie is that a browser
+
+22
+00:01:11,030 --> 00:01:14,730
+can send a cookie with every request,
+even when it's not, and
+
+23
+00:01:14,730 --> 00:01:18,360
+this gives rise to the cross-site
+request forgery attack.
+
+24
+00:01:18,360 --> 00:01:21,920
+A session token can
+be embedded in a URL,
+
+25
+00:01:21,920 --> 00:01:25,710
+which means that every request
+will have the session token.
+
+26
+00:01:25,710 --> 00:01:29,730
+This means that if the application is
+not returned securely, there can be
+
+27
+00:01:29,730 --> 00:01:37,110
+token leaks via http referer header, or
+if the user posts URL in a public forum.
+
+28
+00:01:37,110 --> 00:01:41,950
+Another option is to store that session
+token in a hidden field in a forum.
+
+29
+00:01:41,950 --> 00:01:45,760
+The downside to this method
+is that every user action
+
+30
+00:01:45,760 --> 00:01:50,220
+must result in a submission of a form,
+or you lose the session token.
+
+31
+00:01:50,220 --> 00:01:52,910
+So, none of these methods are perfect.
+
+32
+00:01:52,910 --> 00:01:55,820
+The best solution is,
+depending on the application,
+
+33
+00:01:55,820 --> 00:01:59,510
+is you choose a combination
+of these three options.
+
+34
+00:01:59,510 --> 00:02:02,720
+Now, let's discuss
+the HTTP referer header.
+
+35
+00:02:02,720 --> 00:02:05,800
+When a browser sends a URL
+request to a server,
+
+36
+00:02:05,800 --> 00:02:09,520
+if the request contains
+a HTTP referer header,
+
+37
+00:02:09,520 --> 00:02:14,390
+it tells the server the page that you
+are coming from, meaning your referer.
+
+38
+00:02:14,390 --> 00:02:15,480
+Here's an example.
+
+39
+00:02:15,480 --> 00:02:18,440
+It shows that the user were here.
+
+40
+00:02:18,440 --> 00:02:20,550
+Again, by checking the referer,
+
+41
+00:02:20,550 --> 00:02:24,000
+the web server can see where
+the request originated.
+
+42
+00:02:24,000 --> 00:02:28,680
+In the most common situation, this means
+that when the user clicks a hyperlink
+
+43
+00:02:28,680 --> 00:02:32,310
+in the web browser, the browser
+sends the request to the server.
+
+44
+00:02:32,310 --> 00:02:34,910
+The request includes the referer field,
+
+45
+00:02:34,910 --> 00:02:38,770
+which indicates the last page
+the user was on that is.
+
+46
+00:02:38,770 --> 00:02:41,250
+The one where they click the link.
+
+47
+00:02:41,250 --> 00:02:45,030
+The problem with referer is that
+it can leak the session token
+
+48
+00:02:45,030 --> 00:02:46,420
+to the previous server.
+
+49
+00:02:46,420 --> 00:02:49,210
+The solution is that he
+can suppress the referer,
+
+50
+00:02:49,210 --> 00:02:52,250
+means that don't send referer
+when you refer to a site.

@@ -1,0 +1,24 @@
+1
+00:00:00,000 --> 00:00:03,330
+With regards to computing. What is entropy?
+
+2
+00:00:03,330 --> 00:00:06,810
+Entropy is randomness for use in cryptography
+
+3
+00:00:06,810 --> 00:00:10,050
+or other applications that require random data.
+
+4
+00:00:10,050 --> 00:00:12,270
+What are the two sources of entropy?
+
+5
+00:00:12,270 --> 00:00:15,915
+Hardware sources or randomness generators.
+
+6
+00:00:15,915 --> 00:00:21,410
+A lack of entropy will have a negative impact on performance and security.
+

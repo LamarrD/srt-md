@@ -1,0 +1,16 @@
+1
+00:00:00,000 --> 00:00:02,185
+Now that we know the basics of Bitcoin,
+
+2
+00:00:02,185 --> 00:00:05,090
+let's move on to how Bitcoin operates.
+
+3
+00:00:05,090 --> 00:00:07,695
+Since this is network security course,
+
+4
+00:00:07,695 --> 00:00:12,860
+we're going to focus on Bitcoin's vulnerabilities and how to hopefully mitigate them.
+

@@ -1,0 +1,14 @@
+1
+00:00:00,200 --> 00:00:04,260
+The first three are allowed because they
+have the same protocol, host and port.
+
+2
+00:00:04,260 --> 00:00:09,000
+The fourth has a different port,
+port 81, so it's not in the same origin.
+
+3
+00:00:09,000 --> 00:00:12,900
+The fifth has a different host and
+the sixth has a different protocol.

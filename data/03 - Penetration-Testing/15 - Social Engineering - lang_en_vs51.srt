@@ -1,0 +1,67 @@
+1
+00:00:00,250 --> 00:00:05,270
+As we discussed earlier, penetration
+testing can include social engineering.
+
+2
+00:00:05,270 --> 00:00:08,270
+So now let's discuss social engineering.
+
+3
+00:00:08,270 --> 00:00:11,750
+We all know that users
+are the weakest link in security,
+
+4
+00:00:11,750 --> 00:00:15,973
+so the goal here is to use social
+engineering techniques to evaluate
+
+5
+00:00:15,973 --> 00:00:19,027
+how vulnerable your user
+population really is.
+
+6
+00:00:19,027 --> 00:00:19,875
+In particular,
+
+7
+00:00:19,875 --> 00:00:24,130
+you will want to find out which user
+groups are particularly vulnerable.
+
+8
+00:00:24,130 --> 00:00:29,850
+You will likely discover policy gaps, so
+you will want to fix these policies and
+
+9
+00:00:29,850 --> 00:00:34,220
+develop new mechanisms including
+educating and training the users.
+
+10
+00:00:34,220 --> 00:00:38,120
+Social engineering is effective
+when the users are manipulated
+
+11
+00:00:38,120 --> 00:00:41,370
+into undermining the security
+of their own systems.
+
+12
+00:00:41,370 --> 00:00:46,040
+This can be accomplished by abusing
+the trust relationships among the users.
+
+13
+00:00:46,040 --> 00:00:49,400
+Social engineering can be very easy and
+cheap for the attacker
+
+14
+00:00:49,400 --> 00:00:53,700
+because the attacker does not need any
+specialized tools or technical skills.

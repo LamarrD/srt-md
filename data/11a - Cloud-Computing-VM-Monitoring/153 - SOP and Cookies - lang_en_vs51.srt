@@ -1,0 +1,60 @@
+1
+00:00:00,290 --> 00:00:05,040
+We call that when a browser connects to
+a site, the server sets the cookie for
+
+2
+00:00:05,040 --> 00:00:06,840
+the web browsing session.
+
+3
+00:00:06,840 --> 00:00:10,420
+There are a number of attributes
+that a server can set for a cookie.
+
+4
+00:00:10,420 --> 00:00:13,370
+For example SameSite means that
+
+5
+00:00:13,370 --> 00:00:16,670
+do not send cookie on
+a cross-site post request.
+
+6
+00:00:16,670 --> 00:00:21,500
+Strict, means that never send
+cookie on cross-site request.
+
+7
+00:00:21,500 --> 00:00:26,900
+Therefore, they provide some sort of
+cross-site request forgery defense.
+
+8
+00:00:26,900 --> 00:00:32,070
+With HttpOnly, it tells the browser
+that this particular cookie
+
+9
+00:00:32,070 --> 00:00:35,320
+should only be assessed by the server.
+
+10
+00:00:35,320 --> 00:00:40,400
+Any attempt to assess the cookie
+from script is strictly forbidden.
+
+11
+00:00:40,400 --> 00:00:45,000
+This can provide defense against
+cross-site scripting attacks.
+
+12
+00:00:45,000 --> 00:00:47,850
+And the scope of the cookie
+is determined by
+
+13
+00:00:47,850 --> 00:00:49,520
+the combination of domain and path.

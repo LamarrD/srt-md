@@ -1,0 +1,13 @@
+1
+00:00:00,250 --> 00:00:03,930
+Now let's do a quiz on the common
+characteristics of cloud computing.
+
+2
+00:00:03,930 --> 00:00:07,150
+Please list some of the characteristics
+that are shared by all four
+
+3
+00:00:07,150 --> 00:00:08,050
+cloud models.

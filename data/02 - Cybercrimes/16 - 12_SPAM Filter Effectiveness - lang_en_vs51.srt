@@ -1,0 +1,174 @@
+1
+00:00:00,210 --> 00:00:03,370
+Let's discuss a case
+study on Storm botnet.
+
+2
+00:00:03,370 --> 00:00:05,980
+This botnet was used to send spams.
+
+3
+00:00:05,980 --> 00:00:11,030
+And this research was performed by the
+University of California in San Diego,
+
+4
+00:00:11,030 --> 00:00:14,390
+where the researchers penetrated
+into the Storm botnet.
+
+5
+00:00:14,390 --> 00:00:17,790
+The researchers were able to
+measure the percentage of spam
+
+6
+00:00:17,790 --> 00:00:19,870
+that got through the spam filters.
+
+7
+00:00:19,870 --> 00:00:23,220
+Here are different campaigns
+carried out by the spams.
+
+8
+00:00:23,220 --> 00:00:26,860
+Pharmacy is a spam advertising
+an online pharmacy.
+
+9
+00:00:26,860 --> 00:00:31,650
+The postcard and April Fool campaigns
+are for installing malware.
+
+10
+00:00:31,650 --> 00:00:35,870
+As we can see here from data that's
+available, there are spam filters
+
+11
+00:00:35,870 --> 00:00:39,850
+that can actually filter out more
+than 99% of the spam messages.
+
+12
+00:00:39,850 --> 00:00:43,850
+On average, only 0.014% of
+the spam messages that can get
+
+13
+00:00:43,850 --> 00:00:48,430
+through the filters, which translates
+into 1 in more than 7,000.
+
+14
+00:00:48,430 --> 00:00:53,060
+Looking at the whole lifecycle of
+a spam message, some get not delivered,
+
+15
+00:00:53,060 --> 00:00:57,570
+some get blocked by spam filters,
+some are ignored by the users, and
+
+16
+00:00:57,570 --> 00:00:59,587
+users may just leave the sites.
+
+17
+00:00:59,587 --> 00:01:02,940
+Of course, some of them will
+actually commit a transaction.
+
+18
+00:01:02,940 --> 00:01:05,422
+But some of these traffics
+are due to crawlers,
+
+19
+00:01:05,422 --> 00:01:08,310
+meaning that they're not actual users.
+
+20
+00:01:08,310 --> 00:01:10,645
+This table shows that for each campaign,
+
+21
+00:01:10,645 --> 00:01:13,970
+what's the percentage of
+spams that can be delivered,
+
+22
+00:01:13,970 --> 00:01:18,940
+filtered, result in user visiting
+the website, and user conversion.
+
+23
+00:01:18,940 --> 00:01:22,220
+Obviously, user conversion is
+the most interesting number
+
+24
+00:01:22,220 --> 00:01:23,580
+that we should look at.
+
+25
+00:01:23,580 --> 00:01:26,929
+For pharmacy, it's 1 in 1,737.
+
+26
+00:01:26,929 --> 00:01:29,539
+For postcard, it's 1 in 37.
+
+27
+00:01:29,539 --> 00:01:33,164
+For April Fool, it's 1 in 25.
+
+28
+00:01:33,164 --> 00:01:38,910
+This conversion rate is computed for the
+spams that got into the user's inbox.
+
+29
+00:01:38,910 --> 00:01:42,570
+How many of them result
+in user transactions?
+
+30
+00:01:42,570 --> 00:01:47,010
+The pharmacy campaign advertise
+a fake online pharmacy.
+
+31
+00:01:47,010 --> 00:01:51,647
+The researchers observed that there
+were 28 purchases in 26 days.
+
+32
+00:01:51,647 --> 00:01:55,235
+The average price per purchase is $100.
+
+33
+00:01:55,235 --> 00:02:00,860
+But the researchers only controlled
+1.5% of the bots sending the spams.
+
+34
+00:02:00,860 --> 00:02:04,970
+If we extrapolate this amount
+to the whole botnet population,
+
+35
+00:02:04,970 --> 00:02:12,380
+then we get close to $9500 a day,
+or $3.5 million a year.
+
+36
+00:02:12,380 --> 00:02:16,200
+Of course, the scammer and
+spammer will divvy up this money.
+
+37
+00:02:16,200 --> 00:02:20,480
+So the Storm operators or the spammers
+will get $1.7 million a year.

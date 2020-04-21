@@ -1,0 +1,8 @@
+1
+00:00:00,000 --> 00:00:02,625
+Now let's do a quiz on digital wallets.
+
+2
+00:00:02,625 --> 00:00:05,640
+Match the characteristics of each wallet, with a name.
+

@@ -1,0 +1,300 @@
+1
+00:00:00,390 --> 00:00:03,610
+SYN flood attacks can be
+launched at a massive scale.
+
+2
+00:00:03,610 --> 00:00:06,620
+Typically, for
+distributed denial of service attack,
+
+3
+00:00:06,620 --> 00:00:11,260
+a large botnet can be used to
+generate a huge amount of traffic.
+
+4
+00:00:11,260 --> 00:00:13,810
+And the result is that the website, or
+
+5
+00:00:13,810 --> 00:00:17,200
+even its uplink network routers,
+can be saturated.
+
+6
+00:00:17,200 --> 00:00:20,140
+It is very hard to filter
+these SYN packets,
+
+7
+00:00:20,140 --> 00:00:22,160
+because they all look legitimate.
+
+8
+00:00:22,160 --> 00:00:25,920
+So how do we defend against
+such massive flooding attack?
+
+9
+00:00:25,920 --> 00:00:29,500
+One idea is to use
+a very powerful server,
+
+10
+00:00:29,500 --> 00:00:32,840
+or a group of servers,
+to protect a website.
+
+11
+00:00:32,840 --> 00:00:35,890
+The idea is that these
+intermediate servers
+
+12
+00:00:35,890 --> 00:00:40,770
+will only forward established TCP
+connections to the real website.
+
+13
+00:00:40,770 --> 00:00:45,070
+Suppose many machines or bots send
+a lot of requests to the website, but
+
+14
+00:00:45,070 --> 00:00:47,210
+they're intercepted by the proxy.
+
+15
+00:00:47,210 --> 00:00:51,330
+The proxy is very powerful
+because it can use many servers.
+
+16
+00:00:51,330 --> 00:00:53,850
+And they can be distributed
+across the Internet.
+
+17
+00:00:53,850 --> 00:00:58,960
+The proxy sends the SYN/ACK packets in
+response to the initial SYN packets.
+
+18
+00:00:58,960 --> 00:01:03,050
+When a proxy receives the ACK
+packets from the client,
+
+19
+00:01:03,050 --> 00:01:05,489
+it will then forward
+to the real website.
+
+20
+00:01:05,489 --> 00:01:07,810
+The idea here is that
+the attacking machine or
+
+21
+00:01:07,810 --> 00:01:12,000
+the bot will not send actual
+ACK packets to the proxy.
+
+22
+00:01:12,000 --> 00:01:16,270
+Only the legitimate clients will send
+the ACK packets to the proxy, and
+
+23
+00:01:16,270 --> 00:01:20,110
+only those will be forwarded
+to the website to be serviced.
+
+24
+00:01:20,110 --> 00:01:24,390
+In other words, the proxy here
+stops the flooding attack.
+
+25
+00:01:24,390 --> 00:01:30,055
+However, the idea of using a proxy to
+protect a website is not bulletproof.
+
+26
+00:01:30,055 --> 00:01:32,620
+Here's an example of a stronger attack.
+
+27
+00:01:32,620 --> 00:01:35,940
+An attacker can use an army of bots
+
+28
+00:01:35,940 --> 00:01:39,750
+to actually completely
+finish the TCP handshake.
+
+29
+00:01:39,750 --> 00:01:44,130
+In other words,
+use complete TCP connections to website.
+
+30
+00:01:44,130 --> 00:01:47,510
+Then it can send requests
+to the website and
+
+31
+00:01:47,510 --> 00:01:50,280
+keep repeating all these
+requests to the server.
+
+32
+00:01:50,280 --> 00:01:53,560
+That is, all of these requests
+are legitimate from a protocol
+
+33
+00:01:53,560 --> 00:01:57,970
+point of view, but they were designed to
+overload the server with a lot of work.
+
+34
+00:01:57,970 --> 00:02:02,500
+And the result is that if the attacker
+can command a huge army of bots,
+
+35
+00:02:02,500 --> 00:02:05,290
+the attacker can still
+bring down a website.
+
+36
+00:02:05,290 --> 00:02:09,160
+This is similar to the situation
+when there are huge number of
+
+37
+00:02:09,160 --> 00:02:12,740
+legitimate users visiting
+a website at the same time.
+
+38
+00:02:12,740 --> 00:02:17,790
+Of course, such attack can actually
+render the proxy protection useless, but
+
+39
+00:02:17,790 --> 00:02:22,360
+on the other hand, because the TCP
+connection is fully established,
+
+40
+00:02:22,360 --> 00:02:26,540
+that means the attacker cannot
+use any random source IP address.
+
+41
+00:02:26,540 --> 00:02:30,360
+The attacker must use the real
+IP address of the bots,
+
+42
+00:02:30,360 --> 00:02:34,320
+which means that the bots' IP
+addresses are now revealed.
+
+43
+00:02:34,320 --> 00:02:39,780
+And then a proxy can actually block or
+rate limit traffic from these bots.
+
+44
+00:02:39,780 --> 00:02:44,531
+In other words, after the initial
+attack, there's a chance that the proxy
+
+45
+00:02:44,531 --> 00:02:47,799
+can actually use the information
+to rate-limit and
+
+46
+00:02:47,799 --> 00:02:50,782
+then reduce the effect
+of the flooding attack.
+
+47
+00:02:50,782 --> 00:02:54,860
+Here's a real-world example of such
+an attack, it's fairly recent.
+
+48
+00:02:54,860 --> 00:02:58,800
+So here, a honest end user
+visits a popular website, but
+
+49
+00:02:58,800 --> 00:03:01,017
+this website is compromised and
+
+50
+00:03:01,017 --> 00:03:07,090
+the response will include a miniature
+JavaScript injected into the response.
+
+51
+00:03:07,090 --> 00:03:10,890
+And the user has no idea
+that this JavaScript
+
+52
+00:03:10,890 --> 00:03:14,240
+is embedded into the response HTML page.
+
+53
+00:03:14,240 --> 00:03:19,340
+For example, this JavaScript can be
+embedded in an invisible iframe.
+
+54
+00:03:19,340 --> 00:03:23,410
+Once the response HTML page
+runs on the user's browser,
+
+55
+00:03:23,410 --> 00:03:25,490
+the malicious JavaScript will run, and
+
+56
+00:03:25,490 --> 00:03:30,550
+it will do a denial of service
+attack on a server, say, Github.com.
+
+57
+00:03:30,550 --> 00:03:34,590
+Here's how the JavaScript can
+launch an attack on Github.com.
+
+58
+00:03:34,590 --> 00:03:38,113
+It basically asks the victim website,
+say, GitHub.com,
+
+59
+00:03:38,113 --> 00:03:40,408
+to fetch a random resource on a server.
+
+60
+00:03:40,408 --> 00:03:44,320
+And it sends such a request
+every ten milliseconds.
+
+61
+00:03:44,320 --> 00:03:49,150
+Therefore, with many users unknowingly
+running this malicious JavaScript,
+
+62
+00:03:49,150 --> 00:03:53,720
+the victim website, say Github.com,
+can be rendered unavailable.

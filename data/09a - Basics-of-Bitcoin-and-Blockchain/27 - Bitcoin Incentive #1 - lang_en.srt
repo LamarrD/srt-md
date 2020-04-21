@@ -1,0 +1,60 @@
+1
+00:00:00,000 --> 00:00:01,805
+The first incentive is that,
+
+2
+00:00:01,805 --> 00:00:03,135
+for node to create a block,
+
+3
+00:00:03,135 --> 00:00:04,425
+the node can create
+
+4
+00:00:04,425 --> 00:00:07,890
+a special transaction and can choose the recipient of this transaction.
+
+5
+00:00:07,890 --> 00:00:09,905
+Typically, that's itself.
+
+6
+00:00:09,905 --> 00:00:12,540
+In particular, this coin creation transaction,
+
+7
+00:00:12,540 --> 00:00:13,980
+the value is fixed as,
+
+8
+00:00:13,980 --> 00:00:15,990
+for example, 25 bitcoins.
+
+9
+00:00:15,990 --> 00:00:18,420
+On the other hand, the block creator can collect
+
+10
+00:00:18,420 --> 00:00:21,385
+this reward only if the block is accepted by the nodes.
+
+11
+00:00:21,385 --> 00:00:25,360
+That means, this block ends up in the long-term consensus branch.
+
+12
+00:00:25,360 --> 00:00:28,570
+Again, block reward is how bitcoins are created,
+
+13
+00:00:28,570 --> 00:00:30,915
+but there are a finite supply of bitcoins.
+
+14
+00:00:30,915 --> 00:00:32,425
+Unless we change the rules,
+
+15
+00:00:32,425 --> 00:00:35,160
+bitcoins can run out in the year 2040.
+

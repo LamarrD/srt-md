@@ -1,0 +1,72 @@
+1
+00:00:00,000 --> 00:00:04,180
+When we say an asynchronous system achieve fault-tolerance,
+
+2
+00:00:04,180 --> 00:00:05,550
+we typically mean that,
+
+3
+00:00:05,550 --> 00:00:08,465
+it has both safety and liveness.
+
+4
+00:00:08,465 --> 00:00:13,020
+Safety means that, even if the system fails, nothing series happens.
+
+5
+00:00:13,020 --> 00:00:15,420
+Liveliness means that, the kinds of
+
+6
+00:00:15,420 --> 00:00:19,360
+the system can eventually receive replies to their requests.
+
+7
+00:00:19,360 --> 00:00:23,400
+In order for an asynchronous system to provide safety and liveness,
+
+8
+00:00:23,400 --> 00:00:27,240
+it needs to have a minimum 3f plus one replicas.
+
+9
+00:00:27,240 --> 00:00:30,775
+Here, f is the maximum number of faulty replicas.
+
+10
+00:00:30,775 --> 00:00:32,890
+We need 3f plus one replicas,
+
+11
+00:00:32,890 --> 00:00:37,910
+it must be possible to proceed after communicating with n minus one replicas,
+
+12
+00:00:37,910 --> 00:00:41,835
+since f replicas might be faulty and not responding.
+
+13
+00:00:41,835 --> 00:00:47,800
+However, it is possible that the f replicas that did not respond are not faulty,
+
+14
+00:00:47,800 --> 00:00:51,505
+and therefore f of those that respond, might be faulty.
+
+15
+00:00:51,505 --> 00:00:54,660
+Even so, there must be enough responses,
+
+16
+00:00:54,660 --> 00:00:59,945
+that those from non-faulty replicas out number those from faulty ones,
+
+17
+00:00:59,945 --> 00:01:03,505
+that is, n minus two f is greater than f. Therefore,
+
+18
+00:01:03,505 --> 00:01:05,780
+n has to be greater than 3f.
+

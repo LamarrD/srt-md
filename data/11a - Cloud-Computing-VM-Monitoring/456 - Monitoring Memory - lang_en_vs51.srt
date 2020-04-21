@@ -1,0 +1,53 @@
+1
+00:00:00,155 --> 00:00:04,011
+One of the most essential tasks of
+virtual machine security is memory
+
+2
+00:00:04,011 --> 00:00:04,682
+analysis.
+
+3
+00:00:04,682 --> 00:00:07,341
+This is because memory is
+the only reliable source
+
+4
+00:00:07,341 --> 00:00:09,740
+of the current state of a computer.
+
+5
+00:00:09,740 --> 00:00:10,610
+For example,
+
+6
+00:00:10,610 --> 00:00:14,720
+using memory analysis we can find
+out a list of the running processes.
+
+7
+00:00:14,720 --> 00:00:18,680
+We can also find out the encryption
+keys being used and the decrypted data.
+
+8
+00:00:18,680 --> 00:00:20,920
+We can look at network socket and data.
+
+9
+00:00:20,920 --> 00:00:25,990
+We can also find OS-level accounting
+information, as well as user inputs.
+
+10
+00:00:25,990 --> 00:00:28,210
+We can also read the screen captures and
+
+11
+00:00:28,210 --> 00:00:32,540
+find the graphical elements of
+an application and so on and so forth.
+
+12
+00:00:32,540 --> 00:00:34,430
+And these are just a few examples.

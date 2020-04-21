@@ -1,0 +1,10 @@
+1
+00:00:00,250 --> 00:00:03,060
+Now let's do a quiz on
+internet infrastructure.
+
+2
+00:00:03,060 --> 00:00:06,340
+Match the different levels of
+networks to its description.
+

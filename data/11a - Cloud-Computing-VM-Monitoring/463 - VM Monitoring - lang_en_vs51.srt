@@ -1,0 +1,27 @@
+1
+00:00:00,270 --> 00:00:02,700
+Let's analyze the requirements of SIM.
+
+2
+00:00:02,700 --> 00:00:04,970
+We want the invocation
+to be really fast.
+
+3
+00:00:04,970 --> 00:00:08,090
+This means that there's no
+need to switch to hypervisor.
+
+4
+00:00:08,090 --> 00:00:11,170
+We also want data read and
+write at native speed.
+
+5
+00:00:11,170 --> 00:00:13,433
+This means that we can
+rewrite data directly,
+
+6
+00:00:13,433 --> 00:00:15,239
+without going through hypervisor.

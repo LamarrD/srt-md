@@ -1,0 +1,44 @@
+1
+00:00:00,000 --> 00:00:03,200
+Now, let's discuss the math behind secure sharing.
+
+2
+00:00:03,200 --> 00:00:07,050
+The goal of secure sharing is that for some secret data say D,
+
+3
+00:00:07,050 --> 00:00:09,255
+we divide the data into n pieces,
+
+4
+00:00:09,255 --> 00:00:11,110
+D1, D2, through Dn.
+
+5
+00:00:11,110 --> 00:00:14,810
+In such a way that, if you know k or more pieces of D,
+
+6
+00:00:14,810 --> 00:00:17,105
+then you can compute D. On the other hand,
+
+7
+00:00:17,105 --> 00:00:20,520
+if you know only k minus one of fewer pieces of D,
+
+8
+00:00:20,520 --> 00:00:24,515
+then you can not determine D. The best you can do is a random guess.
+
+9
+00:00:24,515 --> 00:00:27,820
+This is the so-called k, n threshold scheme.
+
+10
+00:00:27,820 --> 00:00:29,925
+If k equal to n, that means
+
+11
+00:00:29,925 --> 00:00:33,850
+all participants are required together to reconstruct the secret.
+

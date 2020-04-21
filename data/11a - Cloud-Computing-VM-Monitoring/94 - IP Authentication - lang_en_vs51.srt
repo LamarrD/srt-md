@@ -1,0 +1,63 @@
+1
+00:00:00,280 --> 00:00:01,569
+Record it in the IP header,
+
+2
+00:00:01,569 --> 00:00:06,130
+the source and destination IP
+addresses must be specified.
+
+3
+00:00:06,130 --> 00:00:12,340
+However, one can easily override
+the source IP address using raw sockets.
+
+4
+00:00:12,340 --> 00:00:17,630
+For example, you can use the Libnet
+library to format raw packets
+
+5
+00:00:17,630 --> 00:00:22,540
+with arbitrary IP header information
+including the source IP address.
+
+6
+00:00:22,540 --> 00:00:27,410
+This means that there's no guarantee
+that the source ID address is authentic.
+
+7
+00:00:27,410 --> 00:00:31,550
+This means that anyone who owns
+the machine, and knows how to use a tool
+
+8
+00:00:31,550 --> 00:00:35,980
+like dimnet, can send packets with
+arbitrarily sourced IP addresses.
+
+9
+00:00:35,980 --> 00:00:40,480
+Now of course, a response will be sent
+back to the forged source IP address.
+
+10
+00:00:40,480 --> 00:00:45,210
+For example, host A can send packets
+forging the source IP address of
+
+11
+00:00:45,210 --> 00:00:50,190
+host B and then the response
+will be sent back to host B.
+
+12
+00:00:50,190 --> 00:00:54,100
+The ability to forge arbitrary
+source IP addresses enables
+
+13
+00:00:54,100 --> 00:00:58,750
+anonymous denial-of-service attacks and
+anonymous infection and malware attacks.

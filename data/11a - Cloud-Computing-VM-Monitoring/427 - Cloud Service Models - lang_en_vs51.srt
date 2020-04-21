@@ -1,0 +1,69 @@
+1
+00:00:00,260 --> 00:00:02,430
+There are three cloud service models.
+
+2
+00:00:02,430 --> 00:00:04,950
+The first one is Software as a Service.
+
+3
+00:00:04,950 --> 00:00:08,380
+It enables a customer to use
+a provider's applications
+
+4
+00:00:08,380 --> 00:00:10,130
+running on a cloud infrastructure.
+
+5
+00:00:10,130 --> 00:00:13,260
+This applications on a cloud
+can be accessful from various
+
+6
+00:00:13,260 --> 00:00:17,360
+kind devices through a thin client
+interface such as the web browser.
+
+7
+00:00:17,360 --> 00:00:20,230
+The second model is
+Platform as a Service.
+
+8
+00:00:20,230 --> 00:00:23,910
+It enables a consumer to deploy
+on to the cloud infrastructure
+
+9
+00:00:23,910 --> 00:00:27,190
+consumer created applications
+using programming languages and
+
+10
+00:00:27,190 --> 00:00:29,590
+tools supported by the cloud provider.
+
+11
+00:00:29,590 --> 00:00:32,479
+The third model is
+Infrastructure as a Service.
+
+12
+00:00:32,479 --> 00:00:36,690
+It enables a consumer to provision
+processing storage networks and
+
+13
+00:00:36,690 --> 00:00:40,760
+other fundamental computing resources on
+the cloud where the consumer is able to
+
+14
+00:00:40,760 --> 00:00:45,320
+deploy and run arbitrary software,
+which can include operating systems and
+
+15
+00:00:45,320 --> 00:00:46,070
+applications.

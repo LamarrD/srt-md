@@ -1,0 +1,36 @@
+1
+00:00:00,440 --> 00:00:03,750
+So in summary,
+denial of service attack is a real and
+
+2
+00:00:03,750 --> 00:00:05,970
+present danger on the Internet and
+
+3
+00:00:05,970 --> 00:00:10,980
+to mitigate such attacks, security must
+be considered at Internet design time.
+
+4
+00:00:10,980 --> 00:00:15,085
+Therefore, the sad truth is that
+the current Internet is ill-equipped to
+
+5
+00:00:15,085 --> 00:00:17,049
+handle denial of service attacks.
+
+6
+00:00:17,049 --> 00:00:19,800
+There are some commercial solutions.
+
+7
+00:00:19,800 --> 00:00:22,388
+There are many good proposals for
+
+8
+00:00:22,388 --> 00:00:26,183
+internet core redesign
+such as based blogging.
+

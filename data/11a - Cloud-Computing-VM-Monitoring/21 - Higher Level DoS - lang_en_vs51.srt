@@ -1,0 +1,122 @@
+1
+00:00:00,320 --> 00:00:04,430
+So far, we have discussed denial
+service attacks that exploit
+
+2
+00:00:04,430 --> 00:00:07,010
+weaknesses in network protocols.
+
+3
+00:00:07,010 --> 00:00:10,400
+Denial service attack can also
+happen at a higher level.
+
+4
+00:00:10,400 --> 00:00:13,750
+For example, let's look at
+a typical handshake protocol.
+
+5
+00:00:13,750 --> 00:00:17,190
+Here's a protocol that use
+publicly based authentication.
+
+6
+00:00:17,190 --> 00:00:20,140
+So the client sends a hello
+message to the server, and
+
+7
+00:00:20,140 --> 00:00:23,390
+a server sends its public
+key to the client.
+
+8
+00:00:23,390 --> 00:00:27,680
+And then, the client will use that
+public key to perform key exchange.
+
+9
+00:00:27,680 --> 00:00:32,920
+For example, the client can generate
+a secret share key between a client and
+
+10
+00:00:32,920 --> 00:00:36,970
+a server, and encrypt that
+using the server's public key.
+
+11
+00:00:36,970 --> 00:00:40,120
+And when a server receives
+this encrypted key,
+
+12
+00:00:40,120 --> 00:00:44,530
+it will use its private key to decrypt,
+to extract this secret share key.
+
+13
+00:00:44,530 --> 00:00:49,490
+The point is the client encrypts
+the secret share key using the server's
+
+14
+00:00:49,490 --> 00:00:53,810
+public key, and then the server
+decrypts that using its private key.
+
+15
+00:00:53,810 --> 00:00:56,080
+It's all good from
+a crypto point of view.
+
+16
+00:00:56,080 --> 00:01:02,280
+However, RSA Decrypt is ten times
+more costly than RSA Encrypt,
+
+17
+00:01:02,280 --> 00:01:05,090
+since the server has to do so
+much more work.
+
+18
+00:01:05,090 --> 00:01:09,200
+The attacker can send many such
+handshake requests to the server
+
+19
+00:01:09,200 --> 00:01:10,470
+to bring it down.
+
+20
+00:01:10,470 --> 00:01:13,680
+Similarly, at the application
+level a client
+
+21
+00:01:13,680 --> 00:01:18,970
+can send a simple HTTP request to your
+server asking for a very large PDF file.
+
+22
+00:01:18,970 --> 00:01:24,140
+And obviously, the server needs to spend
+far more resources than the client.
+
+23
+00:01:24,140 --> 00:01:29,080
+Therefore, an attacker can send many
+such HTTP requests to your server,
+
+24
+00:01:29,080 --> 00:01:33,540
+causing the server to fetch a large
+number of very large PDF files, and
+
+25
+00:01:33,540 --> 00:01:35,530
+this will actually bring
+down the web server.

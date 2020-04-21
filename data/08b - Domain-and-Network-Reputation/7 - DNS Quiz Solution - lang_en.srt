@@ -1,0 +1,32 @@
+1
+00:00:00,000 --> 00:00:04,075
+A botnet typically have a set of domains at his disposal.
+
+2
+00:00:04,075 --> 00:00:08,125
+So, each domain is only used for short period of time.
+
+3
+00:00:08,125 --> 00:00:11,060
+A spyware is used to steal information,
+
+4
+00:00:11,060 --> 00:00:13,870
+and it needs to upload information to a site.
+
+5
+00:00:13,870 --> 00:00:16,739
+This site is typically registered anonymously.
+
+6
+00:00:16,739 --> 00:00:18,570
+Adaware uses domains.
+
+7
+00:00:18,570 --> 00:00:21,295
+They are not associated with legitimate businesses.
+
+8
+00:00:21,295 --> 00:00:24,100
+Therefore, these domains are disposable.
+

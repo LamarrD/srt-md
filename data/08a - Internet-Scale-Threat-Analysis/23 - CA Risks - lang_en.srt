@@ -1,0 +1,88 @@
+1
+00:00:00,000 --> 00:00:03,600
+At a high level, there are several worrisome observations.
+
+2
+00:00:03,600 --> 00:00:09,560
+First, the certificate authorities are ignoring defense in depth, a least privilege.
+
+3
+00:00:09,560 --> 00:00:13,800
+They are offering services that put the whole ecosystem at risk and they're
+
+4
+00:00:13,800 --> 00:00:19,130
+using some weak keys and deploying HTTPS remains difficult.
+
+5
+00:00:19,130 --> 00:00:21,800
+Let's go on with these observations next.
+
+6
+00:00:21,800 --> 00:00:26,490
+For defense in depth, there are several technical practices already in
+
+7
+00:00:26,490 --> 00:00:31,770
+place for limiting the scope of a signing certificate including setting,
+
+8
+00:00:31,770 --> 00:00:35,205
+name or path length constrains and distributing
+
+9
+00:00:35,205 --> 00:00:39,270
+leave certificates among a large number of intermediate certificates.
+
+10
+00:00:39,270 --> 00:00:44,610
+There are clear cases for using these restrictions but the vast majority of the time,
+
+11
+00:00:44,610 --> 00:00:48,000
+the CA's do not utilize these options.
+
+12
+00:00:48,000 --> 00:00:51,060
+As another example, local domain names are not
+
+13
+00:00:51,060 --> 00:00:57,095
+fully qualified and intended resource is ambiguous and there is no identifiable owner.
+
+14
+00:00:57,095 --> 00:01:02,760
+As such, these local domain names frequently appear on more than one certificate.
+
+15
+00:01:02,760 --> 00:01:09,255
+In one example, there are about 1,218 browser trusted certificates for a domain male,
+
+16
+00:01:09,255 --> 00:01:14,880
+owned by organizations ranging from the U.S. Department of Defense to small companies.
+
+17
+00:01:14,880 --> 00:01:16,750
+In terms of the keys used,
+
+18
+00:01:16,750 --> 00:01:20,655
+the researchers also find that 90 percent of the certificates
+
+19
+00:01:20,655 --> 00:01:25,920
+use a 2048 bit or 4096 bit RSA keys.
+
+20
+00:01:25,920 --> 00:01:30,570
+But 50 percent of the certificates are rooted in the 1024 bit key.
+
+21
+00:01:30,570 --> 00:01:34,395
+More importantly, more than 70 percent of these will expire
+
+22
+00:01:34,395 --> 00:01:39,510
+after 2016 and many still use signs using MD5.
+

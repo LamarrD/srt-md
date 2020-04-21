@@ -1,0 +1,210 @@
+1
+00:00:00,180 --> 00:00:04,040
+Now let's understand how emulation
+works in a bit more detail.
+
+2
+00:00:04,040 --> 00:00:07,962
+In fetch, decode, and execute,
+the emulator fetch the next bytecode,
+
+3
+00:00:07,962 --> 00:00:09,491
+decode to get it's opcode.
+
+4
+00:00:09,491 --> 00:00:14,770
+And look up the execution routine for
+this opcode and then execute it.
+
+5
+00:00:14,770 --> 00:00:20,120
+Notice that the execute routine
+execute real x86 machine code.
+
+6
+00:00:20,120 --> 00:00:21,750
+The Virtual Program Counter,
+
+7
+00:00:21,750 --> 00:00:26,390
+VPC, is a maintained point to
+the next bytecode to fetch from.
+
+8
+00:00:26,390 --> 00:00:30,916
+Now let's discuss briefly how we
+can reverse engineer emulator-based
+
+9
+00:00:30,916 --> 00:00:31,950
+obfuscation.
+
+10
+00:00:31,950 --> 00:00:33,790
+There are quite a few challenges.
+
+11
+00:00:33,790 --> 00:00:38,300
+First of all, we don't even know where
+the bytecode program resides in memory.
+
+12
+00:00:38,300 --> 00:00:42,882
+The emulator code responsible for fetch,
+decode, and execute, is also not known.
+
+13
+00:00:42,882 --> 00:00:47,209
+The malware author can certainly
+make reverse engineering more
+
+14
+00:00:47,209 --> 00:00:50,525
+difficult by changing
+how the emulation works.
+
+15
+00:00:50,525 --> 00:00:55,300
+We develop a tool to automatically
+reverse engineer emulator-based malware,
+
+16
+00:00:55,300 --> 00:00:57,510
+and here's a very high level overview.
+
+17
+00:00:57,510 --> 00:01:02,940
+The first step is to identify abstract
+variables, in particular pointers.
+
+18
+00:01:02,940 --> 00:01:08,331
+And of course, one of the most important
+pointers we need to identify is VPC.
+
+19
+00:01:08,331 --> 00:01:13,520
+A VPC points to the next bytecode
+to fetch, decode, and execute.
+
+20
+00:01:13,520 --> 00:01:17,969
+Therefore, once we identify the VPCs,
+we can identify the fetch,
+
+21
+00:01:17,969 --> 00:01:21,780
+decode, and
+execute behavior in the emulator.
+
+22
+00:01:21,780 --> 00:01:23,290
+From the fetch, decode, and
+
+23
+00:01:23,290 --> 00:01:27,340
+execute operations in the emulator,
+we can obtain the opcode and
+
+24
+00:01:27,340 --> 00:01:32,040
+operands, as well as the execution
+routine of the malware bytecode.
+
+25
+00:01:32,040 --> 00:01:36,380
+We can then construct a control
+flow graph of the original malware.
+
+26
+00:01:36,380 --> 00:01:39,890
+And this will tell us
+the behaviors of the malware.
+
+27
+00:01:39,890 --> 00:01:42,450
+Here are some results
+of our experiments.
+
+28
+00:01:42,450 --> 00:01:44,479
+We created a synthetic program.
+
+29
+00:01:44,479 --> 00:01:48,900
+We then apply two emulation-based
+obfuscation techniques.
+
+30
+00:01:48,900 --> 00:01:53,200
+One is called VMProtect, the other
+one is called Code Virtualizer.
+
+31
+00:01:53,200 --> 00:01:56,650
+We then applied our tool
+to the obfuscated program.
+
+32
+00:01:56,650 --> 00:02:00,153
+We then compared a control flow
+graphs of the original program and
+
+33
+00:02:00,153 --> 00:02:03,155
+the control flow graphs from
+our reverse engineering.
+
+34
+00:02:03,155 --> 00:02:07,167
+Here is the control flow graph
+of the original program, and
+
+35
+00:02:07,167 --> 00:02:11,020
+a graph from reverse engineering
+Code Virtualizer, and
+
+36
+00:02:11,020 --> 00:02:14,170
+a graph from reverse
+engineering VMProtect.
+
+37
+00:02:14,170 --> 00:02:18,450
+As you can see, our tool is
+succesful in terms of extracting
+
+38
+00:02:18,450 --> 00:02:22,010
+the main properties of
+the original control flow graph.
+
+39
+00:02:22,010 --> 00:02:25,045
+Here are the results from
+the experiments on a real program,
+
+40
+00:02:25,045 --> 00:02:26,890
+NOTEPAD.EXE.
+
+41
+00:02:26,890 --> 00:02:30,000
+Again, here's a CFG of
+the original program.
+
+42
+00:02:30,000 --> 00:02:33,480
+And here's the result
+from reversing VMProtect.
+
+43
+00:02:33,480 --> 00:02:37,580
+Again, our tool is able to
+obtain the main information and
+
+44
+00:02:37,580 --> 00:02:39,780
+properties of the original CFG.

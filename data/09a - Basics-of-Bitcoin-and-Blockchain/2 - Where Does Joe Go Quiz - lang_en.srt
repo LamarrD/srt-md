@@ -1,0 +1,32 @@
+1
+00:00:00,000 --> 00:00:03,030
+First, let's do a quiz on hash table.
+
+2
+00:00:03,030 --> 00:00:07,320
+Suppose we want to store pointers to student records in a hash table,
+
+3
+00:00:07,320 --> 00:00:11,380
+the hash function is the length of the name mod 5.
+
+4
+00:00:11,380 --> 00:00:14,950
+Therefore, for Alice, since the length is 5,
+
+5
+00:00:14,950 --> 00:00:18,060
+her record is going to be stored in slot 0,
+
+6
+00:00:18,060 --> 00:00:20,810
+John will be in slot 4,
+
+7
+00:00:20,810 --> 00:00:23,235
+and Sue will be in slot 3,
+
+8
+00:00:23,235 --> 00:00:25,100
+so where will Joe go?
+

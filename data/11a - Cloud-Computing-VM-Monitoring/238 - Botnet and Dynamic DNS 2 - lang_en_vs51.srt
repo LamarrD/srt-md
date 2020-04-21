@@ -1,0 +1,201 @@
+1
+00:00:00,240 --> 00:00:04,570
+Now let's focus on how do we detect
+that a domain is used for upon as C&amp;C.
+
+2
+00:00:04,570 --> 00:00:07,340
+There are a number of heuristics
+based on observations.
+
+3
+00:00:07,340 --> 00:00:11,350
+First, member masses purchase a domain,
+they must use credit card, and
+
+4
+00:00:11,350 --> 00:00:14,000
+that leaves traceable
+financial information.
+
+5
+00:00:14,000 --> 00:00:17,830
+And the other limit such traceable
+information as little as possible.
+
+6
+00:00:17,830 --> 00:00:20,910
+Therefore, they may do the so-called
+package deal, where for
+
+7
+00:00:20,910 --> 00:00:24,240
+one second level domain,
+they're going to use it for
+
+8
+00:00:24,240 --> 00:00:28,220
+multiple three level domains for
+botnets, for example here for
+
+9
+00:00:28,220 --> 00:00:31,730
+the same package deal for
+the second level domain evilhacker.org,
+
+10
+00:00:31,730 --> 00:00:35,240
+there are multiple botnets using
+different three level domains,
+
+11
+00:00:35,240 --> 00:00:37,455
+the point is that with a single
+financial transaction,
+
+12
+00:00:37,455 --> 00:00:39,920
+they can support multiple botnets,
+therefore
+
+13
+00:00:39,920 --> 00:00:43,620
+we can cluster the three level domains
+under the same second level domain
+
+14
+00:00:43,620 --> 00:00:48,070
+that's looks similar in their names or
+they resolved to similar subnets of IPs.
+
+15
+00:00:48,070 --> 00:00:50,811
+Because they're likely to
+be botnets they're related.
+
+16
+00:00:50,811 --> 00:00:54,400
+And we sum up the look-ups to all
+of these domains within a cluster.
+
+17
+00:00:54,400 --> 00:00:58,535
+By doing so we will compare the look-up
+patterns of legitimate domains.
+
+18
+00:00:58,535 --> 00:01:00,870
+which is the Botnet domains
+they look different.
+
+19
+00:01:00,870 --> 00:01:04,019
+That is the Botnet domains tend
+to have larger lookup volumes.
+
+20
+00:01:04,019 --> 00:01:07,780
+And remember these domains
+are in dynamic DNS providers and
+
+21
+00:01:07,780 --> 00:01:10,900
+the domains tend to be small and
+medium sized businesses,
+
+22
+00:01:10,900 --> 00:01:14,570
+therefore legitimate domains will not
+have a very large lookup volumes.
+
+23
+00:01:14,570 --> 00:01:17,580
+Another observation is that bots tend
+to look up their their Command and
+
+24
+00:01:17,580 --> 00:01:21,720
+Control service as soon as their host
+machines are connected to the internet.
+
+25
+00:01:21,720 --> 00:01:25,120
+The intrusion is that bots must
+maintain communication with
+
+26
+00:01:25,120 --> 00:01:28,760
+the command control server and since
+they have no control over when the host
+
+27
+00:01:28,760 --> 00:01:32,050
+machines connect to the internet,
+they must take their first opportunity.
+
+28
+00:01:32,050 --> 00:01:35,040
+The result is that there
+is an exponential arrival
+
+29
+00:01:35,040 --> 00:01:36,790
+of DNS request from the bots,
+
+30
+00:01:36,790 --> 00:01:41,190
+whereas legitimate DNS lookups by normal
+user activities is a lot smoother.
+
+31
+00:01:41,190 --> 00:01:45,220
+For example, Human uses don't all
+immediately check the same side.
+
+32
+00:01:45,220 --> 00:01:49,380
+Therefore, if you sought the lookout
+volume per hour by 24 hour windows,
+
+33
+00:01:49,380 --> 00:01:52,960
+we can see the exponential arrival
+rate of the bot's queries,
+
+34
+00:01:52,960 --> 00:01:55,400
+whereas human queries
+are a lot smoother.
+
+35
+00:01:55,400 --> 00:01:57,060
+There are other detection heuristics.
+
+36
+00:01:57,060 --> 00:01:59,208
+For example, the look up's
+are from all over the internet.
+
+37
+00:01:59,208 --> 00:02:04,620
+And a C&amp;C server is resolved to many
+different IP's across the internet.
+
+38
+00:02:04,620 --> 00:02:08,169
+And the resolved IP address
+change frequently and so on.
+
+39
+00:02:08,169 --> 00:02:11,460
+Any of these observations alone
+cannot effectively detect
+
+40
+00:02:11,460 --> 00:02:13,010
+a Botnet command control domain.
+
+41
+00:02:13,010 --> 00:02:15,900
+And therefore,
+we combine them in a detection system.

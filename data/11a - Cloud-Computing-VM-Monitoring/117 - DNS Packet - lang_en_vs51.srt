@@ -1,0 +1,227 @@
+1
+00:00:00,290 --> 00:00:05,510
+Now let's take a closer look at
+the internals of DNS query and response.
+
+2
+00:00:05,510 --> 00:00:08,550
+Let's start with the format
+of a DNS packet.
+
+3
+00:00:08,550 --> 00:00:10,820
+There is the usual IP header.
+
+4
+00:00:10,820 --> 00:00:14,940
+There's a UDP header
+because DNS uses UDP, and
+
+5
+00:00:14,940 --> 00:00:18,130
+the UDP payload is the actual DNS data.
+
+6
+00:00:18,130 --> 00:00:22,220
+One of the most important fields
+in DNS data is the query ID,
+
+7
+00:00:22,220 --> 00:00:24,930
+which is a 16 bit random value.
+
+8
+00:00:24,930 --> 00:00:27,690
+A DNS query contains a query ID.
+
+9
+00:00:27,690 --> 00:00:31,090
+And a response also carries the ID.
+
+10
+00:00:31,090 --> 00:00:34,510
+Therefore, even though a DNS
+server may send out many, many
+
+11
+00:00:34,510 --> 00:00:39,592
+queries at the same time, it can use
+the ID to link a response to a query.
+
+12
+00:00:39,592 --> 00:00:43,900
+That is, the response to a query will
+have the same ID of the query ID
+
+13
+00:00:43,900 --> 00:00:45,390
+of the original query.
+
+14
+00:00:45,390 --> 00:00:47,490
+Now, let's look through an example.
+
+15
+00:00:47,490 --> 00:00:50,260
+Suppose a local DNS
+server is looking up for
+
+16
+00:00:50,260 --> 00:00:55,380
+the domain www.unixvis.net
+on behalf of a browser.
+
+17
+00:00:55,380 --> 00:00:57,780
+So, this is the local DNS server.
+
+18
+00:00:57,780 --> 00:01:00,860
+It's going to send the query
+to one of the root service.
+
+19
+00:01:00,860 --> 00:01:04,030
+It sent a flag to say recursion desired.
+
+20
+00:01:04,030 --> 00:01:09,040
+That means it's asking the destination
+DNS server to perform recursive queries
+
+21
+00:01:09,040 --> 00:01:10,410
+on its behalf.
+
+22
+00:01:10,410 --> 00:01:13,070
+Here is the response
+from the root server.
+
+23
+00:01:13,070 --> 00:01:18,830
+The root server does not know
+the IP address of www.unixwiz.net.
+
+24
+00:01:18,830 --> 00:01:23,200
+So it provides the IP addresses
+of the next NS service.
+
+25
+00:01:23,200 --> 00:01:25,390
+And these are called glue records.
+
+26
+00:01:25,390 --> 00:01:27,360
+Let's look at this in more detail.
+
+27
+00:01:27,360 --> 00:01:31,220
+The response comes from the root server,
+back to the local DNS server.
+
+28
+00:01:31,220 --> 00:01:35,820
+It says that it's a response, the root
+server does not know the IP address
+
+29
+00:01:35,820 --> 00:01:40,620
+of www.unixwiz.net, but
+it knows where to ask.
+
+30
+00:01:40,620 --> 00:01:44,470
+It responds with a series of
+NS records that should know
+
+31
+00:01:44,470 --> 00:01:46,770
+how to handle the original query.
+
+32
+00:01:46,770 --> 00:01:49,130
+Notice that both the domain names and
+
+33
+00:01:49,130 --> 00:01:52,910
+IP addresses of these named
+servers are provided.
+
+34
+00:01:52,910 --> 00:01:57,360
+Because this response is not the final
+answer to the original query,
+
+35
+00:01:57,360 --> 00:02:01,830
+it sets this flag to zero to indicate
+that this is not authoritative.
+
+36
+00:02:01,830 --> 00:02:05,770
+And also because the root server
+is busy, it's not going to perform
+
+37
+00:02:05,770 --> 00:02:09,229
+because of queries on behalf
+of the local DNS server.
+
+38
+00:02:09,229 --> 00:02:13,360
+That's why it sets this flag to
+indicate that it's not going to perform
+
+39
+00:02:13,360 --> 00:02:14,590
+because of queries.
+
+40
+00:02:14,590 --> 00:02:19,570
+That is, the local DNS server should
+contact these named servers instead.
+
+41
+00:02:19,570 --> 00:02:24,089
+The final, or authoritative,
+response comes from the named server,
+
+42
+00:02:24,089 --> 00:02:25,679
+linux.unixwiz.net.
+
+43
+00:02:25,679 --> 00:02:30,040
+And notice that now
+the authoritative flag is set to 1.
+
+44
+00:02:30,040 --> 00:02:34,245
+Notice that this final response
+contains the IP address of the domain
+
+45
+00:02:34,245 --> 00:02:40,790
+www.unixwiz.net, which is the domain
+name contained in the original query.
+
+46
+00:02:40,790 --> 00:02:45,170
+And the TTL is one hour, which means
+this record will be cached and
+
+47
+00:02:45,170 --> 00:02:47,020
+be valid for one hour.
+
+48
+00:02:47,020 --> 00:02:51,900
+And since these NS records are in the
+same second level domain, unixwiz.net,
+
+49
+00:02:51,900 --> 00:02:54,810
+of the original queried domain,
+they are also cached.

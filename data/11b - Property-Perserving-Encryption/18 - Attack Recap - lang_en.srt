@@ -1,0 +1,10 @@
+1
+00:00:00,240 --> 00:00:04,490
+Here is a summary of the results of
+attacks on electronic medical records.
+
+2
+00:00:04,490 --> 00:00:08,590
+As you can see, the confidentiality
+of many attributes is compromised.
+

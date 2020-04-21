@@ -1,0 +1,88 @@
+1
+00:00:00,000 --> 00:00:03,020
+Let's have a quick overview of machine learning.
+
+2
+00:00:03,020 --> 00:00:05,335
+The task of machine learning is that,
+
+3
+00:00:05,335 --> 00:00:10,260
+given training examples, we would learn a function that can predict the output.
+
+4
+00:00:10,260 --> 00:00:12,140
+Then, once we learn this function,
+
+5
+00:00:12,140 --> 00:00:17,075
+we can apply it to testing examples and this function can then produce the output.
+
+6
+00:00:17,075 --> 00:00:21,830
+For example, the input can be fruits and the output can be the names of the fruits.
+
+7
+00:00:21,830 --> 00:00:24,410
+For example, is it an apple or orange?
+
+8
+00:00:24,410 --> 00:00:27,870
+A partition function will be able to analyze the features of
+
+9
+00:00:27,870 --> 00:00:31,960
+these fruits and determine whether it is apple versus orange.
+
+10
+00:00:31,960 --> 00:00:34,675
+The first step in machine learning is training.
+
+11
+00:00:34,675 --> 00:00:39,520
+Here, the Xs are the examples and the Ys are the labels of these examples.
+
+12
+00:00:39,520 --> 00:00:42,845
+Then, the machine learning algorithm is going to produce
+
+13
+00:00:42,845 --> 00:00:47,900
+the best possible function by minimizing the prediction error on this training data set.
+
+14
+00:00:47,900 --> 00:00:52,025
+We're going to discuss a few example machine learning algorithms.
+
+15
+00:00:52,025 --> 00:00:55,280
+In a testing phase, we apply the learned function to a set
+
+16
+00:00:55,280 --> 00:00:58,460
+of test data which was not used in training,
+
+17
+00:00:58,460 --> 00:01:03,155
+and the function should be able to produce predicted value of Y given X.
+
+18
+00:01:03,155 --> 00:01:07,490
+Ideally, data used in machine learning should reflect the real world.
+
+19
+00:01:07,490 --> 00:01:12,250
+Therefore, we use a process to draw data from the real-world application.
+
+20
+00:01:12,250 --> 00:01:17,155
+Then, that data is randomly split into a training data set and test data set.
+
+21
+00:01:17,155 --> 00:01:20,060
+We can then apply a machine learning algorithm to
+
+22
+00:01:20,060 --> 00:01:24,170
+a training data to learn the particular function that can be applied to test dataset.
+

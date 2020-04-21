@@ -1,0 +1,31 @@
+1
+00:00:00,380 --> 00:00:04,840
+Now let's do a quick review
+quiz on cryptographic checksum.
+
+2
+00:00:04,840 --> 00:00:06,738
+Check all the statements that are true.
+
+3
+00:00:06,738 --> 00:00:11,543
+First, cryptographic hash functions
+that are not one-way are vulnerable to
+
+4
+00:00:11,543 --> 00:00:13,290
+preimage attacks.
+
+5
+00:00:13,290 --> 00:00:18,460
+Second, a difficult hash function is one
+that takes a long time to calculate.
+
+6
+00:00:18,460 --> 00:00:21,160
+Third, a good cryptographic
+hash function
+
+7
+00:00:21,160 --> 00:00:23,210
+should employ an avalanching effect.
